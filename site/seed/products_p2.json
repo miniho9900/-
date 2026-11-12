@@ -1,0 +1,1 @@
+{"name": "SDN Switch", "category": "SDN 장비", "summary": "Rest API, OpenFlow 등 표준 프로토콜로 SDN 컨트롤러와 연동되는 데이터센터 자동화용 스위치", "featured": true, "imageId": null, "order": 10, "visible": true, "updatedAt": "2026-11-12"}
