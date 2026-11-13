@@ -613,6 +613,51 @@ body.embed .pv-bar,body.embed .pv-list,body.embed .edit-fab,body.embed .demo-bar
 .ceo-sign .sig::after{content:"";position:absolute;left:-4px;right:-10px;bottom:2px;height:2px;background:linear-gradient(90deg,transparent,var(--violet) 18%,var(--violet) 70%,transparent);opacity:.55;transform:rotate(2deg)}
 .ceo-sign img.sig-img{height:64px;width:auto;max-width:240px;object-fit:contain;display:block}
 .timeline{display:grid;gap:0;border-top:1px solid var(--line)}
+.htl-sec{background:#0C0A2A;color:#fff;position:relative;overflow:hidden}
+.htl-sec::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 40% at 50% 0%,rgba(110,76,232,.28),transparent 70%);pointer-events:none}
+.htl-sec .wrap{position:relative}
+.htl-hd{text-align:center;max-width:720px;margin:0 auto clamp(56px,7vw,96px)}
+.htl-hd h2{color:#fff;font-size:clamp(34px,4vw,56px);margin:12px 0 0}
+.htl-hd .lead{color:rgba(255,255,255,.72);margin-top:18px}
+.htl-hd .eyebrow{color:#A996FF}
+.htl-span{display:inline-flex;align-items:center;gap:14px;margin-top:26px;font-family:var(--f-display);font-size:15px;color:rgba(255,255,255,.6);letter-spacing:.08em}
+.htl-span i{width:72px;height:1px;background:linear-gradient(90deg,rgba(255,255,255,.2),#8F72FF)}
+.htl{--htl-p:0%;position:relative;padding:24px 0 8px}
+.htl-line{position:absolute;left:50%;top:0;bottom:0;width:1px;transform:translateX(-50%);background:linear-gradient(180deg,rgba(255,255,255,.18) 96%,rgba(255,255,255,0))}
+.htl-prog{position:absolute;left:0;top:0;width:100%;height:var(--htl-p);background:linear-gradient(180deg,#5B3FD6,#9C86F0);box-shadow:0 0 12px rgba(156,134,240,.8);transition:height .25s linear}
+.htl-prog::after{content:"";position:absolute;left:50%;bottom:-4px;width:9px;height:9px;border-radius:50%;background:#fff;transform:translateX(-50%);box-shadow:0 0 0 4px rgba(156,134,240,.35),0 0 18px #9C86F0}
+.htl-cap{position:absolute;left:50%;top:-6px;width:12px;height:12px;border:1px solid #9C86F0;transform:translateX(-50%) rotate(45deg);background:#0C0A2A}
+.htl-item{display:flex;padding:0 0 clamp(48px,6vw,80px)}
+.htl-item.l{justify-content:flex-end}
+.htl-item.r{justify-content:flex-start}
+.htl-body{width:calc(50% - clamp(32px,4vw,56px));opacity:.38;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.htl-item.l .htl-body{order:2}
+.htl-item.r .htl-body{text-align:right}
+.htl-item.on .htl-body{opacity:1;transform:none}
+.htl-y{position:relative;margin:0;font-family:var(--f-display);font-size:clamp(32px,3.4vw,46px);font-weight:700;line-height:1.1;color:rgba(255,255,255,.55);letter-spacing:-.01em;transition:color .5s}
+.htl-item.on .htl-y{color:#fff}
+.htl-item.cur .htl-y{color:#B9A8FF}
+.htl-dot{position:absolute;top:50%;width:11px;height:11px;margin-top:-5.5px;border-radius:50%;background:#3A3366;border:1px solid rgba(255,255,255,.35);transition:background .4s,border-color .4s}
+.htl-item.l .htl-dot{left:calc(-1 * clamp(32px,4vw,56px) - 5.5px)}
+.htl-item.r .htl-dot{right:calc(-1 * clamp(32px,4vw,56px) - 5.5px)}
+.htl-item.on .htl-dot{background:#8F72FF;border-color:#8F72FF}
+.htl-item.cur .htl-dot::after{content:"";position:absolute;inset:-1px;border-radius:50%;background:#8F72FF;animation:htlPulse 1.6s ease-out infinite}
+@keyframes htlPulse{0%{opacity:.6;transform:scale(1)}100%{opacity:0;transform:scale(5)}}
+.htl-body ul{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:10px}
+.htl-body li{position:relative;font-size:16px;line-height:1.65;color:rgba(255,255,255,.78);padding-left:16px}
+.htl-body li::before{content:"";position:absolute;left:0;top:.78em;width:5px;height:1px;background:#9C86F0}
+.htl-item.r .htl-body li{padding:0 16px 0 0}
+.htl-item.r .htl-body li::before{left:auto;right:0}
+@media (max-width:760px){
+  .htl{padding-left:28px}
+  .htl-line,.htl-cap{left:5px}
+  .htl-item.l,.htl-item.r{justify-content:flex-start}
+  .htl-body,.htl-item.r .htl-body{width:100%;text-align:left}
+  .htl-item.l .htl-dot,.htl-item.r .htl-dot{left:-28px;right:auto}
+  .htl-item.r .htl-body li{padding:0 0 0 16px}.htl-item.r .htl-body li::before{left:0;right:auto}
+  .htl-body li{font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){.htl-body{transform:none;transition:none}.htl-prog{transition:none}.htl-item.cur .htl-dot::after{animation:none}}
 .tl-row{display:grid;grid-template-columns:180px minmax(0,1fr);gap:24px;padding:28px 0;border-bottom:1px solid var(--line)}
 .tl-row .y{font-family:var(--f-display);font-size:32px;font-weight:600;color:var(--ink);line-height:1.1}
 .tl-row .t{white-space:pre-line;color:#38365A}
@@ -1064,6 +1109,21 @@ function onScroll(){
   const r = route(); const hasHero = r === "home" || ["about","business","products","product","cert","news","contact"].includes(r.split("-")[0]) || r.startsWith("post-");
   $("#hd").classList.toggle("solid", !hasHero || window.scrollY > 40);
 }
+/* ---- history timeline: scroll progress line + active years ---- */
+let htlRaf = 0;
+function htlUpdate(){
+  htlRaf = 0;
+  const el = document.getElementById("htl"); if (!el) return;
+  const r = el.getBoundingClientRect(), probe = innerHeight * 0.58;
+  const per = Math.max(0, Math.min(1, (probe - r.top) / r.height));
+  el.style.setProperty("--htl-p", (per*100).toFixed(2) + "%");
+  let last = null;
+  el.querySelectorAll(".htl-item").forEach(it => { const on = it.getBoundingClientRect().top < probe; it.classList.toggle("on", on); if (on) last = it; });
+  el.querySelectorAll(".htl-item").forEach(it => it.classList.toggle("cur", it === last));
+}
+const htlQueue = () => { if (!htlRaf) htlRaf = requestAnimationFrame(htlUpdate); };
+window.addEventListener("scroll", htlQueue, {passive:true});
+window.addEventListener("resize", htlQueue, {passive:true});
 window.addEventListener("scroll", onScroll, {passive:true});
 function openMenu(){ const m=$("#fullMenu"); m.classList.add("open"); m.setAttribute("aria-hidden","false"); }
 function closeMenu(){ const m=$("#fullMenu"); m.classList.remove("open"); m.setAttribute("aria-hidden","true"); }
@@ -1265,9 +1325,12 @@ function viewAbout(){
     <div class="sec-hd"><div><p class="eyebrow">Vision &amp; Philosophy</p><h2>비전 &amp; 경영이념</h2></div><p class="lead">${esc(cfg("visionLead"))}</p></div>
     <div class="vision">${vision.map(([h,b],i) => `<div class="reveal"><span class="n">${String(i+1).padStart(2,"0")}</span><b>${esc(h)}</b><p>${esc(b)}</p></div>`).join("")}</div>
   </div></section>`:""}
-  <section class="sec" id="hist"><div class="wrap">
-    <div class="sec-hd"><div><p class="eyebrow">History</p><h2>연혁</h2></div><p class="lead">${esc(cfg("historyLead"))}</p></div>
-    ${hist.length ? `<div class="timeline">${hist.map(h => `<div class="tl-row reveal"><div class="y">${esc(h.year)}</div><div class="t">${esc(h.text)}</div></div>`).join("")}</div>` : `<div class="empty">연혁을 등록하면 이곳에 표시됩니다.</div>`}
+  <section class="sec htl-sec" id="hist"><div class="wrap">
+    <div class="htl-hd"><p class="eyebrow">History</p><h2>연혁</h2>${cfg("historyLead")?`<p class="lead">${esc(cfg("historyLead"))}</p>`:""}
+      ${hist.length>1?`<p class="htl-span"><span class="num">${esc(hist[hist.length-1].year)}</span><i></i><span class="num">${esc(hist[0].year)}</span></p>`:""}</div>
+    ${hist.length ? `<div class="htl" id="htl"><span class="htl-line" aria-hidden="true"><span class="htl-prog"></span></span><span class="htl-cap" aria-hidden="true"></span>
+      ${hist.map((h,i) => `<div class="htl-item ${i%2?"r":"l"}"><div class="htl-body"><h3 class="htl-y"><span class="htl-dot" aria-hidden="true"></span><span class="num">${esc(h.year)}</span></h3><ul>${String(h.text||"").split("\n").map(t=>t.trim()).filter(Boolean).map(t => `<li>${esc(t)}</li>`).join("")}</ul></div></div>`).join("")}
+    </div>` : `<div class="empty">연혁을 등록하면 이곳에 표시됩니다.</div>`}
   </div></section>
   <section class="sec mist" id="loc"><div class="wrap">
     <div class="sec-hd"><div><p class="eyebrow">Location</p><h2>오시는 길</h2></div></div>
@@ -1688,7 +1751,7 @@ function render(routeChanged){
   document.documentElement.lang = ui.lang;
   document.title = ui.lang==="en" ? "TrizN" : "트리즈엔";
   if (r==="home"){ startHero(); wireTrack(); const tr=$("#pTrack"); if (tr && trackX) tr.scrollLeft = trackX; } else clearTimeout(heroTimer);
-  observe(); initMap();
+  observe(); initMap(); htlQueue();
   if (routeChanged) window.scrollTo(0,0); else if (keepY) window.scrollTo(0,keepY);
   lastRoute = r;
   maybePopups();

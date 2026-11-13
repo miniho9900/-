@@ -1,8 +1,8 @@
 {
- "year": "2026",
+ "order": 0,
  "text": "국회 교육위원장 표창 4년 연속 수상 (지능형 네트워크 솔루션 부문)\n차세대 SDN 컨트롤러 내 ‘양자내성암호(PQC)’ 상용화 적용",
  "text_en": "National Assembly Education Committee Chair's Commendation — 4th consecutive year (intelligent network solutions)\nPost-quantum cryptography (PQC) applied commercially in the next-generation SDN controller",
- "order": 0,
+ "updatedAt": "2026-11-13T12:00:00.000Z",
  "visible": true,
- "updatedAt": "2026-11-13"
+ "year": "2026"
 }

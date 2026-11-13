@@ -506,78 +506,155 @@
  {
   "path": "history/h2013",
   "data": {
-   "year": "2013",
-   "text": "엔에스지 설립 (2013.12.31)\n교육정보화(스마트 스쿨, 스쿨넷) 사업",
-   "text_en": "NSG founded (December 31, 2013)\nEducation informatization business (Smart School, SchoolNet)",
-   "order": 60,
+   "order": 130,
+   "text": "엔에스지 설립 (2013.12.31)\n교육정보화(스마트 스쿨, 스쿨넷) 사업\n경기도 지역교육지원청 11개청 유지보수\n경기정보통신 협동조합 이사장 취임 (대표이사)",
+   "text_en": "NSG founded (December 31, 2013)\nEducation informatization business (Smart School, SchoolNet)\nMaintenance for 11 Gyeonggi district education offices\nCEO appointed chair of the Gyeonggi ICT Cooperative",
+   "updatedAt": "2026-11-13T12:00:00.000Z",
    "visible": true,
-   "updatedAt": "2026-11-13"
+   "year": "2013"
+  }
+ },
+ {
+  "path": "history/h2014",
+  "data": {
+   "year": "2014",
+   "visible": true,
+   "text": "경기도 지역교육지원청 14개청 유지보수",
+   "text_en": "Maintenance for 14 Gyeonggi district education offices",
+   "order": 120,
+   "updatedAt": "2026-11-13T12:00:00.000Z"
+  }
+ },
+ {
+  "path": "history/h2015",
+  "data": {
+   "year": "2015",
+   "visible": true,
+   "text": "Ubiquoss 네트워크 스위치 조달 등록\n무선랜 관제센터 구축·운영, 정보통신공사업 등록 및 사무실 이전\n직접생산확인증명 인증 취득 (전산업무 소프트웨어 개발)",
+   "text_en": "Registered Ubiquoss network switches for public procurement\nBuilt and operated a WLAN monitoring center; registered as ICT contractor; moved office\nDirect production certificate (IT software development)",
+   "order": 110,
+   "updatedAt": "2026-11-13T12:00:00.000Z"
   }
  },
  {
   "path": "history/h2016",
   "data": {
-   "year": "2016",
-   "text": "연구개발전담부서 인증 (한국산업기술진흥협회)\n스쿨넷 서비스 구축 감사패 수상",
-   "text_en": "Dedicated R&D department certified (KOITA)\nAppreciation plaque for SchoolNet service deployment",
-   "order": 50,
+   "order": 100,
+   "text": "연구개발전담부서 인증 (한국산업기술진흥협회)\n스쿨넷 서비스 구축 감사패 수상\n경기도교육청 3단계 스쿨넷서비스 구축사업 주관협력사 선정\n파이오링크 파트너 등록\n다보링크 기술지원 협력사 취득",
+   "text_en": "Dedicated R&D department certified (KOITA)\nAppreciation plaque for SchoolNet service deployment\nSelected lead partner for Gyeonggi Phase 3 SchoolNet project\nRegistered PIOLINK partner\nDAVOLINK technical support partner",
+   "updatedAt": "2026-11-13T12:00:00.000Z",
    "visible": true,
-   "updatedAt": "2026-11-13"
+   "year": "2016"
+  }
+ },
+ {
+  "path": "history/h2017",
+  "data": {
+   "year": "2017",
+   "visible": true,
+   "text": "경기도교육청 3단계 스쿨넷 서비스망 구축\n전국연합학력평가 온라인시스템 구축\n경기도교육지원청 산하기관 정보시스템 통합유지보수",
+   "text_en": "Built Gyeonggi Office of Education Phase 3 SchoolNet service network\nBuilt the online system for the National Joint Achievement Test\nIntegrated IT system maintenance for Gyeonggi education office affiliates",
+   "order": 90,
+   "updatedAt": "2026-11-13T12:00:00.000Z"
+  }
+ },
+ {
+  "path": "history/h2018",
+  "data": {
+   "year": "2018",
+   "visible": true,
+   "text": "품질 및 환경인증 취득 (ISO 9001 / TL 9000)\n(사)스마트교육학회 회원사 등록\n포인투랩 리셀러 계약\n경기도교육지원청 11개청 통합유지보수",
+   "text_en": "Quality and environmental certification (ISO 9001 / TL 9000)\nMember of the Korean Society for Smart Education\nReseller agreement with Pointolab\nIntegrated maintenance for 11 Gyeonggi district education offices",
+   "order": 80,
+   "updatedAt": "2026-11-13T12:00:00.000Z"
+  }
+ },
+ {
+  "path": "history/h2019",
+  "data": {
+   "year": "2019",
+   "visible": true,
+   "text": "하몬소프트 관제시스템 조달 총판\n경기도교육청 학생 참여형 수업을 위한 무선인프라시스템 구축\n경기도교육지원청 10개청 통합유지보수\n경기도교육청 학생 주도형 미래교실 시범사업 구축",
+   "text_en": "Exclusive public-procurement distributor of Hamonsoft monitoring systems\nBuilt wireless infrastructure for student-participation classes (Gyeonggi Office of Education)\nIntegrated maintenance for 10 Gyeonggi district education offices\nBuilt student-led Future Classroom pilot (Gyeonggi Office of Education)",
+   "order": 70,
+   "updatedAt": "2026-11-13T12:00:00.000Z"
   }
  },
  {
   "path": "history/h2020",
   "data": {
-   "year": "2020",
-   "text": "국내 최초 유·무선 통합 SDN 컨트롤러 개발\n기업부설연구소 설립\n광다중화, 통합배선반 직접생산증명 취득",
-   "text_en": "Developed Korea's first wired/wireless integrated SDN controller\nEstablished a corporate R&D center\nDirect production certification for optical multiplexers and integrated patch panels",
-   "order": 40,
+   "order": 60,
+   "text": "국내 최초 유·무선 통합 SDN 컨트롤러 개발\n기업부설연구소 설립\n광다중화, 통합배선반 직접생산증명 취득\n기업 자본금 증자 (5억)\n경기도교육지원청 11개청 통합유지보수\n두산건설 정보통신공사 협력사 등록",
+   "text_en": "Developed Korea's first wired/wireless integrated SDN controller\nEstablished a corporate R&D center\nDirect production certification for optical multiplexers and integrated patch panels\nCapital increase (KRW 500 million)\nIntegrated maintenance for 11 Gyeonggi district education offices\nRegistered as Doosan E&C ICT construction partner",
+   "updatedAt": "2026-11-13T12:00:00.000Z",
    "visible": true,
-   "updatedAt": "2026-11-13"
+   "year": "2020"
+  }
+ },
+ {
+  "path": "history/h2021",
+  "data": {
+   "year": "2021",
+   "visible": true,
+   "text": "공장 등록\n경기도교육청 관내 초·중·고 무선 AP 구축 및 단말기 공급\n경기도교육청 신설학교 10개소 FTTH 장비 공급\n경기도교육지원청 11개청 통합유지보수\n국내 최초 인공지능 기반 네트워크 운영관제 솔루션 개발\n경기도 관내 전체학교 무선인프라 구축",
+   "text_en": "Factory registered\nWireless AP deployment and device supply for Gyeonggi elementary, middle and high schools\nSupplied FTTH equipment to 10 new Gyeonggi schools\nIntegrated maintenance for 11 Gyeonggi district education offices\nDeveloped Korea's first AI-based network operations & monitoring solution\nBuilt wireless infrastructure for all schools in Gyeonggi",
+   "order": 50,
+   "updatedAt": "2026-11-13T12:00:00.000Z"
+  }
+ },
+ {
+  "path": "history/h2022",
+  "data": {
+   "year": "2022",
+   "visible": true,
+   "text": "경기도교육청 4단계 스쿨넷 사업 구축\n기업 자본금 증자 (7.5억)\n경기도교육지원청 11개청 통합유지보수",
+   "text_en": "Built Gyeonggi Office of Education Phase 4 SchoolNet\nCapital increase (KRW 750 million)\nIntegrated maintenance for 11 Gyeonggi district education offices",
+   "order": 40,
+   "updatedAt": "2026-11-13T12:00:00.000Z"
   }
  },
  {
   "path": "history/h2023",
   "data": {
-   "year": "2023",
-   "text": "국내 최초 AE 및 PON 통합 SDN 컨트롤러 개발\nMAIN-Biz, Inno-Biz 중소기업 확인서 인증",
-   "text_en": "Developed Korea's first integrated AE & PON SDN controller\nCertified as a MAIN-Biz and Inno-Biz SME",
    "order": 30,
+   "text": "국내 최초 AE 및 PON 통합 SDN 컨트롤러 개발\nMAIN-Biz, Inno-Biz 중소기업 확인서 인증\n원격의료 사업 착수 및 국책사업 수주\n원격진료 장비 및 플랫폼 개발\n경기도교육청 스마트기기 보급 사업 수행",
+   "text_en": "Developed Korea's first integrated AE & PON SDN controller\nCertified as a MAIN-Biz and Inno-Biz SME\nLaunched telemedicine business and won government projects\nDeveloped telemedicine devices and platform\nDelivered Gyeonggi Office of Education smart device supply project",
+   "updatedAt": "2026-11-13T12:00:00.000Z",
    "visible": true,
-   "updatedAt": "2026-11-13"
+   "year": "2023"
   }
  },
  {
   "path": "history/h2024",
   "data": {
-   "year": "2024",
-   "text": "사명 변경 ㈜트리즈엔 (엔에스지 + 트리즈네트웍스 합병)\n국내 학내망 시장 SDN 컨트롤러 점유율 1위\n학내 네트워크 시스템 특허 출원",
-   "text_en": "Renamed TrizN Inc. (merger of NSG and Triz Networks)\nNo. 1 SDN controller share in Korea's school network market\nPatent application for a school network system",
    "order": 20,
+   "text": "사명 변경 ㈜트리즈엔 (엔에스지 + 트리즈네트웍스 합병)\n국내 학내망 시장 SDN 컨트롤러 점유율 1위\n학내 네트워크 시스템 특허 출원\nISO 9001 · 14001 · 45001 인증",
+   "text_en": "Renamed TrizN Inc. (merger of NSG and Triz Networks)\nNo. 1 SDN controller share in Korea's school network market\nPatent application for a school network system\nISO 9001, 14001 and 45001 certified",
+   "updatedAt": "2026-11-13T12:00:00.000Z",
    "visible": true,
-   "updatedAt": "2026-11-13"
+   "year": "2024"
   }
  },
  {
   "path": "history/h2025",
   "data": {
-   "year": "2025",
-   "text": "기술역량 우수기업 인증 (한국평가데이터)\n지능형 네트워크 서비스 플랫폼 부문 ‘굿-ICT 대상’ 수상 (대한민국 굿컴퍼니대상)",
-   "text_en": "Certified as a technology-competence excellent company (Korea Enterprise Data)\nGood-ICT Grand Prize for intelligent network service platforms (Korea Good Company Awards)",
    "order": 10,
+   "text": "기술역량 우수기업 인증 (한국평가데이터)\n지능형 네트워크 서비스 플랫폼 부문 ‘굿-ICT 대상’ 수상 (대한민국 굿컴퍼니대상)\n경기도교육청 학교 유무선 네트워크 점검 및 개선 사업 등 수주",
+   "text_en": "Certified as a technology-competence excellent company (Korea Enterprise Data)\nGood-ICT Grand Prize for intelligent network service platforms (Korea Good Company Awards)\nWon projects incl. Gyeonggi Office of Education school wired/wireless network inspection & improvement",
+   "updatedAt": "2026-11-13T12:00:00.000Z",
    "visible": true,
-   "updatedAt": "2026-11-13"
+   "year": "2025"
   }
  },
  {
   "path": "history/h2026",
   "data": {
-   "year": "2026",
+   "order": 0,
    "text": "국회 교육위원장 표창 4년 연속 수상 (지능형 네트워크 솔루션 부문)\n차세대 SDN 컨트롤러 내 ‘양자내성암호(PQC)’ 상용화 적용",
    "text_en": "National Assembly Education Committee Chair's Commendation — 4th consecutive year (intelligent network solutions)\nPost-quantum cryptography (PQC) applied commercially in the next-generation SDN controller",
-   "order": 0,
+   "updatedAt": "2026-11-13T12:00:00.000Z",
    "visible": true,
-   "updatedAt": "2026-11-13"
+   "year": "2026"
   }
  },
  {
