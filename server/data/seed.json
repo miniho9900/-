@@ -3,11 +3,15 @@
   "path": "business/b1",
   "data": {
    "body": "",
+   "body_en": "",
    "btnLabel": "",
+   "btnLabel_en": "",
    "btnUrl": "",
    "content": "## WHY | 네트워크 운영관리, 왜 어려워지고 있을까요\n### 네트워크 운영관리 복잡도와 비용 지속증가\n- 네트워크 장비 급증\n### 네트워크 운영관리 전문가 급속히 감소\n- 국내외 전반적 인력감소\n### 기업 자체 운영관리 어려움 증가\n- 네트워크 전문지식 부재\n\n## TARGET | 자체 네트워크 운영관리가 필요한 곳\n### 리조트 & 관광지\n### 중소기업\n### 빌딩 & 쇼핑몰\n### 초·중·고등학교\n### MSO & 지자체\n### 체인 & 자영업소\n### 호텔 & 오피스텔\n\n## OUR GOAL | 트리즈엔이 하려는 일\n> 토탈 위생 서비스를 제공하는 세스코처럼, 토탈 보안 서비스를 제공하는 세콤처럼, **토탈 네트워크 서비스**를 제공하는 것\n고객의 복잡하고 다양한 환경에 맞춰 유무선 네트워크 설치부터 운영, 관리 및 맞춤형 컨설팅과 자동화까지 책임지는 솔루션 개발과 서비스를 제공하겠습니다.",
+   "contentHtml": "<div class=\"rich\"><section class=\"reveal \">\n      <div class=\"rs-hd\"><p class=\"eyebrow\">WHY</p><h3>네트워크 운영관리, 왜 어려워지고 있을까요</h3></div>\n      \n      \n      \n      <div class=\"rs-cards\"><div class=\"rs-card\"><h4>네트워크 운영관리 복잡도와 비용 지속증가</h4><ul><li>네트워크 장비 급증</li></ul></div><div class=\"rs-card\"><h4>네트워크 운영관리 전문가 급속히 감소</h4><ul><li>국내외 전반적 인력감소</li></ul></div><div class=\"rs-card\"><h4>기업 자체 운영관리 어려움 증가</h4><ul><li>네트워크 전문지식 부재</li></ul></div></div>\n      \n      \n    </section><section class=\"reveal rs-case\">\n      <div class=\"rs-hd\"><p class=\"eyebrow\">TARGET</p><h3>자체 네트워크 운영관리가 필요한 곳</h3></div>\n      \n      \n      \n      <div class=\"rs-chips\"><span class=\"rs-chip\">리조트 &amp; 관광지</span><span class=\"rs-chip\">중소기업</span><span class=\"rs-chip\">빌딩 &amp; 쇼핑몰</span><span class=\"rs-chip\">초·중·고등학교</span><span class=\"rs-chip\">MSO &amp; 지자체</span><span class=\"rs-chip\">체인 &amp; 자영업소</span><span class=\"rs-chip\">호텔 &amp; 오피스텔</span></div>\n      \n      \n    </section><section class=\"reveal \">\n      <div class=\"rs-hd\"><p class=\"eyebrow\">OUR GOAL</p><h3>트리즈엔이 하려는 일</h3></div>\n      <p class=\"rs-quote\">토탈 위생 서비스를 제공하는 세스코처럼, 토탈 보안 서비스를 제공하는 세콤처럼, <b>토탈 네트워크 서비스</b>를 제공하는 것</p>\n      <p class=\"rs-p\">고객의 복잡하고 다양한 환경에 맞춰 유무선 네트워크 설치부터 운영, 관리 및 맞춤형 컨설팅과 자동화까지 책임지는 솔루션 개발과 서비스를 제공하겠습니다.</p>\n      \n      \n      \n      \n    </section></div>",
+   "contentHtml_en": "<div class=\"rich\"><section class=\"reveal \">\n      <div class=\"rs-hd\"><p class=\"eyebrow\">WHY</p><h3>Why network operations are getting harder</h3></div>\n      \n      \n      \n      <div class=\"rs-cards\"><div class=\"rs-card\"><h4>Growing complexity and cost of network operations</h4><ul><li>Rapid growth in network equipment</li></ul></div><div class=\"rs-card\"><h4>A shrinking pool of network operations experts</h4><ul><li>Workforce decline at home and abroad</li></ul></div><div class=\"rs-card\"><h4>Organizations struggle to run networks themselves</h4><ul><li>Lack of in-house network expertise</li></ul></div></div>\n      \n      \n    </section><section class=\"reveal rs-case\">\n      <div class=\"rs-hd\"><p class=\"eyebrow\">TARGET</p><h3>Who needs managed network operations</h3></div>\n      \n      \n      \n      <div class=\"rs-chips\"><span class=\"rs-chip\">Resorts &amp; tourist sites</span><span class=\"rs-chip\">SMBs</span><span class=\"rs-chip\">Buildings &amp; shopping malls</span><span class=\"rs-chip\">K-12 schools</span><span class=\"rs-chip\">MSOs &amp; local governments</span><span class=\"rs-chip\">Chains &amp; small businesses</span><span class=\"rs-chip\">Hotels &amp; officetels</span></div>\n      \n      \n    </section><section class=\"reveal \">\n      <div class=\"rs-hd\"><p class=\"eyebrow\">OUR GOAL</p><h3>What TrizN sets out to do</h3></div>\n      <p class=\"rs-quote\">Just as Cesco provides total hygiene services and S-1 (SECOM) total security services, we provide <b>total network services</b>.</p>\n      <p class=\"rs-p\">Tailored to each customer's complex and diverse environment, we develop solutions and deliver services that take responsibility for everything from installation to operation, management, custom consulting and automation of wired and wireless networks.</p>\n      \n      \n      \n      \n    </section></div>",
    "content_en": "## WHY | Why network operations are getting harder\n### Growing complexity and cost of network operations\n- Rapid growth in network equipment\n### A shrinking pool of network operations experts\n- Workforce decline at home and abroad\n### Organizations struggle to run networks themselves\n- Lack of in-house network expertise\n\n## TARGET | Who needs managed network operations\n### Resorts & tourist sites\n### SMBs\n### Buildings & shopping malls\n### K-12 schools\n### MSOs & local governments\n### Chains & small businesses\n### Hotels & officetels\n\n## OUR GOAL | What TrizN sets out to do\n> Just as Cesco provides total hygiene services and S-1 (SECOM) total security services, we provide **total network services**.\nTailored to each customer's complex and diverse environment, we develop solutions and deliver services that take responsibility for everything from installation to operation, management, custom consulting and automation of wired and wireless networks.",
-   "detailImageId": "1110d84e6741b901ffd6486de1ec1100.webp",
+   "detailImageId": "a0e81e32e97848edd6052472e6666bb8",
    "en": "Network Consulting",
    "eyebrow": "고객 맞춤형",
    "eyebrow_en": "Tailored for you",
@@ -19,8 +23,11 @@
    "summary_en": "From wired and wireless network installation to operation and management, tailored to complex environments",
    "title": "네트워크 컨설팅 및 솔루션 개발",
    "title_en": "Network Consulting & Solution Development",
-   "updatedAt": "2026-11-13",
-   "visible": true
+   "updatedAt": "2026-11-13T12:43:56.099Z",
+   "visible": true,
+   "secImages": {
+    "WHY": "280b29484d2258d7f2217bf8c82ecf70.webp"
+   }
   }
  },
  {
@@ -822,6 +829,17 @@
   }
  },
  {
+  "path": "media/280b29484d2258d7f2217bf8c82ecf70",
+  "data": {
+   "kind": "image",
+   "name": "biz1_why_monitoring.webp",
+   "size": 64624,
+   "type": "image/webp",
+   "at": "2026-11-13T14:00:00.000Z",
+   "by": ""
+  }
+ },
+ {
   "path": "media/28dac2454c437de98a8d498a511bd74e",
   "data": {
    "kind": "image",
@@ -1570,6 +1588,17 @@
   }
  },
  {
+  "path": "media/ea823c04f7adac7b6490055d33b246f4",
+  "data": {
+   "kind": "image",
+   "name": "sdn_public_ip_banner.webp",
+   "size": 124762,
+   "type": "image/webp",
+   "at": "2026-11-13T14:00:00.000Z",
+   "by": ""
+  }
+ },
+ {
   "path": "media/ecf2839c9e9bd8a3a9e0c15449c1625c",
   "data": {
    "kind": "image",
@@ -2298,7 +2327,7 @@
   "data": {
    "category": "SDN 플랫폼",
    "category_en": "SDN Platform",
-   "detailHtml": "<div class=\"rich\"><section class=\"\"><div class=\"rs-hd\"><p class=\"eyebrow\">COMPARISON</p><h3>서비스 모델 비교</h3></div><div class=\"pd-cmp\"><div><img src=\"uploads/222fb9d9f5e7e6e23275bdcbedfe90a7.webp\" alt=\"기존 네트워크 운영관리 방식\"><h4>기존 네트워크 운영관리 방식</h4><ul><li>자체적인 네트워크 운영관리를 위해서 많은 네트워크 <strong>전문가 고용</strong>이 필요함</li><li>네트워크가 복잡해짐에 따라 자체적인 네트워크 <strong>운영관리 비용도 점차 증가</strong>함</li><li>다양한 환경에 따른 네트워크 및 자동화 기능과 서비스 <strong>확장이 불가</strong>함</li></ul></div><div class=\"on\"><img src=\"uploads/ac0833759704df5b238bb751b6b5f0eb.webp\" alt=\"SDN 운영관제 솔루션\"><h4>SDN 운영관제 솔루션</h4><ul><li>통합 네트워크 <strong>서비스의 구독</strong>으로 네트워크 전문가 <strong>고용이 필요 없음</strong></li><li>지능형 네트워크 운영관리 솔루션 기반의 서비스를 통해 운영관리가 효율적이며 <strong>비용이 저렴</strong>함</li><li>다양한 고객 환경에 따른 <strong>맞춤형 네트워크 및 자동화 기능 확장</strong>이 용이함</li></ul></div></div></section></div><div class=\"pd-band\"><p>공인 IP · SD-WAN 서비스용 공인 IP</p><h3>SD-WAN 서비스가 가능한 다량의 IPv4 공인 IP 보유</h3></div>",
+   "detailHtml": "<div class=\"rich\"><section class=\"\"><div class=\"rs-hd\"><p class=\"eyebrow\">COMPARISON</p><h3>서비스 모델 비교</h3></div><div class=\"pd-cmp\"><div><img src=\"uploads/222fb9d9f5e7e6e23275bdcbedfe90a7.webp\" alt=\"기존 네트워크 운영관리 방식\"><h4>기존 네트워크 운영관리 방식</h4><ul><li>자체적인 네트워크 운영관리를 위해서 많은 네트워크 <strong>전문가 고용</strong>이 필요함</li><li>네트워크가 복잡해짐에 따라 자체적인 네트워크 <strong>운영관리 비용도 점차 증가</strong>함</li><li>다양한 환경에 따른 네트워크 및 자동화 기능과 서비스 <strong>확장이 불가</strong>함</li></ul></div><div class=\"on\"><img src=\"uploads/ac0833759704df5b238bb751b6b5f0eb.webp\" alt=\"SDN 운영관제 솔루션\"><h4>SDN 운영관제 솔루션</h4><ul><li>통합 네트워크 <strong>서비스의 구독</strong>으로 네트워크 전문가 <strong>고용이 필요 없음</strong></li><li>지능형 네트워크 운영관리 솔루션 기반의 서비스를 통해 운영관리가 효율적이며 <strong>비용이 저렴</strong>함</li><li>다양한 고객 환경에 따른 <strong>맞춤형 네트워크 및 자동화 기능 확장</strong>이 용이함</li></ul></div></div></section></div><figure class=\"pd-fig pd-banner\"><img src=\"uploads/ea823c04f7adac7b6490055d33b246f4.webp\" alt=\"SD-WAN 기반 통합 네트워크 서비스 · IPv4 공인 IP 10만개+ 보유·운영\"></figure>",
    "detailHtml_en": "<div class=\"rich\"><section class=\"\"><div class=\"rs-hd\"><p class=\"eyebrow\">COMPARISON</p><h3>Service model comparison</h3></div><div class=\"pd-cmp\"><div><img src=\"uploads/222fb9d9f5e7e6e23275bdcbedfe90a7.webp\" alt=\"Conventional network operations\"><h4>Conventional network operations</h4><ul><li>Running your own network requires <strong>hiring many network experts</strong></li><li>As networks grow more complex, <strong>in-house operating costs keep rising</strong></li><li>Networks, automation and services <strong>cannot be extended</strong> to suit different environments</li></ul></div><div class=\"on\"><img src=\"uploads/ac0833759704df5b238bb751b6b5f0eb.webp\" alt=\"SDN operations &amp; monitoring solution\"><h4>SDN operations &amp; monitoring solution</h4><ul><li>An integrated network <strong>subscription</strong> means <strong>no need to hire network experts</strong></li><li>Services built on an intelligent operations solution make management efficient and <strong>affordable</strong></li><li><strong>Custom networks and automation</strong> are easy to extend for each customer environment</li></ul></div></div></section></div><div class=\"pd-band\"><p>Public IP · for SD-WAN services</p><h3>A large pool of IPv4 public IPs ready for SD-WAN services</h3></div>",
    "featured": true,
    "imageId": null,
