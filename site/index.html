@@ -597,6 +597,12 @@ body.embed .pv-bar,body.embed .pv-list,body.embed .edit-fab,body.embed .demo-bar
 .sub-vis{position:relative;height:440px;color:#fff;display:flex;align-items:flex-end;overflow:hidden}
 .sub-vis .vis{position:absolute;inset:0}
 .sub-vis::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,10,69,.55),rgba(11,10,69,.85))}
+.hero-vis img.hv-img,.hero-vis video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center}
+.hero-vis video{opacity:0;transition:opacity .8s ease}
+.hero-vis video.on{opacity:1}
+.sub-vis.has-img .vis img{object-position:right center}
+.sub-vis.has-img::after{background:linear-gradient(90deg,rgba(7,10,38,.92) 0%,rgba(7,10,38,.7) 38%,rgba(7,10,38,.25) 75%,rgba(7,10,38,.1) 100%),linear-gradient(0deg,rgba(7,10,38,.55),transparent 45%)}
+@media (max-width:760px){.sub-vis.has-img .vis img{object-position:78% center}.sub-vis.has-img::after{background:linear-gradient(90deg,rgba(7,10,38,.9),rgba(7,10,38,.5)),linear-gradient(0deg,rgba(7,10,38,.6),transparent 50%)}}
 .sub-vis .wrap{position:relative;z-index:2;width:100%;padding-bottom:64px}
 .sub-vis h1{font-size:clamp(34px,4.6vw,60px);font-weight:700;margin:14px 0 12px}
 .crumb{font-size:13px;color:var(--on-dark-2);font-family:var(--f-display);letter-spacing:.04em}
@@ -1210,7 +1216,8 @@ function footer(){
   </div></footer>`;
 }
 function subVis(eb, title, crumb, i, img){
-  return `<section class="sub-vis">${vis(img||null,i)}<div class="wrap"><p class="eyebrow">${eb}</p><h1>${title}</h1><p class="crumb">HOME › ${crumb}</p></div></section>`;
+  const bg = img || cfg("subVisImageId") || null;
+  return `<section class="sub-vis ${bg?"has-img":""}">${vis(bg,i)}<div class="wrap"><p class="eyebrow">${eb}</p><h1>${title}</h1><p class="crumb">HOME › ${crumb}</p></div></section>`;
 }
 
 function viewHome(){
@@ -1229,7 +1236,7 @@ function viewHome(){
   return `
   <section class="hero" aria-roledescription="carousel" aria-label="메인 비주얼">
     ${sl.map((s,i) => `<div class="slide ${i===ui.slide?"on":""} dim-${s.dim || ((s.title||s.sub||s.eyebrow||s.btnLabel) ? "mid" : "none")}" aria-hidden="${i!==ui.slide}">
-      ${vis(s.imageId, i, "", s.videoId)}
+      ${s.videoId && s.imageId ? `<div class="vis hero-vis"><img src="${imgUrl(s.imageId)}" alt="" class="hv-img"><video data-src="${imgUrl(s.videoId)}" muted loop playsinline preload="none" poster="${imgUrl(s.imageId)}"></video></div>` : vis(s.imageId, i, "", s.videoId)}
       <div class="hero-copy"><div class="wrap">
         <p class="eyebrow anim">${esc(s.eyebrow)}</p>
         <h1 class="anim d2">${esc(s.title).replace(/\*\*(.+?)\*\*/gs,"<b>$1</b>").replace(/\n/g,"<br>")}</h1>
@@ -1770,6 +1777,12 @@ function viewContact(){
 let heroTimer = 0;
 function startHero(){
   clearTimeout(heroTimer);
+  const wide = matchMedia("(min-width: 761px)").matches, still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.querySelectorAll(".hero-vis video[data-src]").forEach(v => {
+    if (!wide || still) return; // phones & reduced motion keep the still image (no video download)
+    v.addEventListener("playing", () => v.classList.add("on"), {once:true});
+    v.src = v.dataset.src; v.removeAttribute("data-src"); v.autoplay = true; v.play().catch(() => {});
+  });
   if (matchMedia("(prefers-reduced-motion: reduce)").matches) document.querySelectorAll(".slide video, .film video").forEach(v => { v.removeAttribute("autoplay"); v.pause(); });
   if (ui.heroPaused) return;
   const bar = $("#heroBar"); if (!bar) return; // single slide: no slider controls
@@ -1979,7 +1992,7 @@ document.addEventListener("click", async e => {
 const ROUTE_OPTS = ROUTES.map(([v,l]) => [v,l]);
 const SCHEMA = {
   slides:{ label:"메인 비주얼", group:"메인", desc:"홈 상단 슬라이더. 위에 있는 순서대로 노출됩니다.", title:x=>x.title?.replace(/\*\*/g,"").replace(/\n/g," "), meta:x=>x.eyebrow, img:true,
-    fields:[["eyebrow","상단 영문 문구","text"],["title","메인 문구","textarea","**굵게** 표시하려면 별표 두 개로 감싸세요. 줄바꿈 가능."],["sub","보조 문구","textarea"],["btnLabel","버튼 문구","text","비워두면 버튼이 숨겨집니다."],["btnRoute","버튼 연결 페이지","route"],["dim","어둡게 처리 (글자를 잘 보이게 덮는 그림자)","dim"],["imageId","배경 이미지 (권장 2400×1400)","image"],["videoId","배경 영상 (MP4, 선택 · 있으면 이미지 대신 재생)","video"]] },
+    fields:[["eyebrow","상단 영문 문구","text"],["title","메인 문구","textarea","**굵게** 표시하려면 별표 두 개로 감싸세요. 줄바꿈 가능."],["sub","보조 문구","textarea"],["btnLabel","버튼 문구","text","비워두면 버튼이 숨겨집니다."],["btnRoute","버튼 연결 페이지","route"],["dim","어둡게 처리 (글자를 잘 보이게 덮는 그림자)","dim"],["imageId","배경 이미지 (권장 2400×1400 · 영상 로딩 전 스틸컷, 모바일 배경)","image"],["videoId","배경 영상 (MP4, 선택 · PC에서 이미지 위로 재생)","video"]] },
   popups:{ label:"팝업", group:"메인", desc:"홈 접속 시 뜨는 레이어 팝업. 최대 3개가 순서대로 나란히 표시됩니다.", title:x=>x.title?.replace(/\n/g," "), meta:x=>`${fmtDate(x.start)||"즉시"} ~ ${fmtDate(x.end)||"종료일 없음"}${popupState(x)}`, img:true,
     fields:[["eyebrow","상단 영문 문구","text"],["title","제목","textarea"],["body","내용","textarea"],["btnLabel","버튼 문구","text"],["btnRoute","버튼 연결 페이지","route"],["bodyHtml","이미지 아래 상세 내용 (선택)","html"],["start","노출 시작일","date"],["end","노출 종료일","date"],["imageId","팝업 이미지 (권장 800×720)","image"]] },
   business:{ label:"사업영역", group:"콘텐츠", desc:"홈의 사업영역 카드와 사업영역 페이지에 함께 반영됩니다.", title:x=>x.title, meta:x=>x.en, img:true,
@@ -2205,7 +2218,7 @@ function admSite(){
       ${f("filmEyebrow","상단 영문 문구")}${f("filmTitle","제목","textarea")}${f("filmText","설명","textarea")}
     </div>
     <div class="panel-hd" style="border-top:1px solid var(--line)"><h2>회사 정보</h2></div><div class="panel-bd form-grid">
-      ${f("company","회사명 (국문)")}${f("companyEn","회사명 (영문)")}${f("ceo","대표이사","text","비워두면 표시하지 않습니다.")}${f("bizNo","사업자등록번호","text","비워두면 표시하지 않습니다.")}${f("tel","대표전화")}${f("fax","팩스")}${f("email","이메일")}${f("supportUrl","원격지원 프로그램 주소","text","https:// 로 시작하는 주소")}${f("naverMapKey","네이버 지도 Client ID (선택)","text","네이버 클라우드 플랫폼 › Maps에서 발급한 Client ID. 비워 두면 구글 지도로 표시됩니다.")}${f("mapLat","지도 위도 (선택)","text","예: 37.2995 · 비워 두면 본사 주소로 위치를 찾습니다.")}${f("mapLng","지도 경도 (선택)","text","예: 127.0456")}<div class="af full"><label>오시는 길 지도 이미지 (선택 · 네이버 지도 캡처 등)</label>${imgFieldHtml("mapImageId", c.mapImageId)}<span class="help">네이버 지도 Client ID가 없을 때 지도 자리에 보입니다. 누르면 네이버 지도가 열립니다.</span></div>${f("mapImagePos","지도 이미지 중심 위치","text","핀이 가운데 오도록 가로% 세로% 로 입력 (기본 40% 48%)")}${f("kakaoRoughTs","카카오맵 지도 퍼가기 timestamp","text","카카오맵 ‘지도 퍼가기’ 코드의 timestamp (기본: 현재 trizn.kr 지도)")}${f("kakaoRoughKey","카카오맵 지도 퍼가기 key","text","‘-’를 입력하면 카카오 지도 대신 지도 이미지를 씁니다.")}${f("naverMapUrl","네이버 지도 바로가기 주소","text","네이버 지도 앱의 ‘공유’ 주소 (예: https://naver.me/…)")}${f("kakaoMapUrl","카카오맵 바로가기 주소","text","카카오맵 ‘공유’ 주소")}${f("locLead","오시는 길 소개 문구")}${f("directions","교통 안내","textarea","[지하철] · [버스] · [자가용]처럼 대괄호로 묶음을 만들고, 그 아래 한 줄에 하나씩 ‘정류장 | 내용’을 적습니다. 버스는 ‘지선 400(A) / 광역 1007-1’처럼 / 로 나눕니다. 비워 두면 기본 안내가 나옵니다.")}${f("address","본사 주소")}${f("address3","지사 주소")}${f("address2","공장 주소")}
+      ${f("company","회사명 (국문)")}${f("companyEn","회사명 (영문)")}${f("ceo","대표이사","text","비워두면 표시하지 않습니다.")}${f("bizNo","사업자등록번호","text","비워두면 표시하지 않습니다.")}${f("tel","대표전화")}${f("fax","팩스")}${f("email","이메일")}${f("supportUrl","원격지원 프로그램 주소","text","https:// 로 시작하는 주소")}${f("naverMapKey","네이버 지도 Client ID (선택)","text","네이버 클라우드 플랫폼 › Maps에서 발급한 Client ID. 비워 두면 구글 지도로 표시됩니다.")}${f("mapLat","지도 위도 (선택)","text","예: 37.2995 · 비워 두면 본사 주소로 위치를 찾습니다.")}${f("mapLng","지도 경도 (선택)","text","예: 127.0456")}<div class="af full"><label>서브페이지 상단 배너 이미지 (권장 2400×1350 · 왼쪽이 어두운 사진)</label>${imgFieldHtml("subVisImageId", c.subVisImageId)}<span class="help">회사소개·사업영역·서비스 등 모든 서브페이지 상단에 쓰입니다. 사업영역처럼 항목별 이미지가 있으면 그 이미지가 먼저 쓰입니다.</span></div><div class="af full"><label>오시는 길 지도 이미지 (선택 · 네이버 지도 캡처 등)</label>${imgFieldHtml("mapImageId", c.mapImageId)}<span class="help">네이버 지도 Client ID가 없을 때 지도 자리에 보입니다. 누르면 네이버 지도가 열립니다.</span></div>${f("mapImagePos","지도 이미지 중심 위치","text","핀이 가운데 오도록 가로% 세로% 로 입력 (기본 40% 48%)")}${f("kakaoRoughTs","카카오맵 지도 퍼가기 timestamp","text","카카오맵 ‘지도 퍼가기’ 코드의 timestamp (기본: 현재 trizn.kr 지도)")}${f("kakaoRoughKey","카카오맵 지도 퍼가기 key","text","‘-’를 입력하면 카카오 지도 대신 지도 이미지를 씁니다.")}${f("naverMapUrl","네이버 지도 바로가기 주소","text","네이버 지도 앱의 ‘공유’ 주소 (예: https://naver.me/…)")}${f("kakaoMapUrl","카카오맵 바로가기 주소","text","카카오맵 ‘공유’ 주소")}${f("locLead","오시는 길 소개 문구")}${f("directions","교통 안내","textarea","[지하철] · [버스] · [자가용]처럼 대괄호로 묶음을 만들고, 그 아래 한 줄에 하나씩 ‘정류장 | 내용’을 적습니다. 버스는 ‘지선 400(A) / 광역 1007-1’처럼 / 로 나눕니다. 비워 두면 기본 안내가 나옵니다.")}${f("address","본사 주소")}${f("address3","지사 주소")}${f("address2","공장 주소")}
     </div>
     <div class="panel-hd" style="border-top:1px solid var(--line)"><h2>홈 · 주요 수치</h2><div class="tg-wrap" style="min-width:0"><button type="button" class="tg ${c.statsHidden?"":"on"}" id="cf-statsShow" role="switch" aria-checked="${!c.statsHidden}" aria-label="홈에 주요 수치 노출"></button><span>${c.statsHidden?"미노출":"노출"}</span></div></div>
     <div class="panel-bd"><p class="note" style="margin-bottom:12px">숫자는 화면에 들어올 때 0부터 올라가며 표시됩니다. 줄마다 ‘노출’을 끄면 그 수치만 숨겨집니다.</p><div class="stats-ed"><div class="r note"><span>숫자</span><span>단위</span><span>설명</span><span>설명 · English</span><span>노출</span></div>${st.map((s,i) => `<div class="r"><input aria-label="수치 ${i+1} 숫자" data-st="${i}:num" value="${esc(s.num)}"><input aria-label="수치 ${i+1} 단위" data-st="${i}:suffix" value="${esc(s.suffix)}"><input aria-label="수치 ${i+1} 설명" data-st="${i}:label" value="${esc(s.label)}"><input aria-label="수치 ${i+1} 영문 설명" data-st="${i}:label_en" value="${esc(s.label_en)}"><label class="chk" style="justify-content:center"><input type="checkbox" data-sthide="${i}" ${s.hide?"":"checked"} aria-label="수치 ${i+1} 노출"></label></div>`).join("")}</div></div>
@@ -2525,7 +2538,7 @@ async function saveSite(e){
   data.statsHidden = !$("#cf-statsShow").classList.contains("on");
   const os = [0,1,2,3].map(()=>({})); document.querySelectorAll("[data-os]").forEach(el => { const [i,k] = el.dataset.os.split(":"); os[+i][k] = el.value.trim(); });
   if (document.querySelector("[data-os]")) data.orgStats = os.filter(x => x.num);
-  ["ceoImageId","ceoSignId","mapImageId","tile1ImageId","tile2ImageId","tile3ImageId","filmVideoId","filmLoopId","filmPosterId","caseImageId"].forEach(k => { const el = $(`[data-imgval="${k}"]`); if (el) data[k] = el.value || null; });
+  ["ceoImageId","ceoSignId","mapImageId","subVisImageId","tile1ImageId","tile2ImageId","tile3ImageId","filmVideoId","filmLoopId","filmPosterId","caseImageId"].forEach(k => { const el = $(`[data-imgval="${k}"]`); if (el) data[k] = el.value || null; });
   if (document.querySelector('.rte[data-rte="privacyHtml"]')){ const pk = getRte("privacyHtml"), pe = getRte("privacyHtml_en"); data.privacyHtml = pk && pk!==sanitize(PRIVACY_KO).trim() ? pk : ""; data.privacyHtml_en = pe && pe!==sanitize(PRIVACY_EN).trim() ? pe : ""; }
   data.updatedAt = new Date().toISOString();
   const mode = e.submitter?.dataset.mode || "preview";
