@@ -1,0 +1,10 @@
+{
+  "category": "인프라",
+  "featured": true,
+  "imageId": null,
+  "name": "SDN 통합배선반",
+  "order": 70,
+  "summary": "네트워크 상태를 실시간 모니터링하고 원격제어와 장애 예측을 지원하는 스마트 배선 시스템",
+  "updatedAt": "2026-11-12",
+  "visible": true
+}

@@ -1,0 +1,16 @@
+{
+  "body": "",
+  "btnLabel": "",
+  "btnUrl": "",
+  "content": "## TECHNOLOGY | 지능형 자동화 네트워크 운영관제 솔루션\n인공지능기반 지능형 자동화 무인화 토탈 네트워크 서비스\n### 유무선 네트워크 기술\n### AI & Data Analytics\n### SD-WAN 기술\n### APP Platform 기술\n### IoT 기술\n### SD-LAN 기술\n\n## FEATURES | 지능형 운영관제 솔루션\n### 국내최초 AE 및 PON 통합 컨트롤러 기술\n### 국내최초 유무선 통합 멀티벤더 연동 기술\n### 국내최초 인공지능기반 네트워크 장애탐지 기술\n\n## TARGET | 적용 분야\n### 초·중·고등학교\n### 중소기업\n### 빌딩 & 쇼핑몰\n### 호텔 & 오피스텔\n### MSO & 지자체\n### 체인 & 자영업소\n### 리조트 & 관광지\n\n## COMPARISON | SDN 컨트롤러 비교\n| Feature | TRIZN 컨트롤러 | A 컨트롤러 | B 컨트롤러 | C 컨트롤러 |\n| 타겟 시장 | 네트워크 매니지드 서비스 | 5G ISP | 데이터센터 | 데이터센터 |\n| 핵심역량 | 유무선 네트워크 솔루션 기술 | 5G 네트워크 솔루션 기술 | 클라우드플랫폼 기술(오픈스택) | 빅데이터 플랫폼 기술(하둡) |\n| 무선최적화 기능지원 | ● | X | X | X |\n| 유무선 통합 운영관리 및 레퍼런스 | ● | X | X | X |\n| SDN 및 레거시 스위치 통합 운영관리 및 레퍼런스 | ● | ● | X | ● |\n| AE 및 PON 장치 통합 운영관리 및 레퍼런스 | ● | X | X | X |\n| 인공지능기반 유무선 네트워크 장애 탐지 기능 | ● | X | X | X |\n| 유무선 SDN 네트워크 장치 (개발역량) 보유현황 | ● | ● | ● | ● |\n* SDN: Software Defined Network · IOP: Inter-operation · SD-WAN: Software Defined Wide Area Network · SD-LAN: Software Defined Local Area Network · MSO: Multi System Operator · NOS: Network Operating System",
+  "detailImageId": "af7f54517916e04f333fb96350135912",
+  "en": "Automated Operations",
+  "eyebrow": "고객 맞춤형",
+  "imageId": "537eac2d90b7e7d65aea2ff9dbbc4109",
+  "lead": "**인공지능기반 네트워크 운영관제 솔루션 개발** 및 자동화 네트워크 관제센터 구축을 통한 **토탈 네트워크 서비스** 제공",
+  "order": 30,
+  "summary": "인공지능 기반 운영관제 솔루션과 자동화 관제센터 구축",
+  "title": "네트워크 운영관제",
+  "updatedAt": "2026-11-13",
+  "visible": true
+}

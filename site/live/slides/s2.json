@@ -1,0 +1,12 @@
+{
+  "btnLabel": "솔루션 보기",
+  "btnRoute": "products",
+  "eyebrow": "INTELLIGENT NETWORK",
+  "imageId": "537eac2d90b7e7d65aea2ff9dbbc4109",
+  "order": 10,
+  "sub": "SDN 기반 중앙제어와 자동화로\n네트워크 운영관제를 무인화합니다.",
+  "title": "AI로 제어하는\n**지능형 네트워크**",
+  "updatedAt": "2026-11-12",
+  "videoId": null,
+  "visible": false
+}

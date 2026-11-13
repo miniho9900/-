@@ -1,0 +1,43 @@
+Options -Indexes
+DirectoryIndex index.html index.php
+
+# 설정·라이브러리·데이터 파일은 브라우저로 열 수 없게 막습니다.
+<FilesMatch "^(config|lib)\.php$|\.(sqlite|sqlite-wal|sqlite-shm|db|md|py|json|log|ini)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+# 대용량 영상 업로드 (Apache 모듈형 PHP인 호스팅에서 적용됩니다. PHP-FPM 호스팅은 .user.ini 가 적용됩니다.)
+<IfModule mod_php.c>
+  php_value upload_max_filesize 512M
+  php_value post_max_size 520M
+  php_value max_execution_time 300
+  php_value max_input_time 300
+  php_value memory_limit 256M
+</IfModule>
+<IfModule mod_php7.c>
+  php_value upload_max_filesize 512M
+  php_value post_max_size 520M
+  php_value max_execution_time 300
+  php_value max_input_time 300
+  php_value memory_limit 256M
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType video/mp4 "access plus 30 days"
+</IfModule>

@@ -1,0 +1,577 @@
+[
+ {
+  "path": "business/b1",
+  "data": {
+   "body": "",
+   "btnLabel": "",
+   "btnUrl": "",
+   "content": "## WHY | 네트워크 운영관리, 왜 어려워지고 있을까요\n### 네트워크 운영관리 복잡도와 비용 지속증가\n- 네트워크 장비 급증\n### 네트워크 운영관리 전문가 급속히 감소\n- 국내외 전반적 인력감소\n### 기업 자체 운영관리 어려움 증가\n- 네트워크 전문지식 부재\n\n## TARGET | 자체 네트워크 운영관리가 필요한 곳\n### 리조트 & 관광지\n### 중소기업\n### 빌딩 & 쇼핑몰\n### 초·중·고등학교\n### MSO & 지자체\n### 체인 & 자영업소\n### 호텔 & 오피스텔\n\n## OUR GOAL | 트리즈엔이 하려는 일\n> 토탈 위생 서비스를 제공하는 세스코처럼, 토탈 보안 서비스를 제공하는 세콤처럼, **토탈 네트워크 서비스**를 제공하는 것\n고객의 복잡하고 다양한 환경에 맞춰 유무선 네트워크 설치부터 운영, 관리 및 맞춤형 컨설팅과 자동화까지 책임지는 솔루션 개발과 서비스를 제공하겠습니다.",
+   "detailImageId": "d918a263d2517ab2ffabf65b9cb57dca.jpg",
+   "en": "Network Consulting",
+   "eyebrow": "고객 맞춤형",
+   "imageId": "07910d1245f365f300978abef5987c92.jpg",
+   "lead": "고객의 복잡하고 다양한 환경에 맞춰 유무선 네트워크 **설치부터 운영, 관리 및 맞춤형 컨설팅과 자동화까지** 책임지는 솔루션 개발과 서비스를 제공하겠습니다.",
+   "order": 0,
+   "summary": "고객의 복잡하고 다양한 환경에 맞춰 유무선 네트워크 설치부터 운영, 관리까지",
+   "title": "네트워크 컨설팅 및 솔루션 개발",
+   "updatedAt": "2026-11-13",
+   "visible": true
+  }
+ },
+ {
+  "path": "business/b2",
+  "data": {
+   "body": "",
+   "btnLabel": "",
+   "btnUrl": "",
+   "content": "## PROCESS | 서비스 제공 프로세스\n### 고객분석 및 컨설팅\n- 고객의 비즈니스 목적 및 IT 전략 이해\n- 네트워크 인프라 현황 진단 (Legacy 장비, 보안, 트래픽, 장애 이력 등)\n- 향후 확장성, 보안요구사항, 예산 등 파악\n- 서비스 수준 협약(SLA) 초안 마련\n### 네트워크 설계 및 계획 수립\n- 논리적 네트워크 설계 (VLAN, IP 계획, 서브넷팅 등)\n- 물리적 설계 (장비 위치, 케이블 경로 등)\n- 고가용성, 이중화 구성 (예: STP, LACP, HSRP, VRRP 등)\n- 보안정책 설계 (ACL, 방화벽, IDS/IPS 등)\n### 시공 및 장치 설치\n- 케이블링 및 배선 공사 (구내통신, UTP, 광케이블 등)\n- 네트워크 장비 설치 (라우터, 스위치, 무선 AP, 방화벽 등)\n- 전원 및 난방 (UPS 연동, 랙 구성 등)\n- 장애 대비 이중화 구성 및 적용\n### 네트워크 설정 및 테스트\n- 네트워크 구성 작업 실시 (VLAN, 라우팅, QoS, 보안 설정 등)\n- 성능 테스트 (트레이스, PING, 대역폭 측정, 로드 테스트 등)\n- 보안성 점검 (포트 스캐닝, 침투 테스트 등)\n- 사용자 인증 및 접근 제어 설정\n### 교육 및 이관\n- 고객 담당자 교육 (운영/관리 지침)\n- 네트워크 구성도 및 설정 문서 제공\n- 관리시스템 연동 (예: NMS, Syslog, SNMP)\n- 구성 백업 및 초기화 이미지 전달\n### 유지보수 및 기술지원\n- 24/7 모니터링 또는 정기 점검\n- 원격 및 현장 기술지원 및 장애 대응 체계 (SLA 기준)\n- 정기 점검 및 펌웨어, 시스템 업데이트, 보안 패치 제공\n- 장애 대응 프로토콜\n- 기술지원 Help Desk 운영\n\n## SERVICE FEATURES | 서비스 특장점\n### 업무 효율성 향상\n효율적이고 안정적인 네트워크 환경 구현을 통해 업무의 생산성을 높입니다.\n### 네트워크 보안성 강화\n네트워크 보안을 강화하여 데이터 유출을 미연에 방지하고, 해킹 공격을 차단하여 시스템을 보호합니다.\n### 비용절감\n불필요한 네트워크 장비 및 인프라 도입을 사전에 방지함으로 IT 투자 업무 프로세스를 효율화하고, 비용 절감에 기여할 수 있습니다.\n### 사용자 경험\n높은 대역폭과 빠른 전송 속도 등 고성능의 안정적인 네트워크 서비스 제공을 통해 사용자의 만족도를 높입니다.\n\n## CASE | 적용 모델 예시\n### 학교\n- 사용량 변화, 관리 인력 부족\n- 클라우드 기반 컨트롤러, 자동화\n### 사무실\n- 업무 애플리케이션 중심\n- VLAN 분리, QoS 기반 정책\n### 공장\n- 넓은 영역, 실시간성\n- IoT 연동, Wi-Fi, Mesh, 산업용 스위치 등\n### 병원\n- 고신뢰성, 보안\n- 이중화 구성, 의료정보 보안 설계 등",
+   "detailImageId": null,
+   "en": "Design & Construction",
+   "eyebrow": "고객 맞춤형",
+   "imageId": "16ed5483b021c7b2c47ec193ffa36c42.jpg",
+   "lead": "고객의 **특정 요구사항**과 업무 환경에 맞춰 **네트워크를 설계ㆍ구축ㆍ운영하는 서비스**를 제공합니다.",
+   "order": 10,
+   "summary": "설계부터 장비 구축, 시공까지 원스톱으로 수행",
+   "title": "네트워크 시공 및 구축",
+   "updatedAt": "2026-11-13",
+   "visible": true
+  }
+ },
+ {
+  "path": "business/b3",
+  "data": {
+   "body": "지능형 컨트롤러 기반 네트워크 서비스 구성도",
+   "btnLabel": "",
+   "btnUrl": "",
+   "content": "## SERVICES | 서비스 제공 내역\n### 첨단 통합 운영관제 서비스\n- 인공지능 기반의 지능형 자동화 운영관제 솔루션을 통해 네트워크 및 운영장비의 성능, 보안, 트래픽 분석 등을 실시간 모니터링(상시)하고 통합 관제하는 서비스\n- 원격 장애 관리와 오프라인 출동을 통한 신속한 장애처리 서비스 제공\n- ※ 고객 환경에 따라 전문인력 상주 서비스 제공 가능\n### 네트워크 구독 서비스\n- 네트워크 구독 서비스를 통해 비용 부담 없이 고객환경에 필요한 모든 네트워크 솔루션을 렌탈하여 구축 및 운영관리까지 토탈 네트워크 서비스를 제공합니다.\n### Total 네트워크 솔루션 제공\n- Total 네트워크 솔루션 제공 서비스에 특화된 전문가 인력을 바탕으로 한 전국적인 유지보수 및 24시간 실시간 네트워크 감시 체계 서비스 제공\n- 전문가의 진단을 통해 최적의 성능, 장애예방, 효율적 운영관리 등을 모두 고려하여 고객 환경에 최적화된 네트워크를 설계부터 구축, 운영관리 및 맞춤형 자동화 솔루션 개발까지 제공\n\n## PROCESS | 서비스 제공 프로세스\n### 맞춤 컨설팅 서비스 제공\n- 고객사의 네트워크 현황(환경 및 구성 등)을 조사ㆍ분석\n- 맞춤 컨설팅을 통한 도입·적용 가능 서비스 모델 제시\n### 서비스 신청 및 약정\n- 맞춤 컨설팅 결과 도입·적용하고자 하는 서비스 모델 선택\n- 네트워크 구독 서비스 신청 및 계약서 작성\n### 서비스 제공\n- 신청된 서비스 모델 구축 일정 협의\n- 고객사 구축 실시\n### 서비스 비용 정산\n- 구축 완료 후 서비스 제공에 따른 이용료 과금\n### 서비스 해지\n- 서비스 제공 해지 신청\n- 서비스 해지 및 종료\n\n## SERVICE FEATURES | 서비스 특장점\n### 초기 구축 비용 및 운영관리비 절감\n- 월 임대료 납부 방식으로 저렴한 투자비용으로 네트워크 초기 구축 가능\n- 네트워크 구독 서비스를 통해 유지보수비, 장비구매비, 인건비 등 운영관리비 대폭 절감\n### 실시간 모니터링 서비스 제공\n- 고객사 내부 네트워크 환경을 통합적으로 24시간 365일 무중단 관제 서비스를 제공함으로써 안심하고 안정적으로 업무를 수행할 수 있는 환경 제공\n- 통합관제 자체 모니터링이 가능한 사용자 지향 관제 솔루션 제공\n### 효율적 장애복구ㆍOne Stop 서비스 제공\n- 지능형 컨트롤러를 통해 장비의 장애 및 24시간 손쉬운 모니터링 및 신속한 장애대응 가능\n- 네트워크 운영ㆍ관리부터 교육 및 기술지원까지 Total One Stop 서비스 제공\n### 서비스 안정성·연속성 제공\n- 공인 인증 및 BMT(Benchmark Test)를 통과한 신뢰성 있는 제품 사용을 통한 높은 서비스 안정성 제공\n- 네트워크 장비 파손 및 불량 시 최신 기술을 적용한 장비 교체로 서비스 연속성 확보\n\n## CASE | 서비스 적용 분야\n### 중소기업\n### MSO·지자체\n### 병원\n### 초·중·고등학교\n### 대학 캠퍼스\n### 호텔·오피스텔\n### 빌딩·쇼핑몰\n### 체인·자영업소\n### 리조트·관광지",
+   "detailImageId": "d6cf3b9f417aef72f41b7530aee89745.png",
+   "en": "Lease & Maintenance",
+   "eyebrow": "고객 맞춤형",
+   "imageId": "573de8004fd61a36a1df81de91c0ff9b.jpg",
+   "lead": "고객의 **다양한 IT 인프라 환경**과 이용현황을 진단하여, **최적의 맞춤형 네트워크 솔루션 서비스**를 제공합니다.",
+   "order": 20,
+   "summary": "임대형 서비스로 초기 투자 부담을 줄이고 서비스 품질을 보장",
+   "title": "네트워크 솔루션 임대 및 유지보수",
+   "updatedAt": "2026-11-13",
+   "visible": true
+  }
+ },
+ {
+  "path": "business/b4",
+  "data": {
+   "body": "",
+   "btnLabel": "",
+   "btnUrl": "",
+   "content": "## TECHNOLOGY | 지능형 자동화 네트워크 운영관제 솔루션\n인공지능기반 지능형 자동화 무인화 토탈 네트워크 서비스\n### 유무선 네트워크 기술\n### AI & Data Analytics\n### SD-WAN 기술\n### APP Platform 기술\n### IoT 기술\n### SD-LAN 기술\n\n## FEATURES | 지능형 운영관제 솔루션\n### 국내최초 AE 및 PON 통합 컨트롤러 기술\n### 국내최초 유무선 통합 멀티벤더 연동 기술\n### 국내최초 인공지능기반 네트워크 장애탐지 기술\n\n## TARGET | 적용 분야\n### 초·중·고등학교\n### 중소기업\n### 빌딩 & 쇼핑몰\n### 호텔 & 오피스텔\n### MSO & 지자체\n### 체인 & 자영업소\n### 리조트 & 관광지\n\n## COMPARISON | SDN 컨트롤러 비교\n| Feature | TRIZN 컨트롤러 | A 컨트롤러 | B 컨트롤러 | C 컨트롤러 |\n| 타겟 시장 | 네트워크 매니지드 서비스 | 5G ISP | 데이터센터 | 데이터센터 |\n| 핵심역량 | 유무선 네트워크 솔루션 기술 | 5G 네트워크 솔루션 기술 | 클라우드플랫폼 기술(오픈스택) | 빅데이터 플랫폼 기술(하둡) |\n| 무선최적화 기능지원 | ● | X | X | X |\n| 유무선 통합 운영관리 및 레퍼런스 | ● | X | X | X |\n| SDN 및 레거시 스위치 통합 운영관리 및 레퍼런스 | ● | ● | X | ● |\n| AE 및 PON 장치 통합 운영관리 및 레퍼런스 | ● | X | X | X |\n| 인공지능기반 유무선 네트워크 장애 탐지 기능 | ● | X | X | X |\n| 유무선 SDN 네트워크 장치 (개발역량) 보유현황 | ● | ● | ● | ● |\n* SDN: Software Defined Network · IOP: Inter-operation · SD-WAN: Software Defined Wide Area Network · SD-LAN: Software Defined Local Area Network · MSO: Multi System Operator · NOS: Network Operating System",
+   "detailImageId": "af7f54517916e04f333fb96350135912.png",
+   "en": "Automated Operations",
+   "eyebrow": "고객 맞춤형",
+   "imageId": "537eac2d90b7e7d65aea2ff9dbbc4109.jpg",
+   "lead": "**인공지능기반 네트워크 운영관제 솔루션 개발** 및 자동화 네트워크 관제센터 구축을 통한 **토탈 네트워크 서비스** 제공",
+   "order": 30,
+   "summary": "인공지능 기반 운영관제 솔루션과 자동화 관제센터 구축",
+   "title": "네트워크 운영관제",
+   "updatedAt": "2026-11-13",
+   "visible": true
+  }
+ },
+ {
+  "path": "business/b5",
+  "data": {
+   "body": "공공기관을 대상으로 맞춤형 네트워크 장비를 나라장터 쇼핑몰을 통해 판매하고 있으며, 다양한 네트워크 스위치 장비 기반의 구축 컨설팅 업무를 함께 제공합니다.",
+   "btnLabel": "",
+   "btnUrl": "",
+   "content": "## PRODUCTS | 조달 등록 제품소개\n| 연번 | 항목 | 주요내용 |\n| 1 | 강화된 보안기능 (보안적합성 인증 지원) | 백본·L3 Switch, 보안 스위치 전 품목 보안기능확인서 획득 / 전 품목 해킹 및 보안 방지 암호화 및 해쉬 알고리즘 지원 / 강화된 필터링 기능 지원(MAC·IP·ARP 등 Attack 차단) |\n| 2 | 안정성 | 공공·Ent·사업자 초고속 인터넷 서비스 등 전국 100만대 이상 운용 중 / PoE 전 품목 전기안전 인증 획득 |\n| 3 | 구축·운용의 편리성 | 표준 규격을 만족하는 HW Interface / 사용자에게 익숙한 명령어 체계 / 편리한 NMS 시스템 제공(Optional) |\n| 4 | 대한민국 최고의 기술력 | 다수의 특허 및 실용신안 보유 / Fanless 무소음 스위치, 원격 HW 리셋 기능 지원(특허) |\n| 5 | L2·L3·멀티캐스트 완벽 지원 | VRRP·Static·RIP·OSPF·BGP·IS-IS·IGMP·PIM 등 |\n| 6 | IPv4·IPv6 듀얼 스택 | IPv4·IPv6 동시 통신 지원 |\n| 7 | 운용·관제 용이 | SNMP·RMON·sFlow·포트미러링 등 다양한 Management 기능 제공 |\n| 8 | 체계적인 기술지원 서비스 | 제조사 Call Center(1577-9550) 운용 및 홈페이지 기술자료실 운용 |\n\n## LINE-UP | 차별화된 IP 기반의 서비스 제공\n고객의 요구와 규모에 적절한 최적의 네트워크 솔루션!\n### L3 스위치\n### L2 스위치\n### L2 PoE 스위치\n### 보안 스위치\n### 백본스위치\n### 광 모듈 및 변환 모듈\n\n## FEATURED | 보안기능확인서 발급 제품\n### E7148\n- 물품식별번호 25393875\n- Switching Fabric 3.6 Tbps · Throughput 1.5 Bpps(128Bytes)\n- Service 1G/10G/25GE 48포트 (SFP/SFP+/SFP28)\n- Uplink 40G/100GE 6포트 (QSFP+/QSFP28) · 전원 이중화\n### E6100\n- 물품식별번호 22755362\n- Switching Fabric 1,280 Gbps · Throughput 714 Mpps\n- Service 1G/10G 48포트 (SFP/SFP+)\n### E4050-24CX\n- 물품식별번호 25043206\n- Switching Fabric 168 Gbps · Throughput 95.2 Mpps\n- Service 1G 24포트 (Combo) · Uplink 1G/10G 4포트 (SFP/SFP+)\n- 전원 이중화\n### E4050-24S\n- 물품식별번호 25691652\n- Switching Fabric 56 Gbps · Throughput 41.6 Mpps\n- Service 1G 24포트 (SFP) · Uplink 1G 4포트 (Combo)\n- 전원 이중화\n### E4050-24C\n- 물품식별번호 25691651\n- Switching Fabric 56 Gbps · Throughput 41.6 Mpps\n- Service 1G 16포트 (UTP) + 1G 8포트 (Combo) · Uplink 1G 4포트 (Combo)\n- 전원 이중화\n### E4050-24T\n- 물품식별번호 25691650\n- Switching Fabric 56 Gbps · Throughput 41.6 Mpps\n- Service 1G 24포트 (UTP) · Uplink 1G 4포트 (Combo)\n- 전원 이중화\n\n## PRICE LIST | 조달 등록 제품\n등록업체 : 주식회사 트리즈엔\n| NO | 항목 (물품분류번호 43222612) | 물품식별번호 | 모델명 | 나라장터쇼핑몰 간단 표시규격 | 조달등록가격 (VAT포함) |\n| 1 | 백본 스위치 | 23981695 | E7610 | 네트워크스위치, 유비쿼스 (CN)E7610, 최대 384port | ₩40,000,000 |\n| 2 | E7610(제어부) Main Control Unit | 24934979 | PFE7610 | 네트워크스위치, 유비쿼스, (CN)PFE7610, (부품)Control Unit | ₩19,800,000 |\n| 3 | E76XX Line-Card | 24934981 | S76-48GF | 네트워크스위치, 유비쿼스, (CN)S76-48GF, (부품)Line Card | ₩8,000,000 |\n| 4 | L3 스위치 | 25393875 | E7148 | 네트워크스위치, 유비쿼스, E7148, 48port | ₩19,000,000 |\n| 5 | L3 스위치 | 22755362 | E6100 | 네트워크스위치, 유비쿼스, E6100, 48port | ₩13,060,000 |\n| 6 | L3 스위치 | 25043206 | E4050-24CX | 네트워크스위치, 유비쿼스, E4050-24CX, 24port | ₩4,600,000 |\n| 7 | L3 스위치 | 25691652 | E4050-24S | 네트워크스위치, 유비쿼스, E4050-24S, 24port | ₩3,560,000 |\n| 8 | L3 스위치 | 25691651 | E4050-24C | 네트워크스위치, 유비쿼스, E4050-24C, 24port | ₩3,400,000 |\n| 9 | L3 스위치 | 25691650 | E4050-24T | 네트워크스위치, 유비쿼스, E4050-24T, 24port | ₩2,900,000 |\n| 10 | 보안 L3 스위치 | 25052793 | E4050-24CX-S | 네트워크스위치, 유비쿼스, E4050-24CX-S, 24port | ₩5,300,000 |\n| 11 | 보안 L2 PoE 스위치 | 25393878 | E4020-24P-S | 네트워크스위치, 유비쿼스, (CN)E4020-24P-S, 24port | ₩3,900,000 |\n| 12 | 보안 L2 스위치 | 25393877 | E4020-24TX-S | 네트워크스위치, 유비쿼스, (CN)E4020-24TX-S, 24port, Fan-Less 무소음 | ₩2,400,000 |\n| 13 | L2 PoE 스위치 | 25691649 | E4300X-12U12P | 네트워크스위치, 유비쿼스, (CN)E4300X-12U12P, 24port | ₩5,500,000 |\n| 14 | L2 PoE 스위치 | 23210521 | E4020-48PS | 네트워크스위치, 유비쿼스, E4020-48PS, 48port | ₩3,600,000 |\n| 15 | L2 PoE 스위치 | 23499365 | E4020-24PS | 네트워크스위치, 유비쿼스, (CN)E4020-24PS, 24port | ₩1,700,000 |\n| 16 | L2 PoE 스위치 | 24319946 | E4020-24P | 네트워크스위치, 유비쿼스, (CN)E4020-24P, 24port | ₩1,700,000 |\n| 17 | L2 PoE 스위치 | 25548973 | E3010-8P | 네트워크스위치, 유비쿼스, (CN)E3010-8P, 8port | ₩860,000 |\n| 18 | L2 스위치 | 25551611 | E6500-28Z | 네트워크스위치, 유비쿼스, E6500-28Z, 24port | ₩4,950,000 |\n| 19 | L2 스위치 | 23210520 | E4020-48T | 네트워크스위치, 유비쿼스, E4020-48T, 48port | ₩2,450,000 |\n| 20 | L2 스위치 | 24319949 | E4020-24TX | 네트워크스위치, 유비쿼스, (CN)E4020-24TX, 24port, Fan-Less 무소음 | ₩1,190,000 |\n| 21 | L2 스위치 | 24319948 | E4020-24T | 네트워크스위치, 유비쿼스, (CN)E4020-24T, 24port, Fan-Less 무소음 | ₩816,000 |\n| 22 | 광모듈(SFP) | 25637436 | HYM-PX1M-LID | (부품)Hymax optoelectronics, (CN)HYM-PX1M-LID, 10G 멀티 | ₩210,000 |\n| 23 | 광모듈(SFP) | 25637438 | HYM-PX21-LID | (부품)Hymax optoelectronics, (CN)HYM-PX21-LID, 10G 싱글 | ₩350,000 |\n| 24 | 광모듈(SFP) | 25637421 | HYM-P11M-LCD | (부품)Hymax optoelectronics, (CN)HYM-P11M-LCD, 1G 멀티 | ₩97,000 |\n| 25 | 광모듈(SFP) | 25637420 | HYM-P122-LCD | (부품)Hymax optoelectronics, (CN)HYM-P122-LCD, 1G 싱글 | ₩156,000 |\n| 26 | 변환모듈(TX-Copper) | - | GE-GB-P1RC-ETB | (부품)Shenzhen gigalight technology, (CN)GE-GB-P1RC-ETB | ₩250,000 |\n\n## WHY ubiQuoss | 왜 유비쿼스인가\n### 기술력\n- 국내최초 L3 및 백본 스위치, Mobile(4G/5G) 백홀 스위치 안정적 상용화\n### Fan-Less 기술채택\n- 무소음 스위치(E4020-24T/E4020-24TX) 실현\n### 장비 안정성 및 스위치 점유율 1위\n- 국내 네트웍 스위치 판매 2위(Cisco 1위), 약 100만대 이상 운용중\n### L3 전품목 보안적합성 인증 취득\n- 고도화된 보안 기능 제공을 통한 제품 안정성\n### 장비 다양성\n- 국내 업체 중 유일한 End to End Total Solution\n### PoE 전품목 전기안전 인증 취득\n- 산업통상자원부 \"전기용품 및 생활용품 안전관리법\" 안전인증 취득\n### 국내제조사\n- Made in Korea (순수 국산 네트워크 장비 제조업체)\n### L2-L3 원격 Remote Reset 기능 제공(특허)\n- 특허 기술을 비롯 네트워크 자동화 기술로 효율적인 네트워크 환경 구축\n### 재무안정성\n- 코스닥 상장(09년) 및 안정적 재무구조\n### 국내 업체 중 Switch 판매 1위\n- 약 100만대 이상 운용, 검증된 솔루션\n\n## CONTACT | 제조사 · 조달등록업체\n### 제조사 — 주식회사 유비쿼스\n- 본사/연구소: 경기도 성남시 분당구 판교로 255번길 68 (삼평동 616번지)\n- 고객지원/기술지원: 1577-9550\n### 조달등록업체 — 주식회사 트리즈엔\n- 주소: 경기도 수원시 영통구 대학3로 4번길 36, 테라스힐2차 201호 (이의동)\n- 대표전화/팩스: 031)247-5966 / 031)212-5903\n- 제품문의: 070)5038-1771",
+   "detailImageId": null,
+   "en": "S2B Biz",
+   "eyebrow": "PUBLIC PROCUREMENT",
+   "imageId": "74e9271fc9ffa7ebe2ed7219b22c3e73.jpg",
+   "lead": "**ubiQuoss 네트워크 스위치 솔루션**을 나라장터 종합쇼핑몰에서 만나보세요!",
+   "order": 40,
+   "summary": "나라장터를 통한 공공기관 맞춤형 네트워크 장비 공급",
+   "title": "조달 *S2B Biz",
+   "updatedAt": "2026-11-13",
+   "visible": true
+  }
+ },
+ {
+  "path": "facts/f01",
+  "data": {
+   "icon": "building",
+   "label": "회사명",
+   "order": 0,
+   "updatedAt": "2026-11-13",
+   "value": "㈜트리즈엔 (TrizN Inc.)",
+   "visible": true
+  }
+ },
+ {
+  "path": "facts/f02",
+  "data": {
+   "icon": "calendar",
+   "label": "설립일",
+   "order": 10,
+   "updatedAt": "2026-11-13",
+   "value": "2013년 12월 31일",
+   "visible": true
+  }
+ },
+ {
+  "path": "facts/f03",
+  "data": {
+   "icon": "person",
+   "label": "대표이사",
+   "order": 20,
+   "updatedAt": "2026-11-13",
+   "value": "백 성 우",
+   "visible": true
+  }
+ },
+ {
+  "path": "facts/f05",
+  "data": {
+   "icon": "people",
+   "label": "직원수",
+   "order": 40,
+   "updatedAt": "2026-11-13",
+   "value": "80명",
+   "visible": true
+  }
+ },
+ {
+  "path": "facts/f06",
+  "data": {
+   "icon": "award",
+   "label": "신용등급",
+   "order": 50,
+   "updatedAt": "2026-11-13",
+   "value": "A-",
+   "visible": true
+  }
+ },
+ {
+  "path": "facts/f07",
+  "data": {
+   "icon": "money",
+   "label": "자본금",
+   "order": 60,
+   "updatedAt": "2026-11-13",
+   "value": "938백만원",
+   "visible": true
+  }
+ },
+ {
+  "path": "facts/f08",
+  "data": {
+   "icon": "chart",
+   "label": "매출액",
+   "order": 70,
+   "updatedAt": "2026-11-13",
+   "value": "’25: 461억",
+   "visible": true
+  }
+ },
+ {
+  "path": "facts/f09",
+  "data": {
+   "icon": "globe",
+   "label": "주요사업분야",
+   "order": 80,
+   "updatedAt": "2026-11-13",
+   "value": "소프트웨어 개발 및 공급,\n정보통신공사업, 통신장비판매",
+   "visible": true
+  }
+ },
+ {
+  "path": "facts/f10",
+  "data": {
+   "icon": "phone",
+   "label": "연락처",
+   "order": 90,
+   "updatedAt": "2026-11-13",
+   "value": "TEL: 031)247-5966\nFAX: 031)212-5903",
+   "visible": true
+  }
+ },
+ {
+  "path": "facts/f11",
+  "data": {
+   "icon": "pin",
+   "label": "주소",
+   "order": 100,
+   "updatedAt": "2026-11-13",
+   "value": "경기도 수원시 영통구 대학3로4번길\n15 208~220호, 223호 (이의동, 테라스힐)",
+   "visible": true
+  }
+ },
+ {
+  "path": "facts/f12",
+  "data": {
+   "icon": "web",
+   "label": "홈페이지",
+   "order": 110,
+   "updatedAt": "2026-11-13",
+   "value": "https://www.trizn.kr",
+   "visible": true
+  }
+ },
+ {
+  "path": "menus/m1",
+  "data": {
+   "label": "회사소개",
+   "order": 0,
+   "route": "about",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "menus/m2",
+  "data": {
+   "label": "사업영역",
+   "order": 10,
+   "route": "business",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "menus/m3",
+  "data": {
+   "label": "서비스",
+   "order": 20,
+   "route": "products",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "menus/m4",
+  "data": {
+   "label": "소식",
+   "order": 30,
+   "route": "news",
+   "updatedAt": "2026-11-13T00:57:43.019Z",
+   "visible": true
+  }
+ },
+ {
+  "path": "menus/m5",
+  "data": {
+   "label": "고객문의",
+   "order": 40,
+   "route": "contact",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "pillars/v1",
+  "data": {
+   "body": "트리즈엔은 최고의 제품과 서비스 품질을 기반으로\n“고객만족을 최우선으로 하는 기업”이라는 슬로건 아래 지능형 자동화 초연결 네트워크를 목표로 지능형 네트워크를 컨설팅 및 구축을 위해 최선의 노력을 다하고 있습니다.",
+   "en": "Customer First",
+   "order": 0,
+   "title": "고객만족을 최우선으로 하는 기업",
+   "updatedAt": "2026-11-13",
+   "visible": true
+  }
+ },
+ {
+  "path": "pillars/v2",
+  "data": {
+   "body": "지능형 유무선 통합 SDN 솔루션 개발 및 운용기술을 기반으로 통신서비스에 필요한 멀티밴더의 장비 및 단말을 구축하고 통합 운용시스템을 제공합니다.",
+   "en": "ICT Total Solution",
+   "order": 10,
+   "title": "지능형 ICT 토탈 솔루션을 제공하는 전문기업",
+   "updatedAt": "2026-11-13",
+   "visible": true
+  }
+ },
+ {
+  "path": "pillars/v3",
+  "data": {
+   "body": "고객의 수요에 맞는 서비스가 아닌\n선제적으로 미래지향적 맞춤 가치를 지원하며,\n고객과 함께 미래를 준비하는 기업입니다.\n고객과 함께 성장하여 더 나은 미래를 준비합니다.",
+   "en": "Future Together",
+   "order": 20,
+   "title": "고객과 함께 미래를 준비하는 기업",
+   "updatedAt": "2026-11-13",
+   "visible": true
+  }
+ },
+ {
+  "path": "popups/u1",
+  "data": {
+   "body": "새 홈페이지에서 트리즈엔의 네트워크 서비스와\nSDN 솔루션을 만나보세요.",
+   "btnLabel": "공지 보기",
+   "btnRoute": "news",
+   "end": "",
+   "eyebrow": "NOTICE",
+   "imageId": null,
+   "order": 0,
+   "start": "2026-11-12",
+   "title": "홈페이지\n리뉴얼 오픈",
+   "updatedAt": "2026-11-12",
+   "visible": false
+  }
+ },
+ {
+  "path": "posts/n1",
+  "data": {
+   "board": "notice",
+   "body": "트리즈엔 홈페이지가 새롭게 단장했습니다.\n\n사업영역과 지능형 네트워크 솔루션 소개를 보강했고, 고객문의와 원격지원서비스를 한 곳에서 이용할 수 있도록 정리했습니다.\n\n앞으로도 많은 관심 부탁드립니다.",
+   "date": "2026-11-12",
+   "imageId": null,
+   "order": 0,
+   "pinned": true,
+   "title": "트리즈엔 홈페이지를 새롭게 열었습니다",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "posts/n2",
+  "data": {
+   "board": "press",
+   "body": "관리자 화면 › 게시판 관리 › 보도자료에서 이 글을 수정하거나 삭제하세요.",
+   "date": "2026-11-12",
+   "imageId": null,
+   "order": 0,
+   "pinned": false,
+   "title": "[예시] 보도자료 샘플 게시물입니다",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "posts/n3",
+  "data": {
+   "board": "ir",
+   "body": "관리자 화면 › 게시판 관리 › IR·공시에서 이 글을 수정하거나 삭제하세요.\n\n첨부파일 칸에 IR 자료나 공시 원문(PDF)을 올리면 게시물 아래에 ‘첨부파일 열기’ 버튼이 나타납니다.",
+   "date": "2026-11-12",
+   "imageId": null,
+   "order": 0,
+   "pinned": false,
+   "title": "[예시] IR·공시 샘플 게시물입니다",
+   "updatedAt": "2026-11-12",
+   "visible": false
+  }
+ },
+ {
+  "path": "products/p1",
+  "data": {
+   "category": "운영관제",
+   "featured": true,
+   "imageId": null,
+   "name": "SDN 운영관제 솔루션",
+   "order": 0,
+   "summary": "인공지능 기반의 지능형·자동화·무인화 네트워크 운영관제 서비스",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "products/p2",
+  "data": {
+   "category": "SDN 장비",
+   "featured": true,
+   "imageId": null,
+   "name": "SDN Switch",
+   "order": 10,
+   "summary": "Rest API, OpenFlow 등 표준 프로토콜로 SDN 컨트롤러와 연동되는 데이터센터 자동화용 스위치",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "products/p3",
+  "data": {
+   "category": "SDN 장비",
+   "featured": true,
+   "imageId": null,
+   "name": "SDN PON",
+   "order": 20,
+   "summary": "PON에 SDN을 접목한 차세대 광통신 구조. QoS·대역폭·장애 대응을 중앙에서 제어",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "products/p4",
+  "data": {
+   "category": "SDN 장비",
+   "featured": true,
+   "imageId": null,
+   "name": "SDN AP",
+   "order": 30,
+   "summary": "고속 인터넷, 안정성, 넓은 커버리지가 필요한 환경에서 최적의 성능 제공",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "products/p5",
+  "data": {
+   "category": "SDN 장비",
+   "featured": true,
+   "imageId": null,
+   "name": "SDN VPN",
+   "order": 40,
+   "summary": "복잡한 VPN 구성을 소프트웨어로 단순화한 클라우드 시대의 보안 연결",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "products/p6",
+  "data": {
+   "category": "SDN 장비",
+   "featured": true,
+   "imageId": null,
+   "name": "SDN Firewall",
+   "order": 50,
+   "summary": "정책 기반 동적 ACL과 트래픽 가시화로 위협 탐지·차단·분석을 실시간 중앙 대응",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "products/p7",
+  "data": {
+   "category": "SDN 장비",
+   "featured": true,
+   "imageId": null,
+   "name": "SDN 스토리지",
+   "order": 60,
+   "summary": "스토리지 간 데이터 흐름을 중앙에서 통제해 성능 최적화와 QoS 보장",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "products/p8",
+  "data": {
+   "category": "인프라",
+   "featured": true,
+   "imageId": null,
+   "name": "SDN 통합배선반",
+   "order": 70,
+   "summary": "네트워크 상태를 실시간 모니터링하고 원격제어와 장애 예측을 지원하는 스마트 배선 시스템",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "products/p9",
+  "data": {
+   "category": "인프라",
+   "featured": true,
+   "imageId": null,
+   "name": "SDN 지능형 FDF",
+   "order": 80,
+   "summary": "광케이블 연결 상태를 실시간 감시·원격 제어하는 지능형 광분배 시스템",
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "site/config",
+  "data": {
+   "aboutTitle": "네트워크망을 보유하지 않는\n세계 최대 네트워크 서비스 플랫폼",
+   "address": "경기도 수원시 영통구 대학3로4번길 15 208~220호, 223호 (이의동, 테라스힐)",
+   "address2": "경기도 수원시 영통구 대학3로 4번길 36 테라스힐2차 209-210호",
+   "bizLead": "고객의 복잡하고 다양한 환경에 맞춰 컨설팅부터 설계·구축, 임대·유지관리, 운영관제까지 한 번에 제공합니다.",
+   "bizNo": "",
+   "ceo": "백성우",
+   "ceoImageId": null,
+   "ceoMessage": "트리즈엔은 네트워크 컨설팅과 솔루션 개발부터 설계·구축·시공, 솔루션 임대와 유지관리, 인공지능 기반 운영관제까지 네트워크의 전 과정을 책임지는 토탈 네트워크 서비스 기업입니다.\n\nSDN(소프트웨어 정의 네트워크) 기술을 바탕으로 스위치, PON, VPN, 방화벽, 스토리지, 통합배선반, 지능형 FDF를 중앙에서 제어하고 자동화하는 지능형 네트워크 솔루션을 공급합니다.\n\n공공기관에는 나라장터와 S2B를 통해 맞춤형 네트워크 장비와 구축 컨설팅을 함께 제공합니다.",
+   "company": "㈜트리즈엔",
+   "companyEn": "TrizN Inc.",
+   "ctaText": "도입 상담부터 구축과 유지관리까지 담당 엔지니어가 함께합니다.",
+   "ctaTitle": "우리 조직에 맞는 네트워크, 트리즈엔과 함께 설계하세요.",
+   "email": "pro@trizn.kr",
+   "familyName": "TRIZRO",
+   "familyText": "상업용 지능형 건식 청소로봇. 정밀 자율주행과 4-in-1 건식 청소로 공간을 관리합니다.",
+   "familyUrl": "https://trizro-cleaning.hoya99.chatgpt.site/",
+   "fax": "031-212-5903",
+   "filmEyebrow": "Brand Film",
+   "filmLoopId": null,
+   "filmPosterId": null,
+   "filmText": "컨설팅부터 설계·구축, 임대·유지관리, 인공지능 기반 운영관제까지.\n영상으로 트리즈엔을 만나보세요.",
+   "filmTitle": "트리즈엔이 만드는\n지능형 네트워크",
+   "filmVideoId": null,
+   "filmYoutube": "https://youtu.be/voH71MyxqT0",
+   "marquee": "TOTAL NETWORK SERVICES · SDN · AI NETWORK · AUTOMATION",
+   "stats": [
+    {
+     "label": "토탈 네트워크 서비스",
+     "num": "5",
+     "suffix": ""
+    },
+    {
+     "label": "지능형 SDN 솔루션",
+     "num": "9",
+     "suffix": ""
+    },
+    {
+     "label": "본사 · 공장 거점",
+     "num": "2",
+     "suffix": ""
+    }
+   ],
+   "supportText": "전화로 상담원과 연결한 뒤, 안내받은 접속번호로 원격지원 프로그램에 접속하세요. 엔지니어가 원격으로 장비와 네트워크 상태를 점검해 드립니다.",
+   "supportUrl": "https://939.co.kr/nsg/",
+   "tel": "031-247-5966",
+   "tile1ImageId": null,
+   "tile2ImageId": null,
+   "tile3ImageId": null,
+   "updatedAt": "2026-11-13T00:46:44.062Z",
+   "vision": "",
+   "visionLead": ""
+  }
+ },
+ {
+  "path": "slides/s1",
+  "data": {
+   "btnLabel": "",
+   "btnRoute": "business",
+   "eyebrow": "",
+   "imageId": "07910d1245f365f300978abef5987c92.jpg",
+   "order": 0,
+   "sub": "",
+   "title": "",
+   "updatedAt": "2026-11-13T01:38:45.782Z",
+   "videoId": "be7ab1de59d800edbc546b6ede166574.mp4",
+   "visible": true
+  }
+ },
+ {
+  "path": "slides/s2",
+  "data": {
+   "btnLabel": "솔루션 보기",
+   "btnRoute": "products",
+   "eyebrow": "INTELLIGENT NETWORK",
+   "imageId": "537eac2d90b7e7d65aea2ff9dbbc4109.jpg",
+   "order": 10,
+   "sub": "SDN 기반 중앙제어와 자동화로\n네트워크 운영관제를 무인화합니다.",
+   "title": "AI로 제어하는\n**지능형 네트워크**",
+   "updatedAt": "2026-11-12",
+   "videoId": null,
+   "visible": false
+  }
+ },
+ {
+  "path": "slides/s3",
+  "data": {
+   "btnLabel": "고객문의",
+   "btnRoute": "contact",
+   "eyebrow": "PUBLIC PROCUREMENT",
+   "imageId": "16ed5483b021c7b2c47ec193ffa36c42.jpg",
+   "order": 20,
+   "sub": "나라장터와 S2B를 통해 네트워크 장비와\n구축 컨설팅을 함께 제공합니다.",
+   "title": "공공기관 맞춤형\n**조달 · S2B Biz**",
+   "updatedAt": "2026-11-12",
+   "videoId": null,
+   "visible": false
+  }
+ }
+]
