@@ -90,12 +90,12 @@ p{margin:0}
 .support-btn:hover{background:var(--violet);border-color:var(--violet);color:#fff;opacity:1}
 .slide video{width:100%;height:100%;object-fit:cover;display:block}
 .vis video{width:100%;height:100%;object-fit:cover;display:block}
-.vision{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.vision{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
 .vision div{background:var(--paper);padding:36px 32px;display:grid;gap:12px;align-content:start}
 .vision .n{font-family:var(--f-display);font-size:13px;letter-spacing:.2em;color:var(--violet)}
 .vision b{font-size:20px;color:var(--ink)}
 .vision p{color:var(--muted);font-size:15px}
-.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:24px}
 .tile{position:relative;overflow:hidden;color:#fff;min-height:260px;display:flex;flex-direction:column;justify-content:flex-end;padding:40px}
 .tile .vis{position:absolute;inset:0}
 .tile .vis .ph{transition:transform .8s var(--ease)}
@@ -122,6 +122,62 @@ p{margin:0}
 .film-modal .x{position:absolute;top:max(16px,env(safe-area-inset-top,0px));right:max(16px,env(safe-area-inset-right,0px));width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:none;color:#fff;display:grid;place-items:center}
 .hero-pause{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:none;color:#fff;display:grid;place-items:center;font-size:11px}
 @media (max-width:760px){.play{width:84px;height:84px}.film .wrap{padding-block:48px}}
+.rich{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(72px,8vw,120px)}
+.rich>section{min-width:0}
+.rs-hd{margin-bottom:36px}
+.rs-hd h3{font-size:clamp(26px,2.8vw,38px);font-weight:700;color:var(--ink);margin-top:12px;line-height:1.3}
+.rs-p{color:#4A4868;max-width:72ch;font-size:17px;line-height:1.9;margin-bottom:16px}
+.rs-p b,.rs-card b{color:var(--violet);font-weight:700}
+.rs-quote{font-size:clamp(22px,2.4vw,32px);font-weight:700;color:var(--ink);line-height:1.55;border-left:3px solid var(--violet);padding:4px 0 4px 28px;margin:8px 0 24px;max-width:36ch}
+.rs-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:20px}
+.rs-card{border:1px solid var(--line);padding:30px 28px;background:var(--paper);display:grid;gap:12px;align-content:start;transition:border-color .3s var(--ease),transform .3s var(--ease)}
+.rs-card:hover{border-color:var(--violet);transform:translateY(-3px)}
+.rs-card h4{font-size:19px;font-weight:700;color:var(--ink);line-height:1.45}
+.rs-card .n{font-family:var(--f-display);font-size:12px;letter-spacing:.2em;color:var(--violet)}
+.rs-card p{color:#4A4868;font-size:15px}
+.rs-card ul,.rs-list{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.rs-card li,.rs-list li{position:relative;padding-left:16px;color:#4A4868;font-size:15px;line-height:1.7}
+.rs-card li::before,.rs-list li::before{content:"";position:absolute;left:0;top:.72em;width:6px;height:6px;border-radius:50%;background:var(--violet)}
+.rs-steps .rs-cards{counter-reset:st;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr))}
+.rs-steps .rs-card{background:var(--mist);border-color:transparent;border-top:2px solid var(--ink)}
+.rs-feat .rs-cards{grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr))}
+.rs-feat .rs-card{background:var(--ink);border-color:var(--ink);color:#fff}
+.rs-feat .rs-card h4{color:#fff}.rs-feat .rs-card .n{color:var(--violet-soft)}
+.rs-feat .rs-card li,.rs-feat .rs-card p{color:var(--on-dark-2)}
+.rs-feat .rs-card li::before{background:var(--violet-soft)}
+.rs-case .rs-cards{grid-template-columns:repeat(auto-fill,minmax(min(220px,100%),1fr))}
+.rs-chips{display:flex;flex-wrap:wrap;gap:10px}
+.rs-chip{border:1px solid var(--line-2);border-radius:999px;padding:12px 22px;font-size:15px;font-weight:500;color:var(--ink);background:var(--paper)}
+.rs-table{overflow-x:auto;border-top:2px solid var(--ink)}
+.rs-table table{width:100%;border-collapse:collapse;min-width:640px}
+.rs-table th{background:var(--mist);font-weight:500;font-size:14px;padding:16px 14px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+.rs-table td{padding:16px 14px;border-bottom:1px solid var(--line);font-size:14px;color:#3A385C;vertical-align:top}
+.rs-table td.c,.rs-table th.c{text-align:center}
+.rs-table td .dot{color:var(--violet);font-size:16px}
+.biz-intro{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(40px,6vw,96px);align-items:end}
+.biz-intro h2{font-size:clamp(30px,3.6vw,50px);font-weight:700;color:var(--ink);line-height:1.25;margin-top:14px}
+.biz-intro .lead{font-size:clamp(19px,1.7vw,23px);line-height:1.7;color:var(--ink);font-weight:500;white-space:pre-line}
+.biz-intro .lead b{color:var(--violet)}
+.biz-intro .body{color:#4A4868;margin-top:20px;white-space:pre-line}
+.biz-diagram{margin-top:clamp(56px,6vw,88px);background:var(--mist);border:1px solid var(--line);padding:clamp(20px,4vw,48px);display:grid;place-items:center}
+.biz-diagram img{max-width:100%;height:auto;display:block}
+.biz-pn{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-top:1px solid var(--line)}
+.biz-pn a{padding:36px 0;display:grid;gap:6px;transition:color .2s}
+.biz-pn a:last-child{text-align:right;border-left:1px solid var(--line);padding-left:24px}
+.biz-pn a span{font-size:13px;color:var(--muted);font-family:var(--f-display);letter-spacing:.12em}
+.biz-pn a b{font-size:20px;color:var(--ink)}
+.biz-pn a:hover b{color:var(--violet)}
+.family-btn[hidden]{display:none}
+.family-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600;background:rgba(255,255,255,.12);font-family:var(--f-display);letter-spacing:.04em;transition:background .25s,color .25s;white-space:nowrap}
+.hd.solid .family-btn{background:var(--lilac);color:var(--violet)}
+.family-btn:hover{background:var(--violet)!important;color:#fff!important}
+.fm-family{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:1px solid var(--on-dark-line);padding:28px 0 40px;color:var(--on-dark-2)}
+.fm-family a{color:#fff;font-weight:500;display:inline-flex;gap:8px;align-items:center}
+.ft-family{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--on-dark-line);padding:10px 16px;color:#fff;font-size:13px;margin-top:20px}
+.ft-family:hover{border-color:var(--violet-soft)}
+.post-file{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line-2);padding:14px 20px;margin-top:28px;font-size:15px;color:var(--ink);background:var(--mist)}
+.post-file:hover{border-color:var(--violet);color:var(--violet)}
+@media (max-width:760px){.biz-intro{grid-template-columns:minmax(0,1fr)}.biz-pn a b{font-size:16px}.family-btn{padding:6px 10px;font-size:12px}}
 .pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
 .pillar{padding:8px 36px 8px 32px;border-left:1px solid var(--on-dark-line);display:grid;gap:14px;align-content:start}
 .pillar .n{font-family:var(--f-display);font-size:13px;letter-spacing:.2em;color:var(--violet-soft)}
@@ -576,6 +632,7 @@ p{margin:0}
     <div class="hd-util">
       <span class="lang">KOR / ENG</span>
       <a class="support-btn" href="#contact" data-jump-after="support">원격지원서비스</a>
+      <a class="family-btn" id="familyBtn" href="#" target="_blank" rel="noopener" hidden></a>
       <button class="icon-btn" id="menuOpen" aria-label="전체 메뉴 열기"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 8h20M4 14h20M10 20h14" stroke="currentColor" stroke-width="1.6"/></svg></button>
     </div>
   </div>
@@ -584,6 +641,7 @@ p{margin:0}
   <div class="wrap">
     <div class="fm-top"><img src="logo-white.png" alt="TRIZN" style="height:28px"><button class="icon-btn" id="menuClose" aria-label="전체 메뉴 닫기"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M6 6l16 16M22 6L6 22" stroke="currentColor" stroke-width="1.6"/></svg></button></div>
     <div class="fm-grid" id="fmGrid"></div>
+    <div class="fm-family" id="fmFamily" hidden></div>
   </div>
 </div>
 <main id="app"></main>
@@ -597,14 +655,14 @@ p{margin:0}
 /* ================= constants ================= */
 const ROUTES = [
   ["home","홈"],["about","회사소개"],["business","사업영역"],["products","서비스"],
-  ["cert","인증·지적재산권"],["news","소식·채용"],["contact","고객문의"]
+  ["cert","인증·지적재산권"],["news","홍보·IR"],["contact","고객문의"]
 ];
 const DEFAULT_MENU = ROUTES.slice(1).map(([route,label],i)=>({id:"d"+i,route,label,order:i*10,visible:true}));
 const SUBMENU = {
-  about:["회사개요","기업 정보","비전 & 경영이념","연혁","오시는 길"], business:["토탈 네트워크 서비스"], products:["지능형 네트워크 솔루션","SDN 제품"],
-  cert:["인증 및 지적재산권"], news:["공지사항","보도자료","인재채용"], contact:["고객문의","원격지원서비스"]
+  about:["회사개요","기업 정보","비전 & 경영이념","연혁","오시는 길"], business:["네트워크 컨설팅 및 솔루션 개발","네트워크 시공 및 구축","네트워크 솔루션 임대 및 유지보수","네트워크 운영관제","조달 *S2B Biz"], products:["지능형 네트워크 솔루션","SDN 제품"],
+  cert:["인증 및 지적재산권"], news:["공지사항","보도자료","IR·공시"], contact:["고객문의","원격지원서비스"]
 };
-const BOARDS = [["notice","공지사항"],["press","보도자료"],["recruit","인재채용"]];
+const BOARDS = [["notice","공지사항"],["press","보도자료"],["ir","IR·공시"]];
 const BOARD_LABEL = Object.fromEntries(BOARDS);
 const COLS = ["menus","slides","popups","business","products","works","posts","partners","history","pillars","facts"];
 
@@ -683,6 +741,9 @@ function renderHeader(r){
   const base = r.split("-")[0];
   $("#gnb").innerHTML = menus().map(m => `<a href="#${esc(m.route)}" class="${base===m.route?"on":""}">${esc(m.label)}</a>`).join("");
   $("#fmGrid").innerHTML = menus().map((m,i) => `<a class="fm-item" href="#${esc(m.route)}"><span class="n">${String(i+1).padStart(2,"0")}</span><span class="t">${esc(m.label)}</span><span class="s">${(SUBMENU[m.route]||[]).map(esc).join("<br>")}</span></a>`).join("");
+  const fu = cfg("familyUrl"), fnm = cfg("familyName") || "TRIZRO";
+  const fb = $("#familyBtn"); fb.hidden = !fu; if (fu){ fb.href = fu; fb.textContent = fnm + " ↗"; fb.setAttribute("aria-label", fnm + " 사이트 (새 창)"); }
+  const ff = $("#fmFamily"); ff.hidden = !fu; if (fu) ff.innerHTML = `<span>FAMILY SITE</span><a href="${esc(fu)}" target="_blank" rel="noopener">${esc(fnm)} — ${esc(cfg("familyText")||"사이트 바로가기")} ${I.ext}</a>`;
   const isAdm = base === "admin";
   $("#hd").hidden = isAdm;
   onScroll();
@@ -699,17 +760,17 @@ document.addEventListener("keydown", e => { if (e.key === "Escape") { closeMenu(
 
 /* ================= site views ================= */
 function footer(){
-  const groups = [["회사소개",[["회사개요","about"],["연혁","about"],["인증 및 지적재산권","cert"],["오시는 길","about"]]],["사업·서비스",[["토탈 네트워크 서비스","business"],["지능형 네트워크 솔루션","products"]]],["고객지원",[["공지사항","news"],["인재채용","news"],["고객문의","contact"],["원격지원서비스","contact"]]]];
+  const groups = [["회사소개",[["회사개요","about"],["연혁","about"],["인증 및 지적재산권","cert"],["오시는 길","about"]]],["사업·서비스",[["토탈 네트워크 서비스","business"],["지능형 네트워크 솔루션","products"]]],["고객지원",[["공지사항","news"],["IR·공시","news"],["고객문의","contact"],["원격지원서비스","contact"]]]];
   return `<footer class="ft"><div class="wrap">
     <div class="top">
-      <div><img src="logo-white.png" alt="TRIZN"><p class="info">${[cfg("company")||"트리즈엔", cfg("ceo")&&"대표이사 "+cfg("ceo"), cfg("bizNo")&&"사업자등록번호 "+cfg("bizNo")].filter(Boolean).map(esc).join("  |  ")}<br><b style="color:#fff;font-weight:500">본사</b>  ${esc(cfg("address"))}${cfg("address2")?`<br><b style="color:#fff;font-weight:500">공장</b>  ${esc(cfg("address2"))}`:""}<br>TEL ${esc(cfg("tel"))}  |  FAX ${esc(cfg("fax"))}  |  ${esc(cfg("email"))}</p></div>
+      <div><img src="logo-white.png" alt="TRIZN"><p class="info">${[cfg("company")||"트리즈엔", cfg("ceo")&&"대표이사 "+cfg("ceo"), cfg("bizNo")&&"사업자등록번호 "+cfg("bizNo")].filter(Boolean).map(esc).join("  |  ")}<br><b style="color:#fff;font-weight:500">본사</b>  ${esc(cfg("address"))}${cfg("address2")?`<br><b style="color:#fff;font-weight:500">공장</b>  ${esc(cfg("address2"))}`:""}<br>TEL ${esc(cfg("tel"))}  |  FAX ${esc(cfg("fax"))}  |  ${esc(cfg("email"))}</p>${cfg("familyUrl")?`<a class="ft-family" href="${esc(cfg("familyUrl"))}" target="_blank" rel="noopener">FAMILY SITE · ${esc(cfg("familyName")||"TRIZRO")} ${I.ext}</a>`:""}</div>
       <div class="cols">${groups.map(([h,l]) => `<div><h4>${h}</h4>${l.map(([t,r]) => `<a href="#${r}">${t}</a>`).join("")}</div>`).join("")}</div>
     </div>
     <div class="bot"><span>© ${new Date().getFullYear()} ${esc(cfg("companyEn")||"TRIZN")} Co., Ltd. All rights reserved.</span><span><a href="#contact">개인정보처리방침</a><a href="#contact">이용약관</a><a href="#admin">관리자</a></span></div>
   </div></footer>`;
 }
-function subVis(eb, title, crumb, i){
-  return `<section class="sub-vis">${vis(null,i)}<div class="wrap"><p class="eyebrow">${eb}</p><h1>${title}</h1><p class="crumb">HOME › ${crumb}</p></div></section>`;
+function subVis(eb, title, crumb, i, img){
+  return `<section class="sub-vis">${vis(img||null,i)}<div class="wrap"><p class="eyebrow">${eb}</p><h1>${title}</h1><p class="crumb">HOME › ${crumb}</p></div></section>`;
 }
 
 function viewHome(){
@@ -720,7 +781,7 @@ function viewHome(){
   const biz = shown("business");
   const prods = shown("products", p => p.featured !== false);
   const posts = shown("posts");
-  const newsCards = shownPostsSorted(posts.filter(p => ui.homeTab==="all" ? p.board!=="recruit" : p.board===ui.homeTab)).slice(0,2);
+  const newsCards = shownPostsSorted(posts.filter(p => ui.homeTab==="all" ? true : p.board===ui.homeTab)).slice(0,2);
   const notices = shownPostsSorted(posts.filter(p => p.board==="notice")).slice(0,5);
   const partners = shown("partners");
   const mq = (cfg("marquee") || "TOTAL NETWORK SERVICES · SDN · AI NETWORK · AUTOMATION").split("·").map(s=>s.trim()).filter(Boolean);
@@ -745,7 +806,7 @@ function viewHome(){
   ${stats.length ? `<section class="dark"><div class="wrap stats">${stats.map(s => `<div class="stat reveal"><div class="v num"><span data-count="${esc(String(s.num).replace(/[^\d.]/g,""))}" data-fmt="${/,/.test(s.num)?"comma":""}">${esc(s.num)}</span><em>${esc(s.suffix)}</em></div><div class="l">${esc(s.label)}</div></div>`).join("")}</div></section>` : ""}
   ${biz.length ? `<section class="sec"><div class="wrap">
     <div class="sec-hd"><div><p class="eyebrow">Total Network Services</p><h2>사업영역</h2></div><p class="lead">${esc(cfg("bizLead")||"")}</p></div>
-    <div class="biz">${biz.map((b,i) => `<a class="biz-card" href="#business">${vis(b.imageId,i+1,b.title)}<div class="in"><span class="no">SERVICE ${String(i+1).padStart(2,"0")}</span><h3>${esc(b.en)}</h3><p class="ko">${esc(b.title)}</p><p class="desc">${esc(b.summary)}</p></div><span class="line"></span></a>`).join("")}</div>
+    <div class="biz">${biz.map((b,i) => `<a class="biz-card" href="#business-${esc(b.id)}">${vis(b.imageId,i+1,b.title)}<div class="in"><span class="no">SERVICE ${String(i+1).padStart(2,"0")}</span><h3>${esc(b.en)}</h3><p class="ko">${esc(b.title)}</p><p class="desc">${esc(b.summary)}</p></div><span class="line"></span></a>`).join("")}</div>
   </div></section>` : ""}
   ${filmHtml()}
   ${prods.length ? `<section class="sec mist" style="padding-bottom:clamp(88px,10vw,140px)"><div class="wrap">
@@ -756,7 +817,7 @@ function viewHome(){
   <div class="marquee" aria-hidden="true"><div class="mq-row">${mqHtml}${mqHtml}</div></div>
   <section class="sec"><div class="wrap">
     <div class="sec-hd"><div><p class="eyebrow">Newsroom</p><h2>새로운 소식</h2></div>
-      <div class="tabs" role="tablist">${[["all","전체"],["press","보도자료"],["notice","공지사항"],["recruit","인재채용"]].map(([k,l]) => `<button class="tab ${ui.homeTab===k?"on":""}" data-hometab="${k}" role="tab" aria-selected="${ui.homeTab===k}">${l}</button>`).join("")}</div></div>
+      <div class="tabs" role="tablist">${[["all","전체"],["press","보도자료"],["notice","공지사항"],["ir","IR·공시"]].map(([k,l]) => `<button class="tab ${ui.homeTab===k?"on":""}" data-hometab="${k}" role="tab" aria-selected="${ui.homeTab===k}">${l}</button>`).join("")}</div></div>
     <div class="news-grid">
       ${newsCards.length ? newsCards.map((p,i) => `<a class="n-card reveal" href="#post-${esc(p.id)}">${vis(p.imageId,i+3,p.title)}<div><span class="badge">${esc(BOARD_LABEL[p.board]||"")}</span></div><h3>${esc(p.title)}</h3><span class="meta">${fmtDate(p.date)}</span></a>`).join("") : `<div class="empty" style="grid-column:span 2">등록된 소식이 없습니다.</div>`}
       ${newsCards.length===1?"<div></div>":""}
@@ -770,6 +831,7 @@ function viewHome(){
   <section class="sec" style="padding-top:0"><div class="wrap tiles">
     <a class="tile" href="#contact">${vis(cfg("tile1ImageId"),2)}<p class="eyebrow">Contact</p><h3>고객문의</h3><p>도입 상담, 견적, 기술 문의를 남겨 주세요.</p><span class="go">문의하기 ${ARROW}</span></a>
     <a class="tile" href="#contact" data-jump-after="support">${vis(cfg("tile2ImageId"),5)}<p class="eyebrow">Remote Support</p><h3>원격지원서비스</h3><p>엔지니어가 원격으로 바로 점검해 드립니다.</p><span class="go">원격지원 받기 ${ARROW}</span></a>
+    ${cfg("familyUrl")?`<a class="tile" href="${esc(cfg("familyUrl"))}" target="_blank" rel="noopener">${vis(cfg("tile3ImageId"),3)}<p class="eyebrow">Family Site</p><h3>${esc(cfg("familyName")||"TRIZRO")}</h3><p>${esc(cfg("familyText"))}</p><span class="go">사이트 바로가기 ${I.ext}</span></a>`:""}
   </div></section>
   <section class="dark cta"><div class="wrap">
     <div><p class="eyebrow">Let's build together</p><h2>${esc(cfg("ctaTitle")||"프로젝트를 함께할 파트너를 찾고 계신가요?")}</h2><p>${esc(cfg("ctaText"))}</p></div>
@@ -830,12 +892,55 @@ function viewAbout(){
     </div>
   </div></section>${footer()}`;
 }
-function viewBusiness(){
+function inl(t){ return esc(t).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>"); }
+function renderRich(src){
+  const secs = []; let sec = null, card = null;
+  const newSec = (eb,title) => { sec = {eb,title,paras:[],quotes:[],list:[],cards:[],rows:[],after:[]}; secs.push(sec); card = null; };
+  String(src||"").split("\n").forEach(raw => {
+    const l = raw.trim(); if (!l) return;
+    if (l.startsWith("## ")){ const [a,...b] = l.slice(3).split("|"); newSec(b.length?a.trim():"", (b.length?b.join("|"):a).trim()); return; }
+    if (!sec) newSec("","");
+    if (l.startsWith("### ")){ card = {title:l.slice(4).trim(), list:[], paras:[]}; sec.cards.push(card); return; }
+    if (l.startsWith("|")){ card = null; sec.rows.push(l.replace(/^\||\|$/g,"").split("|").map(c=>c.trim())); return; }
+    if (l.startsWith("> ")){ sec.quotes.push(l.slice(2)); return; }
+    if (l.startsWith("- ")){ (card ? card.list : sec.list).push(l.slice(2)); return; }
+    (card ? card.paras : sec.rows.length ? sec.after : sec.paras).push(l);
+  });
+  return `<div class="rich">${secs.map(x => {
+    const E = x.eb.toUpperCase();
+    const kind = /PROCESS|STEP/.test(E) ? "rs-steps" : /FEATURE|특장/.test(E) ? "rs-feat" : /CASE|TARGET|분야/.test(E) ? "rs-case" : "";
+    const chipsOnly = kind!=="rs-feat" && x.cards.length && x.cards.every(c => !c.list.length && !c.paras.length);
+    const [head, ...body] = x.rows;
+    return `<section class="reveal ${kind}">
+      ${x.title||x.eb?`<div class="rs-hd">${x.eb?`<p class="eyebrow">${esc(x.eb)}</p>`:""}${x.title?`<h3>${inl(x.title)}</h3>`:""}</div>`:""}
+      ${x.quotes.map(q => `<p class="rs-quote">${inl(q)}</p>`).join("")}
+      ${x.paras.map(q => `<p class="rs-p">${inl(q)}</p>`).join("")}
+      ${x.list.length?`<ul class="rs-list" style="margin-bottom:24px">${x.list.map(i=>`<li>${inl(i)}</li>`).join("")}</ul>`:""}
+      ${chipsOnly ? `<div class="rs-chips">${x.cards.map(c=>`<span class="rs-chip">${inl(c.title)}</span>`).join("")}</div>`
+        : x.cards.length ? `<div class="rs-cards">${x.cards.map((c,i) => `<div class="rs-card">${kind==="rs-steps"?`<span class="n">STEP ${String(i+1).padStart(2,"0")}</span>`:kind==="rs-feat"?`<span class="n">${String(i+1).padStart(2,"0")}</span>`:""}<h4>${inl(c.title)}</h4>${c.paras.map(q=>`<p>${inl(q)}</p>`).join("")}${c.list.length?`<ul>${c.list.map(i=>`<li>${inl(i)}</li>`).join("")}</ul>`:""}</div>`).join("")}</div>` : ""}
+      ${head?`<div class="rs-table"><table><thead><tr>${head.map(h=>`<th>${inl(h)}</th>`).join("")}</tr></thead><tbody>${body.map(r=>`<tr>${r.map(c=>`<td class="${/^[●○X✕-]$/.test(c)?"c":""}">${c==="●"?'<span class="dot">●</span>':inl(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`:""}
+      ${x.after.map(q => `<p class="note" style="margin-top:16px">${inl(q)}</p>`).join("")}
+    </section>`; }).join("")}</div>`;
+}
+function viewBusiness(id){
   const biz = shown("business");
-  return `${subVis("Total Network Services","사업영역","사업영역 › 토탈 네트워크 서비스",3)}
-  <section class="sec" style="padding-top:40px"><div class="wrap">
-    ${biz.map((b,i) => `<article class="biz-row reveal">${vis(b.imageId,i+1,b.title)}<div><p class="eyebrow">Service ${String(i+1).padStart(2,"0")}</p><h3>${esc(b.en)}</h3><p class="ko">${esc(b.title)}</p><p>${esc(b.body||b.summary)}</p></div></article>`).join("") || `<div class="empty">사업영역을 등록하면 이곳에 표시됩니다.</div>`}
-  </div></section>${footer()}`;
+  if (!biz.length) return `${subVis("Total Network Services","사업영역","사업영역",3)}<section class="sec"><div class="wrap"><div class="empty">${S.loaded?"사업영역을 등록하면 이곳에 표시됩니다.":"불러오는 중…"}</div></div></section>${footer()}`;
+  const i = Math.max(0, biz.findIndex(b => b.id===id)); const b = biz[i];
+  const prev = biz[i-1], next = biz[i+1];
+  return `${subVis("Total Network Services","사업영역","사업영역 › "+esc(b.title),3,b.imageId)}
+  <nav class="lnb"><div class="wrap">${biz.map(x => `<a class="${x.id===b.id?"on":""}" href="#business-${esc(x.id)}">${esc(x.title)}</a>`).join("")}</div></nav>
+  <section class="sec"><div class="wrap">
+    <div class="biz-intro">
+      <div><p class="eyebrow">${esc(b.eyebrow||"고객 맞춤형")}</p><h2>${esc(b.title)}</h2></div>
+      <div><p class="lead">${inl(b.lead||b.summary)}</p>${b.body?`<p class="body">${inl(b.body)}</p>`:""}${b.btnLabel&&b.btnUrl?`<p style="margin-top:28px"><a class="btn btn-violet" href="${esc(b.btnUrl)}" target="_blank" rel="noopener">${esc(b.btnLabel)} ${ARROW}</a></p>`:""}</div>
+    </div>
+    ${b.detailImageId?`<div class="biz-diagram reveal"><img src="${imgUrl(b.detailImageId)}" alt="${esc(b.title)} 구성도" loading="lazy"></div>`:""}
+  </div></section>
+  ${b.content?`<section class="sec" style="padding-top:0"><div class="wrap">${renderRich(b.content)}</div></section>`:""}
+  <section style="padding-bottom:clamp(72px,8vw,120px)"><div class="wrap"><div class="biz-pn">
+    ${prev?`<a href="#business-${esc(prev.id)}"><span>PREV</span><b>← ${esc(prev.title)}</b></a>`:"<span></span>"}
+    ${next?`<a href="#business-${esc(next.id)}"><span>NEXT</span><b>${esc(next.title)} →</b></a>`:`<a href="#contact"><span>CONTACT</span><b>고객문의 →</b></a>`}
+  </div></div></section>${footer()}`;
 }
 function viewProducts(){
   const all = shown("products");
@@ -861,28 +966,28 @@ function viewNews(){
   const pages = Math.max(1, Math.ceil(list.length/per)); if (ui.page > pages) ui.page = pages;
   const rows = list.slice((ui.page-1)*per, ui.page*per);
   const normalCount = list.filter(p=>!p.pinned).length; let n = normalCount - (ui.page-1)*per + rows.filter(p=>p.pinned).length;
-  return `${subVis("Newsroom","소식·채용","소식·채용 › "+BOARD_LABEL[ui.board],6)}
+  return `${subVis("Newsroom · IR","홍보·IR","홍보·IR › "+BOARD_LABEL[ui.board],6)}
   <nav class="lnb"><div class="wrap">${BOARDS.map(([k,l]) => `<button class="${ui.board===k?"on":""}" data-board="${k}">${l}</button>`).join("")}</div></nav>
   <section class="sec" style="padding-top:80px"><div class="wrap">
     <h2 style="font-size:clamp(26px,3vw,36px);color:var(--ink);margin-bottom:32px">${BOARD_LABEL[ui.board]}</h2>
     <div class="board-tools"><span class="total">전체 <b class="num">${list.length}</b>건</span>
       <form class="search" id="bSearch" role="search"><label class="sr" for="bq">게시물 검색</label><input id="bq" type="search" placeholder="제목 또는 내용 검색" value="${esc(ui.q)}"><button aria-label="검색">${I.search}</button></form></div>
-    <div style="overflow-x:auto"><table class="board"><thead><tr><th class="h-no" style="width:80px">번호</th><th>제목</th><th class="h-file" style="width:80px">이미지</th><th style="width:130px">작성일</th></tr></thead><tbody>
-    ${rows.map(p => { const no = p.pinned ? '<span class="badge ink">공지</span>' : n--; return `<tr class="${p.pinned?"pin":""}"><td class="h-no num">${no}</td><td class="t"><a href="#post-${esc(p.id)}"><span>${esc(p.title)}</span>${isNew(p.date)?'<span class="badge new">NEW</span>':""}</a></td><td class="h-file">${p.imageId?"●":"–"}</td><td class="num">${fmtDate(p.date)}</td></tr>`; }).join("") || `<tr><td colspan="4" style="padding:72px 0">${q?"검색 결과가 없습니다.":"등록된 게시물이 없습니다."}</td></tr>`}
+    <div style="overflow-x:auto"><table class="board"><thead><tr><th class="h-no" style="width:80px">번호</th><th>제목</th><th class="h-file" style="width:80px">첨부</th><th style="width:130px">작성일</th></tr></thead><tbody>
+    ${rows.map(p => { const no = p.pinned ? '<span class="badge ink">공지</span>' : n--; return `<tr class="${p.pinned?"pin":""}"><td class="h-no num">${no}</td><td class="t"><a href="#post-${esc(p.id)}"><span>${esc(p.title)}</span>${isNew(p.date)?'<span class="badge new">NEW</span>':""}</a></td><td class="h-file">${p.fileId?'<span title="첨부파일">📎</span>':"–"}</td><td class="num">${fmtDate(p.date)}</td></tr>`; }).join("") || `<tr><td colspan="4" style="padding:72px 0">${q?"검색 결과가 없습니다.":"등록된 게시물이 없습니다."}</td></tr>`}
     </tbody></table></div>
     <div class="pager"><button data-page="${ui.page-1}" ${ui.page<=1?"disabled":""} aria-label="이전 페이지">‹</button>${Array.from({length:pages},(_,i)=>`<button class="${ui.page===i+1?"on":""}" data-page="${i+1}">${i+1}</button>`).join("")}<button data-page="${ui.page+1}" ${ui.page>=pages?"disabled":""} aria-label="다음 페이지">›</button></div>
   </div></section>${footer()}`;
 }
 function viewPost(id){
   const p = S.posts.find(x => x.id===id && x.visible!==false);
-  if (!p) return `${subVis("Newsroom","소식·채용","소식·채용",6)}<section class="sec"><div class="wrap"><div class="empty">${S.loaded?"게시물을 찾을 수 없습니다.":"불러오는 중…"}</div><p style="margin-top:24px"><a class="btn btn-line" href="#news">목록으로</a></p></div></section>${footer()}`;
+  if (!p) return `${subVis("Newsroom · IR","홍보·IR","홍보·IR",6)}<section class="sec"><div class="wrap"><div class="empty">${S.loaded?"게시물을 찾을 수 없습니다.":"불러오는 중…"}</div><p style="margin-top:24px"><a class="btn btn-line" href="#news">목록으로</a></p></div></section>${footer()}`;
   ui.board = p.board;
   const list = shownPostsSorted(shown("posts", x => x.board===p.board)); const i = list.findIndex(x=>x.id===p.id);
   const prev = list[i-1], next = list[i+1];
-  return `${subVis("Newsroom","소식·채용","소식·채용 › "+BOARD_LABEL[p.board],6)}
+  return `${subVis("Newsroom · IR","홍보·IR","홍보·IR › "+BOARD_LABEL[p.board],6)}
   <section class="sec" style="padding-top:80px"><div class="wrap">
     <div class="post-hd"><span class="badge">${BOARD_LABEL[p.board]}</span><h1>${esc(p.title)}</h1><span class="meta">${fmtDate(p.date)}</span></div>
-    <div class="post-body">${p.imageId?vis(p.imageId,0,p.title):""}${esc(p.body)}</div>
+    <div class="post-body">${p.imageId?vis(p.imageId,0,p.title):""}${esc(p.body)}${p.fileId?`<div><a class="post-file" href="${imgUrl(p.fileId)}" target="_blank" rel="noopener">📎 ${esc(p.fileName||"첨부파일")} 열기</a></div>`:""}</div>
     <div class="post-nav">${prev?`<a href="#post-${esc(prev.id)}"><span>이전글</span><span>${esc(prev.title)}</span></a>`:""}${next?`<a href="#post-${esc(next.id)}"><span>다음글</span><span>${esc(next.title)}</span></a>`:""}</div>
     <p style="margin-top:40px;text-align:center"><a class="btn btn-ink" href="#news">목록으로</a></p>
   </div></section>${footer()}`;
@@ -1027,7 +1132,7 @@ function render(routeChanged){
   let html;
   if (r==="home") html = viewHome();
   else if (r==="about") html = viewAbout();
-  else if (r==="business") html = viewBusiness();
+  else if (r==="business" || r.startsWith("business-")) html = viewBusiness(r.slice(9));
   else if (r==="products") html = viewProducts();
   else if (r==="cert") html = viewWorks();
   else if (r==="news") html = viewNews();
@@ -1058,13 +1163,15 @@ const SCHEMA = {
   popups:{ label:"팝업", group:"메인", desc:"홈 접속 시 뜨는 레이어 팝업. 최대 3개가 순서대로 나란히 표시됩니다.", title:x=>x.title?.replace(/\n/g," "), meta:x=>`${fmtDate(x.start)||"즉시"} ~ ${fmtDate(x.end)||"종료일 없음"}${popupState(x)}`, img:true,
     fields:[["eyebrow","상단 영문 문구","text"],["title","제목","textarea"],["body","내용","textarea"],["btnLabel","버튼 문구","text"],["btnRoute","버튼 연결 페이지","route"],["start","노출 시작일","date"],["end","노출 종료일","date"],["imageId","팝업 이미지 (권장 800×720)","image"]] },
   business:{ label:"사업영역", group:"콘텐츠", desc:"홈의 사업영역 카드와 사업영역 페이지에 함께 반영됩니다.", title:x=>x.title, meta:x=>x.en, img:true,
-    fields:[["title","사업명 (국문)","text"],["en","사업명 (영문)","text"],["summary","요약 (카드용)","textarea"],["body","상세 설명","textarea"],["imageId","대표 이미지 (권장 1200×1400)","image"]] },
+    fields:[["title","사업명 (국문)","text"],["en","사업명 (영문)","text"],["eyebrow","상세 · 상단 작은 문구","text","예: 고객 맞춤형"],["summary","요약 (홈 카드용)","textarea"],["lead","상세 · 핵심 문장","textarea","**굵게** 표시하면 보라색으로 강조됩니다."],["body","상세 · 보조 설명","textarea"],
+      ["content","상세 · 본문 구성","textarea-tall","## 영문 소제목 | 섹션 제목 → 섹션 시작 (소제목에 PROCESS면 단계형, FEATURES면 특장점형, CASE면 적용분야형)\n### 카드 제목 → 카드 · - 항목 → 목록 · > 문장 → 강조 문장 · | 칸 | 칸 | → 표 (첫 줄은 제목 행)"],
+      ["btnLabel","상세 · 버튼 문구 (선택)","text"],["btnUrl","상세 · 버튼 링크 (https://)","url"],["imageId","대표 이미지 (홈 카드 · 상단 배경, 권장 1800×900)","image"],["detailImageId","상세 · 구성도/설명 이미지 (선택)","image"]] },
   products:{ label:"솔루션", group:"콘텐츠", desc:"서비스 › 지능형 네트워크 솔루션. ‘홈 화면에 노출’을 켠 항목만 홈 가로 스크롤에 나옵니다.", title:x=>x.name, meta:x=>`${x.category||"카테고리 없음"}${x.featured!==false?" · 메인 노출":""}`, img:true,
     fields:[["name","솔루션명","text"],["category","카테고리","text"],["summary","설명","textarea"],["featured","홈 화면에 노출","bool"],["imageId","대표 이미지 (권장 1200×900)","image"]] },
   works:{ label:"인증·지적재산권", group:"콘텐츠", desc:"회사소개 › 인증 및 지적재산권 갤러리.", title:x=>x.title, meta:x=>`${x.category||""} · ${x.year||""}`, img:true,
     fields:[["title","명칭","text"],["category","구분 (인증/특허/등록 등)","text"],["client","발급 기관","text"],["year","취득 연도","text"],["imageId","인증서 이미지 (권장 900×1200)","image"]] },
-  posts:{ label:"게시판", group:"게시판", desc:"공지사항 · 보도자료 · 인재채용. 상단 고정 글이 먼저 나오고, 나머지는 이 목록 순서대로 노출됩니다.", title:x=>x.title, meta:x=>`${BOARD_LABEL[x.board]||""} · ${fmtDate(x.date)}`, img:true, pin:true,
-    fields:[["board","게시판","board"],["title","제목","text"],["date","작성일","date"],["pinned","상단 고정 (공지)","bool"],["body","본문","textarea-tall"],["imageId","대표 이미지 (선택)","image"]] },
+  posts:{ label:"게시판", group:"게시판", desc:"공지사항 · 보도자료 · IR·공시. 상단 고정 글이 먼저 나오고, 나머지는 이 목록 순서대로 노출됩니다.", title:x=>x.title, meta:x=>`${BOARD_LABEL[x.board]||""} · ${fmtDate(x.date)}`, img:true, pin:true,
+    fields:[["board","게시판","board"],["title","제목","text"],["date","작성일","date"],["pinned","상단 고정 (공지)","bool"],["body","본문","textarea-tall"],["fileId","첨부파일 (PDF 등, 20MB 이하)","file"],["imageId","대표 이미지 (선택)","image"]] },
   history:{ label:"연혁", group:"회사정보", desc:"회사소개 › 연혁. 위에서부터 순서대로 노출됩니다.", title:x=>x.year, meta:x=>(x.text||"").split("\n")[0], img:false,
     fields:[["year","연도","text"],["text","내용","textarea","항목마다 줄을 바꿔 입력하세요."]] },
   pillars:{ label:"회사개요 핵심가치", group:"회사정보", desc:"회사소개 › 회사개요 아래 어두운 띠에 나란히 표시되는 문구입니다.", title:x=>x.title, meta:x=>x.en||"", img:false,
@@ -1113,7 +1220,7 @@ function renderAdmin(r){
 function admDashboard(){
   const t = today();
   const activePops = shown("popups", p => (!p.start||p.start<=t)&&(!p.end||p.end>=t)).length;
-  const k = [["slides","메인 비주얼",`노출 ${shown("slides").length}개`],["popups","팝업",`현재 노출 ${activePops}개`],["posts","게시물",`공지 ${S.posts.filter(p=>p.board==="notice").length} · 보도 ${S.posts.filter(p=>p.board==="press").length} · 채용 ${S.posts.filter(p=>p.board==="recruit").length}`],["products","솔루션",`메인 노출 ${shown("products",p=>p.featured!==false).length}개`],["inquiries","고객문의","접수 건수"]];
+  const k = [["slides","메인 비주얼",`노출 ${shown("slides").length}개`],["popups","팝업",`현재 노출 ${activePops}개`],["posts","게시물",`공지 ${S.posts.filter(p=>p.board==="notice").length} · 보도 ${S.posts.filter(p=>p.board==="press").length} · IR ${S.posts.filter(p=>p.board==="ir").length}`],["products","솔루션",`메인 노출 ${shown("products",p=>p.featured!==false).length}개`],["inquiries","고객문의","접수 건수"]];
   const recent = [...S.posts].sort((a,b)=>(b.date||"").localeCompare(a.date||"")).slice(0,6);
   return `<div class="kpis">${k.map(([key,l,s]) => `<a class="kpi" href="#admin-${key}"><span class="k">${l}</span><span class="v">${countOf(key)||0}</span><span class="s">${s}</span></a>`).join("")}</div>
   <div class="panel"><div class="panel-hd"><h2>수정 방법</h2></div><div class="panel-bd how">
@@ -1166,9 +1273,12 @@ function admSite(){
       ${f("aboutTitle","회사개요 제목","textarea")}${f("ceoMessage","회사개요 본문","textarea")}
       ${f("visionLead","비전 소개 문구","textarea")}${f("vision","비전 & 경영이념 항목","textarea","한 줄에 하나씩 ‘제목 | 설명’ 형식으로 입력하세요.")}
       ${f("supportText","원격지원 안내 문구","textarea")}
+      ${f("familyName","패밀리 사이트 이름","text","헤더 버튼 · 전체메뉴 · 홈 타일 · 푸터에 표시")}${f("familyUrl","패밀리 사이트 주소","text","비워두면 모든 바로가기가 숨겨집니다.")}
+      ${f("familyText","패밀리 사이트 소개 문구","textarea")}
       <div class="af full"><label>회사개요 이미지 (권장 1000×1250)</label>${imgFieldHtml("ceoImageId", c.ceoImageId)}</div>
       <div class="af"><label>홈 · 고객문의 타일 이미지</label>${imgFieldHtml("tile1ImageId", c.tile1ImageId)}</div>
       <div class="af"><label>홈 · 원격지원 타일 이미지</label>${imgFieldHtml("tile2ImageId", c.tile2ImageId)}</div>
+      <div class="af"><label>홈 · 패밀리 사이트 타일 이미지</label>${imgFieldHtml("tile3ImageId", c.tile3ImageId)}</div>
     </div>
     <div class="panel-hd" style="border-top:1px solid var(--line)"><h2>홈 · 회사 소개 영상</h2><span class="note">영상 파일이나 유튜브 주소 중 하나만 있어도 섹션이 나타납니다.</span></div>
     <div class="panel-bd form-grid">
@@ -1185,6 +1295,11 @@ function admInquiries(){
   const all = S.inquiries.flatMap(d => (d.items||[])).sort((a,b) => (b.at||"").localeCompare(a.at||""));
   return `<div class="panel"><div class="panel-hd"><h2>접수 ${all.length}건</h2><span class="note">최신순</span></div>
   <div class="inq">${all.map(q => `<div class="r"><div><span class="badge">${esc(q.type)}</span><div class="meta" style="margin-top:6px">${esc((q.at||"").slice(0,16).replace("T"," "))}</div></div><div class="b"><b>${esc(q.name)}</b> · ${esc(q.contact)}\n${esc(q.body)}</div><div></div></div>`).join("") || `<div class="panel-bd"><div class="empty">아직 접수된 문의가 없습니다.</div></div>`}</div></div>`;
+}
+function fileFieldHtml(key, id, name){
+  return `<div class="img-field" data-imgfield="${key}"><div class="prev" style="display:grid;place-items:center;color:#fff;font-size:13px;padding:8px;text-align:center">${id?"📎 "+esc(name||"첨부됨"):"첨부 없음"}</div>
+    <div class="btns"><label class="abtn" style="cursor:pointer">${assets?"파일 업로드":"업로드 불가"}<input type="file" accept=".pdf,.png,.jpg,.jpeg,.csv,.txt,application/pdf" hidden data-upload="${key}" data-kind="file" ${assets?"":"disabled"}></label>${id?`<button type="button" class="abtn dan" data-imgclear="${key}">첨부 빼기</button>`:""}<span class="help">${id?"":"IR 자료, 공시 원문 등"}</span></div>
+    <input type="hidden" data-imgval="${key}" value="${esc(id||"")}"><input type="hidden" data-fname="${key}" value="${esc(name||"")}"></div>`;
 }
 function imgFieldHtml(key, id, video){
   const media = id ? (video ? `<video src="${imgUrl(id)}" muted loop autoplay playsinline style="width:100%;height:100%;object-fit:cover"></video>` : `<img src="${imgUrl(id)}" alt="">`) : '<div class="ph"></div>';
@@ -1255,6 +1370,7 @@ function openEditor(c, item){
     else if (type==="board") input = `<select id="${id}" data-f="${k}">${BOARDS.map(([r,lb]) => `<option value="${r}" ${v[k]===r?"selected":""}>${lb}</option>`).join("")}</select>`;
     else if (type==="bool") return `<label class="chk"><input type="checkbox" id="${id}" data-f="${k}" ${v[k]!==false&&(v[k]||k==="featured")?"checked":""}> ${l}</label>`;
     else if (type==="image"||type==="video") return `<div class="af"><label>${l}</label>${imgFieldHtml(k, v[k], type==="video")}</div>`;
+    else if (type==="file") return `<div class="af"><label>${l}</label>${fileFieldHtml(k, v[k], v[k+"Name"])}</div>`;
     else input = `<input type="${type==="date"?"date":type==="url"?"url":"text"}" id="${id}" data-f="${k}" value="${esc(v[k])}">`;
     return `<div class="af"><label for="${id}">${l}</label>${input}${help?`<span class="help">${help}</span>`:""}</div>`;
   };
@@ -1273,6 +1389,7 @@ async function saveEditor(e){
   const data = {};
   sch.fields.forEach(([k,,type]) => {
     if (type==="image"||type==="video"){ data[k] = $(`[data-imgval="${k}"]`).value || null; return; }
+    if (type==="file"){ data[k] = $(`[data-imgval="${k}"]`).value || null; data[k+"Name"] = data[k] ? ($(`[data-fname="${k}"]`).value || "첨부파일") : null; return; }
     const el = $(`#edForm [data-f="${k}"]`); if (!el) return;
     data[k] = type==="bool" ? el.checked : el.value.trim();
   });
@@ -1299,7 +1416,7 @@ async function saveSite(e){
   const st = [0,1,2,3].map(()=>({}));
   document.querySelectorAll("[data-st]").forEach(el => { const [i,k] = el.dataset.st.split(":"); st[+i][k] = el.value.trim(); });
   data.stats = st.filter(s => s.num);
-  ["ceoImageId","tile1ImageId","tile2ImageId","filmVideoId","filmLoopId","filmPosterId"].forEach(k => data[k] = $(`[data-imgval="${k}"]`).value || null);
+  ["ceoImageId","tile1ImageId","tile2ImageId","tile3ImageId","filmVideoId","filmLoopId","filmPosterId"].forEach(k => data[k] = $(`[data-imgval="${k}"]`).value || null);
   data.updatedAt = new Date().toISOString();
   try { if (!db) throw {code:"unavailable"}; await db.doc("site/config").set(data); toast("기본 정보를 저장했습니다."); } catch(err){ toast(dbErr(err), true); }
 }
@@ -1308,7 +1425,8 @@ document.addEventListener("change", async e => {
   const key = up.dataset.upload, file = up.files[0]; if (!file || !assets) return;
   if (file.size > 20*1024*1024){ toast("20MB 이하 파일만 올릴 수 있습니다.", true); return; }
   const box = up.closest(".img-field"); box.querySelector(".help").textContent = "업로드 중…";
-  try { const r = await assets.upload(file); box.querySelector(`[data-imgval="${key}"]`).value = r.id; box.querySelector(".prev").innerHTML = up.dataset.kind==="video" ? `<video src="${r.url}" muted loop autoplay playsinline style="width:100%;height:100%;object-fit:cover"></video>` : `<img src="${r.url}" alt="">`; box.querySelector(".help").textContent = "업로드 완료 · 저장하면 반영됩니다."; }
+  try { const r = await assets.upload(file); box.querySelector(`[data-imgval="${key}"]`).value = r.id; const fn = box.querySelector(`[data-fname="${key}"]`); if (fn) fn.value = file.name;
+    box.querySelector(".prev").innerHTML = up.dataset.kind==="file" ? "📎 "+esc(file.name) : up.dataset.kind==="video" ? `<video src="${r.url}" muted loop autoplay playsinline style="width:100%;height:100%;object-fit:cover"></video>` : `<img src="${r.url}" alt="">`; box.querySelector(".help").textContent = "업로드 완료 · 저장하면 반영됩니다."; }
   catch(err){ box.querySelector(".help").textContent = "업로드하지 못했습니다. 다른 이미지로 다시 시도하세요."; }
 });
 document.addEventListener("click", e => { const cl = e.target.closest("[data-imgclear]"); if (!cl) return; const box = cl.closest(".img-field"); box.querySelector(`[data-imgval="${cl.dataset.imgclear}"]`).value = ""; box.querySelector(".prev").innerHTML = '<div class="ph"></div>'; cl.remove(); });
