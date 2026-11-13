@@ -2,7 +2,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Nanum+Brush+Script&display=swap">
 <style>
 /* Layout: full-bleed dark ink bands alternate with white/mist bands; 1280px content column; admin = fixed sidebar + work area.
    Single deliberate light look (brand site), colors set explicitly. */
@@ -533,8 +533,10 @@ body.embed .pv-bar,body.embed .pv-list,body.embed .edit-fab,body.embed .demo-bar
 .about-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(40px,6vw,96px);align-items:start}
 .about-grid .vis{aspect-ratio:4/5;max-width:100%}
 .ceo-msg{font-size:17px;color:#38365A;white-space:pre-line;line-height:2}
-.ceo-sign{margin-top:36px;font-size:15px;color:var(--muted)}
-.ceo-sign b{font-size:20px;color:var(--ink);margin-left:10px}
+.ceo-sign{margin-top:44px;font-size:15px;color:var(--muted);display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.ceo-sign .sig{font-family:"Nanum Brush Script","Nanum Pen Script",cursive;font-size:clamp(46px,4.6vw,60px);line-height:1;color:var(--ink);letter-spacing:.02em;transform:rotate(-4deg);display:inline-block;padding:0 6px 4px;position:relative}
+.ceo-sign .sig::after{content:"";position:absolute;left:-4px;right:-10px;bottom:2px;height:2px;background:linear-gradient(90deg,transparent,var(--violet) 18%,var(--violet) 70%,transparent);opacity:.55;transform:rotate(2deg)}
+.ceo-sign img.sig-img{height:64px;width:auto;max-width:240px;object-fit:contain;display:block}
 .timeline{display:grid;gap:0;border-top:1px solid var(--line)}
 .tl-row{display:grid;grid-template-columns:180px minmax(0,1fr);gap:24px;padding:28px 0;border-bottom:1px solid var(--line)}
 .tl-row .y{font-family:var(--f-display);font-size:32px;font-weight:600;color:var(--ink);line-height:1.1}
@@ -842,7 +844,7 @@ const ROUTES = [
 ];
 const DEFAULT_MENU = ROUTES.slice(1).map(([route,label],i)=>({id:"d"+i,route,label,order:i*10,visible:true}));
 const SUBMENU = {
-  about:["회사개요","기업 정보","비전 & 경영이념","조직 및 인력","연혁","구축사례","오시는 길"], business:["네트워크 컨설팅 및 솔루션 개발","네트워크 시공 및 구축","네트워크 솔루션 임대 및 유지보수","네트워크 운영관제","조달 *S2B Biz"], products:["지능형 네트워크 솔루션","SDN 제품"],
+  about:["회사개요","기업 정보","비전 & 경영이념","연혁","오시는 길"], business:["네트워크 컨설팅 및 솔루션 개발","네트워크 시공 및 구축","네트워크 솔루션 임대 및 유지보수","네트워크 운영관제","조달 *S2B Biz"], products:["지능형 네트워크 솔루션","SDN 제품"],
   cert:["인증 및 지적재산권"], news:["공지사항","보도자료","IR·공시"], contact:["고객문의","원격지원서비스"]
 };
 const BOARDS = [["notice","공지사항"],["press","보도자료"],["ir","IR·공시"]];
@@ -1134,12 +1136,12 @@ function viewAbout(){
   const hist = shown("history"), pillars = shown("pillars"), facts = shown("facts");
   const vision = (cfg("vision")||"").split("\n").map(l=>l.trim()).filter(Boolean).map(l => { const [h,...r] = l.split("|"); return [h.trim(), r.join("|").trim()]; });
   return `${subVis("About us","회사소개","회사소개",1)}
-  <nav class="lnb"><div class="wrap"><a class="on" href="#about">회사개요</a><a href="#about" data-jump="facts">기업 정보</a><a href="#about" data-jump="vision">비전 &amp; 경영이념</a><a href="#about" data-jump="org">조직 및 인력</a><a href="#about" data-jump="hist">연혁</a><a href="#about" data-jump="cases">구축사례</a><a href="#cert">인증 및 지적재산권</a><a href="#about" data-jump="loc">오시는 길</a></div></nav>
+  <nav class="lnb"><div class="wrap"><a class="on" href="#about">회사개요</a><a href="#about" data-jump="facts">기업 정보</a><a href="#about" data-jump="vision">비전 &amp; 경영이념</a><a href="#about" data-jump="hist">연혁</a><a href="#cert">인증 및 지적재산권</a><a href="#about" data-jump="loc">오시는 길</a></div></nav>
   <section class="sec"><div class="wrap about-grid ${cfg("ceoImageId")?"":"noimg"}">
     ${cfg("ceoImageId")?vis(cfg("ceoImageId"),2,"트리즈엔"):""}
     <div><p class="eyebrow">Company Overview</p><h2 style="font-size:clamp(28px,3.2vw,42px);font-weight:700;margin:16px 0 36px;line-height:1.35;color:var(--ink);white-space:pre-line">${esc(cfg("aboutTitle"))}</h2>
     <p class="ceo-msg">${esc(cfg("ceoMessage"))}</p>
-    ${cfg("ceo")?`<p class="ceo-sign">${esc(cfg("company")||"트리즈엔")} 대표이사 <b>${esc(cfg("ceo"))}</b></p>`:""}</div>
+    ${cfg("ceo")||cfg("ceoSignId")?`<p class="ceo-sign"><span>${esc(cfg("company")||"트리즈엔")} 대표이사</span>${cfg("ceoSignId")?`<img class="sig-img" src="${imgUrl(cfg("ceoSignId"))}" alt="${esc(cfg("ceo"))} 서명">`:`<span class="sig" aria-label="${esc(cfg("ceo"))}">${esc(cfg("ceo_sign")||cfg("ceo").replace(/\s+/g,""))}</span>`}</p>`:""}</div>
   </div></section>
   ${pillars.length?`<section class="sec dark"><div class="wrap"><div class="pillars">${pillars.map((x,i) => `<div class="pillar reveal"><span class="n">${String(i+1).padStart(2,"0")}${x.en?" — "+esc(x.en):""}</span><h3>${esc(x.title)}</h3><p>${esc(x.body)}</p></div>`).join("")}</div></div></section>`:""}
   ${bizStatusHtml()}
@@ -1151,12 +1153,10 @@ function viewAbout(){
     <div class="sec-hd"><div><p class="eyebrow">Vision &amp; Philosophy</p><h2>비전 &amp; 경영이념</h2></div><p class="lead">${esc(cfg("visionLead"))}</p></div>
     <div class="vision">${vision.map(([h,b],i) => `<div class="reveal"><span class="n">${String(i+1).padStart(2,"0")}</span><b>${esc(h)}</b><p>${esc(b)}</p></div>`).join("")}</div>
   </div></section>`:""}
-  ${orgHtml()}
   <section class="sec" id="hist"><div class="wrap">
     <div class="sec-hd"><div><p class="eyebrow">History</p><h2>연혁</h2></div><p class="lead">${esc(cfg("historyLead"))}</p></div>
     ${hist.length ? `<div class="timeline">${hist.map(h => `<div class="tl-row reveal"><div class="y">${esc(h.year)}</div><div class="t">${esc(h.text)}</div></div>`).join("")}</div>` : `<div class="empty">연혁을 등록하면 이곳에 표시됩니다.</div>`}
   </div></section>
-  ${caseHtml(true)}
   <section class="sec mist" id="loc"><div class="wrap">
     <div class="sec-hd"><div><p class="eyebrow">Location</p><h2>오시는 길</h2></div></div>
     <div class="sites">
@@ -1595,7 +1595,7 @@ const ADM_NAV = [
   ["메인",[["slides","메인 비주얼"],["popups","팝업 관리"]]],
   ["콘텐츠",[["business","사업영역"],["products","솔루션"],["works","인증·지적재산권"]]],
   ["게시판",[["posts","게시판 관리"],["inquiries","고객문의 접수"]]],
-  ["회사정보",[["pillars","회사개요 핵심가치"],["facts","기업 정보 카드"],["history","연혁"],["clients","구축 고객"],["partners","기술협력 파트너"]]]
+  ["회사정보",[["pillars","회사개요 핵심가치"],["facts","기업 정보 카드"],["history","연혁"],["partners","기술협력 파트너"]]]
 ];
 const SEC_TITLE = {dashboard:"대시보드",site:"기본 정보 · 문구",inquiries:"고객문의 접수",users:"관리자 계정",account:"내 계정"}; Object.entries(SCHEMA).forEach(([k,v]) => SEC_TITLE[k] = SEC_TITLE[k] || v.label+" 관리");
 const countOf = k => k==="inquiries" ? S.inquiries.reduce((a,d)=>a+(d.items||[]).length,0) : (S[k]||[]).length || "";
@@ -1644,7 +1644,7 @@ function renderAdmin(r){
   if (keepY) window.scrollTo(0,keepY);
   if (isEdit) wireEdit(); else if (sec==="users") wireUsers(); else if (sec==="account") wireAccount(); else wireAdmin(sec);
 }
-const PERM_SECTIONS = [["site","기본 정보 · 문구"],["menus","메뉴 관리"],["slides","메인 비주얼"],["popups","팝업 관리"],["business","사업영역"],["products","솔루션"],["works","인증·지적재산권"],["posts","게시판 관리"],["inquiries","고객문의 접수"],["pillars","회사개요 핵심가치"],["facts","기업 정보 카드"],["history","연혁"],["clients","구축 고객"],["partners","기술협력 파트너"]];
+const PERM_SECTIONS = [["site","기본 정보 · 문구"],["menus","메뉴 관리"],["slides","메인 비주얼"],["popups","팝업 관리"],["business","사업영역"],["products","솔루션"],["works","인증·지적재산권"],["posts","게시판 관리"],["inquiries","고객문의 접수"],["pillars","회사개요 핵심가치"],["facts","기업 정보 카드"],["history","연혁"],["partners","기술협력 파트너"]];
 function admNav(){
   const nav = ADM_NAV.map(([g,items]) => [g, items.filter(([k]) => k==="dashboard" || canSec(k))]).filter(([,items]) => items.length);
   if (SRV && me?.role==="super") nav.push(["계정",[["users","관리자 계정"]]]);
@@ -1798,19 +1798,16 @@ function admSite(){
       ${f("familyName","패밀리 사이트 이름","text","헤더 버튼 · 전체메뉴 · 홈 타일 · 푸터에 표시")}${f("familyUrl","패밀리 사이트 주소","text","비워두면 모든 바로가기가 숨겨집니다.")}
       ${f("familyText","패밀리 사이트 소개 문구","textarea")}
       <div class="af full"><label>회사개요 이미지 (권장 1000×1250)</label>${imgFieldHtml("ceoImageId", c.ceoImageId)}</div>
+      <div class="af full"><label>대표이사 서명 이미지 (선택 · 투명 PNG 권장)</label>${imgFieldHtml("ceoSignId", c.ceoSignId)}<span class="help">올리지 않으면 대표이사 이름이 손글씨 서명체로 표시됩니다.</span></div>
       <div class="af"><label>홈 · 고객문의 타일 이미지</label>${imgFieldHtml("tile1ImageId", c.tile1ImageId)}</div>
       <div class="af"><label>홈 · 원격지원 타일 이미지</label>${imgFieldHtml("tile2ImageId", c.tile2ImageId)}</div>
       <div class="af"><label>홈 · 패밀리 사이트 타일 이미지</label>${imgFieldHtml("tile3ImageId", c.tile3ImageId)}</div>
     </div>
-    <div class="panel-hd" style="border-top:1px solid var(--line)"><h2>회사소개 · 사업 현황 / 조직 / 연혁 / 구축사례 문구</h2></div>
+    <div class="panel-hd" style="border-top:1px solid var(--line)"><h2>회사소개 · 사업 현황 / 연혁 문구</h2></div>
     <div class="panel-bd form-grid">
       ${f("bizStatusLead","주요 사업 현황 소개 문구","textarea")}${f("bizStatus","주요 사업 현황 항목","textarea","한 줄에 하나씩 ‘제목 | 설명’")}
-      ${f("orgLead","조직 및 인력 소개 문구","textarea")}${f("orgChart","조직도 (총괄 | 소속 부서, 부서 …)","textarea","한 줄에 한 총괄씩 ‘경영총괄(CFO) | 경영지원본부, 회계팀, …’")}
-      ${f("orgTop","조직도 맨 위")}${f("orgStaff","대표 직속 (· 로 구분)")}
-      <div class="af full"><label>조직 · 인력 수치</label><div class="stats-ed">${[...(c.orgStats||[]),{},{},{},{}].slice(0,4).map((s,i) => `<div class="r" style="grid-template-columns:80px 60px minmax(0,1fr) minmax(0,1fr) minmax(0,1fr)"><input aria-label="조직 수치 ${i+1} 숫자" data-os="${i}:num" value="${esc(s.num)}" placeholder="숫자"><input aria-label="단위" data-os="${i}:suffix" value="${esc(s.suffix)}" placeholder="단위"><input aria-label="제목" data-os="${i}:label" value="${esc(s.label)}" placeholder="제목"><input aria-label="설명" data-os="${i}:desc" value="${esc(s.desc)}" placeholder="설명"><input aria-label="영문 제목" data-os="${i}:label_en" value="${esc(s.label_en)}" placeholder="English"></div>`).join("")}</div></div>
       ${f("historyLead","연혁 소개 문구","textarea")}
-      ${f("caseTitle","구축사례 제목","textarea")}${f("caseText","구축사례 설명","textarea")}${f("caseChips","구축사례 강조 (· 로 구분)")}
-      <div class="af full"><label>구축사례 대표 이미지 (선택)</label>${imgFieldHtml("caseImageId", c.caseImageId)}</div>
+
     </div>
     <div class="drawer d-ft" style="position:static;width:auto;box-shadow:none;animation:none;border-radius:0 0 10px 10px;justify-content:flex-end;align-items:center;flex-wrap:wrap"><span class="note" style="margin-right:auto">저장한 내용은 미리보기에서 확인한 뒤 ‘반영하기’를 눌러야 공개됩니다.</span><button class="abtn" type="submit" data-mode="draft">반영 대기로만 저장</button><button class="abtn pri" type="submit" data-mode="preview">저장 후 미리보기</button></div>
   </form>`;
@@ -2059,8 +2056,8 @@ async function saveSite(e){
   data.stats = st.filter(s => s.num);
   data.statsHidden = !$("#cf-statsShow").classList.contains("on");
   const os = [0,1,2,3].map(()=>({})); document.querySelectorAll("[data-os]").forEach(el => { const [i,k] = el.dataset.os.split(":"); os[+i][k] = el.value.trim(); });
-  data.orgStats = os.filter(x => x.num);
-  ["ceoImageId","tile1ImageId","tile2ImageId","tile3ImageId","filmVideoId","filmLoopId","filmPosterId","caseImageId"].forEach(k => data[k] = $(`[data-imgval="${k}"]`).value || null);
+  if (document.querySelector("[data-os]")) data.orgStats = os.filter(x => x.num);
+  ["ceoImageId","ceoSignId","tile1ImageId","tile2ImageId","tile3ImageId","filmVideoId","filmLoopId","filmPosterId","caseImageId"].forEach(k => { const el = $(`[data-imgval="${k}"]`); if (el) data[k] = el.value || null; });
   data.updatedAt = new Date().toISOString();
   const mode = e.submitter?.dataset.mode || "preview";
   try {
