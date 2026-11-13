@@ -105,6 +105,23 @@ p{margin:0}
 .tile h3{font-size:clamp(22px,2.2vw,28px);margin:10px 0 6px}
 .tile p{color:var(--on-dark-2);font-size:15px}
 .tile .go{margin-top:20px;display:inline-flex;align-items:center;gap:8px;font-size:14px}
+.film{position:relative;overflow:hidden;color:#fff;background:var(--ink);min-height:clamp(440px,52vw,680px);display:flex;align-items:flex-end}
+.film>.vis{position:absolute;inset:0}
+.film>.vis video,.film>.vis img{transform:scale(1.04)}
+.film::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,10,69,.9),rgba(11,10,69,.35) 70%);pointer-events:none;transition:opacity .5s}
+.film .wrap{position:relative;z-index:2;width:100%;padding-block:72px;display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap}
+.film h2{font-size:clamp(28px,3.4vw,46px);font-weight:700;margin:14px 0 14px;line-height:1.3;max-width:24ch;white-space:pre-line}
+.film p{color:var(--on-dark-2);max-width:56ch;white-space:pre-line}
+.play{width:112px;height:112px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.06);backdrop-filter:blur(6px);color:#fff;display:grid;place-items:center;position:relative;flex:none;transition:background .3s,transform .3s var(--ease)}
+.play::before{content:"";position:absolute;inset:-12px;border-radius:50%;border:1px solid rgba(156,134,240,.5);animation:ring 2.4s var(--ease) infinite}
+@keyframes ring{from{transform:scale(.85);opacity:1}to{transform:scale(1.25);opacity:0}}
+.play:hover{background:var(--violet);transform:scale(1.05)}
+.play small{position:absolute;top:calc(100% + 16px);left:50%;transform:translateX(-50%);font-family:var(--f-display);font-size:11px;letter-spacing:.24em;white-space:nowrap;opacity:.75}
+.film-modal{position:fixed;inset:0;z-index:110;background:rgba(5,4,30,.92);display:grid;place-items:center;padding:max(56px,env(safe-area-inset-top,0px)) var(--gut-r) 24px var(--gut);animation:fade .3s}
+.film-modal video{width:min(1200px,100%);max-height:80vh;background:#000;box-shadow:0 30px 80px -20px rgba(0,0,0,.6)}
+.film-modal .x{position:absolute;top:max(16px,env(safe-area-inset-top,0px));right:max(16px,env(safe-area-inset-right,0px));width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:none;color:#fff;display:grid;place-items:center}
+.hero-pause{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:none;color:#fff;display:grid;place-items:center;font-size:11px}
+@media (max-width:760px){.play{width:84px;height:84px}.film .wrap{padding-block:48px}}
 .pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
 .pillar{padding:8px 36px 8px 32px;border-left:1px solid var(--on-dark-line);display:grid;gap:14px;align-content:start}
 .pillar .n{font-family:var(--f-display);font-size:13px;letter-spacing:.2em;color:var(--violet-soft)}
@@ -191,9 +208,9 @@ p{margin:0}
 .biz-card{position:relative;flex:1;min-width:0;overflow:hidden;color:#fff;transition:flex .6s var(--ease)}
 .biz-card .vis{position:absolute;inset:0}
 .biz-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,10,69,.05) 20%,rgba(11,10,69,.92));transition:background .5s}
-.biz-card .in{position:absolute;z-index:2;left:32px;right:32px;bottom:36px}
+.biz-card .in{position:absolute;z-index:2;left:28px;right:14px;bottom:36px}
 .biz-card .no{font-family:var(--f-display);font-size:13px;letter-spacing:.2em;color:var(--violet-soft)}
-.biz-card h3{font-family:var(--f-display);font-size:clamp(22px,2vw,28px);font-weight:600;margin:10px 0 8px;line-height:1.2}
+.biz-card h3{font-family:var(--f-display);font-size:clamp(18px,1.45vw,26px);font-weight:600;margin:10px 0 8px;line-height:1.2}
 .biz-card .ko{font-size:15px;color:var(--on-dark-2)}
 .biz-card .desc{max-height:0;opacity:0;overflow:hidden;transition:max-height .6s var(--ease),opacity .4s;font-size:14px;color:var(--on-dark-2);max-width:36ch}
 .biz-card .line{position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--violet);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease);z-index:3}
@@ -678,7 +695,7 @@ window.addEventListener("scroll", onScroll, {passive:true});
 function openMenu(){ const m=$("#fullMenu"); m.classList.add("open"); m.setAttribute("aria-hidden","false"); }
 function closeMenu(){ const m=$("#fullMenu"); m.classList.remove("open"); m.setAttribute("aria-hidden","true"); }
 $("#menuOpen").onclick = openMenu; $("#menuClose").onclick = closeMenu;
-document.addEventListener("keydown", e => { if (e.key === "Escape") { closeMenu(); closeDrawer(); } });
+document.addEventListener("keydown", e => { if (e.key === "Escape") { closeMenu(); closeDrawer(); closeFilm(); } });
 
 /* ================= site views ================= */
 function footer(){
@@ -720,6 +737,7 @@ function viewHome(){
       </div></div></div>`).join("")}
     <div class="hero-ctrl"><div class="wrap">
       <span class="cur num">${String(ui.slide+1).padStart(2,"0")}</span><span class="bar"><i id="heroBar"></i></span><span class="tot num">${String(sl.length).padStart(2,"0")}</span>
+      ${sl.some(x=>x.videoId)?`<button class="hero-pause" data-heropause aria-label="영상 일시정지">❚❚</button>`:""}
       ${sl.length>1?`<button class="circ" data-act="prev" aria-label="이전 슬라이드">${I.left}</button><button class="circ" data-act="next" aria-label="다음 슬라이드">${I.right}</button>`:""}
       <span class="scroll-cue">SCROLL <i></i></span>
     </div></div>
@@ -729,6 +747,7 @@ function viewHome(){
     <div class="sec-hd"><div><p class="eyebrow">Total Network Services</p><h2>사업영역</h2></div><p class="lead">${esc(cfg("bizLead")||"")}</p></div>
     <div class="biz">${biz.map((b,i) => `<a class="biz-card" href="#business">${vis(b.imageId,i+1,b.title)}<div class="in"><span class="no">SERVICE ${String(i+1).padStart(2,"0")}</span><h3>${esc(b.en)}</h3><p class="ko">${esc(b.title)}</p><p class="desc">${esc(b.summary)}</p></div><span class="line"></span></a>`).join("")}</div>
   </div></section>` : ""}
+  ${filmHtml()}
   ${prods.length ? `<section class="sec mist" style="padding-bottom:clamp(88px,10vw,140px)"><div class="wrap">
     <div class="sec-hd"><div><p class="eyebrow">Intelligent Network Solutions</p><h2>지능형 네트워크 솔루션</h2></div>
     <div class="scroller-hd"><span class="cnt num" id="pCnt">01 / ${String(prods.length).padStart(2,"0")}</span><button class="circ-dk" data-act="pprev" aria-label="이전 제품">${I.left}</button><button class="circ-dk" data-act="pnext" aria-label="다음 제품">${I.right}</button></div></div></div>
@@ -758,6 +777,23 @@ function viewHome(){
   </div></section>
   ${footer()}`;
 }
+function ytId(u){ const m = String(u||"").match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{6,})/); return m ? m[1] : ""; }
+function filmHtml(){
+  const vid = cfg("filmVideoId"), yt = cfg("filmYoutube");
+  if (!vid && !yt) return "";
+  const loop = cfg("filmLoopId");
+  const bg = loop ? vis(cfg("filmPosterId"),4,"",loop) : vis(cfg("filmPosterId"),4,"");
+  const play = vid
+    ? `<button class="play" data-film aria-label="회사 소개 영상 재생"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg><small>PLAY FILM</small></button>`
+    : `<a class="play" href="${esc(yt)}" target="_blank" rel="noopener" aria-label="유튜브에서 회사 소개 영상 보기 (새 창)"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg><small>WATCH ON YOUTUBE</small></a>`;
+  return `<section class="film">${bg}<div class="wrap"><div><p class="eyebrow">${esc(cfg("filmEyebrow")||"Brand Film")}</p><h2>${esc(cfg("filmTitle")||"트리즈엔이 만드는\n지능형 네트워크")}</h2><p>${esc(cfg("filmText"))}</p></div>${play}</div></section>`;
+}
+function openFilm(){
+  const id = cfg("filmVideoId"); if (!id) return;
+  $("#popRoot").insertAdjacentHTML("beforeend", `<div class="film-modal" id="filmModal" role="dialog" aria-modal="true" aria-label="회사 소개 영상"><button class="x" data-filmclose aria-label="영상 닫기">${I.close}</button><video src="${imgUrl(id)}" controls autoplay playsinline ${cfg("filmPosterId")?`poster="${imgUrl(cfg("filmPosterId"))}"`:""}></video></div>`);
+  $("#filmModal .x").focus();
+}
+function closeFilm(){ $("#filmModal")?.remove(); }
 function shownPostsSorted(list){
   return [...list].sort((a,b) => (b.pinned?1:0)-(a.pinned?1:0) || (a.order??0)-(b.order??0));
 }
@@ -881,6 +917,8 @@ function viewContact(){
 let heroTimer = 0;
 function startHero(){
   clearTimeout(heroTimer);
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) document.querySelectorAll(".slide video, .film video").forEach(v => { v.removeAttribute("autoplay"); v.pause(); });
+  if (ui.heroPaused) return;
   const bar = $("#heroBar"); if (!bar) return;
   const n = document.querySelectorAll(".slide").length;
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -926,6 +964,9 @@ function maybePopups(){
     <div class="foot"><label><input type="checkbox" data-today="${esc(p.id)}"> 오늘 하루 보지 않기</label><button data-popclose="${esc(p.id)}">닫기 ✕</button></div></div>`).join("")}</div>`;
 }
 document.addEventListener("click", e => {
+  if (e.target.closest("[data-film]")){ openFilm(); return; }
+  if (e.target.closest("[data-filmclose]") || e.target.id==="filmModal"){ closeFilm(); return; }
+  if (e.target.closest("[data-heropause]")){ const v = [...document.querySelectorAll(".slide video")]; const paused = v.some(x=>!x.paused); v.forEach(x => paused ? x.pause() : x.play().catch(()=>{})); ui.heroPaused = paused; if (paused) clearTimeout(heroTimer); else startHero(); const b=e.target.closest("[data-heropause]"); b.innerHTML = paused ? "▶" : "❚❚"; b.setAttribute("aria-label", paused?"영상 재생":"영상 일시정지"); return; }
   const pc = e.target.closest("[data-popclose]");
   if (pc){
     const id = pc.dataset.popclose, box = document.querySelector(`[data-pop="${CSS.escape(id)}"]`);
@@ -1129,6 +1170,14 @@ function admSite(){
       <div class="af"><label>홈 · 고객문의 타일 이미지</label>${imgFieldHtml("tile1ImageId", c.tile1ImageId)}</div>
       <div class="af"><label>홈 · 원격지원 타일 이미지</label>${imgFieldHtml("tile2ImageId", c.tile2ImageId)}</div>
     </div>
+    <div class="panel-hd" style="border-top:1px solid var(--line)"><h2>홈 · 회사 소개 영상</h2><span class="note">영상 파일이나 유튜브 주소 중 하나만 있어도 섹션이 나타납니다.</span></div>
+    <div class="panel-bd form-grid">
+      ${f("filmEyebrow","상단 영문 문구")}${f("filmYoutube","유튜브 주소","text","영상 파일이 없을 때 새 창으로 엽니다. 사이트 안에 유튜브를 끼워 넣을 수는 없습니다.")}
+      ${f("filmTitle","제목","textarea")}${f("filmText","설명","textarea")}
+      <div class="af"><label>재생 영상 (MP4, 20MB 이하)</label>${imgFieldHtml("filmVideoId", c.filmVideoId, true)}</div>
+      <div class="af"><label>배경 반복 영상 (MP4, 짧게 · 선택)</label>${imgFieldHtml("filmLoopId", c.filmLoopId, true)}</div>
+      <div class="af full"><label>배경·썸네일 이미지 (권장 2400×1200)</label>${imgFieldHtml("filmPosterId", c.filmPosterId)}</div>
+    </div>
     <div class="drawer d-ft" style="position:static;width:auto;box-shadow:none;animation:none;border-radius:0 0 10px 10px;justify-content:flex-end"><button class="abtn pri" type="submit">저장하고 반영</button></div>
   </form>`;
 }
@@ -1250,7 +1299,7 @@ async function saveSite(e){
   const st = [0,1,2,3].map(()=>({}));
   document.querySelectorAll("[data-st]").forEach(el => { const [i,k] = el.dataset.st.split(":"); st[+i][k] = el.value.trim(); });
   data.stats = st.filter(s => s.num);
-  ["ceoImageId","tile1ImageId","tile2ImageId"].forEach(k => data[k] = $(`[data-imgval="${k}"]`).value || null);
+  ["ceoImageId","tile1ImageId","tile2ImageId","filmVideoId","filmLoopId","filmPosterId"].forEach(k => data[k] = $(`[data-imgval="${k}"]`).value || null);
   data.updatedAt = new Date().toISOString();
   try { if (!db) throw {code:"unavailable"}; await db.doc("site/config").set(data); toast("기본 정보를 저장했습니다."); } catch(err){ toast(dbErr(err), true); }
 }
