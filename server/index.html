@@ -823,7 +823,7 @@ const ui = { slide:0, homeTab:"all", board:"notice", q:"", page:1, prodCat:"all"
 /* ================= helpers ================= */
 const $ = (s, r=document) => r.querySelector(s);
 const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const imgUrl = id => id ? (window.TRIZN_MEDIA_BASE || "/_blob/") + encodeURIComponent(id) : "";
+const imgUrl = id => !id ? "" : /^blob:/.test(id) ? id : (window.TRIZN_MEDIA_BASE || "/_blob/") + encodeURIComponent(id);
 const sorted = (c, f) => [...S[c]].filter(f || (() => true)).sort((a,b) => (a.order ?? 0) - (b.order ?? 0));
 const shown = (c, f) => sorted(c, x => x.visible !== false && (!f || f(x)));
 const today = () => new Date().toISOString().slice(0,10);
@@ -1038,7 +1038,7 @@ function sanitize(html){
         const n = a.name.toLowerCase(), v = a.value.trim();
         let keep = false;
         if (n==="href") keep = /^(https?:|mailto:|tel:|#|\/)/i.test(v);
-        else if (n==="src") keep = tag==="img" && (/^(\/_blob\/|\/?uploads\/)/.test(v) || /^data:image\/(png|jpe?g|gif|webp);/i.test(v));
+        else if (n==="src") keep = tag==="img" && (/^(\/_blob\/|\/?uploads\/|blob:)/.test(v) || /^data:image\/(png|jpe?g|gif|webp);/i.test(v));
         else if (["alt","title","colspan","rowspan","target"].includes(n)) keep = true;
         else if (n==="class") keep = /^[\w\s-]*$/.test(v);
         else if (n==="style"){ const clean = v.split(";").map(x=>x.trim()).filter(x => { const [k,val=""] = x.split(":"); return k && OK_STYLE.test(k.trim().toLowerCase()) && !/url\(|expression|javascript/i.test(val); }).join("; "); if (clean){ ch.setAttribute("style", clean); } else ch.removeAttribute("style"); return; }
