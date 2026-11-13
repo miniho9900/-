@@ -262,8 +262,10 @@ p{margin:0}
 .fact svg{margin-top:auto;align-self:flex-end;color:var(--violet);width:44px;height:44px;flex:none}
 @media (max-width:1080px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.pillars{grid-template-columns:minmax(0,1fr);gap:40px}}
 @media (max-width:520px){.facts{grid-template-columns:minmax(0,1fr)}.fact{min-height:0}.fact svg{width:36px;height:36px}}
-.sites{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
-.site-card{border:1px solid var(--line);padding:32px;display:grid;gap:14px;background:var(--paper)}
+.sites{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+.site-card{border:1px solid var(--line);padding:32px;display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:24px 40px;align-items:center;background:var(--paper)}
+.site-card h3{grid-column:1/-1}
+@media (max-width:760px){.site-card{grid-template-columns:minmax(0,1fr)}}
 .site-card h3{font-size:20px;color:var(--ink)}
 .site-card dl{margin:0;display:grid;grid-template-columns:64px minmax(0,1fr);gap:8px 16px;font-size:15px}
 .site-card dt{color:var(--muted)}.site-card dd{margin:0}
@@ -846,7 +848,7 @@ function footer(){
   const groups = [["회사소개",[["회사개요","about"],["연혁","about"],["인증 및 지적재산권","cert"],["오시는 길","about"]]],["사업·서비스",[["토탈 네트워크 서비스","business"],["지능형 네트워크 솔루션","products"]]],["고객지원",[["공지사항","news"],["IR·공시","news"],["고객문의","contact"],["원격지원서비스","contact"]]]];
   const fu = cfg("familyUrl"), fn = cfg("familyName")||"TRIZRO";
   const famCol = fu ? `<div><h4>패밀리 사이트</h4><a class="ft-fam" href="${esc(fu)}" target="_blank" rel="noopener" aria-label="${esc(fn)} 사이트 바로가기 (새 창)"><img src="trizro-white.png" alt="${esc(fn)}">${I.ext}</a></div>` : "";
-  const contact = [["TEL",cfg("tel")],["FAX",cfg("fax")],["E-mail",cfg("email")]].filter(x=>x[1]).map(([k,v]) => `<span><b>${k}</b>${esc(v)}</span>`).join("");
+  const contact = [["TEL",cfg("tel")],["FAX",cfg("fax")]].filter(x=>x[1]).map(([k,v]) => `<span><b>${k}</b>${esc(v)}</span>`).join("");
   return `<footer class="ft"><div class="wrap">
     <div class="ft-top">
       <div>
@@ -981,8 +983,7 @@ function viewAbout(){
   <section class="sec mist" id="loc"><div class="wrap">
     <div class="sec-hd"><div><p class="eyebrow">Location</p><h2>오시는 길</h2></div></div>
     <div class="sites">
-      <div class="site-card"><h3>트리즈엔 본사</h3><div class="map-ph"><span>${esc(cfg("address")||"주소를 등록하세요")}</span></div><dl><dt>주소</dt><dd>${esc(cfg("address"))}</dd><dt>전화</dt><dd class="num">${esc(cfg("tel"))}</dd><dt>팩스</dt><dd class="num">${esc(cfg("fax"))}</dd></dl></div>
-      ${cfg("address2")?`<div class="site-card"><h3>트리즈엔 공장</h3><div class="map-ph"><span>${esc(cfg("address2"))}</span></div><dl><dt>주소</dt><dd>${esc(cfg("address2"))}</dd><dt>전화</dt><dd class="num">${esc(cfg("tel"))}</dd><dt>팩스</dt><dd class="num">${esc(cfg("fax"))}</dd></dl></div>`:""}
+      <div class="site-card"><h3>트리즈엔</h3><div class="map-ph"><span>${esc(cfg("address")||"주소를 등록하세요")}</span></div><dl><dt>주소</dt><dd>${esc(cfg("address"))}</dd><dt>전화</dt><dd class="num">${esc(cfg("tel"))}</dd><dt>팩스</dt><dd class="num">${esc(cfg("fax"))}</dd></dl></div>
     </div>
   </div></section>${footer()}`;
 }
