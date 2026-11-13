@@ -1,9 +1,9 @@
 {
- "name": "한화오션에코텍",
  "group": "공공·기업·기관",
  "group_en": "Public sector, enterprises & institutions",
- "imageId": "ca627d4eb2324aea6afd0e13f9e1aa53",
+ "imageId": "3eddb8fd3596b83724fed6d938602134",
+ "name": "한화오션에코텍",
  "order": 120,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:29:06.787Z",
+ "visible": true
 }

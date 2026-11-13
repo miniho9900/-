@@ -1,12 +1,12 @@
 {
- "title": "Good-ICT Award 대상",
- "title_en": "Good-ICT Award Grand Prize",
  "category": "수상",
  "category_en": "Award",
  "client": "",
- "year": "2025",
- "imageId": "2ea47567f55b2808f8b812daab45801c",
+ "imageId": "0db17207578c6b5e3ac3567fe3b4fd11",
  "order": 140,
+ "title": "Good-ICT Award 대상",
+ "title_en": "Good-ICT Award Grand Prize",
+ "updatedAt": "2026-11-13T02:30:16.206Z",
  "visible": true,
- "updatedAt": "2026-11-13"
+ "year": "2025"
 }

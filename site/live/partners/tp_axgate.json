@@ -1,1 +1,10 @@
-{"name": "AXGATE", "role": "UTM / AP", "url": "", "imageId": "85633e8ac205d6d1fa9e289bf4314e88", "order": 110, "visible": true, "updatedAt": "2026-11-13", "role_en": "UTM / AP"}
+{
+ "imageId": "d04f937e5c25aa7dfb20c9018a503cf4",
+ "name": "AXGATE",
+ "order": 110,
+ "role": "UTM / AP",
+ "role_en": "UTM / AP",
+ "updatedAt": "2026-11-13T02:29:42.557Z",
+ "url": "",
+ "visible": true
+}

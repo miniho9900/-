@@ -1,12 +1,17 @@
 {
  "btnLabel": "",
+ "btnLabel_en": "",
  "btnRoute": "business",
+ "dim": "",
  "eyebrow": "",
- "imageId": "91a18110b581497be55abfe1aa86f926",
+ "eyebrow_en": "",
+ "imageId": "3b60328b16ce1274c1c062ba0afba24d",
  "order": 0,
  "sub": "",
+ "sub_en": "",
  "title": "",
- "updatedAt": "2026-11-13T01:38:45.782Z",
+ "title_en": "",
+ "updatedAt": "2026-11-13T03:51:50.664Z",
  "videoId": "be7ab1de59d800edbc546b6ede166574",
  "visible": true
 }

@@ -1,1 +1,10 @@
-{"name": "PIOLINK", "role": "스위치", "url": "", "imageId": "c38e78a8c97ccb3aee2f05d262373eac", "order": 40, "visible": true, "updatedAt": "2026-11-13", "role_en": "Switch"}
+{
+ "imageId": "eff0e47aed55bec24b565b082f0f9fee",
+ "name": "PIOLINK",
+ "order": 40,
+ "role": "스위치",
+ "role_en": "Switch",
+ "updatedAt": "2026-11-13T02:29:54.488Z",
+ "url": "",
+ "visible": true
+}

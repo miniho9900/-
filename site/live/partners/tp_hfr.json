@@ -1,1 +1,10 @@
-{"name": "HFR", "role": "스위치 / OLT", "url": "", "imageId": "7641063a700e3626fc0ecc8d97d795a2", "order": 60, "visible": true, "updatedAt": "2026-11-13", "role_en": "Switch / OLT"}
+{
+ "imageId": "16865b0601f6c83823cc2d452d5cb751",
+ "name": "HFR",
+ "order": 60,
+ "role": "스위치 / OLT",
+ "role_en": "Switch / OLT",
+ "updatedAt": "2026-11-13T02:29:50.974Z",
+ "url": "",
+ "visible": true
+}

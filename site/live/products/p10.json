@@ -1,13 +1,13 @@
 {
- "name": "SDN 컨트롤러",
- "name_en": "SDN Controller",
  "category": "SDN 플랫폼",
  "category_en": "SDN Platform",
  "featured": true,
  "imageId": null,
+ "name": "SDN 컨트롤러",
+ "name_en": "SDN Controller",
  "order": 5,
  "summary": "국내 최초 유·무선 통합 SDN 컨트롤러. 유·무선 네트워크 인프라 전체를 하나의 정책으로 중앙에서 통합 제어합니다.",
  "summary_en": "Korea's first wired/wireless integrated SDN controller — central, policy-based control of the entire network infrastructure.",
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:30:06.560Z",
+ "visible": true
 }

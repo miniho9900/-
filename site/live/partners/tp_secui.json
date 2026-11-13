@@ -1,1 +1,10 @@
-{"name": "SECUI", "role": "UTM", "url": "", "imageId": "2032efd5f83320c5a2f000ae72baab12", "order": 130, "visible": true, "updatedAt": "2026-11-13", "role_en": "UTM"}
+{
+ "imageId": "44c234a5767d6fb827de5efd264195e4",
+ "name": "SECUI",
+ "order": 130,
+ "role": "UTM",
+ "role_en": "UTM",
+ "updatedAt": "2026-11-13T02:29:55.694Z",
+ "url": "",
+ "visible": true
+}

@@ -1,10 +1,10 @@
 {
-  "icon": "building",
-  "label": "회사명",
-  "label_en": "Company",
-  "order": 0,
-  "updatedAt": "2026-11-13",
-  "value": "㈜트리즈엔 (TrizN Inc.)",
-  "value_en": "TrizN Inc.",
-  "visible": true
+ "icon": "building",
+ "label": "회사명",
+ "label_en": "Company",
+ "order": 0,
+ "updatedAt": "2026-11-13",
+ "value": "㈜트리즈엔 (TrizN Inc.)",
+ "value_en": "TrizN Inc.",
+ "visible": true
 }

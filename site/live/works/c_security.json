@@ -1,12 +1,12 @@
 {
- "title": "보안기능확인서",
- "title_en": "Security Function Certificate",
  "category": "인증",
  "category_en": "Certification",
  "client": "",
- "year": "",
- "imageId": "d06113b2f770fa3a9bcc318cba7d9a99",
+ "imageId": "27ac220f5be010cb7284a23ff12bde67",
  "order": 40,
+ "title": "보안기능확인서",
+ "title_en": "Security Function Certificate",
+ "updatedAt": "2026-11-13T02:30:29.214Z",
  "visible": true,
- "updatedAt": "2026-11-13"
+ "year": ""
 }

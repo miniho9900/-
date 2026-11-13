@@ -1,1 +1,10 @@
-{"name": "FORTINET", "role": "UTM / 스위치", "url": "", "imageId": "6572f2523108d68762749bc20d59680a", "order": 120, "visible": true, "updatedAt": "2026-11-13", "role_en": "UTM / Switch"}
+{
+ "imageId": "de4068f817597bd96a6bcf863de9584f",
+ "name": "FORTINET",
+ "order": 120,
+ "role": "UTM / 스위치",
+ "role_en": "UTM / Switch",
+ "updatedAt": "2026-11-13T02:29:47.255Z",
+ "url": "",
+ "visible": true
+}

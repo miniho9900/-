@@ -1,8 +1,8 @@
 {
- "year": "2017",
- "visible": true,
+ "order": 90,
  "text": "경기도교육청 3단계 스쿨넷 서비스망 구축\n전국연합학력평가 온라인시스템 구축\n경기도교육지원청 산하기관 정보시스템 통합유지보수",
  "text_en": "Built Gyeonggi Office of Education Phase 3 SchoolNet service network\nBuilt the online system for the National Joint Achievement Test\nIntegrated IT system maintenance for Gyeonggi education office affiliates",
- "order": 90,
- "updatedAt": "2026-11-13T12:00:00.000Z"
+ "updatedAt": "2026-11-13T11:51:04.704Z",
+ "visible": true,
+ "year": "2017"
 }

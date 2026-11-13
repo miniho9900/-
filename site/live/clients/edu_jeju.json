@@ -1,9 +1,9 @@
 {
- "name": "제주특별자치도교육청",
  "group": "교육청",
  "group_en": "Offices of Education",
- "imageId": "0177eeca9e56c56f20fdcc25259acda5",
+ "imageId": "3c60948d883fe43df81e9492ac6d2bc6",
+ "name": "제주특별자치도교육청",
  "order": 50,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:29:20.888Z",
+ "visible": true
 }

@@ -1,10 +1,10 @@
 {
+ "icon": "document",
  "label": "ISO 인증",
  "label_en": "ISO",
+ "order": 106,
+ "updatedAt": "2026-11-13T02:29:29.321Z",
  "value": "ISO 9001 · ISO 45001 · ISO 14001",
  "value_en": "ISO 9001 · ISO 45001 · ISO 14001",
- "icon": "document",
- "order": 106,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "visible": true
 }

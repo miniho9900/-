@@ -1,9 +1,9 @@
 {
- "name": "대전광역시교육청",
  "group": "교육청",
  "group_en": "Offices of Education",
- "imageId": "cf8b89f597d73e81af02be5771cdbf8d",
+ "imageId": "563e9592cf3d15b75fbc27c62490b929",
+ "name": "대전광역시교육청",
  "order": 10,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:29:14.607Z",
+ "visible": true
 }

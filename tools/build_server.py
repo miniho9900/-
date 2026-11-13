@@ -63,9 +63,14 @@ head = f"""<!doctype html>
 for f in ["logo.png", "logo-white.png", "trizro.png", "trizro-white.png"]:
     shutil.copy2(SITE / f, OUT / f)
 
-# 3. media
+# 3. media (only files the content actually uses)
 (OUT / "uploads").mkdir(exist_ok=True)
+for old in (OUT / "uploads").iterdir():
+    if old.is_file() and not old.name.startswith("."): old.unlink()
+_live = "".join(f.read_text(encoding="utf-8") for f in (SITE / "live").glob("*/*.json"))
+USED = {aid for aid in ASSETS if aid in _live}
 for aid, src in ASSETS.items():
+    if aid not in USED: continue
     p = SITE / "images" / src
     if p.exists(): shutil.copy2(p, OUT / "uploads" / new_name[aid])
     else: print("missing media:", src)
@@ -78,4 +83,4 @@ for f in sorted((SITE / "live").glob("*/*.json")):
     docs.append({"path": f"{col}/{did}", "data": remap(json.loads(f.read_text(encoding="utf-8")))})
 (OUT / "data").mkdir(exist_ok=True)
 (OUT / "data" / "seed.json").write_text(json.dumps(docs, ensure_ascii=False, indent=1), encoding="utf-8")
-print(f"server/index.html, {len(docs)} seed documents, {len(ASSETS)} media files")
+print(f"server/index.html, {len(docs)} seed documents, {len(USED)} media files")

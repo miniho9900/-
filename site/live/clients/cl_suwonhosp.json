@@ -1,9 +1,9 @@
 {
- "name": "수원중앙병원",
  "group": "공공·기업·기관",
  "group_en": "Public sector, enterprises & institutions",
- "imageId": "fc03623e578998be3dcd46be92446168",
+ "imageId": "992ba4a9707efade12afa03d10665c4c",
+ "name": "수원중앙병원",
  "order": 150,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:29:12.192Z",
+ "visible": true
 }

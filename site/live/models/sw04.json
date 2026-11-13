@@ -1,14 +1,14 @@
 {
- "productId": "p2",
- "series": "SD 3500 Series",
+ "detailHtml": "<figure class=\"pd-fig\"><img src=\"/_blob/a11ce793a1dde51ff018bc3e9e18436c\" alt=\"SD-Network 스위치 소개\"></figure>",
+ "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"/_blob/a11ce793a1dde51ff018bc3e9e18436c\" alt=\"SD-Network switch overview\"></figure>",
+ "imageId": "dcc5fce0ccdd913de268e041c338589b",
  "name": "[SDN L3 스위치] 3534TXQ",
  "name_en": "[SDN L3 Switch] 3534TXQ",
+ "order": 30,
+ "productId": "p2",
+ "series": "SD 3500 Series",
  "specs": "인터페이스 | 8x10/100/1000M RJ45, 24x10GBase SFP+, 2x40GBase QSFP+\nSwitching Capacity / Forwarding Rate | 656 Gbps / 488 Mpps\n펌웨어 파일명 | TRIZN3554XQ-10.31.199-V705R204C003B072S_nos.img",
  "specs_en": "Interface | 8x10/100/1000M RJ45, 24x10GBase SFP+, 2x40GBase QSFP+\nSwitching Capacity / Forwarding Rate | 656 Gbps / 488 Mpps\nFirmware file | TRIZN3554XQ-10.31.199-V705R204C003B072S_nos.img",
- "imageId": "03f190478d4ac0479b82b877ba1a7143",
- "detailHtml": "<figure class=\"pd-fig\"><img src=\"/_blob/3958e3fe4cdd4787c3d967c9192466a5\" alt=\"SD-Network 스위치 소개\"></figure>",
- "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"/_blob/3958e3fe4cdd4787c3d967c9192466a5\" alt=\"SD-Network switch overview\"></figure>",
- "order": 30,
- "visible": true,
- "updatedAt": "2026-11-13T09:00:00.000Z"
+ "updatedAt": "2026-11-13T04:12:22.472Z",
+ "visible": true
 }

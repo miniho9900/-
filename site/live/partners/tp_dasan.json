@@ -1,1 +1,10 @@
-{"name": "DASAN", "role": "스위치 / OLT / AP", "url": "", "imageId": "90908e3ff440ab5c08b62d4b4e7a188d", "order": 50, "visible": true, "updatedAt": "2026-11-13", "role_en": "Switch / OLT / AP"}
+{
+ "imageId": "4bd055fff86708cbd3d4d75af03c629e",
+ "name": "DASAN",
+ "order": 50,
+ "role": "스위치 / OLT / AP",
+ "role_en": "Switch / OLT / AP",
+ "updatedAt": "2026-11-13T02:29:44.911Z",
+ "url": "",
+ "visible": true
+}

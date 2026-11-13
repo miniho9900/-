@@ -1,1 +1,10 @@
-{"name": "HDN (Handreamnet)", "role": "스위치", "url": "", "imageId": "743d6cc8ba6d412ce17ac75ad77b954d", "order": 30, "visible": true, "updatedAt": "2026-11-13", "role_en": "Switch"}
+{
+ "imageId": "7e788c1f1ca70857c885ca1ad8574c63",
+ "name": "HDN (Handreamnet)",
+ "order": 30,
+ "role": "스위치",
+ "role_en": "Switch",
+ "updatedAt": "2026-11-13T02:29:49.790Z",
+ "url": "",
+ "visible": true
+}

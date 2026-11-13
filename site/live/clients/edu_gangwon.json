@@ -1,9 +1,9 @@
 {
- "name": "강원특별자치도교육청",
  "group": "교육청",
  "group_en": "Offices of Education",
- "imageId": "a37835ee0b23c877e74566b30c95686c",
+ "imageId": "66ae6999f9717c9bc82d9ffd883ed7e9",
+ "name": "강원특별자치도교육청",
  "order": 70,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:29:15.787Z",
+ "visible": true
 }

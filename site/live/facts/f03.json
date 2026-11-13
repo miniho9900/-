@@ -1,9 +1,9 @@
 {
-  "icon": "person",
-  "label": "대표이사",
-  "label_en": "CEO",
-  "order": 20,
-  "updatedAt": "2026-11-13",
-  "value": "백 성 우",
-  "visible": true
+ "icon": "person",
+ "label": "대표이사",
+ "label_en": "CEO",
+ "order": 20,
+ "updatedAt": "2026-11-13",
+ "value": "백 성 우",
+ "visible": true
 }

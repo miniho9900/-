@@ -1,10 +1,10 @@
 {
  "body": "지능형 유무선 통합 SDN 솔루션 개발 및 운용기술을 기반으로 통신서비스에 필요한 멀티밴더의 장비 및 단말을 구축하고 통합 운용시스템을 제공합니다.",
+ "body_en": "Based on our development and operation of intelligent wired/wireless integrated SDN solutions, we build multi-vendor equipment and devices for communication services and provide an integrated operating system.",
  "en": "ICT Total Solution",
  "order": 10,
  "title": "지능형 ICT 토탈 솔루션을 제공하는 전문기업",
- "updatedAt": "2026-11-13",
- "visible": true,
  "title_en": "A specialist in intelligent ICT total solutions",
- "body_en": "Based on our development and operation of intelligent wired/wireless integrated SDN solutions, we build multi-vendor equipment and devices for communication services and provide an integrated operating system."
+ "updatedAt": "2026-11-13",
+ "visible": true
 }

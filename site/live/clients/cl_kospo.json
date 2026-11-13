@@ -1,9 +1,9 @@
 {
- "name": "한국남부발전",
  "group": "공공·기업·기관",
  "group_en": "Public sector, enterprises & institutions",
- "imageId": "8353e5e47b0c5aa163bf0910993e0ef5",
+ "imageId": "821ad6bf0db1f32677fe35567e37ce76",
+ "name": "한국남부발전",
  "order": 110,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:29:08.593Z",
+ "visible": true
 }

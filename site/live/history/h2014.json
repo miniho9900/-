@@ -1,8 +1,8 @@
 {
- "year": "2014",
- "visible": true,
+ "order": 120,
  "text": "경기도 지역교육지원청 14개청 유지보수",
  "text_en": "Maintenance for 14 Gyeonggi district education offices",
- "order": 120,
- "updatedAt": "2026-11-13T12:00:00.000Z"
+ "updatedAt": "2026-11-13T11:51:02.484Z",
+ "visible": true,
+ "year": "2014"
 }

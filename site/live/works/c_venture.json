@@ -1,12 +1,12 @@
 {
- "title": "벤처기업확인서",
- "title_en": "Venture Business Certificate",
  "category": "기업인증",
  "category_en": "Company certification",
  "client": "",
- "year": "",
- "imageId": "5c7f2920280c6905373b770ff5c41851",
+ "imageId": "608041fc9b829607fe2e39aa48a28052",
  "order": 60,
+ "title": "벤처기업확인서",
+ "title_en": "Venture Business Certificate",
+ "updatedAt": "2026-11-13T02:30:32.839Z",
  "visible": true,
- "updatedAt": "2026-11-13"
+ "year": ""
 }

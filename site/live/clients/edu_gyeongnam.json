@@ -1,9 +1,9 @@
 {
- "name": "경상남도교육청",
  "group": "교육청",
  "group_en": "Offices of Education",
- "imageId": "391d2d299bfdf1c52d6706c22cacc3f9",
+ "imageId": "a6415158b87809892f8478dc0ba896dc",
+ "name": "경상남도교육청",
  "order": 60,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:29:18.380Z",
+ "visible": true
 }

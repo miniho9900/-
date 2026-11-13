@@ -1,1 +1,10 @@
-{"name": "TP-Link", "role": "스위치 / AP", "url": "", "imageId": "a0c515f7fdda50e0f02846a2f57dc9a6", "order": 70, "visible": true, "updatedAt": "2026-11-13", "role_en": "Switch / AP"}
+{
+ "imageId": "5a8f4f334c0637c10edd0d90fb90a668",
+ "name": "TP-Link",
+ "order": 70,
+ "role": "스위치 / AP",
+ "role_en": "Switch / AP",
+ "updatedAt": "2026-11-13T02:29:56.860Z",
+ "url": "",
+ "visible": true
+}

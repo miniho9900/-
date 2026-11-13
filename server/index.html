@@ -2459,7 +2459,8 @@ document.addEventListener("change", async e => {
   const box = e.target.closest(".rte"); if (!box) return;
   if (e.target.matches("[data-rblock]")){ rteExec(box, "formatBlock", "<"+e.target.value+">"); e.target.value = "p"; return; }
   if (e.target.matches("[data-rcolor]")){ rteExec(box, "foreColor", e.target.value); return; }
-  if (e.target.matches("[data-rimg]")){ const file = e.target.files[0]; e.target.value = ""; if (!file || !assets) return;
+  if (e.target.matches("[data-rimg]")){ let file = e.target.files[0]; e.target.value = ""; if (!file || !assets) return;
+    file = await toWebp(file, 1200);
     if (file.size > MAX_UP()){ toast(MAX_LABEL()+" 이하 이미지만 넣을 수 있습니다.", true); return; }
     toast("이미지를 올리는 중입니다…");
     try { const r = await assets.upload(file); rteExec(box, "insertHTML", `<img src="${imgUrl(r.id)}" alt="">`); toast("이미지를 넣었습니다."); } catch { toast("이미지를 올리지 못했습니다.", true); } }
@@ -2565,16 +2566,33 @@ async function saveSite(e){
     else toast("반영 대기로 저장했습니다. 아직 방문자에게는 보이지 않습니다.");
   } catch(err){ toast(dbErr(err), true); }
 }
+/* ---- images: every upload becomes WebP (quality 0.82), hero 1920px / others 1200px wide ---- */
+const HERO_KEYS = new Set(["subVisImageId","filmPosterId","caseImageId"]);
+const imgMaxW = key => (HERO_KEYS.has(key) || (key==="imageId" && editing && ["slides","business"].includes(editing.c))) ? 1920 : 1200;
+async function toWebp(file, maxW){
+  if (!/^image\/(jpeg|png|webp|bmp)$/i.test(file.type||"")) return file; // keep GIF animation, SVG etc. as they are
+  try {
+    const bmp = await createImageBitmap(file), bw = bmp.width, bh = bmp.height;
+    const w = Math.min(maxW, bw), h = Math.round(bh * w / bw);
+    const c = document.createElement("canvas"); c.width = w; c.height = h;
+    const g = c.getContext("2d"); g.imageSmoothingQuality = "high"; g.drawImage(bmp, 0, 0, w, h); bmp.close && bmp.close();
+    const blob = await new Promise(ok => c.toBlob(ok, "image/webp", 0.82));
+    if (!blob || blob.type !== "image/webp") return file; // browser cannot encode WebP: upload the original
+    if (file.type === "image/webp" && w === bw && blob.size >= file.size) return file;
+    return new File([blob], (file.name||"image").replace(/\.[^.]+$/,"") + ".webp", {type:"image/webp"});
+  } catch { return file; }
+}
 document.addEventListener("change", async e => {
   const up = e.target.closest("[data-upload]"); if (!up) return;
-  const key = up.dataset.upload, file = up.files[0]; if (!file || !assets) return;
+  const key = up.dataset.upload; let file = up.files[0]; if (!file || !assets) return;
   const box = up.closest(".img-field");
+  if (up.dataset.kind==="image"){ box.querySelector(".help").textContent = "WebP로 변환 중…"; file = await toWebp(file, imgMaxW(key)); }
   if (file.size > MAX_UP()){
     if (up.dataset.kind==="video") { showCompress(box, key, file); up.value = ""; return; }
     toast(MAX_LABEL()+" 이하 파일만 올릴 수 있습니다.", true); return;
   } box.querySelector(".help").textContent = "업로드 중…";
   try { const r = await assets.upload(file); box.querySelector(`[data-imgval="${key}"]`).value = r.id; const fn = box.querySelector(`[data-fname="${key}"]`); if (fn) fn.value = file.name;
-    box.querySelector(".prev").innerHTML = up.dataset.kind==="file" ? "📎 "+esc(file.name) : up.dataset.kind==="video" ? `<video src="${r.url}" muted loop autoplay playsinline style="width:100%;height:100%;object-fit:cover"></video>` : `<img src="${r.url}" alt="">`; box.querySelector(".help").textContent = "업로드 완료 · 저장하면 반영됩니다."; }
+    box.querySelector(".prev").innerHTML = up.dataset.kind==="file" ? "📎 "+esc(file.name) : up.dataset.kind==="video" ? `<video src="${r.url}" muted loop autoplay playsinline style="width:100%;height:100%;object-fit:cover"></video>` : `<img src="${r.url}" alt="">`; box.querySelector(".help").textContent = (file.type==="image/webp" ? "WebP로 변환해 올렸습니다" : "업로드 완료") + " · 저장하면 반영됩니다."; }
   catch(err){ box.querySelector(".help").textContent = "업로드하지 못했습니다. 다른 이미지로 다시 시도하세요."; }
 });
 /* ---- in-browser video compression (for files over 20MB) ---- */

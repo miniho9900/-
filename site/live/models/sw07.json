@@ -1,14 +1,14 @@
 {
- "productId": "p2",
- "series": "TRIZN 3000 Series",
+ "detailHtml": "<figure class=\"pd-fig\"><img src=\"/_blob/a11ce793a1dde51ff018bc3e9e18436c\" alt=\"SD-Network 스위치 소개\"></figure>",
+ "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"/_blob/a11ce793a1dde51ff018bc3e9e18436c\" alt=\"SD-Network switch overview\"></figure>",
+ "imageId": "919dff88f897446b7976141eeb12c786",
  "name": "[SDN L2 스위치] 3028TX",
  "name_en": "[SDN L2 Switch] 3028TX",
+ "order": 60,
+ "productId": "p2",
+ "series": "TRIZN 3000 Series",
  "specs": "인터페이스/Fan | 24x10/100/1000M RJ45, 4x1G/10G SFP+ / Passive Fan\n크기/입력전원 // CPU / HDD/ Memory | 440(W)x44(H)x170(D) mm / AC 100~240V/50~60Hz // 800MHz, 1Core / SPI 32MB/SDRAM 256MB\nSwitching Capacity / Forwarding Rate | 128 Gbps / 95 Mpps\n펌웨어 파일명 | TRIZN3012(3028)T(P)X-10.31.211-V705R002C011B037S_nos.img",
  "specs_en": "Interface/Fan | 24x10/100/1000M RJ45, 4x1G/10G SFP+ / Passive Fan\nDimensions/Power input // CPU / HDD/ Memory | 440(W)x44(H)x170(D) mm / AC 100~240V/50~60Hz // 800MHz, 1Core / SPI 32MB/SDRAM 256MB\nSwitching Capacity / Forwarding Rate | 128 Gbps / 95 Mpps\nFirmware file | TRIZN3012(3028)T(P)X-10.31.211-V705R002C011B037S_nos.img",
- "imageId": "83668a0839144de60a5c280d409ccd00",
- "detailHtml": "<figure class=\"pd-fig\"><img src=\"/_blob/3958e3fe4cdd4787c3d967c9192466a5\" alt=\"SD-Network 스위치 소개\"></figure>",
- "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"/_blob/3958e3fe4cdd4787c3d967c9192466a5\" alt=\"SD-Network switch overview\"></figure>",
- "order": 60,
- "visible": true,
- "updatedAt": "2026-11-13T09:00:00.000Z"
+ "updatedAt": "2026-11-13T04:12:24.315Z",
+ "visible": true
 }

@@ -1,9 +1,9 @@
 {
- "name": "경주시",
  "group": "공공·기업·기관",
  "group_en": "Public sector, enterprises & institutions",
- "imageId": "913306f5ba00500129f68d006ebef76f",
+ "imageId": "b31de610f9c61fb96c8ca479fe216be6",
+ "name": "경주시",
  "order": 100,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:29:06.181Z",
+ "visible": true
 }

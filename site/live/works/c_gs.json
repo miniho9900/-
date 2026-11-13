@@ -1,12 +1,12 @@
 {
- "title": "GS인증 (1등급)",
- "title_en": "GS Certification (Grade 1)",
  "category": "인증",
  "category_en": "Certification",
  "client": "",
- "year": "",
- "imageId": "93822599bc16cba38f54b4ded8d15842",
+ "imageId": "60704ab66a3bf32155942884980648b8",
  "order": 30,
+ "title": "GS인증 (1등급)",
+ "title_en": "GS Certification (Grade 1)",
+ "updatedAt": "2026-11-13T02:30:17.362Z",
  "visible": true,
- "updatedAt": "2026-11-13"
+ "year": ""
 }

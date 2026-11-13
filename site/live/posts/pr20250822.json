@@ -1,15 +1,15 @@
 {
  "board": "press",
+ "body": "2025 제11회 대한민국 굿컴퍼니 대상에서 ‘지능형 네트워크 서비스 플랫폼’ 부문 ‘굿-ICT 대상(Good-ICT Award)’을 수상했다.",
+ "bodyHtml": "<p>2025 제11회 대한민국 굿컴퍼니 대상에서 ‘지능형 네트워크 서비스 플랫폼’ 부문 ‘굿-ICT 대상(Good-ICT Award)’을 수상했다.</p>",
+ "bodyHtml_en": "<p>At the 11th Korea Good Company Awards 2025, TrizN received the Good-ICT Award in the intelligent network service platform category.</p>",
+ "body_en": "At the 11th Korea Good Company Awards 2025, TrizN received the Good-ICT Award in the intelligent network service platform category.",
  "date": "2025-08-22",
+ "imageId": null,
+ "order": -80,
  "pinned": false,
  "title": "트리즈엔, 지능형 네트워크 플랫폼 부문 ‘굿-ICT 대상’ 수상",
  "title_en": "TrizN wins the Good-ICT Grand Prize for its intelligent network platform",
- "body": "2025 제11회 대한민국 굿컴퍼니 대상에서 ‘지능형 네트워크 서비스 플랫폼’ 부문 ‘굿-ICT 대상(Good-ICT Award)’을 수상했다.",
- "body_en": "At the 11th Korea Good Company Awards 2025, TrizN received the Good-ICT Award in the intelligent network service platform category.",
- "bodyHtml": "<p>2025 제11회 대한민국 굿컴퍼니 대상에서 ‘지능형 네트워크 서비스 플랫폼’ 부문 ‘굿-ICT 대상(Good-ICT Award)’을 수상했다.</p>",
- "bodyHtml_en": "<p>At the 11th Korea Good Company Awards 2025, TrizN received the Good-ICT Award in the intelligent network service platform category.</p>",
- "imageId": null,
- "order": -80,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:30:01.876Z",
+ "visible": true
 }

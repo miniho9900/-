@@ -1,12 +1,12 @@
 {
- "title": "정보통신공사업 등록증",
- "title_en": "ICT Construction Business Registration",
  "category": "등록",
  "category_en": "Registration",
  "client": "",
- "year": "",
- "imageId": "3fe88dc958c48340518163d1bfe15a2a",
+ "imageId": "a7569f65325454cd88ec61cbe19b724d",
  "order": 120,
+ "title": "정보통신공사업 등록증",
+ "title_en": "ICT Construction Business Registration",
+ "updatedAt": "2026-11-13T02:30:18.700Z",
  "visible": true,
- "updatedAt": "2026-11-13"
+ "year": ""
 }

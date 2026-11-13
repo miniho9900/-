@@ -1,9 +1,9 @@
 {
- "name": "장안대학교",
  "group": "공공·기업·기관",
  "group_en": "Public sector, enterprises & institutions",
- "imageId": "f892806e85ad723823c9720bea559a98",
+ "imageId": "af5ea5379c9c46efe1eb098b3ff577b8",
+ "name": "장안대학교",
  "order": 130,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:29:07.569Z",
+ "visible": true
 }

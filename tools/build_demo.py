@@ -14,8 +14,10 @@ SITE, SRV, OUT = ROOT / "site", ROOT / "server", ROOT / "demo"
 seed = json.loads((SRV / "data" / "seed.json").read_text(encoding="utf-8"))
 txt = json.dumps(seed, ensure_ascii=False).replace("be7ab1de59d800edbc546b6ede166574.mp4", "hero-video-small.mp4")
 (OUT / "uploads").mkdir(parents=True, exist_ok=True)
+for f in (OUT / "uploads").iterdir():
+    if f.name != "hero-video-small.mp4": f.unlink()
 for f in (SRV / "uploads").iterdir():
-    if f.suffix in (".jpg", ".png") and f.name in txt: shutil.copy2(f, OUT / "uploads" / f.name)
+    if f.suffix in (".jpg", ".png", ".webp") and f.name in txt: shutil.copy2(f, OUT / "uploads" / f.name)
 shutil.copy2(OUT / "hero-video-small.mp4", OUT / "uploads" / "hero-video-small.mp4")
 for f in ["logo.png", "logo-white.png", "trizro.png", "trizro-white.png"]: shutil.copy2(SITE / f, OUT / f)
 

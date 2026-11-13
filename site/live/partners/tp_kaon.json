@@ -1,1 +1,10 @@
-{"name": "KAON BROADBAND", "role": "AP", "url": "", "imageId": "f063c2df305f0dc2103b66e7cde12b36", "order": 160, "visible": true, "updatedAt": "2026-11-13", "role_en": "AP"}
+{
+ "imageId": "0109266d59adb1feab2f8a99b6c4dce3",
+ "name": "KAON BROADBAND",
+ "order": 160,
+ "role": "AP",
+ "role_en": "AP",
+ "updatedAt": "2026-11-13T02:29:52.161Z",
+ "url": "",
+ "visible": true
+}

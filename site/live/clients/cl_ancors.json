@@ -1,9 +1,9 @@
 {
- "name": "ANCORS",
  "group": "공공·기업·기관",
  "group_en": "Public sector, enterprises & institutions",
- "imageId": "2a2a13f6b219c3b9fb2257488ca909cf",
+ "imageId": "b90c2eb7aeedd4893fa00a8cd349aa23",
+ "name": "ANCORS",
  "order": 180,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:29:04.945Z",
+ "visible": true
 }

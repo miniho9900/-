@@ -1,1 +1,10 @@
-{"name": "CORE EDGE NETWORKS", "role": "스위치", "url": "", "imageId": "6df7fc9d07910d6cc0fc6e5ee8b69fb7", "order": 20, "visible": true, "updatedAt": "2026-11-13", "role_en": "Switch"}
+{
+ "imageId": "aea31af4f02f6f69eeda258a89cf9e9f",
+ "name": "CORE EDGE NETWORKS",
+ "order": 20,
+ "role": "스위치",
+ "role_en": "Switch",
+ "updatedAt": "2026-11-13T02:29:43.703Z",
+ "url": "",
+ "visible": true
+}

@@ -1,9 +1,9 @@
 {
- "name": "인천광역시교육청",
  "group": "교육청",
  "group_en": "Offices of Education",
- "imageId": "8bbb8cf111abdf03c5e0d764491851eb",
+ "imageId": "5d35362f52ce2f2b7187cbd26301df6f",
+ "name": "인천광역시교육청",
  "order": 20,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:29:19.601Z",
+ "visible": true
 }

@@ -1,8 +1,8 @@
 {
  "label": "서비스",
+ "label_en": "Solutions",
  "order": 20,
  "route": "products",
  "updatedAt": "2026-11-12",
- "visible": true,
- "label_en": "Solutions"
+ "visible": true
 }

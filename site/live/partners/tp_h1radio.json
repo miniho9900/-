@@ -1,1 +1,11 @@
-{"name": "에이치원레디오", "role": "AP", "url": "", "imageId": "7af721570056d3e060a714a59c318e07", "order": 150, "visible": true, "updatedAt": "2026-11-13", "role_en": "AP", "name_en": "H1 Radio"}
+{
+ "imageId": "6ccecfee6ef3ce7d795eb2179d9ecb31",
+ "name": "에이치원레디오",
+ "name_en": "H1 Radio",
+ "order": 150,
+ "role": "AP",
+ "role_en": "AP",
+ "updatedAt": "2026-11-13T02:29:48.504Z",
+ "url": "",
+ "visible": true
+}

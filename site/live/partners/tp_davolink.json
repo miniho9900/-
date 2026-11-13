@@ -1,1 +1,10 @@
-{"name": "DAVOLINK", "role": "AP", "url": "", "imageId": "b00e126240ca21fe9be389077382e21c", "order": 140, "visible": true, "updatedAt": "2026-11-13", "role_en": "AP"}
+{
+ "imageId": "55361bbb41395b338366d60369dd6bd9",
+ "name": "DAVOLINK",
+ "order": 140,
+ "role": "AP",
+ "role_en": "AP",
+ "updatedAt": "2026-11-13T02:29:46.123Z",
+ "url": "",
+ "visible": true
+}

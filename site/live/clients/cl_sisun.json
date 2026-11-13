@@ -1,9 +1,9 @@
 {
- "name": "sisun",
  "group": "공공·기업·기관",
  "group_en": "Public sector, enterprises & institutions",
- "imageId": "f4fe0a6db71c91782f31d7db12671a47",
+ "imageId": "6fca894f90e10cf88662ff3abd2c1de3",
+ "name": "sisun",
  "order": 160,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:29:09.787Z",
+ "visible": true
 }

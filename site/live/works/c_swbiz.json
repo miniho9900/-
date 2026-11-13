@@ -1,12 +1,12 @@
 {
- "title": "소프트웨어사업자 관리확인서",
- "title_en": "Software Business Registration",
  "category": "등록",
  "category_en": "Registration",
  "client": "",
- "year": "",
- "imageId": "58ce69fa17dbbf6bee1c4229d03204db",
+ "imageId": "e2606c29ab4bdc70891104b1d53b978c",
  "order": 110,
+ "title": "소프트웨어사업자 관리확인서",
+ "title_en": "Software Business Registration",
+ "updatedAt": "2026-11-13T02:30:30.509Z",
  "visible": true,
- "updatedAt": "2026-11-13"
+ "year": ""
 }

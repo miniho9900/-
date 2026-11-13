@@ -1,15 +1,15 @@
 {
  "board": "press",
+ "body": "국민대학교 교수 연구팀이 양자내성암호 알고리즘 ML-KEM을 TLS 1.3 핸드셰이크에 적용한 PQC-TLS 라이브러리를 자체 구현하고, 트리즈엔 상용 제품 적용에 성공했다.",
+ "bodyHtml": "<p>국민대학교 교수 연구팀이 양자내성암호 알고리즘 ML-KEM을 TLS 1.3 핸드셰이크에 적용한 PQC-TLS 라이브러리를 자체 구현하고, 트리즈엔 상용 제품 적용에 성공했다.</p>",
+ "bodyHtml_en": "<p>A Kookmin University research team implemented a PQC-TLS library applying the ML-KEM post-quantum algorithm to the TLS 1.3 handshake, and successfully applied it to TrizN's commercial products.</p>",
+ "body_en": "A Kookmin University research team implemented a PQC-TLS library applying the ML-KEM post-quantum algorithm to the TLS 1.3 handshake, and successfully applied it to TrizN's commercial products.",
  "date": "2026-02-03",
+ "imageId": null,
+ "order": -100,
  "pinned": false,
  "title": "트리즈엔, 차세대 SDN 컨트롤러에 양자내성암호(PQC) 통합 성공",
  "title_en": "TrizN integrates post-quantum cryptography (PQC) into its next-generation SDN controller",
- "body": "국민대학교 교수 연구팀이 양자내성암호 알고리즘 ML-KEM을 TLS 1.3 핸드셰이크에 적용한 PQC-TLS 라이브러리를 자체 구현하고, 트리즈엔 상용 제품 적용에 성공했다.",
- "body_en": "A Kookmin University research team implemented a PQC-TLS library applying the ML-KEM post-quantum algorithm to the TLS 1.3 handshake, and successfully applied it to TrizN's commercial products.",
- "bodyHtml": "<p>국민대학교 교수 연구팀이 양자내성암호 알고리즘 ML-KEM을 TLS 1.3 핸드셰이크에 적용한 PQC-TLS 라이브러리를 자체 구현하고, 트리즈엔 상용 제품 적용에 성공했다.</p>",
- "bodyHtml_en": "<p>A Kookmin University research team implemented a PQC-TLS library applying the ML-KEM post-quantum algorithm to the TLS 1.3 handshake, and successfully applied it to TrizN's commercial products.</p>",
- "imageId": null,
- "order": -100,
- "visible": true,
- "updatedAt": "2026-11-13"
+ "updatedAt": "2026-11-13T02:30:04.223Z",
+ "visible": true
 }
