@@ -3,7 +3,7 @@
    데이터는 이 브라우저의 localStorage 에만 저장되는 시험용입니다. */
 (function () {
   "use strict";
-  var KEY = "trizn-demo-v1", SKEY = "trizn-demo-session";
+  var KEY = "trizn-demo-v2", SKEY = "trizn-demo-session-v2";
   var SECTIONS = ["site","menus","slides","popups","business","products","works","posts","inquiries","pillars","facts","history","partners"];
   var COLS = ["menus","slides","popups","business","products","works","posts","partners","history","pillars","facts","site"];
   var MAX = 512 * 1048576;
