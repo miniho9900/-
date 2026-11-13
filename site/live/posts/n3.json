@@ -1,11 +1,12 @@
 {
-  "board": "ir",
-  "body": "관리자 화면 › 게시판 관리 › IR·공시에서 이 글을 수정하거나 삭제하세요.\n\n첨부파일 칸에 IR 자료나 공시 원문(PDF)을 올리면 게시물 아래에 ‘첨부파일 열기’ 버튼이 나타납니다.",
-  "date": "2026-11-12",
-  "imageId": null,
-  "order": 0,
-  "pinned": false,
-  "title": "[예시] IR·공시 샘플 게시물입니다",
-  "updatedAt": "2026-11-12",
-  "visible": false
+ "board": "ir",
+ "body": "관리자 화면 › 게시판 관리 › IR·공시에서 이 글을 수정하거나 삭제하세요.\n\n첨부파일 칸에 IR 자료나 공시 원문(PDF)을 올리면 게시물 아래에 ‘첨부파일 열기’ 버튼이 나타납니다.",
+ "date": "2026-11-12",
+ "imageId": null,
+ "order": 0,
+ "pinned": false,
+ "title": "[예시] IR·공시 샘플 게시물입니다",
+ "updatedAt": "2026-11-12",
+ "visible": false,
+ "title_en": "[Sample] IR & disclosure sample post"
 }

@@ -1,7 +1,8 @@
 {
-  "label": "사업영역",
-  "order": 10,
-  "route": "business",
-  "updatedAt": "2026-11-12",
-  "visible": true
+ "label": "사업영역",
+ "order": 10,
+ "route": "business",
+ "updatedAt": "2026-11-12",
+ "visible": true,
+ "label_en": "Business"
 }

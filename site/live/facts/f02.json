@@ -1,8 +1,10 @@
 {
-  "icon": "calendar",
-  "label": "설립일",
-  "order": 10,
-  "updatedAt": "2026-11-13",
-  "value": "2013년 12월 31일",
-  "visible": true
+ "icon": "calendar",
+ "label": "설립일",
+ "order": 10,
+ "updatedAt": "2026-11-13",
+ "value": "2013년 12월 31일",
+ "visible": true,
+ "label_en": "Founded",
+ "value_en": "December 31, 2013"
 }

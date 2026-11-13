@@ -1,8 +1,9 @@
 {
-  "icon": "award",
-  "label": "신용등급",
-  "order": 50,
-  "updatedAt": "2026-11-13",
-  "value": "A-",
-  "visible": true
+ "icon": "award",
+ "label": "신용등급",
+ "order": 50,
+ "updatedAt": "2026-11-13T02:02:14.719Z",
+ "value": "BBB+",
+ "visible": true,
+ "label_en": "Credit rating"
 }

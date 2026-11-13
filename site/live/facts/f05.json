@@ -1,8 +1,10 @@
 {
-  "icon": "people",
-  "label": "직원수",
-  "order": 40,
-  "updatedAt": "2026-11-13",
-  "value": "80명",
-  "visible": true
+ "icon": "people",
+ "label": "직원수",
+ "order": 40,
+ "updatedAt": "2026-11-13T02:02:05.155Z",
+ "value": "109명",
+ "visible": true,
+ "label_en": "Employees",
+ "value_en": "109"
 }

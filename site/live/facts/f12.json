@@ -1,8 +1,9 @@
 {
-  "icon": "web",
-  "label": "홈페이지",
-  "order": 110,
-  "updatedAt": "2026-11-13",
-  "value": "https://www.trizn.kr",
-  "visible": true
+ "icon": "web",
+ "label": "홈페이지",
+ "order": 110,
+ "updatedAt": "2026-11-13",
+ "value": "https://www.trizn.kr",
+ "visible": true,
+ "label_en": "Website"
 }

@@ -1,7 +1,8 @@
 {
-  "label": "회사소개",
-  "order": 0,
-  "route": "about",
-  "updatedAt": "2026-11-12",
-  "visible": true
+ "label": "회사소개",
+ "order": 0,
+ "route": "about",
+ "updatedAt": "2026-11-12",
+ "visible": true,
+ "label_en": "Company"
 }

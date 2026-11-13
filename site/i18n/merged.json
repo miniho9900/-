@@ -1,0 +1,286 @@
+[
+ {
+  "path": "menus/m1",
+  "fields": [
+   "label_en"
+  ]
+ },
+ {
+  "path": "menus/m2",
+  "fields": [
+   "label_en"
+  ]
+ },
+ {
+  "path": "menus/m3",
+  "fields": [
+   "label_en"
+  ]
+ },
+ {
+  "path": "menus/m4",
+  "fields": [
+   "label_en"
+  ]
+ },
+ {
+  "path": "menus/m5",
+  "fields": [
+   "label_en"
+  ]
+ },
+ {
+  "path": "slides/s2",
+  "fields": [
+   "title_en",
+   "sub_en",
+   "btnLabel_en"
+  ]
+ },
+ {
+  "path": "slides/s3",
+  "fields": [
+   "title_en",
+   "sub_en",
+   "btnLabel_en"
+  ]
+ },
+ {
+  "path": "popups/u1",
+  "fields": [
+   "title_en",
+   "body_en",
+   "btnLabel_en"
+  ]
+ },
+ {
+  "path": "posts/n1",
+  "fields": [
+   "title_en",
+   "body_en",
+   "bodyHtml_en"
+  ]
+ },
+ {
+  "path": "posts/n2",
+  "fields": [
+   "title_en"
+  ]
+ },
+ {
+  "path": "posts/n3",
+  "fields": [
+   "title_en"
+  ]
+ },
+ {
+  "path": "pillars/v1",
+  "fields": [
+   "title_en",
+   "body_en"
+  ]
+ },
+ {
+  "path": "pillars/v2",
+  "fields": [
+   "title_en",
+   "body_en"
+  ]
+ },
+ {
+  "path": "pillars/v3",
+  "fields": [
+   "title_en",
+   "body_en"
+  ]
+ },
+ {
+  "path": "facts/f01",
+  "fields": [
+   "label_en",
+   "value_en"
+  ]
+ },
+ {
+  "path": "facts/f02",
+  "fields": [
+   "label_en",
+   "value_en"
+  ]
+ },
+ {
+  "path": "facts/f03",
+  "fields": [
+   "label_en"
+  ]
+ },
+ {
+  "path": "facts/f05",
+  "fields": [
+   "label_en",
+   "value_en"
+  ]
+ },
+ {
+  "path": "facts/f06",
+  "fields": [
+   "label_en"
+  ]
+ },
+ {
+  "path": "facts/f07",
+  "fields": [
+   "label_en",
+   "value_en"
+  ]
+ },
+ {
+  "path": "facts/f08",
+  "fields": [
+   "label_en",
+   "value_en"
+  ]
+ },
+ {
+  "path": "facts/f09",
+  "fields": [
+   "label_en",
+   "value_en"
+  ]
+ },
+ {
+  "path": "facts/f10",
+  "fields": [
+   "label_en",
+   "value_en"
+  ]
+ },
+ {
+  "path": "facts/f11",
+  "fields": [
+   "label_en",
+   "value_en"
+  ]
+ },
+ {
+  "path": "facts/f12",
+  "fields": [
+   "label_en"
+  ]
+ },
+ {
+  "path": "products/p1",
+  "fields": [
+   "category_en",
+   "summary_en",
+   "name_en"
+  ]
+ },
+ {
+  "path": "products/p2",
+  "fields": [
+   "category_en",
+   "summary_en"
+  ]
+ },
+ {
+  "path": "products/p3",
+  "fields": [
+   "category_en",
+   "summary_en"
+  ]
+ },
+ {
+  "path": "products/p4",
+  "fields": [
+   "category_en",
+   "summary_en"
+  ]
+ },
+ {
+  "path": "products/p8",
+  "fields": [
+   "category_en",
+   "summary_en",
+   "name_en"
+  ]
+ },
+ {
+  "path": "products/p9",
+  "fields": [
+   "category_en",
+   "summary_en",
+   "name_en"
+  ]
+ },
+ {
+  "path": "site/config",
+  "fields": [
+   "company_en",
+   "address_en",
+   "address2_en",
+   "bizLead_en",
+   "ctaTitle_en",
+   "ctaText_en",
+   "aboutTitle_en",
+   "ceoMessage_en",
+   "supportText_en",
+   "familyText_en",
+   "filmTitle_en",
+   "filmText_en",
+   "stats"
+  ]
+ },
+ {
+  "path": "business/b1",
+  "fields": [
+   "title_en",
+   "eyebrow_en",
+   "summary_en",
+   "lead_en",
+   "content_en"
+  ]
+ },
+ {
+  "path": "business/b2",
+  "fields": [
+   "title_en",
+   "eyebrow_en",
+   "summary_en",
+   "lead_en",
+   "content_en"
+  ]
+ },
+ {
+  "path": "business/b3",
+  "fields": [
+   "title_en",
+   "eyebrow_en",
+   "summary_en",
+   "lead_en",
+   "body_en",
+   "content_en"
+  ]
+ },
+ {
+  "path": "business/b4",
+  "fields": [
+   "title_en",
+   "eyebrow_en",
+   "summary_en",
+   "lead_en",
+   "content_en"
+  ]
+ },
+ {
+  "path": "business/b5",
+  "fields": [
+   "title_en",
+   "eyebrow_en",
+   "summary_en",
+   "lead_en",
+   "body_en",
+   "content_en"
+  ]
+ }
+]

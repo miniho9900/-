@@ -66,6 +66,7 @@
     case "bootstrap": {
       var data = {};
       COLS.forEach(function (c) { data[c] = Object.keys(mem.docs[c] || {}).map(function (id) { return { id: id, data: mem.docs[c][id] }; }); });
+      if (u) data.drafts = Object.keys(mem.docs.drafts || {}).filter(function (id) { return can(u, id.split("__")[0]); }).map(function (id) { return { id: id, data: mem.docs.drafts[id] }; });
       if (can(u, "inquiries")) data.inquiries = [{ id: "all", data: { items: mem.inquiries.slice().reverse() } }];
       return { ok: true, data: data, me: u ? pub(u) : null, csrf: s.csrf, maxUpload: MAX };
     }
@@ -81,9 +82,9 @@
     case "logout": sess = { csrf: rand(16), uid: null }; saveSess(); return { ok: true };
     case "write": {
       var col = String(body.col || ""), id = String(body.id || ""), op = body.op;
-      if (COLS.indexOf(col) < 0) fail("invalid_argument", "알 수 없는 항목입니다.");
       if (!/^[A-Za-z0-9_-]{1,80}$/.test(id)) fail("invalid_argument", "잘못된 문서 번호입니다.");
-      need(col);
+      if (col === "drafts") { var tg = id.split("__")[0]; if (COLS.indexOf(tg) < 0) fail("invalid_argument", "잘못된 반영 대기 항목입니다."); need(tg); }
+      else { if (COLS.indexOf(col) < 0) fail("invalid_argument", "알 수 없는 항목입니다."); need(col); }
       var bag = mem.docs[col] = mem.docs[col] || {};
       if (op === "delete") { delete bag[id]; save(); return { ok: true }; }
       var d = body.data; if (!isObj(d)) fail("invalid_argument", "저장할 내용이 올바르지 않습니다.");

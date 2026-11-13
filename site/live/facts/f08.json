@@ -1,8 +1,10 @@
 {
-  "icon": "chart",
-  "label": "매출액",
-  "order": 70,
-  "updatedAt": "2026-11-13",
-  "value": "’25: 461억",
-  "visible": true
+ "icon": "chart",
+ "label": "매출액",
+ "order": 70,
+ "updatedAt": "2026-11-13",
+ "value": "’25: 461억",
+ "visible": true,
+ "label_en": "Revenue",
+ "value_en": "2025: KRW 46.1 billion"
 }

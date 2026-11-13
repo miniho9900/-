@@ -29,6 +29,13 @@ try {
             if (!isset($data[$r['col']])) continue;
             $data[$r['col']][] = ['id' => $r['id'], 'data' => json_decode($r['data'], true) ?: []];
         }
+        if ($me) { // pending changes are visible to admins only (unpublished IR etc. must not leak)
+            $data['drafts'] = [];
+            foreach (q("SELECT id, data FROM docs WHERE col = 'drafts'")->fetchAll() as $r) {
+                $target = explode('__', $r['id'], 2)[0];
+                if (can($me, $target)) $data['drafts'][] = ['id' => $r['id'], 'data' => json_decode($r['data'], true) ?: []];
+            }
+        }
         if ($me && can($me, 'inquiries')) {
             $items = array_map(fn($r) => (json_decode($r['data'], true) ?: []) + ['id' => 'q' . $r['id'], 'at' => $r['created_at']], q('SELECT * FROM inquiries ORDER BY id DESC LIMIT 500')->fetchAll());
             $data['inquiries'] = [['id' => 'all', 'data' => ['items' => $items]]];
@@ -63,9 +70,16 @@ try {
     case 'write':
         if (!$isPost) fail('method', 'POST만 됩니다.', 405);
         $col = (string)($body['col'] ?? ''); $id = (string)($body['id'] ?? ''); $op = (string)($body['op'] ?? '');
-        if (!in_array($col, TZ_COLS, true)) fail('invalid_argument', '알 수 없는 항목입니다.');
         if (!preg_match('/^[A-Za-z0-9_-]{1,80}$/', $id)) fail('invalid_argument', '잘못된 문서 번호입니다.');
-        $need($col);
+        if ($col === 'drafts') {
+            [$target, $docId] = explode('__', $id, 2) + [1 => ''];
+            if (!in_array($target, TZ_COLS, true) || $docId === '') fail('invalid_argument', '잘못된 반영 대기 항목입니다.');
+            $need($target);
+            if ($op !== 'delete' && (($body['data']['col'] ?? '') !== $target || ($body['data']['docId'] ?? '') !== $docId)) fail('invalid_argument', '잘못된 반영 대기 항목입니다.');
+        } else {
+            if (!in_array($col, TZ_COLS, true)) fail('invalid_argument', '알 수 없는 항목입니다.');
+            $need($col);
+        }
         $cur = q1('SELECT data FROM docs WHERE col = ? AND id = ?', [$col, $id]);
         if ($op === 'delete') { q('DELETE FROM docs WHERE col = ? AND id = ?', [$col, $id]); json_out(['ok' => true]); }
         $data = $body['data'] ?? null;

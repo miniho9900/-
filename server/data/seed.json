@@ -15,7 +15,12 @@
    "summary": "고객의 복잡하고 다양한 환경에 맞춰 유무선 네트워크 설치부터 운영, 관리까지",
    "title": "네트워크 컨설팅 및 솔루션 개발",
    "updatedAt": "2026-11-13",
-   "visible": true
+   "visible": true,
+   "title_en": "Network Consulting & Solution Development",
+   "eyebrow_en": "Tailored for you",
+   "summary_en": "From wired and wireless network installation to operation and management, tailored to complex environments",
+   "lead_en": "Tailored to each customer's complex and diverse environment, we develop solutions and deliver services that take responsibility for **everything from installation to operation, management, custom consulting and automation** of wired and wireless networks.",
+   "content_en": "## WHY | Why network operations are getting harder\n### Growing complexity and cost of network operations\n- Rapid growth in network equipment\n### A shrinking pool of network operations experts\n- Workforce decline at home and abroad\n### Organizations struggle to run networks themselves\n- Lack of in-house network expertise\n\n## TARGET | Who needs managed network operations\n### Resorts & tourist sites\n### SMBs\n### Buildings & shopping malls\n### K-12 schools\n### MSOs & local governments\n### Chains & small businesses\n### Hotels & officetels\n\n## OUR GOAL | What TrizN sets out to do\n> Just as Cesco provides total hygiene services and S-1 (SECOM) total security services, we provide **total network services**.\nTailored to each customer's complex and diverse environment, we develop solutions and deliver services that take responsibility for everything from installation to operation, management, custom consulting and automation of wired and wireless networks."
   }
  },
  {
@@ -34,7 +39,12 @@
    "summary": "설계부터 장비 구축, 시공까지 원스톱으로 수행",
    "title": "네트워크 시공 및 구축",
    "updatedAt": "2026-11-13",
-   "visible": true
+   "visible": true,
+   "title_en": "Network Design, Construction & Deployment",
+   "eyebrow_en": "Tailored for you",
+   "summary_en": "One-stop service from design to equipment deployment and construction",
+   "lead_en": "We design, build and operate networks around each customer's **specific requirements** and work environment — **a complete network delivery service**.",
+   "content_en": "## PROCESS | Service process\n### Customer analysis & consulting\n- Understand business goals and IT strategy\n- Assess current infrastructure (legacy equipment, security, traffic, incident history)\n- Identify scalability, security requirements and budget\n- Draft a service level agreement (SLA)\n### Network design & planning\n- Logical design (VLANs, IP plan, subnetting)\n- Physical design (equipment placement, cable routes)\n- High availability and redundancy (e.g. STP, LACP, HSRP, VRRP)\n- Security policy design (ACL, firewall, IDS/IPS)\n### Construction & installation\n- Cabling and wiring (premises, UTP, fiber)\n- Equipment installation (routers, switches, wireless APs, firewalls)\n- Power and cooling (UPS integration, rack configuration)\n- Redundancy for fault tolerance\n### Configuration & testing\n- Network configuration (VLAN, routing, QoS, security)\n- Performance tests (trace, ping, bandwidth, load tests)\n- Security checks (port scanning, penetration tests)\n- User authentication and access control\n### Training & handover\n- Training for customer staff (operation and management guides)\n- Network diagrams and configuration documents\n- Management system integration (e.g. NMS, Syslog, SNMP)\n- Configuration backups and recovery images\n### Maintenance & technical support\n- 24/7 monitoring or regular inspections\n- Remote and on-site support with SLA-based incident response\n- Regular checks, firmware/system updates and security patches\n- Incident response protocol\n- Technical support help desk\n\n## SERVICE FEATURES | Service highlights\n### Higher productivity\nAn efficient, stable network environment raises business productivity.\n### Stronger network security\nHardened security prevents data leaks and blocks hacking attempts to protect your systems.\n### Lower costs\nAvoiding unnecessary equipment and infrastructure streamlines IT investment and cuts costs.\n### Better user experience\nHigh bandwidth, fast transfer and stable performance raise user satisfaction.\n\n## CASE | Example deployments\n### Schools\n- Changing usage, limited IT staff\n- Cloud-based controllers, automation\n### Offices\n- Business application focus\n- VLAN segmentation, QoS-based policies\n### Factories\n- Large areas, real-time requirements\n- IoT integration, Wi-Fi, mesh, industrial switches\n### Hospitals\n- High reliability and security\n- Redundancy, medical information security design"
   }
  },
  {
@@ -53,7 +63,13 @@
    "summary": "임대형 서비스로 초기 투자 부담을 줄이고 서비스 품질을 보장",
    "title": "네트워크 솔루션 임대 및 유지보수",
    "updatedAt": "2026-11-13",
-   "visible": true
+   "visible": true,
+   "title_en": "Network Solution Leasing & Maintenance",
+   "eyebrow_en": "Tailored for you",
+   "summary_en": "Subscription service that lowers upfront investment while guaranteeing service quality",
+   "lead_en": "We assess each customer's **IT infrastructure and usage** and deliver **the best-fit network solution as a service**.",
+   "body_en": "Network service architecture based on intelligent controllers",
+   "content_en": "## SERVICES | What we provide\n### Advanced integrated operations monitoring\n- AI-based intelligent, automated monitoring of network and equipment performance, security and traffic — around the clock\n- Fast incident handling through remote fault management and on-site dispatch\n- ※ On-site engineers available depending on the customer environment\n### Network subscription service\n- Rent every network solution your environment needs with no upfront burden — from deployment to operation, a total network service.\n### Total network solutions\n- Nationwide maintenance and 24-hour real-time network monitoring by dedicated specialists\n- Expert diagnosis to optimize performance, prevent failures and streamline operations — from design and deployment to operation and custom automation\n\n## PROCESS | Service process\n### Tailored consulting\n- Survey and analyze the customer's network (environment and configuration)\n- Propose service models that can be adopted\n### Application & agreement\n- Choose the service model based on the consulting results\n- Apply for the subscription service and sign the contract\n### Service delivery\n- Agree on the deployment schedule\n- Deploy at the customer site\n### Billing\n- Usage fees charged after deployment\n### Termination\n- Request termination\n- Service terminated\n\n## SERVICE FEATURES | Service highlights\n### Lower deployment and operating costs\n- Monthly fees make initial deployment affordable\n- Subscription greatly reduces maintenance, equipment and staffing costs\n### Real-time monitoring\n- 24/7/365 uninterrupted monitoring of the customer's internal network for stable operations\n- User-oriented monitoring tools for self-service integrated monitoring\n### Efficient recovery · one-stop service\n- Intelligent controllers enable easy 24-hour monitoring and fast incident response\n- Total one-stop service from operation and management to training and technical support\n### Service stability and continuity\n- Certified, BMT-proven products for high service stability\n- Damaged or faulty equipment replaced with up-to-date models for continuity\n\n## CASE | Where it applies\n### SMBs\n### MSOs · local governments\n### Hospitals\n### K-12 schools\n### University campuses\n### Hotels · officetels\n### Buildings · shopping malls\n### Chains · small businesses\n### Resorts · tourist sites"
   }
  },
  {
@@ -72,7 +88,12 @@
    "summary": "인공지능 기반 운영관제 솔루션과 자동화 관제센터 구축",
    "title": "네트워크 운영관제",
    "updatedAt": "2026-11-13",
-   "visible": true
+   "visible": true,
+   "title_en": "Network Operations & Monitoring",
+   "eyebrow_en": "Tailored for you",
+   "summary_en": "AI-based operations monitoring solutions and automated network operations centers",
+   "lead_en": "Total network services through **AI-based network operations solution development** and automated network operations center deployment",
+   "content_en": "## TECHNOLOGY | Intelligent automated network operations solution\nAI-based, intelligent, automated and unmanned total network services\n### Wired & wireless networking\n### AI & data analytics\n### SD-WAN\n### App platform\n### IoT\n### SD-LAN\n\n## FEATURES | Intelligent operations solution\n### Korea's first integrated AE & PON controller\n### Korea's first wired/wireless multi-vendor integration\n### Korea's first AI-based network fault detection\n\n## TARGET | Where it applies\n### K-12 schools\n### SMBs\n### Buildings & shopping malls\n### Hotels & officetels\n### MSOs & local governments\n### Chains & small businesses\n### Resorts & tourist sites\n\n## COMPARISON | SDN controller comparison\n| Feature | TRIZN controller | Controller A | Controller B | Controller C |\n| Target market | Managed network services | 5G ISP | Data centers | Data centers |\n| Core competence | Wired & wireless network solutions | 5G network solutions | Cloud platform (OpenStack) | Big data platform (Hadoop) |\n| Wireless optimization | ● | X | X | X |\n| Integrated wired/wireless management & references | ● | X | X | X |\n| Integrated SDN & legacy switch management & references | ● | ● | X | ● |\n| Integrated AE & PON device management & references | ● | X | X | X |\n| AI-based wired/wireless fault detection | ● | X | X | X |\n| In-house wired/wireless SDN device development | ● | ● | ● | ● |\n* SDN: Software Defined Network · IOP: Inter-operation · SD-WAN: Software Defined Wide Area Network · SD-LAN: Software Defined Local Area Network · MSO: Multi System Operator · NOS: Network Operating System"
   }
  },
  {
@@ -91,7 +112,13 @@
    "summary": "나라장터를 통한 공공기관 맞춤형 네트워크 장비 공급",
    "title": "조달 *S2B Biz",
    "updatedAt": "2026-11-13",
-   "visible": true
+   "visible": true,
+   "title_en": "Public Procurement · S2B Biz",
+   "eyebrow_en": "PUBLIC PROCUREMENT",
+   "summary_en": "Tailored network equipment for public institutions via KONEPS",
+   "lead_en": "Find **ubiQuoss network switch solutions** on the KONEPS online shopping mall!",
+   "body_en": "We supply tailored network equipment to public institutions through the KONEPS shopping mall, together with deployment consulting based on a wide range of network switches.",
+   "content_en": "## PRODUCTS | Registered procurement products\n| No | Item | Details |\n| 1 | Enhanced security (security conformity certified) | Security function certificates for all backbone/L3 and security switches / Encryption and hash algorithms against hacking on all models / Enhanced filtering (blocks MAC·IP·ARP attacks) |\n| 2 | Reliability | Over 1 million units in operation nationwide for public, enterprise and carrier broadband services / Electrical safety certification for all PoE models |\n| 3 | Easy deployment & operation | Standard hardware interfaces / Familiar command set / Convenient NMS (optional) |\n| 4 | Leading Korean technology | Numerous patents and utility models / Fanless silent switches, remote hardware reset (patented) |\n| 5 | Full L2·L3·multicast support | VRRP·Static·RIP·OSPF·BGP·IS-IS·IGMP·PIM and more |\n| 6 | IPv4·IPv6 dual stack | Simultaneous IPv4·IPv6 communication |\n| 7 | Easy operation & monitoring | SNMP·RMON·sFlow·port mirroring and other management features |\n| 8 | Structured technical support | Manufacturer call center (+82-1577-9550) and online technical library |\n\n## LINE-UP | Differentiated IP-based services\nThe right network solution for every requirement and scale!\n### L3 switches\n### L2 switches\n### L2 PoE switches\n### Security switches\n### Backbone switches\n### Optical & converter modules\n\n## FEATURED | Products with security function certificates\n### E7148\n- Item ID 25393875\n- Switching fabric 3.6 Tbps · Throughput 1.5 Bpps (128 bytes)\n- Service 1G/10G/25GE 48 ports (SFP/SFP+/SFP28)\n- Uplink 40G/100GE 6 ports (QSFP+/QSFP28) · redundant power\n### E6100\n- Item ID 22755362\n- Switching fabric 1,280 Gbps · Throughput 714 Mpps\n- Service 1G/10G 48 ports (SFP/SFP+)\n### E4050-24CX\n- Item ID 25043206\n- Switching fabric 168 Gbps · Throughput 95.2 Mpps\n- Service 1G 24 ports (combo) · Uplink 1G/10G 4 ports (SFP/SFP+)\n- Redundant power\n### E4050-24S\n- Item ID 25691652\n- Switching fabric 56 Gbps · Throughput 41.6 Mpps\n- Service 1G 24 ports (SFP) · Uplink 1G 4 ports (combo)\n- Redundant power\n### E4050-24C\n- Item ID 25691651\n- Switching fabric 56 Gbps · Throughput 41.6 Mpps\n- Service 1G 16 ports (UTP) + 1G 8 ports (combo) · Uplink 1G 4 ports (combo)\n- Redundant power\n### E4050-24T\n- Item ID 25691650\n- Switching fabric 56 Gbps · Throughput 41.6 Mpps\n- Service 1G 24 ports (UTP) · Uplink 1G 4 ports (combo)\n- Redundant power\n\n## PRICE LIST | Registered procurement products\nRegistered supplier: TrizN Inc.\n| No | Item (classification 43222612) | Item ID | Model | KONEPS listing | Registered price (VAT incl.) |\n| 1 | Backbone switch | 23981695 | E7610 | Network switch, ubiQuoss (CN)E7610, up to 384port | ₩40,000,000 |\n| 2 | E7610 Control Unit | 24934979 | PFE7610 | Network switch, ubiQuoss, (CN)PFE7610, (Part) Control Unit | ₩19,800,000 |\n| 3 | E76XX Line-Card | 24934981 | S76-48GF | Network switch, ubiQuoss, (CN)S76-48GF, (Part) Line Card | ₩8,000,000 |\n| 4 | L3 switch | 25393875 | E7148 | Network switch, ubiQuoss, E7148, 48port | ₩19,000,000 |\n| 5 | L3 switch | 22755362 | E6100 | Network switch, ubiQuoss, E6100, 48port | ₩13,060,000 |\n| 6 | L3 switch | 25043206 | E4050-24CX | Network switch, ubiQuoss, E4050-24CX, 24port | ₩4,600,000 |\n| 7 | L3 switch | 25691652 | E4050-24S | Network switch, ubiQuoss, E4050-24S, 24port | ₩3,560,000 |\n| 8 | L3 switch | 25691651 | E4050-24C | Network switch, ubiQuoss, E4050-24C, 24port | ₩3,400,000 |\n| 9 | L3 switch | 25691650 | E4050-24T | Network switch, ubiQuoss, E4050-24T, 24port | ₩2,900,000 |\n| 10 | Secure L3 switch | 25052793 | E4050-24CX-S | Network switch, ubiQuoss, E4050-24CX-S, 24port | ₩5,300,000 |\n| 11 | Secure L2 PoE switch | 25393878 | E4020-24P-S | Network switch, ubiQuoss, (CN)E4020-24P-S, 24port | ₩3,900,000 |\n| 12 | Secure L2 switch | 25393877 | E4020-24TX-S | Network switch, ubiQuoss, (CN)E4020-24TX-S, 24port, fanless, silent | ₩2,400,000 |\n| 13 | L2 PoE switch | 25691649 | E4300X-12U12P | Network switch, ubiQuoss, (CN)E4300X-12U12P, 24port | ₩5,500,000 |\n| 14 | L2 PoE switch | 23210521 | E4020-48PS | Network switch, ubiQuoss, E4020-48PS, 48port | ₩3,600,000 |\n| 15 | L2 PoE switch | 23499365 | E4020-24PS | Network switch, ubiQuoss, (CN)E4020-24PS, 24port | ₩1,700,000 |\n| 16 | L2 PoE switch | 24319946 | E4020-24P | Network switch, ubiQuoss, (CN)E4020-24P, 24port | ₩1,700,000 |\n| 17 | L2 PoE switch | 25548973 | E3010-8P | Network switch, ubiQuoss, (CN)E3010-8P, 8port | ₩860,000 |\n| 18 | L2 switch | 25551611 | E6500-28Z | Network switch, ubiQuoss, E6500-28Z, 24port | ₩4,950,000 |\n| 19 | L2 switch | 23210520 | E4020-48T | Network switch, ubiQuoss, E4020-48T, 48port | ₩2,450,000 |\n| 20 | L2 switch | 24319949 | E4020-24TX | Network switch, ubiQuoss, (CN)E4020-24TX, 24port, fanless, silent | ₩1,190,000 |\n| 21 | L2 switch | 24319948 | E4020-24T | Network switch, ubiQuoss, (CN)E4020-24T, 24port, fanless, silent | ₩816,000 |\n| 22 | Optical module (SFP) | 25637436 | HYM-PX1M-LID | (Part) Hymax optoelectronics, (CN)HYM-PX1M-LID, 10G multi-mode | ₩210,000 |\n| 23 | Optical module (SFP) | 25637438 | HYM-PX21-LID | (Part) Hymax optoelectronics, (CN)HYM-PX21-LID, 10G single-mode | ₩350,000 |\n| 24 | Optical module (SFP) | 25637421 | HYM-P11M-LCD | (Part) Hymax optoelectronics, (CN)HYM-P11M-LCD, 1G multi-mode | ₩97,000 |\n| 25 | Optical module (SFP) | 25637420 | HYM-P122-LCD | (Part) Hymax optoelectronics, (CN)HYM-P122-LCD, 1G single-mode | ₩156,000 |\n| 26 | Converter module (TX-Copper) | - | GE-GB-P1RC-ETB | (Part) Shenzhen gigalight technology, (CN)GE-GB-P1RC-ETB | ₩250,000 |\n\n## WHY ubiQuoss | Why ubiQuoss\n### Technology\n- Korea's first stable commercial L3 and backbone switches, and mobile (4G/5G) backhaul switches\n### Fanless design\n- Silent switches (E4020-24T / E4020-24TX)\n### Proven stability and market share\n- No. 2 in Korean network switch sales (after Cisco), about 1 million units in operation\n### Security conformity on all L3 models\n- Product stability through advanced security features\n### Product range\n- The only Korean vendor with an end-to-end total solution\n### Electrical safety on all PoE models\n- Safety certified under the Electrical Appliances and Consumer Products Safety Control Act\n### Korean manufacturer\n- Made in Korea (domestic network equipment manufacturer)\n### L2–L3 remote reset (patented)\n- Efficient networks through patented technology and network automation\n### Financial stability\n- KOSDAQ-listed (2009) with a sound financial structure\n### No. 1 Korean switch vendor\n- About 1 million units in operation — a proven solution\n\n## CONTACT | Manufacturer · registered supplier\n### Manufacturer — ubiQuoss Inc.\n- HQ / R&D: 68 Pangyo-ro 255beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do\n- Customer & technical support: +82-1577-9550\n### Registered supplier — TrizN Inc.\n- Address: Room 201, Terrace Hill 2, 36 Daehak 3-ro 4beon-gil, Yeongtong-gu, Suwon-si, Gyeonggi-do\n- Main line / fax: +82-31-247-5966 / +82-31-212-5903\n- Product inquiries: +82-70-5038-1771"
   }
  },
  {
@@ -102,7 +129,9 @@
    "order": 0,
    "updatedAt": "2026-11-13",
    "value": "㈜트리즈엔 (TrizN Inc.)",
-   "visible": true
+   "visible": true,
+   "label_en": "Company",
+   "value_en": "TrizN Inc."
   }
  },
  {
@@ -113,7 +142,9 @@
    "order": 10,
    "updatedAt": "2026-11-13",
    "value": "2013년 12월 31일",
-   "visible": true
+   "visible": true,
+   "label_en": "Founded",
+   "value_en": "December 31, 2013"
   }
  },
  {
@@ -124,7 +155,8 @@
    "order": 20,
    "updatedAt": "2026-11-13",
    "value": "백 성 우",
-   "visible": true
+   "visible": true,
+   "label_en": "CEO"
   }
  },
  {
@@ -133,9 +165,11 @@
    "icon": "people",
    "label": "직원수",
    "order": 40,
-   "updatedAt": "2026-11-13",
-   "value": "80명",
-   "visible": true
+   "updatedAt": "2026-11-13T02:02:05.155Z",
+   "value": "109명",
+   "visible": true,
+   "label_en": "Employees",
+   "value_en": "109"
   }
  },
  {
@@ -144,9 +178,10 @@
    "icon": "award",
    "label": "신용등급",
    "order": 50,
-   "updatedAt": "2026-11-13",
-   "value": "A-",
-   "visible": true
+   "updatedAt": "2026-11-13T02:02:14.719Z",
+   "value": "BBB+",
+   "visible": true,
+   "label_en": "Credit rating"
   }
  },
  {
@@ -157,7 +192,9 @@
    "order": 60,
    "updatedAt": "2026-11-13",
    "value": "938백만원",
-   "visible": true
+   "visible": true,
+   "label_en": "Paid-in capital",
+   "value_en": "KRW 938 million"
   }
  },
  {
@@ -168,7 +205,9 @@
    "order": 70,
    "updatedAt": "2026-11-13",
    "value": "’25: 461억",
-   "visible": true
+   "visible": true,
+   "label_en": "Revenue",
+   "value_en": "2025: KRW 46.1 billion"
   }
  },
  {
@@ -179,7 +218,9 @@
    "order": 80,
    "updatedAt": "2026-11-13",
    "value": "소프트웨어 개발 및 공급,\n정보통신공사업, 통신장비판매",
-   "visible": true
+   "visible": true,
+   "label_en": "Main business",
+   "value_en": "Software development and supply,\ninformation & communication construction,\ntelecom equipment sales"
   }
  },
  {
@@ -190,7 +231,9 @@
    "order": 90,
    "updatedAt": "2026-11-13",
    "value": "TEL: 031)247-5966\nFAX: 031)212-5903",
-   "visible": true
+   "visible": true,
+   "label_en": "Contact",
+   "value_en": "TEL: +82-31-247-5966\nFAX: +82-31-212-5903"
   }
  },
  {
@@ -201,7 +244,9 @@
    "order": 100,
    "updatedAt": "2026-11-13",
    "value": "경기도 수원시 영통구 대학3로4번길\n15 208~220호, 223호 (이의동, 테라스힐)",
-   "visible": true
+   "visible": true,
+   "label_en": "Address",
+   "value_en": "Rooms 208–220, 223, 15 Daehak 3-ro 4beon-gil,\nYeongtong-gu, Suwon-si, Gyeonggi-do (Terrace Hill)"
   }
  },
  {
@@ -212,7 +257,8 @@
    "order": 110,
    "updatedAt": "2026-11-13",
    "value": "https://www.trizn.kr",
-   "visible": true
+   "visible": true,
+   "label_en": "Website"
   }
  },
  {
@@ -222,7 +268,8 @@
    "order": 0,
    "route": "about",
    "updatedAt": "2026-11-12",
-   "visible": true
+   "visible": true,
+   "label_en": "Company"
   }
  },
  {
@@ -232,7 +279,8 @@
    "order": 10,
    "route": "business",
    "updatedAt": "2026-11-12",
-   "visible": true
+   "visible": true,
+   "label_en": "Business"
   }
  },
  {
@@ -242,7 +290,8 @@
    "order": 20,
    "route": "products",
    "updatedAt": "2026-11-12",
-   "visible": true
+   "visible": true,
+   "label_en": "Solutions"
   }
  },
  {
@@ -252,7 +301,8 @@
    "order": 30,
    "route": "news",
    "updatedAt": "2026-11-13T00:57:43.019Z",
-   "visible": true
+   "visible": true,
+   "label_en": "News & IR"
   }
  },
  {
@@ -262,7 +312,8 @@
    "order": 40,
    "route": "contact",
    "updatedAt": "2026-11-12",
-   "visible": true
+   "visible": true,
+   "label_en": "Contact"
   }
  },
  {
@@ -273,7 +324,9 @@
    "order": 0,
    "title": "고객만족을 최우선으로 하는 기업",
    "updatedAt": "2026-11-13",
-   "visible": true
+   "visible": true,
+   "title_en": "Customer satisfaction comes first",
+   "body_en": "Built on the highest product and service quality, and guided by our motto \"Customer satisfaction comes first,\" TrizN does its utmost to consult on and build intelligent networks, aiming for intelligent, automated, hyper-connected networks."
   }
  },
  {
@@ -284,7 +337,9 @@
    "order": 10,
    "title": "지능형 ICT 토탈 솔루션을 제공하는 전문기업",
    "updatedAt": "2026-11-13",
-   "visible": true
+   "visible": true,
+   "title_en": "A specialist in intelligent ICT total solutions",
+   "body_en": "Based on our development and operation of intelligent wired/wireless integrated SDN solutions, we build multi-vendor equipment and devices for communication services and provide an integrated operating system."
   }
  },
  {
@@ -295,7 +350,9 @@
    "order": 20,
    "title": "고객과 함께 미래를 준비하는 기업",
    "updatedAt": "2026-11-13",
-   "visible": true
+   "visible": true,
+   "title_en": "Preparing the future with our customers",
+   "body_en": "Rather than simply meeting today's demand,\nwe proactively deliver forward-looking, tailored value\nand prepare for the future together with our customers.\nWe grow with our customers toward a better tomorrow."
   }
  },
  {
@@ -311,7 +368,10 @@
    "start": "2026-11-12",
    "title": "홈페이지\n리뉴얼 오픈",
    "updatedAt": "2026-11-12",
-   "visible": false
+   "visible": false,
+   "title_en": "Our new\nwebsite is live",
+   "body_en": "Explore TrizN's network services\nand SDN solutions on our new website.",
+   "btnLabel_en": "View Notice"
   }
  },
  {
@@ -325,7 +385,10 @@
    "pinned": true,
    "title": "트리즈엔 홈페이지를 새롭게 열었습니다",
    "updatedAt": "2026-11-12",
-   "visible": true
+   "visible": true,
+   "title_en": "TrizN has launched its new website",
+   "body_en": "The TrizN website has been fully redesigned.\n\nWe have expanded the introductions to our business areas and intelligent network solutions, and brought customer inquiries and remote support together in one place.\n\nThank you for your continued interest.",
+   "bodyHtml_en": "<p>The TrizN website has been fully redesigned.</p><p>We have expanded the introductions to our business areas and intelligent network solutions, and brought customer inquiries and remote support together in one place.</p><p>Thank you for your continued interest.</p>"
   }
  },
  {
@@ -339,7 +402,8 @@
    "pinned": false,
    "title": "[예시] 보도자료 샘플 게시물입니다",
    "updatedAt": "2026-11-12",
-   "visible": true
+   "visible": true,
+   "title_en": "[Sample] Press release sample post"
   }
  },
  {
@@ -353,7 +417,8 @@
    "pinned": false,
    "title": "[예시] IR·공시 샘플 게시물입니다",
    "updatedAt": "2026-11-12",
-   "visible": false
+   "visible": false,
+   "title_en": "[Sample] IR & disclosure sample post"
   }
  },
  {
@@ -366,7 +431,10 @@
    "order": 0,
    "summary": "인공지능 기반의 지능형·자동화·무인화 네트워크 운영관제 서비스",
    "updatedAt": "2026-11-12",
-   "visible": true
+   "visible": true,
+   "category_en": "Operations",
+   "summary_en": "AI-based intelligent, automated and unmanned network operations and monitoring service",
+   "name_en": "SDN Operations & Monitoring Solution"
   }
  },
  {
@@ -379,7 +447,9 @@
    "order": 10,
    "summary": "Rest API, OpenFlow 등 표준 프로토콜로 SDN 컨트롤러와 연동되는 데이터센터 자동화용 스위치",
    "updatedAt": "2026-11-12",
-   "visible": true
+   "visible": true,
+   "category_en": "SDN Equipment",
+   "summary_en": "Switches that integrate with SDN controllers over standard protocols such as REST API and OpenFlow, built for data center automation"
   }
  },
  {
@@ -392,7 +462,9 @@
    "order": 20,
    "summary": "PON에 SDN을 접목한 차세대 광통신 구조. QoS·대역폭·장애 대응을 중앙에서 제어",
    "updatedAt": "2026-11-12",
-   "visible": true
+   "visible": true,
+   "category_en": "SDN Equipment",
+   "summary_en": "Next-generation optical architecture combining PON with SDN — QoS, bandwidth and fault response controlled centrally"
   }
  },
  {
@@ -405,46 +477,9 @@
    "order": 30,
    "summary": "고속 인터넷, 안정성, 넓은 커버리지가 필요한 환경에서 최적의 성능 제공",
    "updatedAt": "2026-11-12",
-   "visible": true
-  }
- },
- {
-  "path": "products/p5",
-  "data": {
-   "category": "SDN 장비",
-   "featured": true,
-   "imageId": null,
-   "name": "SDN VPN",
-   "order": 40,
-   "summary": "복잡한 VPN 구성을 소프트웨어로 단순화한 클라우드 시대의 보안 연결",
-   "updatedAt": "2026-11-12",
-   "visible": true
-  }
- },
- {
-  "path": "products/p6",
-  "data": {
-   "category": "SDN 장비",
-   "featured": true,
-   "imageId": null,
-   "name": "SDN Firewall",
-   "order": 50,
-   "summary": "정책 기반 동적 ACL과 트래픽 가시화로 위협 탐지·차단·분석을 실시간 중앙 대응",
-   "updatedAt": "2026-11-12",
-   "visible": true
-  }
- },
- {
-  "path": "products/p7",
-  "data": {
-   "category": "SDN 장비",
-   "featured": true,
-   "imageId": null,
-   "name": "SDN 스토리지",
-   "order": 60,
-   "summary": "스토리지 간 데이터 흐름을 중앙에서 통제해 성능 최적화와 QoS 보장",
-   "updatedAt": "2026-11-12",
-   "visible": true
+   "visible": true,
+   "category_en": "SDN Equipment",
+   "summary_en": "Optimal performance where high-speed internet, stability and wide coverage are required"
   }
  },
  {
@@ -457,7 +492,10 @@
    "order": 70,
    "summary": "네트워크 상태를 실시간 모니터링하고 원격제어와 장애 예측을 지원하는 스마트 배선 시스템",
    "updatedAt": "2026-11-12",
-   "visible": true
+   "visible": true,
+   "category_en": "Infrastructure",
+   "summary_en": "Smart cabling system with real-time monitoring, remote control and fault prediction",
+   "name_en": "SDN Integrated Patch Panel"
   }
  },
  {
@@ -470,7 +508,10 @@
    "order": 80,
    "summary": "광케이블 연결 상태를 실시간 감시·원격 제어하는 지능형 광분배 시스템",
    "updatedAt": "2026-11-12",
-   "visible": true
+   "visible": true,
+   "category_en": "Infrastructure",
+   "summary_en": "Intelligent fiber distribution frame with real-time monitoring and remote control of fiber connections",
+   "name_en": "SDN Intelligent FDF"
   }
  },
  {
@@ -505,17 +546,20 @@
     {
      "label": "토탈 네트워크 서비스",
      "num": "5",
-     "suffix": ""
+     "suffix": "",
+     "label_en": "Total network services"
     },
     {
      "label": "지능형 SDN 솔루션",
      "num": "9",
-     "suffix": ""
+     "suffix": "",
+     "label_en": "Intelligent SDN solutions"
     },
     {
      "label": "본사 · 공장 거점",
      "num": "2",
-     "suffix": ""
+     "suffix": "",
+     "label_en": "Office & factory sites"
     }
    ],
    "supportText": "전화로 상담원과 연결한 뒤, 안내받은 접속번호로 원격지원 프로그램에 접속하세요. 엔지니어가 원격으로 장비와 네트워크 상태를 점검해 드립니다.",
@@ -526,7 +570,19 @@
    "tile3ImageId": null,
    "updatedAt": "2026-11-13T00:46:44.062Z",
    "vision": "",
-   "visionLead": ""
+   "visionLead": "",
+   "company_en": "TrizN Inc.",
+   "address_en": "Rooms 208–220, 223, 15 Daehak 3-ro 4beon-gil, Yeongtong-gu, Suwon-si, Gyeonggi-do, Korea (Terrace Hill)",
+   "address2_en": "Rooms 209–210, Terrace Hill 2, 36 Daehak 3-ro 4beon-gil, Yeongtong-gu, Suwon-si, Gyeonggi-do, Korea",
+   "bizLead_en": "From consulting to design and deployment, leasing and maintenance, and operations monitoring — all in one place, tailored to your complex environment.",
+   "ctaTitle_en": "Design the network your organization needs, with TrizN.",
+   "ctaText_en": "Our engineers are with you from the first consultation through deployment and maintenance.",
+   "aboutTitle_en": "The world's largest network service platform\n— without owning a network",
+   "ceoMessage_en": "TrizN is a total network service company that takes responsibility for the entire network lifecycle — from network consulting and solution development to design, construction and deployment, solution leasing and maintenance, and AI-based operations monitoring.\n\nBuilt on SDN (Software-Defined Networking), we supply intelligent network solutions that centrally control and automate switches, PON, VPN, firewalls, storage, integrated patch panels and intelligent FDFs.\n\nFor public institutions, we provide tailored network equipment and deployment consulting through KONEPS and S2B.",
+   "supportText_en": "Call our support line, then connect to the remote support program with the access code you are given. Our engineers will check your equipment and network remotely.",
+   "familyText_en": "Commercial intelligent dry-cleaning robot. Precise autonomous navigation and 4-in-1 dry cleaning keep your spaces in shape.",
+   "filmTitle_en": "Intelligent networks,\nbuilt by TrizN",
+   "filmText_en": "From consulting, design and deployment to leasing, maintenance and AI-based operations.\nMeet TrizN on film."
   }
  },
  {
@@ -556,7 +612,10 @@
    "title": "AI로 제어하는\n**지능형 네트워크**",
    "updatedAt": "2026-11-12",
    "videoId": null,
-   "visible": false
+   "visible": false,
+   "title_en": "Intelligent networks,\n**controlled by AI**",
+   "sub_en": "SDN-based central control and automation\nfor unmanned network operations.",
+   "btnLabel_en": "View Solutions"
   }
  },
  {
@@ -571,7 +630,10 @@
    "title": "공공기관 맞춤형\n**조달 · S2B Biz**",
    "updatedAt": "2026-11-12",
    "videoId": null,
-   "visible": false
+   "visible": false,
+   "title_en": "Built for the public sector\n**Procurement · S2B Biz**",
+   "sub_en": "Network equipment and deployment consulting\nthrough KONEPS and S2B.",
+   "btnLabel_en": "Contact Us"
   }
  }
 ]

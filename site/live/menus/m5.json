@@ -1,7 +1,8 @@
 {
-  "label": "고객문의",
-  "order": 40,
-  "route": "contact",
-  "updatedAt": "2026-11-12",
-  "visible": true
+ "label": "고객문의",
+ "order": 40,
+ "route": "contact",
+ "updatedAt": "2026-11-12",
+ "visible": true,
+ "label_en": "Contact"
 }
