@@ -168,16 +168,23 @@ p{margin:0}
 .biz-pn a b{font-size:20px;color:var(--ink)}
 .biz-pn a:hover b{color:var(--violet)}
 .family-btn[hidden]{display:none}
-.family-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600;background:rgba(255,255,255,.12);font-family:var(--f-display);letter-spacing:.04em;transition:background .25s,color .25s;white-space:nowrap}
-.hd.solid .family-btn{background:var(--lilac);color:var(--violet)}
-.family-btn:hover{background:var(--violet)!important;color:#fff!important}
+.family-btn{display:inline-flex;align-items:center;gap:8px;padding:6px 12px 6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.06);transition:background .25s,border-color .25s;white-space:nowrap;color:inherit}
+.family-btn img{height:26px;width:auto;display:block}
+.family-btn .fl-c{display:none}
+.hd.solid .family-btn{border-color:var(--line-2);background:var(--paper)}
+.hd.solid .family-btn .fl-w{display:none}.hd.solid .family-btn .fl-c{display:block}
+.family-btn:hover{background:var(--violet);border-color:var(--violet)}
+.hd.solid .family-btn:hover{background:var(--lilac);border-color:var(--violet)}
+.fm-family img{height:40px;width:auto;display:block}
+.ft-family img{height:24px;width:auto;display:block}
+.tile .fam-logo{height:58px;width:auto;display:block;margin:12px 0 10px}
 .fm-family{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:1px solid var(--on-dark-line);padding:28px 0 40px;color:var(--on-dark-2)}
 .fm-family a{color:#fff;font-weight:500;display:inline-flex;gap:8px;align-items:center}
 .ft-family{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--on-dark-line);padding:10px 16px;color:#fff;font-size:13px;margin-top:20px}
 .ft-family:hover{border-color:var(--violet-soft)}
 .post-file{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line-2);padding:14px 20px;margin-top:28px;font-size:15px;color:var(--ink);background:var(--mist)}
 .post-file:hover{border-color:var(--violet);color:var(--violet)}
-@media (max-width:760px){.biz-intro{grid-template-columns:minmax(0,1fr)}.biz-pn a b{font-size:16px}.family-btn{padding:6px 10px;font-size:12px}}
+@media (max-width:760px){.biz-intro{grid-template-columns:minmax(0,1fr)}.biz-pn a b{font-size:16px}.family-btn{padding:4px 8px 4px 10px}.family-btn img{height:20px}}
 /* rich html content (site + editor) */
 .rte-content{font-size:17px;line-height:1.9;color:#2F2D4E;overflow-wrap:break-word}
 .rte-content>*:first-child{margin-top:0}
@@ -808,8 +815,8 @@ function renderHeader(r){
   $("#gnb").innerHTML = menus().map(m => `<a href="#${esc(m.route)}" class="${base===m.route?"on":""}">${esc(m.label)}</a>`).join("");
   $("#fmGrid").innerHTML = menus().map((m,i) => `<a class="fm-item" href="#${esc(m.route)}"><span class="n">${String(i+1).padStart(2,"0")}</span><span class="t">${esc(m.label)}</span><span class="s">${(SUBMENU[m.route]||[]).map(esc).join("<br>")}</span></a>`).join("");
   const fu = cfg("familyUrl"), fnm = cfg("familyName") || "TRIZRO";
-  const fb = $("#familyBtn"); fb.hidden = !fu; if (fu){ fb.href = fu; fb.textContent = fnm + " ↗"; fb.setAttribute("aria-label", fnm + " 사이트 (새 창)"); }
-  const ff = $("#fmFamily"); ff.hidden = !fu; if (fu) ff.innerHTML = `<span>FAMILY SITE</span><a href="${esc(fu)}" target="_blank" rel="noopener">${esc(fnm)} — ${esc(cfg("familyText")||"사이트 바로가기")} ${I.ext}</a>`;
+  const fb = $("#familyBtn"); fb.hidden = !fu; if (fu){ fb.href = fu; fb.innerHTML = `<img class="fl-w" src="trizro-white.png" alt="${esc(fnm)}"><img class="fl-c" src="trizro.png" alt="">${I.ext}`; fb.setAttribute("aria-label", fnm + " 사이트 바로가기 (새 창)"); }
+  const ff = $("#fmFamily"); ff.hidden = !fu; if (fu) ff.innerHTML = `<span>FAMILY SITE</span><a href="${esc(fu)}" target="_blank" rel="noopener" aria-label="${esc(fnm)} 사이트 바로가기 (새 창)"><img src="trizro-white.png" alt="${esc(fnm)}"> ${I.ext}</a>`;
   const isAdm = base === "admin";
   $("#hd").hidden = isAdm;
   onScroll();
@@ -829,7 +836,7 @@ function footer(){
   const groups = [["회사소개",[["회사개요","about"],["연혁","about"],["인증 및 지적재산권","cert"],["오시는 길","about"]]],["사업·서비스",[["토탈 네트워크 서비스","business"],["지능형 네트워크 솔루션","products"]]],["고객지원",[["공지사항","news"],["IR·공시","news"],["고객문의","contact"],["원격지원서비스","contact"]]]];
   return `<footer class="ft"><div class="wrap">
     <div class="top">
-      <div><img src="logo-white.png" alt="TRIZN"><p class="info">${[cfg("company")||"트리즈엔", cfg("ceo")&&"대표이사 "+cfg("ceo"), cfg("bizNo")&&"사업자등록번호 "+cfg("bizNo")].filter(Boolean).map(esc).join("  |  ")}<br><b style="color:#fff;font-weight:500">본사</b>  ${esc(cfg("address"))}${cfg("address2")?`<br><b style="color:#fff;font-weight:500">공장</b>  ${esc(cfg("address2"))}`:""}<br>TEL ${esc(cfg("tel"))}  |  FAX ${esc(cfg("fax"))}  |  ${esc(cfg("email"))}</p>${cfg("familyUrl")?`<a class="ft-family" href="${esc(cfg("familyUrl"))}" target="_blank" rel="noopener">FAMILY SITE · ${esc(cfg("familyName")||"TRIZRO")} ${I.ext}</a>`:""}</div>
+      <div><img src="logo-white.png" alt="TRIZN"><p class="info">${[cfg("company")||"트리즈엔", cfg("ceo")&&"대표이사 "+cfg("ceo"), cfg("bizNo")&&"사업자등록번호 "+cfg("bizNo")].filter(Boolean).map(esc).join("  |  ")}<br><b style="color:#fff;font-weight:500">본사</b>  ${esc(cfg("address"))}${cfg("address2")?`<br><b style="color:#fff;font-weight:500">공장</b>  ${esc(cfg("address2"))}`:""}<br>TEL ${esc(cfg("tel"))}  |  FAX ${esc(cfg("fax"))}  |  ${esc(cfg("email"))}</p>${cfg("familyUrl")?`<a class="ft-family" href="${esc(cfg("familyUrl"))}" target="_blank" rel="noopener" aria-label="${esc(cfg("familyName")||"TRIZRO")} 사이트 바로가기 (새 창)">FAMILY SITE <img src="trizro-white.png" alt="${esc(cfg("familyName")||"TRIZRO")}"> ${I.ext}</a>`:""}</div>
       <div class="cols">${groups.map(([h,l]) => `<div><h4>${h}</h4>${l.map(([t,r]) => `<a href="#${r}">${t}</a>`).join("")}</div>`).join("")}</div>
     </div>
     <div class="bot"><span>© ${new Date().getFullYear()} ${esc(cfg("companyEn")||"TRIZN")} Co., Ltd. All rights reserved.</span><span><a href="#contact">개인정보처리방침</a><a href="#contact">이용약관</a><a href="#admin">관리자</a></span></div>
@@ -897,7 +904,7 @@ function viewHome(){
   <section class="sec" style="padding-top:0"><div class="wrap tiles">
     <a class="tile" href="#contact">${vis(cfg("tile1ImageId"),2)}<p class="eyebrow">Contact</p><h3>고객문의</h3><p>도입 상담, 견적, 기술 문의를 남겨 주세요.</p><span class="go">문의하기 ${ARROW}</span></a>
     <a class="tile" href="#contact" data-jump-after="support">${vis(cfg("tile2ImageId"),5)}<p class="eyebrow">Remote Support</p><h3>원격지원서비스</h3><p>엔지니어가 원격으로 바로 점검해 드립니다.</p><span class="go">원격지원 받기 ${ARROW}</span></a>
-    ${cfg("familyUrl")?`<a class="tile" href="${esc(cfg("familyUrl"))}" target="_blank" rel="noopener">${vis(cfg("tile3ImageId"),3)}<p class="eyebrow">Family Site</p><h3>${esc(cfg("familyName")||"TRIZRO")}</h3><p>${esc(cfg("familyText"))}</p><span class="go">사이트 바로가기 ${I.ext}</span></a>`:""}
+    ${cfg("familyUrl")?`<a class="tile" href="${esc(cfg("familyUrl"))}" target="_blank" rel="noopener">${vis(cfg("tile3ImageId"),3)}<p class="eyebrow">Family Site</p><h3 class="sr">${esc(cfg("familyName")||"TRIZRO")}</h3><img class="fam-logo" src="trizro-white.png" alt=""><p>${esc(cfg("familyText"))}</p><span class="go">사이트 바로가기 ${I.ext}</span></a>`:""}
   </div></section>
   <section class="dark cta"><div class="wrap">
     <div><p class="eyebrow">Let's build together</p><h2>${esc(cfg("ctaTitle")||"프로젝트를 함께할 파트너를 찾고 계신가요?")}</h2><p>${esc(cfg("ctaText"))}</p></div>
