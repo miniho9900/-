@@ -17,7 +17,7 @@ txt = json.dumps(seed, ensure_ascii=False).replace("be7ab1de59d800edbc546b6ede16
 for f in (OUT / "uploads").iterdir():
     if f.name != "hero-video-small.mp4": f.unlink()
 for f in (SRV / "uploads").iterdir():
-    if f.suffix in (".jpg", ".png", ".webp") and f.name in txt: shutil.copy2(f, OUT / "uploads" / f.name)
+    if f.suffix in (".jpg", ".png", ".webp") and (f.name in txt or f.stem in txt): shutil.copy2(f, OUT / "uploads" / f.name)
 shutil.copy2(OUT / "hero-video-small.mp4", OUT / "uploads" / "hero-video-small.mp4")
 for f in ["logo.png", "logo-white.png", "trizro.png", "trizro-white.png"]: shutil.copy2(SITE / f, OUT / f)
 

@@ -3,9 +3,9 @@
    데이터는 이 브라우저의 localStorage 에만 저장되는 시험용입니다. */
 (function () {
   "use strict";
-  var KEY = "trizn-demo-v8", SKEY = "trizn-demo-session-v3";
+  var KEY = "trizn-demo-v9", SKEY = "trizn-demo-session-v3";
   var SECTIONS = ["site","menus","slides","popups","business","products","models","works","posts","inquiries","pillars","facts","history","partners","clients"];
-  var COLS = ["menus","slides","popups","business","products","models","works","posts","partners","clients","history","pillars","facts","site"];
+  var COLS = ["menus","slides","popups","business","products","models","media","works","posts","partners","clients","history","pillars","facts","site"];
   var MAX = 512 * 1048576;
   var mem = null, sess = null;
 
@@ -84,7 +84,7 @@
       var col = String(body.col || ""), id = String(body.id || ""), op = body.op;
       if (!/^[A-Za-z0-9_-]{1,80}$/.test(id)) fail("invalid_argument", "잘못된 문서 번호입니다.");
       if (col === "drafts") { var tg = id.split("__")[0]; if (COLS.indexOf(tg) < 0) fail("invalid_argument", "잘못된 반영 대기 항목입니다."); need(tg); }
-      else { if (COLS.indexOf(col) < 0) fail("invalid_argument", "알 수 없는 항목입니다."); need(col); }
+      else { if (COLS.indexOf(col) < 0) fail("invalid_argument", "알 수 없는 항목입니다."); if (col === "media") { need(); if (!SECTIONS.some(function (sec) { return can(u, sec); })) fail("forbidden", "권한이 없습니다.", 403); } else need(col); }
       var bag = mem.docs[col] = mem.docs[col] || {};
       if (op === "delete") { delete bag[id]; save(); return { ok: true }; }
       var d = body.data; if (!isObj(d)) fail("invalid_argument", "저장할 내용이 올바르지 않습니다.");

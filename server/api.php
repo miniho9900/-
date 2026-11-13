@@ -78,7 +78,8 @@ try {
             if ($op !== 'delete' && (($body['data']['col'] ?? '') !== $target || ($body['data']['docId'] ?? '') !== $docId)) fail('invalid_argument', '잘못된 반영 대기 항목입니다.');
         } else {
             if (!in_array($col, TZ_COLS, true)) fail('invalid_argument', '알 수 없는 항목입니다.');
-            $need($col);
+            if ($col === 'media') { $need(); if (!array_filter(TZ_SECTIONS, fn($s) => can($me, $s))) fail('forbidden', '권한이 없습니다.', 403); }
+            else $need($col);
         }
         $cur = q1('SELECT data FROM docs WHERE col = ? AND id = ?', [$col, $id]);
         if ($op === 'delete') { q('DELETE FROM docs WHERE col = ? AND id = ?', [$col, $id]); json_out(['ok' => true]); }

@@ -60,7 +60,7 @@
    "en": "Lease & Maintenance",
    "eyebrow": "고객 맞춤형",
    "eyebrow_en": "Tailored for you",
-   "imageId": "ba1cbb2c7180b76d155640ae68c2ef0e.webp",
+   "imageId": "16ad7f66bc5dd687984d9ae133576946.webp",
    "lead": "고객의 **다양한 IT 인프라 환경**과 이용현황을 진단하여, **최적의 맞춤형 네트워크 솔루션 서비스**를 제공합니다.",
    "lead_en": "We assess each customer's **IT infrastructure and usage** and deliver **the best-fit network solution as a service**.",
    "order": 20,
@@ -84,7 +84,7 @@
    "en": "Automated Operations",
    "eyebrow": "고객 맞춤형",
    "eyebrow_en": "Tailored for you",
-   "imageId": "691b48b8d9a1307c9bf638c7138fdfe7.webp",
+   "imageId": "71678aa7b2084ad81ea8792ff6490cf1.webp",
    "lead": "**인공지능기반 네트워크 운영관제 솔루션 개발** 및 자동화 네트워크 관제센터 구축을 통한 **토탈 네트워크 서비스** 제공",
    "lead_en": "Total network services through **AI-based network operations solution development** and automated network operations center deployment",
    "order": 30,
@@ -109,7 +109,7 @@
    "en": "S2B Biz",
    "eyebrow": "PUBLIC PROCUREMENT",
    "eyebrow_en": "PUBLIC PROCUREMENT",
-   "imageId": "4ac830f97dc681250b5db4f354a379b8.webp",
+   "imageId": "3ba47a3f60c51f60af059f1c7a8f0d97.webp",
    "lead": "**ubiQuoss 네트워크 스위치 솔루션**을 나라장터 종합쇼핑몰에서 만나보세요!",
    "lead_en": "Find **ubiQuoss network switch solutions** on the KONEPS online shopping mall!",
    "order": 40,
@@ -643,6 +643,996 @@
    "updatedAt": "2026-11-13T11:51:11.629Z",
    "visible": true,
    "year": "2026"
+  }
+ },
+ {
+  "path": "media/0109266d59adb1feab2f8a99b6c4dce3",
+  "data": {
+   "kind": "image",
+   "name": "tp_kaon.webp",
+   "size": 4950,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/023606ac5676eabf5e6443211bdc6fa6",
+  "data": {
+   "kind": "image",
+   "name": "cert_patent.webp",
+   "size": 18408,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/0db17207578c6b5e3ac3567fe3b4fd11",
+  "data": {
+   "kind": "image",
+   "name": "cert_goodict.webp",
+   "size": 13392,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/10cb2ce234a135a8b14f867c03680701",
+  "data": {
+   "kind": "image",
+   "name": "tp_alcatel.webp",
+   "size": 5166,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/1110d84e6741b901ffd6486de1ec1100",
+  "data": {
+   "kind": "image",
+   "name": "consulting1.webp",
+   "size": 76378,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/16865b0601f6c83823cc2d452d5cb751",
+  "data": {
+   "kind": "image",
+   "name": "tp_hfr.webp",
+   "size": 4202,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/16ad7f66bc5dd687984d9ae133576946",
+  "data": {
+   "kind": "image",
+   "name": "biz3_maintenance.webp",
+   "size": 138780,
+   "type": "image/webp",
+   "at": "2026-11-13T13:10:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/1d2871be5fb0bae3a0a29a2022be1916",
+  "data": {
+   "kind": "image",
+   "name": "cl_tdf.webp",
+   "size": 1494,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/1e9b0a9f981273b109e65bf2e9f9c0bd",
+  "data": {
+   "kind": "image",
+   "name": "sw_topology.webp",
+   "size": 27846,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/21745ab0e90a75a8fcdfc80a77039c13",
+  "data": {
+   "kind": "image",
+   "name": "cert_techcomp.webp",
+   "size": 11944,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/222fb9d9f5e7e6e23275bdcbedfe90a7",
+  "data": {
+   "kind": "image",
+   "name": "sdn_img01.webp",
+   "size": 100854,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/22e7356dd25d0852d2954d69993ff87a",
+  "data": {
+   "kind": "image",
+   "name": "integrate_img03.webp",
+   "size": 41150,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/231637c4134a4598fccb3515dce46350",
+  "data": {
+   "kind": "image",
+   "name": "m_2507230003.webp",
+   "size": 8194,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/2496cd48ba0ac8ffbda9349589a26fb8",
+  "data": {
+   "kind": "image",
+   "name": "cert_award_assembly.webp",
+   "size": 21526,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/2519c9b96baf9bdab3b855c7808b04dd",
+  "data": {
+   "kind": "image",
+   "name": "cert_powerbrand.webp",
+   "size": 17018,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/27ac220f5be010cb7284a23ff12bde67",
+  "data": {
+   "kind": "image",
+   "name": "cert_security.webp",
+   "size": 5850,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/28dac2454c437de98a8d498a511bd74e",
+  "data": {
+   "kind": "image",
+   "name": "cert_lab.webp",
+   "size": 15052,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/28f3745a31fb942e8588c9a6851b6732",
+  "data": {
+   "kind": "image",
+   "name": "sw_edge_spec.webp",
+   "size": 9684,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/306c9127d0118c6a86f766fa872f2580",
+  "data": {
+   "kind": "image",
+   "name": "integrate_img04.webp",
+   "size": 59712,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/366e8c86351b4fb163b723a949c75663",
+  "data": {
+   "kind": "image",
+   "name": "fdf_process.webp",
+   "size": 41874,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/387a45901dfe8e9b165183ae91d53e1c",
+  "data": {
+   "kind": "image",
+   "name": "tp_ahnlab.webp",
+   "size": 2458,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/3b60328b16ce1274c1c062ba0afba24d",
+  "data": {
+   "kind": "image",
+   "name": "hero_datacenter.webp",
+   "size": 92198,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/3ba47a3f60c51f60af059f1c7a8f0d97",
+  "data": {
+   "kind": "image",
+   "name": "biz5_smartschool.webp",
+   "size": 141542,
+   "type": "image/webp",
+   "at": "2026-11-13T13:10:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/3c60948d883fe43df81e9492ac6d2bc6",
+  "data": {
+   "kind": "image",
+   "name": "edu_jeju.webp",
+   "size": 7286,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/3eddb8fd3596b83724fed6d938602134",
+  "data": {
+   "kind": "image",
+   "name": "cl_hanwha.webp",
+   "size": 4024,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/44c234a5767d6fb827de5efd264195e4",
+  "data": {
+   "kind": "image",
+   "name": "tp_secui.webp",
+   "size": 1666,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/459fbb38c8c193816d79f4c7eeac0091",
+  "data": {
+   "kind": "image",
+   "name": "m_2508260006.webp",
+   "size": 6440,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/45bbb9784018b2c7cd2d704bf9642ec3",
+  "data": {
+   "kind": "image",
+   "name": "cert_iso14001.webp",
+   "size": 13610,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/4ac830f97dc681250b5db4f354a379b8",
+  "data": {
+   "kind": "image",
+   "name": "biz5.webp",
+   "size": 134402,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/4bd055fff86708cbd3d4d75af03c629e",
+  "data": {
+   "kind": "image",
+   "name": "tp_dasan.webp",
+   "size": 3834,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/55361bbb41395b338366d60369dd6bd9",
+  "data": {
+   "kind": "image",
+   "name": "tp_davolink.webp",
+   "size": 3196,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/563e9592cf3d15b75fbc27c62490b929",
+  "data": {
+   "kind": "image",
+   "name": "edu_daejeon.webp",
+   "size": 6524,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/56695677073c2691fbbe5a86163ee39b",
+  "data": {
+   "kind": "image",
+   "name": "control_solution.webp",
+   "size": 56580,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/5a8f4f334c0637c10edd0d90fb90a668",
+  "data": {
+   "kind": "image",
+   "name": "tp_tplink.webp",
+   "size": 2260,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/5ca01195f85ade74532f259a0bea7b6c",
+  "data": {
+   "kind": "image",
+   "name": "tp_arista.webp",
+   "size": 2254,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/5d35362f52ce2f2b7187cbd26301df6f",
+  "data": {
+   "kind": "image",
+   "name": "edu_incheon.webp",
+   "size": 6682,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/5d3c22e353aa169bec62276f92ef12a6",
+  "data": {
+   "kind": "image",
+   "name": "tp_nokia.webp",
+   "size": 2014,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/5f800e72724d8269e1ad4094695f718c",
+  "data": {
+   "kind": "image",
+   "name": "lease_dia.webp",
+   "size": 59074,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/60704ab66a3bf32155942884980648b8",
+  "data": {
+   "kind": "image",
+   "name": "cert_gs.webp",
+   "size": 12372,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/608041fc9b829607fe2e39aa48a28052",
+  "data": {
+   "kind": "image",
+   "name": "cert_venture.webp",
+   "size": 15058,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/63c7831b182e4b0590f751f8667716bc",
+  "data": {
+   "kind": "image",
+   "name": "biz2.webp",
+   "size": 165330,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/66ae6999f9717c9bc82d9ffd883ed7e9",
+  "data": {
+   "kind": "image",
+   "name": "edu_gangwon.webp",
+   "size": 4278,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/691b48b8d9a1307c9bf638c7138fdfe7",
+  "data": {
+   "kind": "image",
+   "name": "biz4.webp",
+   "size": 125606,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/6ccecfee6ef3ce7d795eb2179d9ecb31",
+  "data": {
+   "kind": "image",
+   "name": "tp_h1radio.webp",
+   "size": 1708,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/6fca894f90e10cf88662ff3abd2c1de3",
+  "data": {
+   "kind": "image",
+   "name": "cl_sisun.webp",
+   "size": 1432,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/71678aa7b2084ad81ea8792ff6490cf1",
+  "data": {
+   "kind": "image",
+   "name": "biz4_noc.webp",
+   "size": 173656,
+   "type": "image/webp",
+   "at": "2026-11-13T13:10:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/7d999c46329b30554a44f724a3f651fb",
+  "data": {
+   "kind": "image",
+   "name": "pon_topology.webp",
+   "size": 38304,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/7e788c1f1ca70857c885ca1ad8574c63",
+  "data": {
+   "kind": "image",
+   "name": "tp_hdn.webp",
+   "size": 2582,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/821ad6bf0db1f32677fe35567e37ce76",
+  "data": {
+   "kind": "image",
+   "name": "cl_kospo.webp",
+   "size": 4040,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/86d98b28ffbab6902700cecba6c78656",
+  "data": {
+   "kind": "image",
+   "name": "edu_seoul.webp",
+   "size": 5924,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/8cef13e4f8124e22c973ba9d8fbd20b8",
+  "data": {
+   "kind": "image",
+   "name": "cert_iso45001.webp",
+   "size": 11916,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/919dff88f897446b7976141eeb12c786",
+  "data": {
+   "kind": "image",
+   "name": "m_2507230001.webp",
+   "size": 6468,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/9286aa643cf6d026e083e97f322e502c",
+  "data": {
+   "kind": "image",
+   "name": "m_2508260007.webp",
+   "size": 5300,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/94deefed57d0a41660ebfac0a5ffa424",
+  "data": {
+   "kind": "image",
+   "name": "m_2508260001.webp",
+   "size": 1390,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/992ba4a9707efade12afa03d10665c4c",
+  "data": {
+   "kind": "image",
+   "name": "cl_suwonhosp.webp",
+   "size": 5416,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/9beef89216a7c305165c10bef55bf436",
+  "data": {
+   "kind": "image",
+   "name": "biz1.webp",
+   "size": 98090,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/9ca3a4c3eafe73a9eb4e86d4099e9287",
+  "data": {
+   "kind": "image",
+   "name": "m_2508260005.webp",
+   "size": 8654,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/9ef05d3ba0a7bf7b22ef4e6c9f2278fa",
+  "data": {
+   "kind": "image",
+   "name": "map_naver.webp",
+   "size": 57806,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/a11ce793a1dde51ff018bc3e9e18436c",
+  "data": {
+   "kind": "image",
+   "name": "sw_intro.webp",
+   "size": 222236,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/a14408834d1c09f7e3d131e2b43bc984",
+  "data": {
+   "kind": "image",
+   "name": "tp_ubiquoss.webp",
+   "size": 3524,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/a2cb13c11d1552c7ed0914d9326afb4f",
+  "data": {
+   "kind": "image",
+   "name": "cl_ssc.webp",
+   "size": 5184,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/a3383614487c648481b3268f0baeac22",
+  "data": {
+   "kind": "image",
+   "name": "integrate_dia.webp",
+   "size": 67160,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/a6415158b87809892f8478dc0ba896dc",
+  "data": {
+   "kind": "image",
+   "name": "edu_gyeongnam.webp",
+   "size": 5798,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/a7569f65325454cd88ec61cbe19b724d",
+  "data": {
+   "kind": "image",
+   "name": "cert_ictcon.webp",
+   "size": 9744,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/a83cae7efeac0f91f6b0b56fd701d19f",
+  "data": {
+   "kind": "image",
+   "name": "fdf_process2.webp",
+   "size": 86672,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/ac0833759704df5b238bb751b6b5f0eb",
+  "data": {
+   "kind": "image",
+   "name": "sdn_img02.webp",
+   "size": 154228,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/add95fd9ff37b254643dc98e9c004f50",
+  "data": {
+   "kind": "image",
+   "name": "integrate_img05.webp",
+   "size": 40944,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/aea31af4f02f6f69eeda258a89cf9e9f",
+  "data": {
+   "kind": "image",
+   "name": "tp_coreedge.webp",
+   "size": 3602,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/af5ea5379c9c46efe1eb098b3ff577b8",
+  "data": {
+   "kind": "image",
+   "name": "cl_jangan.webp",
+   "size": 4874,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/b31de610f9c61fb96c8ca479fe216be6",
+  "data": {
+   "kind": "image",
+   "name": "cl_gyeongju.webp",
+   "size": 3418,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/b6b1fc421d943d40bf65ee762f833cfb",
+  "data": {
+   "kind": "image",
+   "name": "msoc.webp",
+   "size": 152412,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/b90c2eb7aeedd4893fa00a8cd349aa23",
+  "data": {
+   "kind": "image",
+   "name": "cl_ancors.webp",
+   "size": 2342,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/ba1cbb2c7180b76d155640ae68c2ef0e",
+  "data": {
+   "kind": "image",
+   "name": "biz3.webp",
+   "size": 111860,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/bb1bac04101d7f43a02e5244e061baef",
+  "data": {
+   "kind": "image",
+   "name": "edu_gyeonggi.webp",
+   "size": 5170,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/be7ab1de59d800edbc546b6ede166574",
+  "data": {
+   "kind": "video",
+   "name": "hero-video.mp4",
+   "size": 0,
+   "type": "video/mp4",
+   "at": "2026-11-12T10:00:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/c3edc00afcc1d883363c675704c862e3",
+  "data": {
+   "kind": "image",
+   "name": "m_2512170001.webp",
+   "size": 4062,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/d04f937e5c25aa7dfb20c9018a503cf4",
+  "data": {
+   "kind": "image",
+   "name": "tp_axgate.webp",
+   "size": 3170,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/d1b45b9889490412e1cb355d831ca639",
+  "data": {
+   "kind": "image",
+   "name": "cert_iso9001.webp",
+   "size": 11452,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/daea770a7939d5159cc14084068b410b",
+  "data": {
+   "kind": "image",
+   "name": "integrate_img01.webp",
+   "size": 55836,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/dcc5fce0ccdd913de268e041c338589b",
+  "data": {
+   "kind": "image",
+   "name": "m_2508260002.webp",
+   "size": 1462,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/de4068f817597bd96a6bcf863de9584f",
+  "data": {
+   "kind": "image",
+   "name": "tp_fortinet.webp",
+   "size": 1806,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/deb4bb60f81c3d7117a5e434f99962e5",
+  "data": {
+   "kind": "image",
+   "name": "m_2507230002.webp",
+   "size": 1882,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/e0c4b6fe099af045984b4a18d55d328c",
+  "data": {
+   "kind": "image",
+   "name": "edu_jeonnam.webp",
+   "size": 4810,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/e2606c29ab4bdc70891104b1d53b978c",
+  "data": {
+   "kind": "image",
+   "name": "cert_swbiz.webp",
+   "size": 20412,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/ecf2839c9e9bd8a3a9e0c15449c1625c",
+  "data": {
+   "kind": "image",
+   "name": "cert_mainbiz.webp",
+   "size": 14174,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/eff0e47aed55bec24b565b082f0f9fee",
+  "data": {
+   "kind": "image",
+   "name": "tp_piolink.webp",
+   "size": 3132,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/f17218e1289782bc357bee059756f92b",
+  "data": {
+   "kind": "image",
+   "name": "m_2508260004.webp",
+   "size": 1082,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/f87912c9ca08cc97ab44fb87a9738c57",
+  "data": {
+   "kind": "image",
+   "name": "cert_innobiz.webp",
+   "size": 14462,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/fa11f7b81998747841e0b84dc8f4b211",
+  "data": {
+   "kind": "image",
+   "name": "cl_chai.webp",
+   "size": 1872,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
+  }
+ },
+ {
+  "path": "media/fa888f6fd5d3e6620f1f8459c149d69b",
+  "data": {
+   "kind": "image",
+   "name": "integrate_img02.webp",
+   "size": 66850,
+   "type": "image/webp",
+   "at": "2026-11-13T12:50:00.000Z",
+   "by": ""
   }
  },
  {

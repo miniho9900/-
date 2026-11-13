@@ -67,7 +67,7 @@ for f in ["logo.png", "logo-white.png", "trizro.png", "trizro-white.png"]:
 (OUT / "uploads").mkdir(exist_ok=True)
 for old in (OUT / "uploads").iterdir():
     if old.is_file() and not old.name.startswith("."): old.unlink()
-_live = "".join(f.read_text(encoding="utf-8") for f in (SITE / "live").glob("*/*.json"))
+_live = "".join(f.name + f.read_text(encoding="utf-8") for f in (SITE / "live").glob("*/*.json"))
 USED = {aid for aid in ASSETS if aid in _live}
 for aid, src in ASSETS.items():
     if aid not in USED: continue

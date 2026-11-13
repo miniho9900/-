@@ -911,6 +911,27 @@ body.embed .pv-bar,body.embed .pv-list,body.embed .edit-fab,body.embed .demo-bar
 .af textarea{min-height:110px;resize:vertical;line-height:1.7}
 .af textarea.tall{min-height:260px}
 .af .row2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.rich section.has-fig .rs-fig{margin:0 0 clamp(28px,3vw,40px);aspect-ratio:21/8;overflow:hidden;background:var(--mist);max-width:100%}
+.rich section.has-fig .rs-fig img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s var(--ease)}
+.rich section.has-fig:hover .rs-fig img{transform:scale(1.02)}
+@media (max-width:760px){.rich section.has-fig .rs-fig{aspect-ratio:16/9}}
+.sec-imgs{display:grid;gap:14px}
+.sec-img{display:grid;gap:8px;padding:12px;border:1px solid var(--line);border-radius:8px}
+.sec-img b{font-size:13px;letter-spacing:.06em;color:var(--violet)}
+.lib-modal{position:fixed;inset:0;z-index:400;background:rgba(10,8,40,.55);display:grid;place-items:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lib-box{background:var(--paper);width:min(1100px,100%);max-height:min(86vh,900px);display:flex;flex-direction:column;border-radius:12px;overflow:hidden;box-shadow:0 30px 80px -20px rgba(0,0,0,.5)}
+.lib-hd{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:20px 22px;border-bottom:1px solid var(--line)}
+.lib-hd>div{flex:1 1 260px;min-width:0}.lib-hd h2{font-size:18px;margin:0 0 4px;color:var(--ink)}
+.lib-grid{overflow:auto;padding:18px 22px 24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;align-content:start}
+.lib-it{position:relative;display:grid;gap:6px;min-width:0}
+.lib-pick{all:unset;cursor:pointer;display:block;aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:repeating-conic-gradient(#ECEBF3 0 25%,#F7F6FB 0 50%) 0 0/16px 16px;border:2px solid transparent;position:relative}
+.lib-pick img,.lib-pick video{width:100%;height:100%;object-fit:contain;display:block}
+.lib-pick:hover,.lib-pick:focus-visible{border-color:var(--violet)}
+.lib-it.on .lib-pick{border-color:var(--ink)}
+.lib-used{position:absolute;left:6px;top:6px;background:var(--ink);color:#fff;font-size:11px;padding:2px 7px;border-radius:10px}
+.lib-meta{display:grid;font-size:12px;color:var(--muted);min-width:0}.lib-meta b{color:var(--ink);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lib-hide{position:absolute;right:6px;top:6px;width:24px;height:24px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:#555;font-size:12px;cursor:pointer;opacity:0;transition:opacity .2s}
+.lib-it:hover .lib-hide,.lib-hide:focus-visible{opacity:1}
 .img-field{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
 .img-field .prev{width:160px;height:100px;border-radius:6px;overflow:hidden;position:relative;background:var(--ink);flex:none}
 .img-field .prev img{width:100%;height:100%;object-fit:cover}
@@ -1038,7 +1059,7 @@ const SUBMENU = {
 };
 const BOARDS = [["notice","공지사항"],["press","보도자료"],["ir","IR·공시"]];
 const BOARD_LABEL = Object.fromEntries(BOARDS);
-const COLS = ["menus","slides","popups","business","products","models","works","posts","partners","clients","history","pillars","facts"];
+const COLS = ["menus","slides","popups","business","products","models","media","works","posts","partners","clients","history","pillars","facts"];
 
 const ARROW = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg>';
 const I = {
@@ -1153,11 +1174,12 @@ function schedule(){ if (rq) return; rq = requestAnimationFrame(() => { rq = 0; 
 /* ================= header / menu ================= */
 const menus = () => { const m = shown("menus"); return m.length ? m : (S.loaded ? [] : DEFAULT_MENU); };
 function renderHeader(r){
-  const base = r.split("-")[0];
+  const b0 = r.split("-")[0];
+  const base = {product:"products", model:"products", firmware:"products", post:"news", cert:"about"}[b0] || b0;
   document.querySelectorAll("#hd [aria-label], #fullMenu [aria-label]").forEach(el => { if (!el.dataset.koAria) el.dataset.koAria = el.getAttribute("aria-label"); const ko = el.dataset.koAria; el.setAttribute("aria-label", ui.lang==="en" ? (DICT[ko] || ko) : ko); });
   document.querySelectorAll("[data-lang]").forEach(b => { b.classList.toggle("on", b.dataset.lang===ui.lang); b.setAttribute("aria-pressed", b.dataset.lang===ui.lang); });
   $("#gnb").innerHTML = menus().map(m => `<a href="#${esc(m.route)}" class="${base===m.route?"on":""}">${esc(m.label)}</a>`).join("");
-  $("#fmGrid").innerHTML = trHtml(menus().map((m,i) => `<a class="fm-item" href="#${esc(m.route)}"><span class="n">${String(i+1).padStart(2,"0")}</span><span class="t">${esc(m.label)}</span><span class="s">${(SUBMENU[m.route]||[]).map(esc).join("<br>")}</span></a>`).join(""));
+  $("#fmGrid").innerHTML = trHtml(menus().map((m,i) => `<a class="fm-item" href="#${esc(m.route)}"><span class="n">${String(i+1).padStart(2,"0")}</span><span class="t">${esc(m.label)}</span><span class="s">${(m.route==="products" ? shown("products").map(p => p.name).concat("펌웨어 관리") : (SUBMENU[m.route]||[])).map(esc).join("<br>")}</span></a>`).join(""));
   const fu = cfg("familyUrl"), fnm = cfg("familyName") || "TRIZRO";
   $(".support-btn") && ($(".support-btn").textContent = ui.lang==="en" ? "Remote Support" : "원격지원서비스");
   const fb = $("#familyBtn"); fb.hidden = !fu; if (fu){ fb.href = fu; fb.innerHTML = `<img class="fl-w" src="trizro-white.png" alt="${esc(fnm)}"><img class="fl-c" src="trizro.png" alt="">${I.ext}`; fb.setAttribute("aria-label", fnm + " 사이트 바로가기 (새 창)"); }
@@ -1578,6 +1600,24 @@ function renderRich(src){
       ${x.after.map(q => `<p class="note" style="margin-top:16px">${inl(q)}</p>`).join("")}
     </section>`; }).join("")}</div>`;
 }
+/* section images: business pages can attach one image to each "## EYEBROW | title" section */
+const secKey = t => String(t||"").trim().toUpperCase();
+function secEyebrows(v){
+  const src = v.contentHtml ? (v.contentHtml.match(/<p class="eyebrow">([^<]+)<\/p>/g)||[]).map(x => x.replace(/<[^>]+>/g,"")) : String(v.content||"").split("\n").filter(l => l.trim().startsWith("## ")).map(l => { const a = l.trim().slice(3).split("|"); return a.length>1 ? a[0] : ""; });
+  return [...new Set(src.map(secKey).filter(Boolean))];
+}
+function withSecImages(html, map){
+  if (!map || !Object.values(map).some(Boolean)) return html;
+  const doc = new DOMParser().parseFromString(`<div>${html}</div>`, "text/html"), root = doc.body.firstChild;
+  root.querySelectorAll(".rich > section").forEach(sec => {
+    const eb = sec.querySelector(".rs-hd .eyebrow"); const id = eb && map[secKey(eb.textContent)];
+    if (!id) return;
+    sec.classList.add("has-fig");
+    const fig = doc.createElement("figure"); fig.className = "rs-fig"; fig.innerHTML = `<img src="${imgUrl(id)}" alt="" loading="lazy">`;
+    sec.querySelector(".rs-hd").after(fig);
+  });
+  return root.innerHTML;
+}
 function viewBusiness(id){
   const biz = shown("business");
   if (!biz.length) return `${subVis("Total Network Services","사업영역","사업영역",3)}<section class="sec"><div class="wrap"><div class="empty">${S.loaded?"사업영역을 등록하면 이곳에 표시됩니다.":"불러오는 중…"}</div></div></section>${footer()}`;
@@ -1592,7 +1632,7 @@ function viewBusiness(id){
     </div>
     ${b.detailImageId?`<div class="biz-diagram reveal"><img src="${imgUrl(b.detailImageId)}" alt="${esc(b.title)} 구성도" loading="lazy"></div>`:""}
   </div></section>
-  ${b.contentHtml||b.content?`<section class="sec" style="padding-top:0"><div class="wrap">${b.contentHtml?`<div class="rte-content">${sanitize(b.contentHtml)}</div>`:renderRich(b.content)}</div></section>`:""}
+  ${b.contentHtml||b.content?`<section class="sec" style="padding-top:0"><div class="wrap">${withSecImages(b.contentHtml?`<div class="rte-content">${sanitize(b.contentHtml)}</div>`:renderRich(b.content), b.secImages)}</div></section>`:""}
   <section style="padding-bottom:clamp(72px,8vw,120px)"><div class="wrap"><div class="biz-pn">
     ${prev?`<a href="#business-${esc(prev.id)}"><span>PREV</span><b>← ${esc(prev.title)}</b></a>`:"<span></span>"}
     ${next?`<a href="#business-${esc(next.id)}"><span>NEXT</span><b>${esc(next.title)} →</b></a>`:`<a href="#contact"><span>CONTACT</span><b>고객문의 →</b></a>`}
@@ -1683,7 +1723,7 @@ function viewProduct(id){
     ${prodVideo(p) ? `<div style="margin-top:clamp(56px,6vw,88px)">${prodVideo(p)}</div>` : ""}
     ${p.detailHtml?`<div class="rte-content pd-body" style="margin-top:clamp(56px,6vw,88px)">${sanitize(p.detailHtml)}</div>`:""}
     <div class="biz-pn" style="margin-top:clamp(56px,6vw,88px)">
-      ${prev?`<a href="#product-${esc(prev.id)}"><span>PREV</span><b>← ${esc(prev.name)}</b></a>`:`<a href="#products"><span>LIST</span><b>← 전체 솔루션</b></a>`}
+      ${prev?`<a href="#product-${esc(prev.id)}"><span>PREV</span><b>← ${esc(prev.name)}</b></a>`:"<span></span>"}
       ${next?`<a href="#product-${esc(next.id)}"><span>NEXT</span><b>${esc(next.name)} →</b></a>`:`<a href="#contact"><span>CONTACT</span><b>도입 문의 →</b></a>`}
     </div>
   </div></section>${footer()}`;
@@ -1898,7 +1938,7 @@ function render(routeChanged){
   if (r==="home") html = viewHome();
   else if (r==="about") html = viewAbout();
   else if (r==="business" || r.startsWith("business-")) html = viewBusiness(r.slice(9));
-  else if (r==="products") html = viewProducts();
+  else if (r==="products") html = shown("products").length ? viewProduct(shown("products")[0].id) : viewProducts();
   else if (r==="cert") html = viewWorks();
   else if (r.startsWith("product-")) html = viewProduct(r.slice(8));
   else if (r.startsWith("model-")) html = viewModel(r.slice(6));
@@ -2260,10 +2300,54 @@ function fileFieldHtml(key, id, name){
     <div class="btns"><label class="abtn" style="cursor:pointer">${assets?"파일 업로드":"업로드 불가"}<input type="file" accept=".pdf,.png,.jpg,.jpeg,.csv,.txt,application/pdf" hidden data-upload="${key}" data-kind="file" ${assets?"":"disabled"}></label>${id?`<button type="button" class="abtn dan" data-imgclear="${key}">첨부 빼기</button>`:""}<span class="help">${id?"":"IR 자료, 공시 원문 등"}</span></div>
     <input type="hidden" data-imgval="${key}" value="${esc(id||"")}"><input type="hidden" data-fname="${key}" value="${esc(name||"")}"></div>`;
 }
+/* ---- media library: every upload is remembered so earlier images can be picked again ---- */
+function recordMedia(id, file, kind){
+  if (!db || !id) return;
+  db.doc("media/"+id).set({kind, name:String(file?.name||"").slice(0,120), size:file?.size||0, type:file?.type||"", at:new Date().toISOString(), by: me?.id || ""}).catch(() => {});
+}
+function setImgField(key, id, kind){
+  const box = document.querySelector(`.img-field[data-imgfield="${key}"]`); if (!box) return;
+  box.querySelector(`[data-imgval="${key}"]`).value = id;
+  box.querySelector(".prev").innerHTML = kind==="video" ? `<video src="${imgUrl(id)}" muted loop autoplay playsinline style="width:100%;height:100%;object-fit:cover"></video>` : `<img src="${imgUrl(id)}" alt="">`;
+  if (!box.querySelector("[data-imgclear]")) box.querySelector(".btns label").insertAdjacentHTML("afterend", `<button type="button" class="abtn dan" data-imgclear="${key}">${kind==="video"?"영상 빼기":"이미지 빼기"}</button>`);
+  const h = box.querySelector(".help"); if (h) h.textContent = "라이브러리에서 골랐습니다 · 저장하면 반영됩니다.";
+}
+function usedMediaIds(){
+  const txt = JSON.stringify(COLS.filter(c => c!=="media").map(c => S[c])) + JSON.stringify(S.config||{});
+  return new Set(txt.match(/[0-9a-f]{32}/g) || []);
+}
+let libState = null;
+function renderLib(){
+  const {key, kind, q, cur} = libState, used = usedMediaIds();
+  const all = S.media.filter(m => (m.kind||"image")===kind && !m.hidden).sort((a,b) => String(b.at||"").localeCompare(String(a.at||"")));
+  const list = q ? all.filter(m => (m.name||"").toLowerCase().includes(q.toLowerCase())) : all;
+  const el = $("#libModal");
+  el.querySelector(".lib-grid").innerHTML = list.map(m => `<div class="lib-it ${m.id===cur?"on":""}"><button type="button" class="lib-pick" data-libpick="${esc(m.id)}" aria-label="${esc(m.name||"이미지")} 선택">${kind==="video"?`<video src="${imgUrl(m.id)}" muted preload="metadata"></video>`:`<img src="${imgUrl(m.id)}" alt="" loading="lazy">`}${used.has(m.id)?'<span class="lib-used">사용 중</span>':""}</button><div class="lib-meta"><b title="${esc(m.name)}">${esc(m.name||"(이름 없음)")}</b><span>${esc(String(m.at||"").slice(0,10))}${m.size?` · ${Math.max(1,Math.round(m.size/1024))}KB`:""}</span></div>${used.has(m.id)?"":`<button type="button" class="lib-hide" data-libhide="${esc(m.id)}" title="라이브러리에서 숨기기" aria-label="라이브러리에서 숨기기">✕</button>`}</div>`).join("") || `<div class="empty" style="grid-column:1/-1">${q?"검색 결과가 없습니다.":"아직 올린 "+(kind==="video"?"영상":"이미지")+"가 없습니다."}</div>`;
+  el.querySelector(".lib-count").textContent = `${list.length}개`;
+}
+function openLib(key, kind){
+  const cur = document.querySelector(`[data-imgval="${key}"]`)?.value || "";
+  libState = {key, kind, q:"", cur};
+  $("#libModal")?.remove();
+  document.body.insertAdjacentHTML("beforeend", `<div class="lib-modal" id="libModal" role="dialog" aria-modal="true" aria-label="미디어 라이브러리"><div class="lib-box">
+    <div class="lib-hd"><div><h2>${kind==="video"?"영상":"이미지"} 라이브러리</h2><p class="note">지금까지 올린 ${kind==="video"?"영상":"이미지"}에서 골라 다시 쓸 수 있습니다. <span class="lib-count"></span></p></div>
+    <input type="search" class="a-search" id="libQ" placeholder="파일 이름 검색" aria-label="파일 이름 검색"><button type="button" class="abtn" data-libclose>닫기</button></div>
+    <div class="lib-grid"></div></div></div>`);
+  renderLib(); setTimeout(() => $("#libQ")?.focus(), 30);
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-lib]"); if (b){ e.preventDefault(); openLib(b.dataset.lib, b.dataset.libkind); return; }
+  if (!libState) return;
+  const pk = e.target.closest("[data-libpick]"); if (pk){ setImgField(libState.key, pk.dataset.libpick, libState.kind); $("#libModal")?.remove(); libState = null; return; }
+  const hd = e.target.closest("[data-libhide]"); if (hd){ db && db.doc("media/"+hd.dataset.libhide).update({hidden:true}).then(() => { const m = S.media.find(x => x.id===hd.dataset.libhide); if (m) m.hidden = true; renderLib(); }).catch(err => toast(dbErr(err), true)); return; }
+  if (e.target.closest("[data-libclose]") || e.target.id==="libModal"){ $("#libModal")?.remove(); libState = null; }
+});
+document.addEventListener("input", e => { if (e.target.id==="libQ" && libState){ libState.q = e.target.value; renderLib(); } });
+document.addEventListener("keydown", e => { if (e.key==="Escape" && libState){ $("#libModal")?.remove(); libState = null; } });
 function imgFieldHtml(key, id, video){
   const media = id ? (video ? `<video src="${imgUrl(id)}" muted loop autoplay playsinline style="width:100%;height:100%;object-fit:cover"></video>` : `<img src="${imgUrl(id)}" alt="">`) : '<div class="ph"></div>';
   return `<div class="img-field" data-imgfield="${key}"><div class="prev">${media}</div>
-    <div class="btns"><label class="abtn" style="cursor:pointer">${assets?(video?"영상 업로드":"이미지 업로드"):"업로드 불가"}<input type="file" accept="${video?"video/mp4,video/webm":"image/*"}" hidden data-upload="${key}" data-kind="${video?"video":"image"}" ${assets?"":"disabled"}></label>${id?`<button type="button" class="abtn dan" data-imgclear="${key}">${video?"영상 빼기":"이미지 빼기"}</button>`:""}<span class="help">${id?"":(video?"영상이 없으면 이미지가 표시됩니다.":"이미지가 없으면 브랜드 그래픽이 대신 표시됩니다.")}</span></div>
+    <div class="btns"><label class="abtn" style="cursor:pointer">${assets?(video?"영상 업로드":"이미지 업로드"):"업로드 불가"}<input type="file" accept="${video?"video/mp4,video/webm":"image/*"}" hidden data-upload="${key}" data-kind="${video?"video":"image"}" ${assets?"":"disabled"}></label><button type="button" class="abtn" data-lib="${key}" data-libkind="${video?"video":"image"}">${I.grid||"▦"} 라이브러리</button>${id?`<button type="button" class="abtn dan" data-imgclear="${key}">${video?"영상 빼기":"이미지 빼기"}</button>`:""}<span class="help">${id?"":(video?"영상이 없으면 이미지가 표시됩니다.":"이미지가 없으면 브랜드 그래픽이 대신 표시됩니다.")}</span></div>
     <input type="hidden" data-imgval="${key}" value="${esc(id||"")}"></div>`;
 }
 
@@ -2383,7 +2467,8 @@ function admEdit(c, id){
   const main = sch.fields.filter(f => !SIDE_TYPES.has(f[2])), side = sch.fields.filter(f => SIDE_TYPES.has(f[2]));
   const link = item && SITE_LINK[c] ? SITE_LINK[c](item) : "";
   const trKeys = new Set(trFields(sch).map(f => f[0]));
-  const mainHtml = main.map(f => trKeys.has(f[0])
+  const secPanel = c==="business" ? (() => { const ebs = secEyebrows(v); return ebs.length ? `<div class="af"><label>섹션별 이미지 (선택)</label><span class="help" style="margin-bottom:6px">본문의 각 섹션 제목 아래에 넓은 이미지가 들어갑니다. 권장 가로 1200px 이상 · 자동으로 WebP 변환</span><div class="sec-imgs">${ebs.map((k,i) => `<div class="sec-img" data-seckey="${esc(k)}" data-secidx="${i}"><b>${esc(k)}</b>${imgFieldHtml("sec_"+i, (v.secImages||{})[k])}</div>`).join("")}</div></div>` : ""; })() : "";
+  const mainHtml = secPanel + main.map(f => trKeys.has(f[0])
     ? `<div data-lang-pane="ko">${fld(f)}</div><div data-lang-pane="en" hidden>${fld([f[0]+"_en", f[1]+" · English", f[2], "비워 두면 영문 화면에도 한국어가 보입니다."])}</div>`
     : `<div ${f[2]==="url"?"":'data-lang-pane="ko"'}>${fld(f)}</div>`).join("");
   return `<div class="panel"><div class="panel-hd"><div class="ed-top"><a class="abtn" href="#admin-${c}">← 목록으로</a><span class="note">${esc(sch.label)} › ${item?esc(sch.title(item)||"수정"):"새로 등록"}</span>${dr?'<span class="badge wait">반영 대기 중인 변경을 이어서 고치는 중</span>':""}</div>${link&&live?`<a class="abtn" href="${link}">${I.ext} 홈페이지에서 보기</a>`:""}</div></div>
@@ -2448,7 +2533,7 @@ document.addEventListener("change", async e => {
     file = await toWebp(file, 1200);
     if (file.size > MAX_UP()){ toast(MAX_LABEL()+" 이하 이미지만 넣을 수 있습니다.", true); return; }
     toast("이미지를 올리는 중입니다…");
-    try { const r = await assets.upload(file); rteExec(box, "insertHTML", `<img src="${imgUrl(r.id)}" alt="">`); toast("이미지를 넣었습니다."); } catch { toast("이미지를 올리지 못했습니다.", true); } }
+    try { const r = await assets.upload(file); recordMedia(r.id, file, "image"); rteExec(box, "insertHTML", `<img src="${imgUrl(r.id)}" alt="">`); toast("이미지를 넣었습니다."); } catch { toast("이미지를 올리지 못했습니다.", true); } }
 });
 document.addEventListener("paste", e => {
   const area = e.target.closest?.(".rte-area"); if (!area) return;
@@ -2467,6 +2552,7 @@ async function saveEditor(e){
     const el = $(`#edForm [data-f="${k}"]`); if (!el) return;
     data[k] = type==="bool" ? el.checked : el.value.trim();
   });
+  if (c==="business"){ const m = {}; document.querySelectorAll("#edForm [data-seckey]").forEach(el => { const val = el.querySelector(`[data-imgval="sec_${el.dataset.secidx}"]`)?.value; if (val) m[el.dataset.seckey] = val; }); data.secImages = m; }
   if (c==="posts"){ data.body = stripHtml(data.bodyHtml).slice(0, 3000); data.body_en = stripHtml(data.bodyHtml_en||"").slice(0, 3000); }
   data.visible = $("#ed-visible").checked;
   data.updatedAt = new Date().toISOString();
@@ -2576,7 +2662,7 @@ document.addEventListener("change", async e => {
     if (up.dataset.kind==="video") { showCompress(box, key, file); up.value = ""; return; }
     toast(MAX_LABEL()+" 이하 파일만 올릴 수 있습니다.", true); return;
   } box.querySelector(".help").textContent = "업로드 중…";
-  try { const r = await assets.upload(file); box.querySelector(`[data-imgval="${key}"]`).value = r.id; const fn = box.querySelector(`[data-fname="${key}"]`); if (fn) fn.value = file.name;
+  try { const r = await assets.upload(file); recordMedia(r.id, file, up.dataset.kind); box.querySelector(`[data-imgval="${key}"]`).value = r.id; const fn = box.querySelector(`[data-fname="${key}"]`); if (fn) fn.value = file.name;
     box.querySelector(".prev").innerHTML = up.dataset.kind==="file" ? "📎 "+esc(file.name) : up.dataset.kind==="video" ? `<video src="${r.url}" muted loop autoplay playsinline style="width:100%;height:100%;object-fit:cover"></video>` : `<img src="${r.url}" alt="">`; box.querySelector(".help").textContent = (file.type==="image/webp" ? "WebP로 변환해 올렸습니다" : "업로드 완료") + " · 저장하면 반영됩니다."; }
   catch(err){ box.querySelector(".help").textContent = "업로드하지 못했습니다. 다른 이미지로 다시 시도하세요."; }
 });
@@ -2650,7 +2736,7 @@ document.addEventListener("click", async e => {
     const out = await compressVideo(f, plan, p => { bar.firstElementChild.style.width = (p*100).toFixed(1)+"%"; });
     if (out.size > MAX_UP()) throw new Error(`압축 결과가 ${(out.size/1048576).toFixed(1)}MB라 ${MAX_LABEL()}를 넘었습니다. 길이를 줄이거나 해상도를 낮춰 다시 시도하세요.`);
     msg.textContent = `압축 완료 (${(out.size/1048576).toFixed(1)}MB). 업로드 중…`;
-    const r = await assets.upload(out);
+    const r = await assets.upload(out); recordMedia(r.id, out, "video");
     box.querySelector(`[data-imgval="${key}"]`).value = r.id;
     box.querySelector(".prev").innerHTML = `<video src="${r.url}" muted loop autoplay playsinline style="width:100%;height:100%;object-fit:cover"></video>`;
     box.querySelector(".help").textContent = "업로드 완료 · 저장하면 반영됩니다.";
