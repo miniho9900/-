@@ -176,12 +176,10 @@ p{margin:0}
 .family-btn:hover{background:var(--violet);border-color:var(--violet)}
 .hd.solid .family-btn:hover{background:var(--lilac);border-color:var(--violet)}
 .fm-family img{height:40px;width:auto;display:block}
-.ft-family img{height:24px;width:auto;display:block}
 .tile .fam-logo{height:58px;width:auto;display:block;margin:12px 0 10px}
 .fm-family{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:1px solid var(--on-dark-line);padding:28px 0 40px;color:var(--on-dark-2)}
 .fm-family a{color:#fff;font-weight:500;display:inline-flex;gap:8px;align-items:center}
-.ft-family{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--on-dark-line);padding:10px 16px;color:#fff;font-size:13px;margin-top:20px}
-.ft-family:hover{border-color:var(--violet-soft)}
+
 .post-file{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line-2);padding:14px 20px;margin-top:28px;font-size:15px;color:var(--ink);background:var(--mist)}
 .post-file:hover{border-color:var(--violet);color:var(--violet)}
 @media (max-width:760px){.biz-intro{grid-template-columns:minmax(0,1fr)}.biz-pn a b{font-size:16px}.family-btn{padding:4px 8px 4px 10px}.family-btn img{height:20px}}
@@ -414,14 +412,26 @@ p{margin:0}
 
 /* footer */
 .ft{background:#07062F;color:var(--on-dark-2);font-size:14px}
-.ft .top{display:flex;justify-content:space-between;gap:48px;flex-wrap:wrap;padding-block:72px 48px}
-.ft img{height:28px;width:auto;margin-bottom:22px}
-.ft .info{line-height:2;max-width:56ch}
-.ft .cols{display:flex;gap:56px;flex-wrap:wrap}
-.ft .cols h4{color:#fff;font-size:14px;font-weight:500;margin-bottom:14px}
-.ft .cols a{display:block;line-height:2.2;transition:color .2s}
-.ft .cols a:hover{color:#fff}
-.ft .bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--on-dark-line);padding-block:24px 32px;font-size:13px}
+.ft-top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:56px 72px;padding-block:72px 56px;align-items:start}
+.ft-logo{height:28px;width:auto;display:block;margin-bottom:28px}
+.ft-name{color:#fff;font-size:15px;font-weight:500;margin-bottom:16px;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center}
+.ft-name span{color:var(--on-dark-2);font-weight:400;padding-left:14px;border-left:1px solid var(--on-dark-line)}
+.ft-info{display:grid;grid-template-columns:52px minmax(0,1fr);gap:8px 16px;margin:0;line-height:1.75}
+.ft-info dt{color:rgba(255,255,255,.88);font-weight:500;white-space:nowrap}
+.ft-info dd{margin:0;min-width:0}
+.ft-info dd span{display:inline-block;margin-right:22px;white-space:nowrap}
+.ft-info dd span b{font-weight:400;color:rgba(255,255,255,.5);margin-right:6px}
+.ft-cols{display:flex;gap:48px;flex-wrap:wrap}
+.ft-cols h4{color:#fff;font-size:14px;font-weight:500;margin-bottom:14px}
+.ft-cols a{display:block;line-height:2.2;transition:color .2s}
+.ft-cols a:hover{color:#fff}
+.ft-fam{display:inline-flex!important;align-items:center;gap:10px;padding:12px 16px;border:1px solid var(--on-dark-line);line-height:1!important;transition:border-color .25s,background .25s}
+.ft-fam img{height:30px;width:auto;display:block}
+.ft-fam:hover{border-color:var(--violet-soft);background:rgba(255,255,255,.04)}
+.ft-fam svg{color:rgba(255,255,255,.7);flex:none}
+@media (max-width:1080px){.ft-top{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.ft-info{grid-template-columns:minmax(0,1fr);gap:2px}.ft-info dd{margin-bottom:10px}.ft-cols{gap:32px}}
+.ft .bot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--on-dark-line);padding-block:24px 32px;font-size:13px}
 .ft .bot a{margin-left:20px}
 .ft .bot a:first-child{margin-left:0;color:#fff}
 
@@ -834,12 +844,23 @@ document.addEventListener("keydown", e => { if (e.key === "Escape") { closeMenu(
 /* ================= site views ================= */
 function footer(){
   const groups = [["회사소개",[["회사개요","about"],["연혁","about"],["인증 및 지적재산권","cert"],["오시는 길","about"]]],["사업·서비스",[["토탈 네트워크 서비스","business"],["지능형 네트워크 솔루션","products"]]],["고객지원",[["공지사항","news"],["IR·공시","news"],["고객문의","contact"],["원격지원서비스","contact"]]]];
+  const fu = cfg("familyUrl"), fn = cfg("familyName")||"TRIZRO";
+  const famCol = fu ? `<div><h4>패밀리 사이트</h4><a class="ft-fam" href="${esc(fu)}" target="_blank" rel="noopener" aria-label="${esc(fn)} 사이트 바로가기 (새 창)"><img src="trizro-white.png" alt="${esc(fn)}">${I.ext}</a></div>` : "";
+  const contact = [["TEL",cfg("tel")],["FAX",cfg("fax")],["E-mail",cfg("email")]].filter(x=>x[1]).map(([k,v]) => `<span><b>${k}</b>${esc(v)}</span>`).join("");
   return `<footer class="ft"><div class="wrap">
-    <div class="top">
-      <div><img src="logo-white.png" alt="TRIZN"><p class="info">${[cfg("company")||"트리즈엔", cfg("ceo")&&"대표이사 "+cfg("ceo"), cfg("bizNo")&&"사업자등록번호 "+cfg("bizNo")].filter(Boolean).map(esc).join("  |  ")}<br><b style="color:#fff;font-weight:500">본사</b>  ${esc(cfg("address"))}${cfg("address2")?`<br><b style="color:#fff;font-weight:500">공장</b>  ${esc(cfg("address2"))}`:""}<br>TEL ${esc(cfg("tel"))}  |  FAX ${esc(cfg("fax"))}  |  ${esc(cfg("email"))}</p>${cfg("familyUrl")?`<a class="ft-family" href="${esc(cfg("familyUrl"))}" target="_blank" rel="noopener" aria-label="${esc(cfg("familyName")||"TRIZRO")} 사이트 바로가기 (새 창)">FAMILY SITE <img src="trizro-white.png" alt="${esc(cfg("familyName")||"TRIZRO")}"> ${I.ext}</a>`:""}</div>
-      <div class="cols">${groups.map(([h,l]) => `<div><h4>${h}</h4>${l.map(([t,r]) => `<a href="#${r}">${t}</a>`).join("")}</div>`).join("")}</div>
+    <div class="ft-top">
+      <div>
+        <img class="ft-logo" src="logo-white.png" alt="TRIZN">
+        <p class="ft-name">${esc(cfg("company")||"트리즈엔")}${cfg("ceo")?`<span>대표이사 ${esc(cfg("ceo"))}</span>`:""}${cfg("bizNo")?`<span>사업자등록번호 ${esc(cfg("bizNo"))}</span>`:""}</p>
+        <dl class="ft-info">
+          ${cfg("address")?`<dt>본사</dt><dd>${esc(cfg("address"))}</dd>`:""}
+          ${cfg("address2")?`<dt>공장</dt><dd>${esc(cfg("address2"))}</dd>`:""}
+          ${contact?`<dt>연락처</dt><dd>${contact}</dd>`:""}
+        </dl>
+      </div>
+      <nav class="ft-cols" aria-label="푸터 메뉴">${groups.map(([h,l]) => `<div><h4>${h}</h4>${l.map(([t,r]) => `<a href="#${r}">${t}</a>`).join("")}</div>`).join("")}${famCol}</nav>
     </div>
-    <div class="bot"><span>© ${new Date().getFullYear()} ${esc(cfg("companyEn")||"TRIZN")} Co., Ltd. All rights reserved.</span><span><a href="#contact">개인정보처리방침</a><a href="#contact">이용약관</a><a href="#admin">관리자</a></span></div>
+    <div class="bot"><span>© ${new Date().getFullYear()} ${esc(cfg("companyEn")||"TrizN Inc.")} All rights reserved.</span><span><a href="#contact">개인정보처리방침</a><a href="#contact">이용약관</a><a href="#admin">관리자</a></span></div>
   </div></footer>`;
 }
 function subVis(eb, title, crumb, i, img){
