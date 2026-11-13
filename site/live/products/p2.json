@@ -1,12 +1,12 @@
 {
- "category": "SDN 장비",
+ "category": "네트워크 인프라",
+ "category_en": "Network Infrastructure",
  "featured": true,
  "imageId": null,
  "name": "SDN Switch",
  "order": 10,
  "summary": "Rest API, OpenFlow 등 표준 프로토콜로 SDN 컨트롤러와 연동되는 데이터센터 자동화용 스위치",
+ "summary_en": "Switches that integrate with SDN controllers over standard protocols such as REST API and OpenFlow, built for data center automation",
  "updatedAt": "2026-11-12",
- "visible": true,
- "category_en": "SDN Equipment",
- "summary_en": "Switches that integrate with SDN controllers over standard protocols such as REST API and OpenFlow, built for data center automation"
+ "visible": true
 }

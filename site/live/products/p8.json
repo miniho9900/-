@@ -1,13 +1,13 @@
 {
- "category": "인프라",
+ "category": "네트워크 인프라",
+ "category_en": "Network Infrastructure",
  "featured": true,
  "imageId": null,
  "name": "SDN 통합배선반",
+ "name_en": "SDN Integrated Patch Panel",
  "order": 70,
  "summary": "네트워크 상태를 실시간 모니터링하고 원격제어와 장애 예측을 지원하는 스마트 배선 시스템",
- "updatedAt": "2026-11-12",
- "visible": true,
- "category_en": "Infrastructure",
  "summary_en": "Smart cabling system with real-time monitoring, remote control and fault prediction",
- "name_en": "SDN Integrated Patch Panel"
+ "updatedAt": "2026-11-12",
+ "visible": true
 }

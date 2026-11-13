@@ -1,10 +1,10 @@
 {
  "icon": "globe",
  "label": "주요사업분야",
+ "label_en": "Main business",
  "order": 80,
  "updatedAt": "2026-11-13",
- "value": "소프트웨어 개발 및 공급,\n정보통신공사업, 통신장비판매",
- "visible": true,
- "label_en": "Main business",
- "value_en": "Software development and supply,\ninformation & communication construction,\ntelecom equipment sales"
+ "value": "소프트웨어 개발 및 공급, 정보통신공사업,\n네트워크 장비 개발 및 공급, 기간통신사업",
+ "value_en": "Software development and supply, ICT construction,\nnetwork equipment development and supply,\nfacilities-based telecommunications",
+ "visible": true
 }

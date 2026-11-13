@@ -1,10 +1,10 @@
 {
  "icon": "pin",
  "label": "주소",
+ "label_en": "Address",
  "order": 100,
  "updatedAt": "2026-11-13",
- "value": "경기도 수원시 영통구 대학3로4번길\n15 208~220호, 223호 (이의동, 테라스힐)",
- "visible": true,
- "label_en": "Address",
- "value_en": "Rooms 208–220, 223, 15 Daehak 3-ro 4beon-gil,\nYeongtong-gu, Suwon-si, Gyeonggi-do (Terrace Hill)"
+ "value": "[본사] 경기도 수원시 영통구 대학3로4번길 15\n[지사] 서울시 종로구 인사동5길 29, 태화빌딩 10층 1004호\n[공장] 경기도 수원시 영통구 대학3로 4번길 36",
+ "value_en": "[HQ] 15 Daehak 3-ro 4beon-gil, Yeongtong-gu, Suwon-si, Gyeonggi-do\n[Branch] Rm 1004, 10F Taehwa Bldg, 29 Insadong 5-gil, Jongno-gu, Seoul\n[Factory] 36 Daehak 3-ro 4beon-gil, Yeongtong-gu, Suwon-si",
+ "visible": true
 }

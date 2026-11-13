@@ -4,8 +4,8 @@ declare(strict_types=1);
 $GLOBALS['TZ_CFG'] = require __DIR__ . '/config.php';
 date_default_timezone_set('Asia/Seoul');
 
-const TZ_COLS = ['menus','slides','popups','business','products','works','posts','partners','history','pillars','facts','site'];
-const TZ_SECTIONS = ['site','menus','slides','popups','business','products','works','posts','inquiries','pillars','facts','history','partners'];
+const TZ_COLS = ['menus','slides','popups','business','products','works','posts','partners','clients','history','pillars','facts','site'];
+const TZ_SECTIONS = ['site','menus','slides','popups','business','products','works','posts','inquiries','pillars','facts','history','partners','clients'];
 const TZ_UPLOAD_EXT = [
     'jpg'=>'image/', 'jpeg'=>'image/', 'png'=>'image/', 'gif'=>'image/', 'webp'=>'image/',
     'mp4'=>'video/', 'webm'=>'video/', 'mov'=>'video/', 'm4v'=>'video/',

@@ -1,13 +1,13 @@
 {
- "category": "운영관제",
+ "category": "SDN 플랫폼",
+ "category_en": "SDN Platform",
  "featured": true,
  "imageId": null,
  "name": "SDN 운영관제 솔루션",
+ "name_en": "SDN Operations & Monitoring Solution",
  "order": 0,
  "summary": "인공지능 기반의 지능형·자동화·무인화 네트워크 운영관제 서비스",
- "updatedAt": "2026-11-12",
- "visible": true,
- "category_en": "Operations",
  "summary_en": "AI-based intelligent, automated and unmanned network operations and monitoring service",
- "name_en": "SDN Operations & Monitoring Solution"
+ "updatedAt": "2026-11-12",
+ "visible": true
 }

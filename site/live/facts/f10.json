@@ -1,10 +1,10 @@
 {
- "icon": "phone",
- "label": "연락처",
- "order": 90,
- "updatedAt": "2026-11-13",
- "value": "TEL: 031)247-5966\nFAX: 031)212-5903",
- "visible": true,
- "label_en": "Contact",
- "value_en": "TEL: +82-31-247-5966\nFAX: +82-31-212-5903"
+  "icon": "phone",
+  "label": "연락처",
+  "label_en": "Contact",
+  "order": 90,
+  "updatedAt": "2026-11-13",
+  "value": "TEL: 031)247-5966\nFAX: 031)212-5903",
+  "value_en": "TEL: +82-31-247-5966\nFAX: +82-31-212-5903",
+  "visible": true
 }

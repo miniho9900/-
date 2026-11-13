@@ -1,10 +1,10 @@
 {
  "icon": "money",
  "label": "자본금",
+ "label_en": "Paid-in capital",
  "order": 60,
  "updatedAt": "2026-11-13",
- "value": "938백만원",
- "visible": true,
- "label_en": "Paid-in capital",
- "value_en": "KRW 938 million"
+ "value": "9.8억원",
+ "value_en": "KRW 980 million",
+ "visible": true
 }

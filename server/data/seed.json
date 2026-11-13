@@ -122,16 +122,232 @@
   }
  },
  {
+  "path": "clients/cl_ancors",
+  "data": {
+   "name": "ANCORS",
+   "group": "공공·기업·기관",
+   "group_en": "Public sector, enterprises & institutions",
+   "imageId": "2a2a13f6b219c3b9fb2257488ca909cf.png",
+   "order": 180,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/cl_chai",
+  "data": {
+   "name": "CHAI",
+   "group": "공공·기업·기관",
+   "group_en": "Public sector, enterprises & institutions",
+   "imageId": "c3e98d55cffa97e0ad0f5e98505e8b0e.png",
+   "order": 170,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/cl_gyeongju",
+  "data": {
+   "name": "경주시",
+   "group": "공공·기업·기관",
+   "group_en": "Public sector, enterprises & institutions",
+   "imageId": "913306f5ba00500129f68d006ebef76f.png",
+   "order": 100,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/cl_hanwha",
+  "data": {
+   "name": "한화오션에코텍",
+   "group": "공공·기업·기관",
+   "group_en": "Public sector, enterprises & institutions",
+   "imageId": "ca627d4eb2324aea6afd0e13f9e1aa53.png",
+   "order": 120,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/cl_jangan",
+  "data": {
+   "name": "장안대학교",
+   "group": "공공·기업·기관",
+   "group_en": "Public sector, enterprises & institutions",
+   "imageId": "f892806e85ad723823c9720bea559a98.png",
+   "order": 130,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/cl_kospo",
+  "data": {
+   "name": "한국남부발전",
+   "group": "공공·기업·기관",
+   "group_en": "Public sector, enterprises & institutions",
+   "imageId": "8353e5e47b0c5aa163bf0910993e0ef5.png",
+   "order": 110,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/cl_sisun",
+  "data": {
+   "name": "sisun",
+   "group": "공공·기업·기관",
+   "group_en": "Public sector, enterprises & institutions",
+   "imageId": "f4fe0a6db71c91782f31d7db12671a47.png",
+   "order": 160,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/cl_ssc",
+  "data": {
+   "name": "수원과학대학교",
+   "group": "공공·기업·기관",
+   "group_en": "Public sector, enterprises & institutions",
+   "imageId": "c2835712974a0473d26bb184381ae011.png",
+   "order": 140,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/cl_suwonhosp",
+  "data": {
+   "name": "수원중앙병원",
+   "group": "공공·기업·기관",
+   "group_en": "Public sector, enterprises & institutions",
+   "imageId": "fc03623e578998be3dcd46be92446168.png",
+   "order": 150,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/cl_tdf",
+  "data": {
+   "name": "tdf (The Design Frontier)",
+   "group": "공공·기업·기관",
+   "group_en": "Public sector, enterprises & institutions",
+   "imageId": "e1d8a4e1dc9236657d6d6f269cab4b36.png",
+   "order": 190,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/edu_daejeon",
+  "data": {
+   "name": "대전광역시교육청",
+   "group": "교육청",
+   "group_en": "Offices of Education",
+   "imageId": "cf8b89f597d73e81af02be5771cdbf8d.png",
+   "order": 10,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/edu_gangwon",
+  "data": {
+   "name": "강원특별자치도교육청",
+   "group": "교육청",
+   "group_en": "Offices of Education",
+   "imageId": "a37835ee0b23c877e74566b30c95686c.png",
+   "order": 70,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/edu_gyeonggi",
+  "data": {
+   "name": "경기도교육청",
+   "group": "교육청",
+   "group_en": "Offices of Education",
+   "imageId": "a06e8e4a4eb67c73c9f0132d1d781ff9.png",
+   "order": 40,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/edu_gyeongnam",
+  "data": {
+   "name": "경상남도교육청",
+   "group": "교육청",
+   "group_en": "Offices of Education",
+   "imageId": "391d2d299bfdf1c52d6706c22cacc3f9.png",
+   "order": 60,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/edu_incheon",
+  "data": {
+   "name": "인천광역시교육청",
+   "group": "교육청",
+   "group_en": "Offices of Education",
+   "imageId": "8bbb8cf111abdf03c5e0d764491851eb.png",
+   "order": 20,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/edu_jeju",
+  "data": {
+   "name": "제주특별자치도교육청",
+   "group": "교육청",
+   "group_en": "Offices of Education",
+   "imageId": "0177eeca9e56c56f20fdcc25259acda5.png",
+   "order": 50,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/edu_jeonnam",
+  "data": {
+   "name": "전남광주통합특별시",
+   "group": "교육청",
+   "group_en": "Offices of Education",
+   "imageId": "2208be5259b9bf594d27eca44cf09944.png",
+   "order": 30,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "clients/edu_seoul",
+  "data": {
+   "name": "서울특별시교육청",
+   "group": "교육청",
+   "group_en": "Offices of Education",
+   "imageId": "3b9f94791999571bd49be82b6c27045e.png",
+   "order": 0,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
   "path": "facts/f01",
   "data": {
    "icon": "building",
    "label": "회사명",
+   "label_en": "Company",
    "order": 0,
    "updatedAt": "2026-11-13",
    "value": "㈜트리즈엔 (TrizN Inc.)",
-   "visible": true,
-   "label_en": "Company",
-   "value_en": "TrizN Inc."
+   "value_en": "TrizN Inc.",
+   "visible": true
   }
  },
  {
@@ -139,12 +355,12 @@
   "data": {
    "icon": "calendar",
    "label": "설립일",
+   "label_en": "Founded",
    "order": 10,
    "updatedAt": "2026-11-13",
    "value": "2013년 12월 31일",
-   "visible": true,
-   "label_en": "Founded",
-   "value_en": "December 31, 2013"
+   "value_en": "December 31, 2013",
+   "visible": true
   }
  },
  {
@@ -152,11 +368,11 @@
   "data": {
    "icon": "person",
    "label": "대표이사",
+   "label_en": "CEO",
    "order": 20,
    "updatedAt": "2026-11-13",
    "value": "백 성 우",
-   "visible": true,
-   "label_en": "CEO"
+   "visible": true
   }
  },
  {
@@ -164,12 +380,12 @@
   "data": {
    "icon": "people",
    "label": "직원수",
+   "label_en": "Employees",
    "order": 40,
    "updatedAt": "2026-11-13T02:02:05.155Z",
    "value": "109명",
-   "visible": true,
-   "label_en": "Employees",
-   "value_en": "109"
+   "value_en": "109",
+   "visible": true
   }
  },
  {
@@ -177,11 +393,11 @@
   "data": {
    "icon": "award",
    "label": "신용등급",
+   "label_en": "Credit rating",
    "order": 50,
    "updatedAt": "2026-11-13T02:02:14.719Z",
    "value": "BBB+",
-   "visible": true,
-   "label_en": "Credit rating"
+   "visible": true
   }
  },
  {
@@ -189,12 +405,12 @@
   "data": {
    "icon": "money",
    "label": "자본금",
+   "label_en": "Paid-in capital",
    "order": 60,
    "updatedAt": "2026-11-13",
-   "value": "938백만원",
-   "visible": true,
-   "label_en": "Paid-in capital",
-   "value_en": "KRW 938 million"
+   "value": "9.8억원",
+   "value_en": "KRW 980 million",
+   "visible": true
   }
  },
  {
@@ -202,12 +418,12 @@
   "data": {
    "icon": "chart",
    "label": "매출액",
+   "label_en": "Revenue",
    "order": 70,
    "updatedAt": "2026-11-13",
    "value": "’25: 461억",
-   "visible": true,
-   "label_en": "Revenue",
-   "value_en": "2025: KRW 46.1 billion"
+   "value_en": "2025: KRW 46.1 billion",
+   "visible": true
   }
  },
  {
@@ -215,12 +431,12 @@
   "data": {
    "icon": "globe",
    "label": "주요사업분야",
+   "label_en": "Main business",
    "order": 80,
    "updatedAt": "2026-11-13",
-   "value": "소프트웨어 개발 및 공급,\n정보통신공사업, 통신장비판매",
-   "visible": true,
-   "label_en": "Main business",
-   "value_en": "Software development and supply,\ninformation & communication construction,\ntelecom equipment sales"
+   "value": "소프트웨어 개발 및 공급, 정보통신공사업,\n네트워크 장비 개발 및 공급, 기간통신사업",
+   "value_en": "Software development and supply, ICT construction,\nnetwork equipment development and supply,\nfacilities-based telecommunications",
+   "visible": true
   }
  },
  {
@@ -228,12 +444,12 @@
   "data": {
    "icon": "phone",
    "label": "연락처",
+   "label_en": "Contact",
    "order": 90,
    "updatedAt": "2026-11-13",
    "value": "TEL: 031)247-5966\nFAX: 031)212-5903",
-   "visible": true,
-   "label_en": "Contact",
-   "value_en": "TEL: +82-31-247-5966\nFAX: +82-31-212-5903"
+   "value_en": "TEL: +82-31-247-5966\nFAX: +82-31-212-5903",
+   "visible": true
   }
  },
  {
@@ -241,12 +457,12 @@
   "data": {
    "icon": "pin",
    "label": "주소",
+   "label_en": "Address",
    "order": 100,
    "updatedAt": "2026-11-13",
-   "value": "경기도 수원시 영통구 대학3로4번길\n15 208~220호, 223호 (이의동, 테라스힐)",
-   "visible": true,
-   "label_en": "Address",
-   "value_en": "Rooms 208–220, 223, 15 Daehak 3-ro 4beon-gil,\nYeongtong-gu, Suwon-si, Gyeonggi-do (Terrace Hill)"
+   "value": "[본사] 경기도 수원시 영통구 대학3로4번길 15\n[지사] 서울시 종로구 인사동5길 29, 태화빌딩 10층 1004호\n[공장] 경기도 수원시 영통구 대학3로 4번길 36",
+   "value_en": "[HQ] 15 Daehak 3-ro 4beon-gil, Yeongtong-gu, Suwon-si, Gyeonggi-do\n[Branch] Rm 1004, 10F Taehwa Bldg, 29 Insadong 5-gil, Jongno-gu, Seoul\n[Factory] 36 Daehak 3-ro 4beon-gil, Yeongtong-gu, Suwon-si",
+   "visible": true
   }
  },
  {
@@ -254,11 +470,114 @@
   "data": {
    "icon": "web",
    "label": "홈페이지",
+   "label_en": "Website",
    "order": 110,
    "updatedAt": "2026-11-13",
    "value": "https://www.trizn.kr",
+   "visible": true
+  }
+ },
+ {
+  "path": "facts/f13",
+  "data": {
+   "label": "기업인증",
+   "label_en": "Certifications",
+   "value": "벤처기업, 기업부설연구소,\n경영혁신형(MAIN-Biz), 기술혁신형(Inno-Biz)",
+   "value_en": "Venture business, corporate R&D center,\nMAIN-Biz, Inno-Biz",
+   "icon": "award",
+   "order": 105,
    "visible": true,
-   "label_en": "Website"
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "facts/f14",
+  "data": {
+   "label": "ISO 인증",
+   "label_en": "ISO",
+   "value": "ISO 9001 · ISO 45001 · ISO 14001",
+   "value_en": "ISO 9001 · ISO 45001 · ISO 14001",
+   "icon": "document",
+   "order": 106,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "history/h2013",
+  "data": {
+   "year": "2013",
+   "text": "엔에스지 설립 (2013.12.31)\n교육정보화(스마트 스쿨, 스쿨넷) 사업",
+   "text_en": "NSG founded (December 31, 2013)\nEducation informatization business (Smart School, SchoolNet)",
+   "order": 60,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "history/h2016",
+  "data": {
+   "year": "2016",
+   "text": "연구개발전담부서 인증 (한국산업기술진흥협회)\n스쿨넷 서비스 구축 감사패 수상",
+   "text_en": "Dedicated R&D department certified (KOITA)\nAppreciation plaque for SchoolNet service deployment",
+   "order": 50,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "history/h2020",
+  "data": {
+   "year": "2020",
+   "text": "국내 최초 유·무선 통합 SDN 컨트롤러 개발\n기업부설연구소 설립\n광다중화, 통합배선반 직접생산증명 취득",
+   "text_en": "Developed Korea's first wired/wireless integrated SDN controller\nEstablished a corporate R&D center\nDirect production certification for optical multiplexers and integrated patch panels",
+   "order": 40,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "history/h2023",
+  "data": {
+   "year": "2023",
+   "text": "국내 최초 AE 및 PON 통합 SDN 컨트롤러 개발\nMAIN-Biz, Inno-Biz 중소기업 확인서 인증",
+   "text_en": "Developed Korea's first integrated AE & PON SDN controller\nCertified as a MAIN-Biz and Inno-Biz SME",
+   "order": 30,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "history/h2024",
+  "data": {
+   "year": "2024",
+   "text": "사명 변경 ㈜트리즈엔 (엔에스지 + 트리즈네트웍스 합병)\n국내 학내망 시장 SDN 컨트롤러 점유율 1위\n학내 네트워크 시스템 특허 출원",
+   "text_en": "Renamed TrizN Inc. (merger of NSG and Triz Networks)\nNo. 1 SDN controller share in Korea's school network market\nPatent application for a school network system",
+   "order": 20,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "history/h2025",
+  "data": {
+   "year": "2025",
+   "text": "기술역량 우수기업 인증 (한국평가데이터)\n지능형 네트워크 서비스 플랫폼 부문 ‘굿-ICT 대상’ 수상 (대한민국 굿컴퍼니대상)",
+   "text_en": "Certified as a technology-competence excellent company (Korea Enterprise Data)\nGood-ICT Grand Prize for intelligent network service platforms (Korea Good Company Awards)",
+   "order": 10,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "history/h2026",
+  "data": {
+   "year": "2026",
+   "text": "국회 교육위원장 표창 4년 연속 수상 (지능형 네트워크 솔루션 부문)\n차세대 SDN 컨트롤러 내 ‘양자내성암호(PQC)’ 상용화 적용",
+   "text_en": "National Assembly Education Committee Chair's Commendation — 4th consecutive year (intelligent network solutions)\nPost-quantum cryptography (PQC) applied commercially in the next-generation SDN controller",
+   "order": 0,
+   "visible": true,
+   "updatedAt": "2026-11-13"
   }
  },
  {
@@ -314,6 +633,228 @@
    "updatedAt": "2026-11-12",
    "visible": true,
    "label_en": "Contact"
+  }
+ },
+ {
+  "path": "partners/tp_ahnlab",
+  "data": {
+   "name": "AhnLab",
+   "role": "UTM",
+   "url": "",
+   "imageId": "e69855b48745ac49f30c452f7d5978e3.png",
+   "order": 100,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "UTM"
+  }
+ },
+ {
+  "path": "partners/tp_alcatel",
+  "data": {
+   "name": "Alcatel-Lucent Enterprise",
+   "role": "스위치",
+   "url": "",
+   "imageId": "e0947be5ab16195f14d6b2774ca2d4ac.png",
+   "order": 10,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "Switch"
+  }
+ },
+ {
+  "path": "partners/tp_arista",
+  "data": {
+   "name": "ARISTA",
+   "role": "스위치",
+   "url": "",
+   "imageId": "8109ea024f48b25743882d22d1d28f28.png",
+   "order": 0,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "Switch"
+  }
+ },
+ {
+  "path": "partners/tp_axgate",
+  "data": {
+   "name": "AXGATE",
+   "role": "UTM / AP",
+   "url": "",
+   "imageId": "85633e8ac205d6d1fa9e289bf4314e88.png",
+   "order": 110,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "UTM / AP"
+  }
+ },
+ {
+  "path": "partners/tp_coreedge",
+  "data": {
+   "name": "CORE EDGE NETWORKS",
+   "role": "스위치",
+   "url": "",
+   "imageId": "6df7fc9d07910d6cc0fc6e5ee8b69fb7.png",
+   "order": 20,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "Switch"
+  }
+ },
+ {
+  "path": "partners/tp_dasan",
+  "data": {
+   "name": "DASAN",
+   "role": "스위치 / OLT / AP",
+   "url": "",
+   "imageId": "90908e3ff440ab5c08b62d4b4e7a188d.png",
+   "order": 50,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "Switch / OLT / AP"
+  }
+ },
+ {
+  "path": "partners/tp_davolink",
+  "data": {
+   "name": "DAVOLINK",
+   "role": "AP",
+   "url": "",
+   "imageId": "b00e126240ca21fe9be389077382e21c.png",
+   "order": 140,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "AP"
+  }
+ },
+ {
+  "path": "partners/tp_fortinet",
+  "data": {
+   "name": "FORTINET",
+   "role": "UTM / 스위치",
+   "url": "",
+   "imageId": "6572f2523108d68762749bc20d59680a.png",
+   "order": 120,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "UTM / Switch"
+  }
+ },
+ {
+  "path": "partners/tp_h1radio",
+  "data": {
+   "name": "에이치원레디오",
+   "role": "AP",
+   "url": "",
+   "imageId": "7af721570056d3e060a714a59c318e07.png",
+   "order": 150,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "AP",
+   "name_en": "H1 Radio"
+  }
+ },
+ {
+  "path": "partners/tp_hdn",
+  "data": {
+   "name": "HDN (Handreamnet)",
+   "role": "스위치",
+   "url": "",
+   "imageId": "743d6cc8ba6d412ce17ac75ad77b954d.png",
+   "order": 30,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "Switch"
+  }
+ },
+ {
+  "path": "partners/tp_hfr",
+  "data": {
+   "name": "HFR",
+   "role": "스위치 / OLT",
+   "url": "",
+   "imageId": "7641063a700e3626fc0ecc8d97d795a2.png",
+   "order": 60,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "Switch / OLT"
+  }
+ },
+ {
+  "path": "partners/tp_kaon",
+  "data": {
+   "name": "KAON BROADBAND",
+   "role": "AP",
+   "url": "",
+   "imageId": "f063c2df305f0dc2103b66e7cde12b36.png",
+   "order": 160,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "AP"
+  }
+ },
+ {
+  "path": "partners/tp_nokia",
+  "data": {
+   "name": "NOKIA",
+   "role": "OLT",
+   "url": "",
+   "imageId": "e0832b0492df8714f12295726250ca02.png",
+   "order": 80,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "OLT"
+  }
+ },
+ {
+  "path": "partners/tp_piolink",
+  "data": {
+   "name": "PIOLINK",
+   "role": "스위치",
+   "url": "",
+   "imageId": "c38e78a8c97ccb3aee2f05d262373eac.png",
+   "order": 40,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "Switch"
+  }
+ },
+ {
+  "path": "partners/tp_secui",
+  "data": {
+   "name": "SECUI",
+   "role": "UTM",
+   "url": "",
+   "imageId": "2032efd5f83320c5a2f000ae72baab12.png",
+   "order": 130,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "UTM"
+  }
+ },
+ {
+  "path": "partners/tp_tplink",
+  "data": {
+   "name": "TP-Link",
+   "role": "스위치 / AP",
+   "url": "",
+   "imageId": "a0c515f7fdda50e0f02846a2f57dc9a6.png",
+   "order": 70,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "Switch / AP"
+  }
+ },
+ {
+  "path": "partners/tp_ubiquoss",
+  "data": {
+   "name": "ubiQuoss",
+   "role": "스위치 / OLT",
+   "url": "",
+   "imageId": "838b885c35ac4e686377fb5aa61d224c.png",
+   "order": 90,
+   "visible": true,
+   "updatedAt": "2026-11-13",
+   "role_en": "Switch / OLT"
   }
  },
  {
@@ -379,16 +920,16 @@
   "data": {
    "board": "notice",
    "body": "트리즈엔 홈페이지가 새롭게 단장했습니다.\n\n사업영역과 지능형 네트워크 솔루션 소개를 보강했고, 고객문의와 원격지원서비스를 한 곳에서 이용할 수 있도록 정리했습니다.\n\n앞으로도 많은 관심 부탁드립니다.",
+   "bodyHtml_en": "<p>The TrizN website has been fully redesigned.</p><p>We have expanded the introductions to our business areas and intelligent network solutions, and brought customer inquiries and remote support together in one place.</p><p>Thank you for your continued interest.</p>",
+   "body_en": "The TrizN website has been fully redesigned.\n\nWe have expanded the introductions to our business areas and intelligent network solutions, and brought customer inquiries and remote support together in one place.\n\nThank you for your continued interest.",
    "date": "2026-11-12",
    "imageId": null,
    "order": 0,
    "pinned": true,
    "title": "트리즈엔 홈페이지를 새롭게 열었습니다",
-   "updatedAt": "2026-11-12",
-   "visible": true,
    "title_en": "TrizN has launched its new website",
-   "body_en": "The TrizN website has been fully redesigned.\n\nWe have expanded the introductions to our business areas and intelligent network solutions, and brought customer inquiries and remote support together in one place.\n\nThank you for your continued interest.",
-   "bodyHtml_en": "<p>The TrizN website has been fully redesigned.</p><p>We have expanded the introductions to our business areas and intelligent network solutions, and brought customer inquiries and remote support together in one place.</p><p>Thank you for your continued interest.</p>"
+   "updatedAt": "2026-11-12",
+   "visible": true
   }
  },
  {
@@ -401,9 +942,9 @@
    "order": 0,
    "pinned": false,
    "title": "[예시] 보도자료 샘플 게시물입니다",
+   "title_en": "[Sample] Press release sample post",
    "updatedAt": "2026-11-12",
-   "visible": true,
-   "title_en": "[Sample] Press release sample post"
+   "visible": false
   }
  },
  {
@@ -416,173 +957,332 @@
    "order": 0,
    "pinned": false,
    "title": "[예시] IR·공시 샘플 게시물입니다",
+   "title_en": "[Sample] IR & disclosure sample post",
    "updatedAt": "2026-11-12",
-   "visible": false,
-   "title_en": "[Sample] IR & disclosure sample post"
+   "visible": false
+  }
+ },
+ {
+  "path": "posts/pr20250116",
+  "data": {
+   "board": "press",
+   "date": "2025-01-16",
+   "pinned": false,
+   "title": "트리즈엔, 대한민국 글로벌 파워브랜드 지능형 네트워크 솔루션 부문 대상",
+   "title_en": "TrizN wins the Korea Global Power Brand Award for intelligent network solutions",
+   "body": "제12회 2024 대한민국 글로벌 파워브랜드 대상 시상식에서 지능형 네트워크 솔루션 부문 대상과 국회 교육위원장 표창을 수상했다. 4년 연속 수상이다.",
+   "body_en": "At the 12th Korea Global Power Brand Awards 2024, TrizN received the grand prize in intelligent network solutions and the National Assembly Education Committee Chair's Commendation — its fourth consecutive year.",
+   "bodyHtml": "<p>제12회 2024 대한민국 글로벌 파워브랜드 대상 시상식에서 지능형 네트워크 솔루션 부문 대상과 국회 교육위원장 표창을 수상했다. 4년 연속 수상이다.</p>",
+   "bodyHtml_en": "<p>At the 12th Korea Global Power Brand Awards 2024, TrizN received the grand prize in intelligent network solutions and the National Assembly Education Committee Chair's Commendation — its fourth consecutive year.</p>",
+   "imageId": null,
+   "order": -70,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "posts/pr20250822",
+  "data": {
+   "board": "press",
+   "date": "2025-08-22",
+   "pinned": false,
+   "title": "트리즈엔, 지능형 네트워크 플랫폼 부문 ‘굿-ICT 대상’ 수상",
+   "title_en": "TrizN wins the Good-ICT Grand Prize for its intelligent network platform",
+   "body": "2025 제11회 대한민국 굿컴퍼니 대상에서 ‘지능형 네트워크 서비스 플랫폼’ 부문 ‘굿-ICT 대상(Good-ICT Award)’을 수상했다.",
+   "body_en": "At the 11th Korea Good Company Awards 2025, TrizN received the Good-ICT Award in the intelligent network service platform category.",
+   "bodyHtml": "<p>2025 제11회 대한민국 굿컴퍼니 대상에서 ‘지능형 네트워크 서비스 플랫폼’ 부문 ‘굿-ICT 대상(Good-ICT Award)’을 수상했다.</p>",
+   "bodyHtml_en": "<p>At the 11th Korea Good Company Awards 2025, TrizN received the Good-ICT Award in the intelligent network service platform category.</p>",
+   "imageId": null,
+   "order": -80,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "posts/pr20251127",
+  "data": {
+   "board": "press",
+   "date": "2025-11-27",
+   "pinned": false,
+   "title": "트리즈엔-노키아, 차세대 유선 액세스망 고도화 전략적 협력",
+   "title_en": "TrizN and Nokia partner to advance next-generation wired access networks",
+   "body": "트리즈엔이 노키아솔루션앤네트웍스코리아(노키아)와 차세대 유선 액세스망 관련 기술 협력 및 제품 개발을 위한 전략적 업무협약(MOU)을 체결했다.",
+   "body_en": "TrizN signed a strategic MOU with Nokia Solutions and Networks Korea for technology cooperation and product development in next-generation wired access networks.",
+   "bodyHtml": "<p>트리즈엔이 노키아솔루션앤네트웍스코리아(노키아)와 차세대 유선 액세스망 관련 기술 협력 및 제품 개발을 위한 전략적 업무협약(MOU)을 체결했다.</p>",
+   "bodyHtml_en": "<p>TrizN signed a strategic MOU with Nokia Solutions and Networks Korea for technology cooperation and product development in next-generation wired access networks.</p>",
+   "imageId": null,
+   "order": -90,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "posts/pr20260203",
+  "data": {
+   "board": "press",
+   "date": "2026-02-03",
+   "pinned": false,
+   "title": "트리즈엔, 차세대 SDN 컨트롤러에 양자내성암호(PQC) 통합 성공",
+   "title_en": "TrizN integrates post-quantum cryptography (PQC) into its next-generation SDN controller",
+   "body": "국민대학교 교수 연구팀이 양자내성암호 알고리즘 ML-KEM을 TLS 1.3 핸드셰이크에 적용한 PQC-TLS 라이브러리를 자체 구현하고, 트리즈엔 상용 제품 적용에 성공했다.",
+   "body_en": "A Kookmin University research team implemented a PQC-TLS library applying the ML-KEM post-quantum algorithm to the TLS 1.3 handshake, and successfully applied it to TrizN's commercial products.",
+   "bodyHtml": "<p>국민대학교 교수 연구팀이 양자내성암호 알고리즘 ML-KEM을 TLS 1.3 핸드셰이크에 적용한 PQC-TLS 라이브러리를 자체 구현하고, 트리즈엔 상용 제품 적용에 성공했다.</p>",
+   "bodyHtml_en": "<p>A Kookmin University research team implemented a PQC-TLS library applying the ML-KEM post-quantum algorithm to the TLS 1.3 handshake, and successfully applied it to TrizN's commercial products.</p>",
+   "imageId": null,
+   "order": -100,
+   "visible": true,
+   "updatedAt": "2026-11-13"
   }
  },
  {
   "path": "products/p1",
   "data": {
-   "category": "운영관제",
+   "category": "SDN 플랫폼",
+   "category_en": "SDN Platform",
    "featured": true,
    "imageId": null,
    "name": "SDN 운영관제 솔루션",
+   "name_en": "SDN Operations & Monitoring Solution",
    "order": 0,
    "summary": "인공지능 기반의 지능형·자동화·무인화 네트워크 운영관제 서비스",
-   "updatedAt": "2026-11-12",
-   "visible": true,
-   "category_en": "Operations",
    "summary_en": "AI-based intelligent, automated and unmanned network operations and monitoring service",
-   "name_en": "SDN Operations & Monitoring Solution"
+   "updatedAt": "2026-11-12",
+   "visible": true
+  }
+ },
+ {
+  "path": "products/p10",
+  "data": {
+   "name": "SDN 컨트롤러",
+   "name_en": "SDN Controller",
+   "category": "SDN 플랫폼",
+   "category_en": "SDN Platform",
+   "featured": true,
+   "imageId": null,
+   "order": 5,
+   "summary": "국내 최초 유·무선 통합 SDN 컨트롤러. 유·무선 네트워크 인프라 전체를 하나의 정책으로 중앙에서 통합 제어합니다.",
+   "summary_en": "Korea's first wired/wireless integrated SDN controller — central, policy-based control of the entire network infrastructure.",
+   "visible": true,
+   "updatedAt": "2026-11-13"
   }
  },
  {
   "path": "products/p2",
   "data": {
-   "category": "SDN 장비",
+   "category": "네트워크 인프라",
+   "category_en": "Network Infrastructure",
    "featured": true,
    "imageId": null,
    "name": "SDN Switch",
    "order": 10,
    "summary": "Rest API, OpenFlow 등 표준 프로토콜로 SDN 컨트롤러와 연동되는 데이터센터 자동화용 스위치",
+   "summary_en": "Switches that integrate with SDN controllers over standard protocols such as REST API and OpenFlow, built for data center automation",
    "updatedAt": "2026-11-12",
-   "visible": true,
-   "category_en": "SDN Equipment",
-   "summary_en": "Switches that integrate with SDN controllers over standard protocols such as REST API and OpenFlow, built for data center automation"
+   "visible": true
   }
  },
  {
   "path": "products/p3",
   "data": {
-   "category": "SDN 장비",
+   "category": "네트워크 인프라",
+   "category_en": "Network Infrastructure",
    "featured": true,
    "imageId": null,
    "name": "SDN PON",
    "order": 20,
    "summary": "PON에 SDN을 접목한 차세대 광통신 구조. QoS·대역폭·장애 대응을 중앙에서 제어",
+   "summary_en": "Next-generation optical architecture combining PON with SDN — QoS, bandwidth and fault response controlled centrally",
    "updatedAt": "2026-11-12",
-   "visible": true,
-   "category_en": "SDN Equipment",
-   "summary_en": "Next-generation optical architecture combining PON with SDN — QoS, bandwidth and fault response controlled centrally"
+   "visible": true
   }
  },
  {
   "path": "products/p4",
   "data": {
-   "category": "SDN 장비",
+   "category": "네트워크 인프라",
+   "category_en": "Network Infrastructure",
    "featured": true,
    "imageId": null,
    "name": "SDN AP",
    "order": 30,
    "summary": "고속 인터넷, 안정성, 넓은 커버리지가 필요한 환경에서 최적의 성능 제공",
+   "summary_en": "Optimal performance where high-speed internet, stability and wide coverage are required",
    "updatedAt": "2026-11-12",
-   "visible": true,
-   "category_en": "SDN Equipment",
-   "summary_en": "Optimal performance where high-speed internet, stability and wide coverage are required"
+   "visible": true
   }
  },
  {
   "path": "products/p8",
   "data": {
-   "category": "인프라",
+   "category": "네트워크 인프라",
+   "category_en": "Network Infrastructure",
    "featured": true,
    "imageId": null,
    "name": "SDN 통합배선반",
+   "name_en": "SDN Integrated Patch Panel",
    "order": 70,
    "summary": "네트워크 상태를 실시간 모니터링하고 원격제어와 장애 예측을 지원하는 스마트 배선 시스템",
-   "updatedAt": "2026-11-12",
-   "visible": true,
-   "category_en": "Infrastructure",
    "summary_en": "Smart cabling system with real-time monitoring, remote control and fault prediction",
-   "name_en": "SDN Integrated Patch Panel"
+   "updatedAt": "2026-11-12",
+   "visible": true
   }
  },
  {
   "path": "products/p9",
   "data": {
-   "category": "인프라",
+   "category": "네트워크 인프라",
+   "category_en": "Network Infrastructure",
    "featured": true,
    "imageId": null,
    "name": "SDN 지능형 FDF",
+   "name_en": "SDN Intelligent FDF",
    "order": 80,
    "summary": "광케이블 연결 상태를 실시간 감시·원격 제어하는 지능형 광분배 시스템",
-   "updatedAt": "2026-11-12",
-   "visible": true,
-   "category_en": "Infrastructure",
    "summary_en": "Intelligent fiber distribution frame with real-time monitoring and remote control of fiber connections",
-   "name_en": "SDN Intelligent FDF"
+   "updatedAt": "2026-11-12",
+   "visible": true
   }
  },
  {
   "path": "site/config",
   "data": {
-   "aboutTitle": "네트워크망을 보유하지 않는\n세계 최대 네트워크 서비스 플랫폼",
+   "aboutTitle": "AI 네트워크 대표기업,\n트리즈엔",
+   "aboutTitle_en": "TrizN,\na leader in AI networks",
    "address": "경기도 수원시 영통구 대학3로4번길 15 208~220호, 223호 (이의동, 테라스힐)",
    "address2": "경기도 수원시 영통구 대학3로 4번길 36 테라스힐2차 209-210호",
+   "address2_en": "Rooms 209–210, Terrace Hill 2, 36 Daehak 3-ro 4beon-gil, Yeongtong-gu, Suwon-si, Gyeonggi-do, Korea",
+   "address_en": "Rooms 208–220, 223, 15 Daehak 3-ro 4beon-gil, Yeongtong-gu, Suwon-si, Gyeonggi-do, Korea (Terrace Hill)",
    "bizLead": "고객의 복잡하고 다양한 환경에 맞춰 컨설팅부터 설계·구축, 임대·유지관리, 운영관제까지 한 번에 제공합니다.",
+   "bizLead_en": "From consulting to design and deployment, leasing and maintenance, and operations monitoring — all in one place, tailored to your complex environment.",
    "bizNo": "",
    "ceo": "백성우",
    "ceoImageId": null,
-   "ceoMessage": "트리즈엔은 네트워크 컨설팅과 솔루션 개발부터 설계·구축·시공, 솔루션 임대와 유지관리, 인공지능 기반 운영관제까지 네트워크의 전 과정을 책임지는 토탈 네트워크 서비스 기업입니다.\n\nSDN(소프트웨어 정의 네트워크) 기술을 바탕으로 스위치, PON, VPN, 방화벽, 스토리지, 통합배선반, 지능형 FDF를 중앙에서 제어하고 자동화하는 지능형 네트워크 솔루션을 공급합니다.\n\n공공기관에는 나라장터와 S2B를 통해 맞춤형 네트워크 장비와 구축 컨설팅을 함께 제공합니다.",
+   "ceoMessage": "국내 지능형 네트워크 시장을 선도해 온 트리즈엔은, 독자적인 SDN 기술과 지속적인 연구개발을 바탕으로 유·무선 네트워크를 통합 관리하고, 보다 지능적인 네트워크 운영을 위한 기술과 솔루션을 발전시켜 왔습니다.\n\n이제 축적된 네트워크 기술에 AI를 더해, 연결을 넘어 지능으로, 네트워크의 새로운 기준을 만들어갑니다.\n\n트리즈엔은 네트워크 구축부터 AI 기반 운영·관리까지, 지능형 네트워크 운영 환경을 구현하는 전문기업입니다.",
+   "ceoMessage_en": "TrizN has led Korea's intelligent network market. Built on proprietary SDN technology and continuous R&D, we manage wired and wireless networks as one and keep advancing the technology and solutions for smarter network operations.\n\nNow we are adding AI to our accumulated network technology — moving beyond connection to intelligence, and setting a new standard for networks.\n\nFrom network deployment to AI-based operation and management, TrizN builds intelligent network operating environments.",
+   "ceo_en": "",
    "company": "㈜트리즈엔",
    "companyEn": "TrizN Inc.",
+   "company_en": "TrizN Inc.",
    "ctaText": "도입 상담부터 구축과 유지관리까지 담당 엔지니어가 함께합니다.",
+   "ctaText_en": "Our engineers are with you from the first consultation through deployment and maintenance.",
    "ctaTitle": "우리 조직에 맞는 네트워크, 트리즈엔과 함께 설계하세요.",
+   "ctaTitle_en": "Design the network your organization needs, with TrizN.",
    "email": "pro@trizn.kr",
    "familyName": "TRIZRO",
    "familyText": "상업용 지능형 건식 청소로봇. 정밀 자율주행과 4-in-1 건식 청소로 공간을 관리합니다.",
+   "familyText_en": "Commercial intelligent dry-cleaning robot. Precise autonomous navigation and 4-in-1 dry cleaning keep your spaces in shape.",
    "familyUrl": "https://trizro-cleaning.hoya99.chatgpt.site/",
    "fax": "031-212-5903",
    "filmEyebrow": "Brand Film",
    "filmLoopId": null,
    "filmPosterId": null,
    "filmText": "컨설팅부터 설계·구축, 임대·유지관리, 인공지능 기반 운영관제까지.\n영상으로 트리즈엔을 만나보세요.",
+   "filmText_en": "From consulting, design and deployment to leasing, maintenance and AI-based operations.\nMeet TrizN on film.",
    "filmTitle": "트리즈엔이 만드는\n지능형 네트워크",
+   "filmTitle_en": "Intelligent networks,\nbuilt by TrizN",
    "filmVideoId": null,
    "filmYoutube": "https://youtu.be/voH71MyxqT0",
    "marquee": "TOTAL NETWORK SERVICES · SDN · AI NETWORK · AUTOMATION",
    "stats": [
     {
-     "label": "토탈 네트워크 서비스",
-     "num": "5",
-     "suffix": "",
-     "label_en": "Total network services"
+     "num": "3,000",
+     "suffix": "+",
+     "label": "SDN 구축·운영 학교",
+     "label_en": "Schools running our SDN"
     },
     {
-     "label": "지능형 SDN 솔루션",
-     "num": "9",
+     "num": "8",
      "suffix": "",
-     "label_en": "Intelligent SDN solutions"
+     "label": "교육청 SDN 구축",
+     "label_en": "Offices of education"
     },
     {
-     "label": "본사 · 공장 거점",
-     "num": "2",
-     "suffix": "",
-     "label_en": "Office & factory sites"
+     "num": "18",
+     "suffix": "건",
+     "suffix_en": "",
+     "label": "특허 등 지식재산권",
+     "label_en": "Patents & IP"
+    },
+    {
+     "num": "4",
+     "suffix": "년",
+     "suffix_en": " yrs",
+     "label": "연속 국회 교육위원장 표창",
+     "label_en": "Consecutive years of commendation"
     }
    ],
+   "statsHidden": true,
    "supportText": "전화로 상담원과 연결한 뒤, 안내받은 접속번호로 원격지원 프로그램에 접속하세요. 엔지니어가 원격으로 장비와 네트워크 상태를 점검해 드립니다.",
+   "supportText_en": "Call our support line, then connect to the remote support program with the access code you are given. Our engineers will check your equipment and network remotely.",
    "supportUrl": "https://939.co.kr/nsg/",
    "tel": "031-247-5966",
    "tile1ImageId": null,
    "tile2ImageId": null,
    "tile3ImageId": null,
-   "updatedAt": "2026-11-13T00:46:44.062Z",
-   "vision": "",
-   "visionLead": "",
-   "company_en": "TrizN Inc.",
-   "address_en": "Rooms 208–220, 223, 15 Daehak 3-ro 4beon-gil, Yeongtong-gu, Suwon-si, Gyeonggi-do, Korea (Terrace Hill)",
-   "address2_en": "Rooms 209–210, Terrace Hill 2, 36 Daehak 3-ro 4beon-gil, Yeongtong-gu, Suwon-si, Gyeonggi-do, Korea",
-   "bizLead_en": "From consulting to design and deployment, leasing and maintenance, and operations monitoring — all in one place, tailored to your complex environment.",
-   "ctaTitle_en": "Design the network your organization needs, with TrizN.",
-   "ctaText_en": "Our engineers are with you from the first consultation through deployment and maintenance.",
-   "aboutTitle_en": "The world's largest network service platform\n— without owning a network",
-   "ceoMessage_en": "TrizN is a total network service company that takes responsibility for the entire network lifecycle — from network consulting and solution development to design, construction and deployment, solution leasing and maintenance, and AI-based operations monitoring.\n\nBuilt on SDN (Software-Defined Networking), we supply intelligent network solutions that centrally control and automate switches, PON, VPN, firewalls, storage, integrated patch panels and intelligent FDFs.\n\nFor public institutions, we provide tailored network equipment and deployment consulting through KONEPS and S2B.",
-   "supportText_en": "Call our support line, then connect to the remote support program with the access code you are given. Our engineers will check your equipment and network remotely.",
-   "familyText_en": "Commercial intelligent dry-cleaning robot. Precise autonomous navigation and 4-in-1 dry cleaning keep your spaces in shape.",
-   "filmTitle_en": "Intelligent networks,\nbuilt by TrizN",
-   "filmText_en": "From consulting, design and deployment to leasing, maintenance and AI-based operations.\nMeet TrizN on film."
+   "updatedAt": "2026-11-13T02:10:17.668Z",
+   "vision": "Mission · 고객 환경에 최적화된 토탈 네트워크 서비스 제공 | 고객의 복잡하고 다양한 환경에 맞춰 유·무선 네트워크 설치부터 운영, 관리 및 맞춤형 컨설팅과 자동화까지 책임지는 솔루션 개발과 서비스를 제공하겠습니다.\nVision · 세계 최대 네트워크 서비스 플랫폼으로 도약 | 네트워크망의 보유가 아닌 기술과 서비스 경쟁력을 기반으로 글로벌 네트워크 서비스 플랫폼을 지향합니다.\nValue · 전문성 · 고객 중심 · 책임 | 맞춤형 컨설팅부터 운영·관리, 자동화까지 고객의 네트워크 전 과정을 함께합니다.",
+   "visionLead": "고객 환경에 최적화된 토탈 네트워크 서비스로 세계 최대 네트워크 서비스 플랫폼을 지향합니다.",
+   "visionLead_en": "Total network services optimized for each customer, on the way to becoming the world's largest network service platform.",
+   "vision_en": "Mission · Total network services optimized for every customer environment | Tailored to complex and diverse environments, we develop solutions and deliver services covering everything from installing wired and wireless networks to operation, management, consulting and automation.\nVision · Becoming the world's largest network service platform | Not by owning network lines, but through technology and service competitiveness, we aim to be a global network service platform.\nValue · Expertise · Customer focus · Responsibility | From tailored consulting to operation, management and automation, we stay with our customers through every stage of their network.",
+   "bizStatusLead": "지능형 네트워크 솔루션 개발부터 장비 제조·구축·통합·운영까지 — 네트워크 전 주기를 자체 역량으로 완결합니다.",
+   "bizStatusLead_en": "From intelligent network solution development to equipment manufacturing, deployment, integration and operation — we cover the entire network lifecycle in-house.",
+   "bizStatus": "지능형 네트워크 플랫폼 개발 | SDN 기반 통합관리와 AI 기술로 더 스마트한 네트워크 운영을 실현합니다.\n지능형 네트워크 장비 제조 | 자체 기술로 개발하고 엄격한 품질관리와 안정적인 제품을 공급합니다.\n지능형 네트워크 통합 구축 | 전문 컨설팅과 구축 역량으로 최적의 네트워크 환경을 구현합니다.\n지능형 통합 운용·관제 서비스 | 고객 개입이 필요 없는(Touch-Zero) 지능형 SDN 매니지드 서비스를 제공합니다.",
+   "bizStatus_en": "Intelligent network platform development | SDN-based integrated management and AI for smarter network operations.\nIntelligent network equipment manufacturing | Developed in-house and supplied as stable products under strict quality control.\nIntelligent network integration | Expert consulting and deployment capabilities for the best network environment.\nIntelligent integrated operations & monitoring | Touch-Zero intelligent SDN managed services that need no customer intervention.",
+   "orgLead": "전문성과 책임감을 바탕으로 유기적인 협업 체계를 구축하여 효율적인 의사결정과 실행력을 높이고 있습니다. 고객 가치 실현을 위해 각 분야의 전문가들이 함께합니다.",
+   "orgLead_en": "Built on expertise and responsibility, our collaborative structure enables efficient decisions and strong execution. Specialists in every field work together to deliver value to customers.",
+   "orgTop": "대표이사",
+   "orgTop_en": "CEO",
+   "orgStaff": "기획팀 · 총무팀 · 고문",
+   "orgStaff_en": "Planning · General Affairs · Advisors",
+   "orgChart": "경영총괄 (CFO) | 경영지원본부, 회계팀, 재무팀, 법무팀, IR공시팀, 인사팀\n사업총괄 (CMO) | BS1 본부, BS2 본부, 마케팅 본부, 신사업 본부, 조달 사업부, 사업지원부\n전략총괄 (CSO) | 전략사업 본부\n기술총괄 (CTO) | R&D 본부, TS 본부, 생산기술본부",
+   "orgChart_en": "Management (CFO) | Management Support, Accounting, Finance, Legal, IR & Disclosure, HR\nBusiness (CMO) | BS1 Division, BS2 Division, Marketing, New Business, Procurement, Business Support\nStrategy (CSO) | Strategic Business Division\nTechnology (CTO) | R&D Division, TS Division, Production Engineering",
+   "orgStats": [
+    {
+     "num": "4",
+     "suffix": "개",
+     "suffix_en": "",
+     "label": "핵심 총괄 체계",
+     "label_en": "Core divisions",
+     "desc": "경영·사업·전략·기술 분야별 전문 조직 운영",
+     "desc_en": "Management, business, strategy and technology"
+    },
+    {
+     "num": "85",
+     "suffix": "%",
+     "label": "전문 인력 비중",
+     "label_en": "Specialist staff",
+     "desc": "엔지니어, 컨설팅, PMO 등 기술 중심의 인력 구성",
+     "desc_en": "Engineers, consultants, PMO and more"
+    },
+    {
+     "num": "43",
+     "suffix": "%",
+     "label": "고급 기술인력 비중",
+     "label_en": "Senior engineers",
+     "desc": "고급 이상 인력 — 검증된 기술 전문성 보유",
+     "desc_en": "Senior-grade or above — proven expertise"
+    },
+    {
+     "num": "18",
+     "suffix": "명",
+     "suffix_en": "",
+     "label": "연구소 소속 인력",
+     "label_en": "R&D center staff",
+     "desc": "기업부설연구소 소속",
+     "desc_en": "Corporate R&D center"
+    }
+   ],
+   "historyLead": "기술 혁신과 신뢰를 바탕으로 성장의 발자취를 이어갑니다.",
+   "historyLead_en": "Building on technical innovation and trust, step by step.",
+   "caseTitle": "8개 교육청, 약 3,000개 학교\nSDN 구축·운영",
+   "caseTitle_en": "8 offices of education,\nabout 3,000 schools on our SDN",
+   "caseText": "전국 교육 현장에서 검증된 SDN 기술과 제품 경쟁력을 바탕으로, 자체 네트워크 제품과 기술로 구축부터 운영·관제까지 지원합니다.",
+   "caseText_en": "Proven in schools nationwide, our own SDN technology and products support customers from deployment through operations and monitoring.",
+   "caseChips": "교육시장 점유율 1위 · 구축·통합 운용·관제 서비스 · 공공 · 교육 · 국방 · 민간",
+   "caseChips_en": "No. 1 in the education market · Deployment & managed operations · Public · Education · Defense · Enterprise",
+   "caseImageId": "5acf621b8f0cf23204da1a6702d72af3.jpg",
+   "address3": "서울시 종로구 인사동5길 29, 태화빌딩 10층 1004호",
+   "address3_en": "Rm 1004, 10F Taehwa Bldg, 29 Insadong 5-gil, Jongno-gu, Seoul, Korea"
   }
  },
  {
@@ -604,36 +1304,276 @@
   "path": "slides/s2",
   "data": {
    "btnLabel": "솔루션 보기",
+   "btnLabel_en": "View Solutions",
    "btnRoute": "products",
    "eyebrow": "INTELLIGENT NETWORK",
    "imageId": "537eac2d90b7e7d65aea2ff9dbbc4109.jpg",
    "order": 10,
    "sub": "SDN 기반 중앙제어와 자동화로\n네트워크 운영관제를 무인화합니다.",
+   "sub_en": "SDN-based central control and automation\nfor unmanned network operations.",
    "title": "AI로 제어하는\n**지능형 네트워크**",
+   "title_en": "Intelligent networks,\n**controlled by AI**",
    "updatedAt": "2026-11-12",
    "videoId": null,
-   "visible": false,
-   "title_en": "Intelligent networks,\n**controlled by AI**",
-   "sub_en": "SDN-based central control and automation\nfor unmanned network operations.",
-   "btnLabel_en": "View Solutions"
+   "visible": false
   }
  },
  {
   "path": "slides/s3",
   "data": {
    "btnLabel": "고객문의",
+   "btnLabel_en": "Contact Us",
    "btnRoute": "contact",
    "eyebrow": "PUBLIC PROCUREMENT",
    "imageId": "16ed5483b021c7b2c47ec193ffa36c42.jpg",
    "order": 20,
    "sub": "나라장터와 S2B를 통해 네트워크 장비와\n구축 컨설팅을 함께 제공합니다.",
+   "sub_en": "Network equipment and deployment consulting\nthrough KONEPS and S2B.",
    "title": "공공기관 맞춤형\n**조달 · S2B Biz**",
+   "title_en": "Built for the public sector\n**Procurement · S2B Biz**",
    "updatedAt": "2026-11-12",
    "videoId": null,
-   "visible": false,
-   "title_en": "Built for the public sector\n**Procurement · S2B Biz**",
-   "sub_en": "Network equipment and deployment consulting\nthrough KONEPS and S2B.",
-   "btnLabel_en": "Contact Us"
+   "visible": false
+  }
+ },
+ {
+  "path": "works/c_assembly",
+  "data": {
+   "title": "국회 교육위원장 표창 (4년 연속)",
+   "title_en": "National Assembly Education Committee Chair's Commendation (4 years in a row)",
+   "category": "수상",
+   "category_en": "Award",
+   "client": "",
+   "year": "2026",
+   "imageId": "a587d6df2b7b63b2e1b02f8c523d1928.jpg",
+   "order": 130,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_goodict",
+  "data": {
+   "title": "Good-ICT Award 대상",
+   "title_en": "Good-ICT Award Grand Prize",
+   "category": "수상",
+   "category_en": "Award",
+   "client": "",
+   "year": "2025",
+   "imageId": "2ea47567f55b2808f8b812daab45801c.jpg",
+   "order": 140,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_gs",
+  "data": {
+   "title": "GS인증 (1등급)",
+   "title_en": "GS Certification (Grade 1)",
+   "category": "인증",
+   "category_en": "Certification",
+   "client": "",
+   "year": "",
+   "imageId": "93822599bc16cba38f54b4ded8d15842.jpg",
+   "order": 30,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_ictcon",
+  "data": {
+   "title": "정보통신공사업 등록증",
+   "title_en": "ICT Construction Business Registration",
+   "category": "등록",
+   "category_en": "Registration",
+   "client": "",
+   "year": "",
+   "imageId": "3fe88dc958c48340518163d1bfe15a2a.jpg",
+   "order": 120,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_innobiz",
+  "data": {
+   "title": "기술혁신형 중소기업 (Inno-Biz)",
+   "title_en": "Technology Innovation SME (Inno-Biz)",
+   "category": "기업인증",
+   "category_en": "Company certification",
+   "client": "",
+   "year": "",
+   "imageId": "6a16baed0a195a81aaa2ef6c261bd46c.jpg",
+   "order": 90,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_iso14001",
+  "data": {
+   "title": "환경경영시스템 (ISO 14001)",
+   "title_en": "Environmental Management System (ISO 14001)",
+   "category": "인증",
+   "category_en": "Certification",
+   "client": "",
+   "year": "",
+   "imageId": "441a11c865e8f3d883c37bfeb0318a90.jpg",
+   "order": 20,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_iso45001",
+  "data": {
+   "title": "안전보건경영시스템 (ISO 45001)",
+   "title_en": "Occupational Health & Safety (ISO 45001)",
+   "category": "인증",
+   "category_en": "Certification",
+   "client": "",
+   "year": "",
+   "imageId": "52be41d5d7dfc5eed872c7e21122da42.jpg",
+   "order": 10,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_iso9001",
+  "data": {
+   "title": "품질경영시스템 (ISO 9001)",
+   "title_en": "Quality Management System (ISO 9001)",
+   "category": "인증",
+   "category_en": "Certification",
+   "client": "",
+   "year": "",
+   "imageId": "7ddbfe1b59e1137a1abc8817cbd7eaf9.jpg",
+   "order": 0,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_lab",
+  "data": {
+   "title": "기업부설연구소 인정서",
+   "title_en": "Corporate R&D Center Recognition",
+   "category": "기업인증",
+   "category_en": "Company certification",
+   "client": "",
+   "year": "",
+   "imageId": "2ac744382aa729b59ccb01c065f40bc0.jpg",
+   "order": 70,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_mainbiz",
+  "data": {
+   "title": "경영혁신형 중소기업 (MAIN-Biz)",
+   "title_en": "Management Innovation SME (MAIN-Biz)",
+   "category": "기업인증",
+   "category_en": "Company certification",
+   "client": "",
+   "year": "",
+   "imageId": "a8ac1a6009e027563897cd068e1fb380.jpg",
+   "order": 80,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_patent",
+  "data": {
+   "title": "특허 등 지식재산권 등록 18건",
+   "title_en": "18 registered patents and other IP",
+   "category": "지식재산권",
+   "category_en": "Intellectual property",
+   "client": "",
+   "year": "",
+   "imageId": "564c9b03bbd465bcd7004ce38e924945.jpg",
+   "order": 50,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_powerbrand",
+  "data": {
+   "title": "대한민국 글로벌파워브랜드 대상 (4년 연속)",
+   "title_en": "Korea Global Power Brand Award (4 years in a row)",
+   "category": "수상",
+   "category_en": "Award",
+   "client": "",
+   "year": "2026",
+   "imageId": "453cd42cb554a47f7dbcea958de11dd4.jpg",
+   "order": 150,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_security",
+  "data": {
+   "title": "보안기능확인서",
+   "title_en": "Security Function Certificate",
+   "category": "인증",
+   "category_en": "Certification",
+   "client": "",
+   "year": "",
+   "imageId": "d06113b2f770fa3a9bcc318cba7d9a99.jpg",
+   "order": 40,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_swbiz",
+  "data": {
+   "title": "소프트웨어사업자 관리확인서",
+   "title_en": "Software Business Registration",
+   "category": "등록",
+   "category_en": "Registration",
+   "client": "",
+   "year": "",
+   "imageId": "58ce69fa17dbbf6bee1c4229d03204db.jpg",
+   "order": 110,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_techcomp",
+  "data": {
+   "title": "기술역량 우수기업 인증",
+   "title_en": "Technology Competence Excellence Certification",
+   "category": "기업인증",
+   "category_en": "Company certification",
+   "client": "",
+   "year": "2026",
+   "imageId": "c28d00507b7b5c389e64a618e711356e.jpg",
+   "order": 100,
+   "visible": true,
+   "updatedAt": "2026-11-13"
+  }
+ },
+ {
+  "path": "works/c_venture",
+  "data": {
+   "title": "벤처기업확인서",
+   "title_en": "Venture Business Certificate",
+   "category": "기업인증",
+   "category_en": "Company certification",
+   "client": "",
+   "year": "",
+   "imageId": "5c7f2920280c6905373b770ff5c41851.jpg",
+   "order": 60,
+   "visible": true,
+   "updatedAt": "2026-11-13"
   }
  }
 ]

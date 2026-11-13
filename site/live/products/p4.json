@@ -1,12 +1,12 @@
 {
- "category": "SDN 장비",
+ "category": "네트워크 인프라",
+ "category_en": "Network Infrastructure",
  "featured": true,
  "imageId": null,
  "name": "SDN AP",
  "order": 30,
  "summary": "고속 인터넷, 안정성, 넓은 커버리지가 필요한 환경에서 최적의 성능 제공",
+ "summary_en": "Optimal performance where high-speed internet, stability and wide coverage are required",
  "updatedAt": "2026-11-12",
- "visible": true,
- "category_en": "SDN Equipment",
- "summary_en": "Optimal performance where high-speed internet, stability and wide coverage are required"
+ "visible": true
 }

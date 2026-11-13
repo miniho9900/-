@@ -1,13 +1,13 @@
 {
- "category": "인프라",
+ "category": "네트워크 인프라",
+ "category_en": "Network Infrastructure",
  "featured": true,
  "imageId": null,
  "name": "SDN 지능형 FDF",
+ "name_en": "SDN Intelligent FDF",
  "order": 80,
  "summary": "광케이블 연결 상태를 실시간 감시·원격 제어하는 지능형 광분배 시스템",
- "updatedAt": "2026-11-12",
- "visible": true,
- "category_en": "Infrastructure",
  "summary_en": "Intelligent fiber distribution frame with real-time monitoring and remote control of fiber connections",
- "name_en": "SDN Intelligent FDF"
+ "updatedAt": "2026-11-12",
+ "visible": true
 }

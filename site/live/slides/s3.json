@@ -1,15 +1,15 @@
 {
- "btnLabel": "고객문의",
- "btnRoute": "contact",
- "eyebrow": "PUBLIC PROCUREMENT",
- "imageId": "16ed5483b021c7b2c47ec193ffa36c42",
- "order": 20,
- "sub": "나라장터와 S2B를 통해 네트워크 장비와\n구축 컨설팅을 함께 제공합니다.",
- "title": "공공기관 맞춤형\n**조달 · S2B Biz**",
- "updatedAt": "2026-11-12",
- "videoId": null,
- "visible": false,
- "title_en": "Built for the public sector\n**Procurement · S2B Biz**",
- "sub_en": "Network equipment and deployment consulting\nthrough KONEPS and S2B.",
- "btnLabel_en": "Contact Us"
+  "btnLabel": "고객문의",
+  "btnLabel_en": "Contact Us",
+  "btnRoute": "contact",
+  "eyebrow": "PUBLIC PROCUREMENT",
+  "imageId": "16ed5483b021c7b2c47ec193ffa36c42",
+  "order": 20,
+  "sub": "나라장터와 S2B를 통해 네트워크 장비와\n구축 컨설팅을 함께 제공합니다.",
+  "sub_en": "Network equipment and deployment consulting\nthrough KONEPS and S2B.",
+  "title": "공공기관 맞춤형\n**조달 · S2B Biz**",
+  "title_en": "Built for the public sector\n**Procurement · S2B Biz**",
+  "updatedAt": "2026-11-12",
+  "videoId": null,
+  "visible": false
 }

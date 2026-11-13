@@ -26,6 +26,7 @@ ASSETS = {
     "4a31dbaa7e89a4c39a06803bab4af91b": "control1.jpg",
     "be7ab1de59d800edbc546b6ede166574": "hero-video.mp4",
 }
+ASSETS.update(json.loads((SITE / "images" / "brochure_assets.json").read_text(encoding="utf-8")))
 new_name = {aid: f"{aid}{Path(src).suffix}" for aid, src in ASSETS.items()}
 
 def remap(v):
