@@ -636,6 +636,210 @@
   }
  },
  {
+  "path": "models/pon01",
+  "data": {
+   "productId": "p3",
+   "series": "TRIZN P5000 Series",
+   "name": "TRIZN P5134",
+   "name_en": "TRIZN P5134",
+   "specs": "고속 데이터 전송 | GPON, XG-PON 및 XGS-PON을 지원하여 높은 대역폭을 제공, 대규모 트래픽을 효율적으로 처리할 수  있습니다.\n확장성 | 유연한 아키텍처로 필요에 따라 포트를 추가할 수 있어 네트워크 확장이 용이합니다.\n신뢰성 | 이중 전원 공급 장치 및 팬 모듈을 통해 높은 가용성을 유지하며, 다운타임을 최소화합니다.\n강력한 관리 기능 | 통합된 네트워크 관리 시스템을 통해 실시간 모니터링 및 문제 해결이 가능하여 운영 효율성을 높입니다.\n에너지 효율성 | 전력 소비를 최소화하는 설계로 운영 비용을 절감하고, 환경에도 긍정적인 영향을 미칩니다.",
+   "specs_en": "High-speed data transfer | Supports GPON, XG-PON and XGS-PON for high bandwidth and efficient handling of heavy traffic.\nScalability | A flexible architecture lets you add ports as needed, making network expansion easy.\nReliability | Redundant power supplies and fan modules keep availability high and downtime minimal.\nPowerful management | An integrated network management system enables real-time monitoring and troubleshooting.\nEnergy efficiency | A low-power design cuts operating costs and reduces environmental impact.",
+   "imageId": "890c6f9f112b3394db2526273192df35.png",
+   "detailHtml": "<figure class=\"pd-fig\"><img src=\"uploads/089809a3fb08a1243bd27b28e046709c.png\" alt=\"SDN PON 구성도\"></figure><h3>제품 스펙</h3><table><thead><tr><th>Model</th><th>TRIZN P5134</th></tr></thead><tbody><tr><td><b>Ports</b></td><td>24x 25GbE SFP+<br>4x 100GbE QSFP+</td></tr><tr><td><b>PoE</b></td><td>GPON, XG-PON, XGS-PON</td></tr><tr><td><b>Layer</b></td><td>Layer3</td></tr><tr><td><b>Mounting</b></td><td>Rack</td></tr></tbody></table>",
+   "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"uploads/089809a3fb08a1243bd27b28e046709c.png\" alt=\"SDN PON topology\"></figure><h3>Specifications</h3><table><thead><tr><th>Model</th><th>TRIZN P5134</th></tr></thead><tbody><tr><td><b>Ports</b></td><td>24x 25GbE SFP+<br>4x 100GbE QSFP+</td></tr><tr><td><b>PoE</b></td><td>GPON, XG-PON, XGS-PON</td></tr><tr><td><b>Layer</b></td><td>Layer3</td></tr><tr><td><b>Mounting</b></td><td>Rack</td></tr></tbody></table>",
+   "order": 200,
+   "visible": true,
+   "updatedAt": "2026-11-13T09:00:00.000Z"
+  }
+ },
+ {
+  "path": "models/sw01",
+  "data": {
+   "productId": "p2",
+   "series": "TRIZN 3500 Series",
+   "name": "[SDN L3 스위치] 3556XC",
+   "name_en": "[SDN L3 Switch] 3556XC",
+   "specs": "인터페이스 | 48 x 10GBase SFP+, 8 x 40/100G Base QSFP+/QSFP28",
+   "specs_en": "Interface | 48 x 10GBase SFP+, 8 x 40/100G Base QSFP+/QSFP28",
+   "imageId": "e4281c42a3b141b32fef24f6ff5a8c6e.png",
+   "detailHtml": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network 스위치 소개\"></figure>",
+   "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network switch overview\"></figure>",
+   "order": 0,
+   "visible": true,
+   "updatedAt": "2026-11-13T09:00:00.000Z"
+  }
+ },
+ {
+  "path": "models/sw02",
+  "data": {
+   "productId": "p2",
+   "series": "SD 3500 Series",
+   "name": "[SDN L3 스위치] 3534C",
+   "name_en": "[SDN L3 Switch] 3534C",
+   "specs": "인터페이스 | 32 x 40/100G Base QSFP+/QSFP28, 2 x 10GBase SFP+",
+   "specs_en": "Interface | 32 x 40/100G Base QSFP+/QSFP28, 2 x 10GBase SFP+",
+   "imageId": "e4281c42a3b141b32fef24f6ff5a8c6e.png",
+   "detailHtml": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network 스위치 소개\"></figure>",
+   "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network switch overview\"></figure>",
+   "order": 10,
+   "visible": true,
+   "updatedAt": "2026-11-13T09:00:00.000Z"
+  }
+ },
+ {
+  "path": "models/sw03",
+  "data": {
+   "productId": "p2",
+   "series": "SD 3500 Series",
+   "name": "[SDN L3 스위치] 3554XQ",
+   "name_en": "[SDN L3 Switch] 3554XQ",
+   "specs": "인터페이스 | 48x10GBase SFP+, 6x10G/40G QSFP+\nSwitching Capacity / Forwarding Rate | 1440 Gbps / 1071 Mpps\n펌웨어 파일명 | TRIZN3554XQ-10.31.199-V705R204C003B072S_nos.img",
+   "specs_en": "Interface | 48x10GBase SFP+, 6x10G/40G QSFP+\nSwitching Capacity / Forwarding Rate | 1440 Gbps / 1071 Mpps\nFirmware file | TRIZN3554XQ-10.31.199-V705R204C003B072S_nos.img",
+   "imageId": "d7b167d6312d9f536f761b1eea6f71a6.png",
+   "detailHtml": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network 스위치 소개\"></figure>",
+   "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network switch overview\"></figure>",
+   "order": 20,
+   "visible": true,
+   "updatedAt": "2026-11-13T09:00:00.000Z"
+  }
+ },
+ {
+  "path": "models/sw04",
+  "data": {
+   "productId": "p2",
+   "series": "SD 3500 Series",
+   "name": "[SDN L3 스위치] 3534TXQ",
+   "name_en": "[SDN L3 Switch] 3534TXQ",
+   "specs": "인터페이스 | 8x10/100/1000M RJ45, 24x10GBase SFP+, 2x40GBase QSFP+\nSwitching Capacity / Forwarding Rate | 656 Gbps / 488 Mpps\n펌웨어 파일명 | TRIZN3554XQ-10.31.199-V705R204C003B072S_nos.img",
+   "specs_en": "Interface | 8x10/100/1000M RJ45, 24x10GBase SFP+, 2x40GBase QSFP+\nSwitching Capacity / Forwarding Rate | 656 Gbps / 488 Mpps\nFirmware file | TRIZN3554XQ-10.31.199-V705R204C003B072S_nos.img",
+   "imageId": "03f190478d4ac0479b82b877ba1a7143.png",
+   "detailHtml": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network 스위치 소개\"></figure>",
+   "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network switch overview\"></figure>",
+   "order": 30,
+   "visible": true,
+   "updatedAt": "2026-11-13T09:00:00.000Z"
+  }
+ },
+ {
+  "path": "models/sw05",
+  "data": {
+   "productId": "p2",
+   "series": "SD 3500 Series",
+   "name": "[SDN L3 스위치] 3530XQ",
+   "name_en": "[SDN L3 Switch] 3530XQ",
+   "specs": "인터페이스 | 24x10GbE(SFP+) + 6x25/40GbE (SFP28/QSFP+)\n크기/무게 | 442.5(W) x 43.95(H) x 473(D) mm\nSwitching Capacity | 1.68 Tbps\nForwarding Rate | 600 Mpps\n입력전원 | AC 100~240V/50~60Hz | 2 AC modular (1+1 redundancy)\nCPU | Marvell CN9130 2.2GHz 4 core\nHDD / Memory | 32M SPI+8G MMC/SDRAM 4GB",
+   "specs_en": "Interface | 24x10GbE(SFP+) + 6x25/40GbE (SFP28/QSFP+)\nDimensions/Weight | 442.5(W) x 43.95(H) x 473(D) mm\nSwitching Capacity | 1.68 Tbps\nForwarding Rate | 600 Mpps\nPower input | AC 100~240V/50~60Hz | 2 AC modular (1+1 redundancy)\nCPU | Marvell CN9130 2.2GHz 4 core\nHDD / Memory | 32M SPI+8G MMC/SDRAM 4GB",
+   "imageId": "03f190478d4ac0479b82b877ba1a7143.png",
+   "detailHtml": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network 스위치 소개\"></figure>",
+   "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network switch overview\"></figure>",
+   "order": 40,
+   "visible": true,
+   "updatedAt": "2026-11-13T09:00:00.000Z"
+  }
+ },
+ {
+  "path": "models/sw06",
+  "data": {
+   "productId": "p2",
+   "series": "TRIZN 3000 Series",
+   "name": "[SDN L2 스위치] 3052TX",
+   "name_en": "[SDN L2 Switch] 3052TX",
+   "specs": "인터페이스 | 48x10/100/1000M RJ45, 4x1G/10G SFP+\n크기/Fan/입력전원 // CPU / HDD/ Memory | 440(W)x44(H)x280(D) mm / Active Fan / AC 100~240V/50~60Hz // 800MHz, 1Core / SPI 32MB + Nand 256MB/ SDRAM 256MB\nSwitching Capacity / Forwarding Rate | 176 Gbps / 131 Mpps\n펌웨어 파일명 | TRIZN3052TX(PX)-10.31.209-V705R002C011B037S_nos.img\n파생 모델 | TRIZN 3052TX, TRIZN 3052PX, TRIZN 3052TF",
+   "specs_en": "Interface | 48x10/100/1000M RJ45, 4x1G/10G SFP+\nDimensions/Fan/Power input // CPU / HDD/ Memory | 440(W)x44(H)x280(D) mm / Active Fan / AC 100~240V/50~60Hz // 800MHz, 1Core / SPI 32MB + Nand 256MB/ SDRAM 256MB\nSwitching Capacity / Forwarding Rate | 176 Gbps / 131 Mpps\nFirmware file | TRIZN3052TX(PX)-10.31.209-V705R002C011B037S_nos.img\nVariants | TRIZN 3052TX, TRIZN 3052PX, TRIZN 3052TF",
+   "imageId": "94e1966f65ba17c89bfa9b502b48a3ff.png",
+   "detailHtml": "<figure class=\"pd-fig\"><img src=\"uploads/54457ebca080a228e4331c9a30b1fd98.png\" alt=\"L2 스위치 구성도\"></figure><figure class=\"pd-fig\"><img src=\"uploads/a8fbfde4ab554c0438e22f7f4a0d2a75.png\" alt=\"Edge Switch 주요 기능\"></figure><figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network 스위치 소개\"></figure>",
+   "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"uploads/54457ebca080a228e4331c9a30b1fd98.png\" alt=\"L2 switch topology\"></figure><figure class=\"pd-fig\"><img src=\"uploads/a8fbfde4ab554c0438e22f7f4a0d2a75.png\" alt=\"Edge switch key features\"></figure><figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network switch overview\"></figure>",
+   "order": 50,
+   "visible": true,
+   "updatedAt": "2026-11-13T09:00:00.000Z"
+  }
+ },
+ {
+  "path": "models/sw07",
+  "data": {
+   "productId": "p2",
+   "series": "TRIZN 3000 Series",
+   "name": "[SDN L2 스위치] 3028TX",
+   "name_en": "[SDN L2 Switch] 3028TX",
+   "specs": "인터페이스/Fan | 24x10/100/1000M RJ45, 4x1G/10G SFP+ / Passive Fan\n크기/입력전원 // CPU / HDD/ Memory | 440(W)x44(H)x170(D) mm / AC 100~240V/50~60Hz // 800MHz, 1Core / SPI 32MB/SDRAM 256MB\nSwitching Capacity / Forwarding Rate | 128 Gbps / 95 Mpps\n펌웨어 파일명 | TRIZN3012(3028)T(P)X-10.31.211-V705R002C011B037S_nos.img",
+   "specs_en": "Interface/Fan | 24x10/100/1000M RJ45, 4x1G/10G SFP+ / Passive Fan\nDimensions/Power input // CPU / HDD/ Memory | 440(W)x44(H)x170(D) mm / AC 100~240V/50~60Hz // 800MHz, 1Core / SPI 32MB/SDRAM 256MB\nSwitching Capacity / Forwarding Rate | 128 Gbps / 95 Mpps\nFirmware file | TRIZN3012(3028)T(P)X-10.31.211-V705R002C011B037S_nos.img",
+   "imageId": "83668a0839144de60a5c280d409ccd00.png",
+   "detailHtml": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network 스위치 소개\"></figure>",
+   "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network switch overview\"></figure>",
+   "order": 60,
+   "visible": true,
+   "updatedAt": "2026-11-13T09:00:00.000Z"
+  }
+ },
+ {
+  "path": "models/sw08",
+  "data": {
+   "productId": "p2",
+   "series": "TRIZN 3000 Series",
+   "name": "[SDN L2 스위치] 3012TX",
+   "name_en": "[SDN L2 Switch] 3012TX",
+   "specs": "인터페이스 / FAN | 8x10/100/1000M RJ45, 4x1G/10G SFP+ / Passive FAN\n크기 / 입력전원 / CPU / HDD/ Memory | 266(W) x 44(H) x 161(D) mm / AC 100~240V/50~60Hz / 800MHz, 1Core / SPI 32MB / SDRAM 256MB\nSwitching Capacity / Forwarding Rate | 96 Gbps / 71 Mpps\n펌웨어 파일명 | TRIZN3012(3028)T(P)X-10.31.211-V705R002C011B037S_nos.img",
+   "specs_en": "Interface / FAN | 8x10/100/1000M RJ45, 4x1G/10G SFP+ / Passive FAN\nDimensions / Power input / CPU / HDD/ Memory | 266(W) x 44(H) x 161(D) mm / AC 100~240V/50~60Hz / 800MHz, 1Core / SPI 32MB / SDRAM 256MB\nSwitching Capacity / Forwarding Rate | 96 Gbps / 71 Mpps\nFirmware file | TRIZN3012(3028)T(P)X-10.31.211-V705R002C011B037S_nos.img",
+   "imageId": "3400c49c5b4666c7e4bcc5a5a29bf248.png",
+   "detailHtml": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network 스위치 소개\"></figure>",
+   "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network switch overview\"></figure>",
+   "order": 70,
+   "visible": true,
+   "updatedAt": "2026-11-13T09:00:00.000Z"
+  }
+ },
+ {
+  "path": "models/sw09",
+  "data": {
+   "productId": "p2",
+   "series": "TRIZN 3000 - PoE Series",
+   "name": "[SDN L2 PoE] 3052PX",
+   "name_en": "[SDN L2 PoE] 3052PX",
+   "specs": "인터페이스 | 48x10/100/1000M RJ45, 4x1G/10G SFP+\nSwitching Capacity / Forwarding Rate | 176 Gbps / 131 Mpps\n입력전원 / CPU / HDD / Memory / FAN / PoE | AC 100~240V/50~60Hz / 800MHz, 1Core / SPI 32MB + Nand 256MB/ SDRAM 256MB / Active FAN /48 port 802.3 af/at 제공\n펌웨어 파일명 | TRIZN3052TX(PX)-10.31.209-V705R002C011B037S_nos.img\n파생 모델 | TRIZN 3052TX, TRIZN 3052PX, TRIZN 3052TF",
+   "specs_en": "Interface | 48x10/100/1000M RJ45, 4x1G/10G SFP+\nSwitching Capacity / Forwarding Rate | 176 Gbps / 131 Mpps\nPower input / CPU / HDD / Memory / FAN / PoE | AC 100~240V/50~60Hz / 800MHz, 1Core / SPI 32MB + Nand 256MB/ SDRAM 256MB / Active FAN /802.3af/at on 48 ports\nFirmware file | TRIZN3052TX(PX)-10.31.209-V705R002C011B037S_nos.img\nVariants | TRIZN 3052TX, TRIZN 3052PX, TRIZN 3052TF",
+   "imageId": "b2886c27245e66d0b8b59a018525ea25.png",
+   "detailHtml": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network 스위치 소개\"></figure>",
+   "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network switch overview\"></figure>",
+   "order": 80,
+   "visible": true,
+   "updatedAt": "2026-11-13T09:00:00.000Z"
+  }
+ },
+ {
+  "path": "models/sw10",
+  "data": {
+   "productId": "p2",
+   "series": "TRIZN 3000 - PoE Series",
+   "name": "[SDN L2 PoE] 3028PX",
+   "name_en": "[SDN L2 PoE] 3028PX",
+   "specs": "인터페이스 | 24x10/100/1000M RJ45, 4x1G/10G SFP+\nSwitching Capacity / Forwarding Rate | 128 Gbps / 95 Mpps\n입력전원 / CPU / HDD / Memory / FAN / PoE | AC 100~240V/50~60Hz / 800MHz, 1Core / SPI 32MB / SDRAM 256MB / Passive FAN / 24 port 802.3 af/at 제공\n펌웨어 파일명 | TRIZN3012(3028)T(P)X-10.31.211-V705R002C011B037S_nos.img",
+   "specs_en": "Interface | 24x10/100/1000M RJ45, 4x1G/10G SFP+\nSwitching Capacity / Forwarding Rate | 128 Gbps / 95 Mpps\nPower input / CPU / HDD / Memory / FAN / PoE | AC 100~240V/50~60Hz / 800MHz, 1Core / SPI 32MB / SDRAM 256MB / Passive FAN / 802.3af/at on 24 ports\nFirmware file | TRIZN3012(3028)T(P)X-10.31.211-V705R002C011B037S_nos.img",
+   "imageId": "88a5225b850520e90030848f42f9559e.png",
+   "detailHtml": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network 스위치 소개\"></figure>",
+   "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network switch overview\"></figure>",
+   "order": 90,
+   "visible": true,
+   "updatedAt": "2026-11-13T09:00:00.000Z"
+  }
+ },
+ {
+  "path": "models/sw11",
+  "data": {
+   "productId": "p2",
+   "series": "SD 3000 - PoE Series",
+   "name": "[SDN L2 PoE] 3012PX",
+   "name_en": "[SDN L2 PoE] 3012PX",
+   "specs": "인터페이스 | 8x10/100/1000M RJ45, 4x1G/10G SFP+\nSwitching Capacity / Forwarding Rate | 96 Gbps / 71 Mpps\n입력전원 / CPU / HDD / Memory / FAN / PoE | AC 100~240V/50~60Hz / 800MHz, 1Core / SPI 32MB / SDRAM 256MB / Passive FAN / 8 port 802.3 af/at 제공\n펌웨어 파일명 | TRIZN3012(3028)T(P)X-10.31.211-V705R002C011B037S_nos.img",
+   "specs_en": "Interface | 8x10/100/1000M RJ45, 4x1G/10G SFP+\nSwitching Capacity / Forwarding Rate | 96 Gbps / 71 Mpps\nPower input / CPU / HDD / Memory / FAN / PoE | AC 100~240V/50~60Hz / 800MHz, 1Core / SPI 32MB / SDRAM 256MB / Passive FAN / 802.3af/at on 8 ports\nFirmware file | TRIZN3012(3028)T(P)X-10.31.211-V705R002C011B037S_nos.img",
+   "imageId": "82f57cab5ab284ff12ef9b3d29246bb9.png",
+   "detailHtml": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network 스위치 소개\"></figure>",
+   "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"uploads/3958e3fe4cdd4787c3d967c9192466a5.png\" alt=\"SD-Network switch overview\"></figure>",
+   "order": 100,
+   "visible": true,
+   "updatedAt": "2026-11-13T09:00:00.000Z"
+  }
+ },
+ {
   "path": "partners/tp_ahnlab",
   "data": {
    "name": "AhnLab",
@@ -1046,8 +1250,11 @@
    "order": 0,
    "summary": "인공지능 기반의 지능형·자동화·무인화 네트워크 운영관제 서비스",
    "summary_en": "AI-based intelligent, automated and unmanned network operations and monitoring service",
-   "updatedAt": "2026-11-12",
-   "visible": true
+   "updatedAt": "2026-11-13T02:30:05.355Z",
+   "visible": true,
+   "videoUrl": "https://www.youtube.com/watch?v=3j8y1mAZCkw",
+   "detailHtml": "<div class=\"rich\"><section class=\"\"><div class=\"rs-hd\"><p class=\"eyebrow\">COMPARISON</p><h3>서비스 모델 비교</h3></div><div class=\"pd-cmp\"><div><img src=\"uploads/f54ad0dba0ed1d1fcc4446e3c411b7e3.jpg\" alt=\"기존 네트워크 운영관리 방식\"><h4>기존 네트워크 운영관리 방식</h4><ul><li>자체적인 네트워크 운영관리를 위해서 많은 네트워크 <strong>전문가 고용</strong>이 필요함</li><li>네트워크가 복잡해짐에 따라 자체적인 네트워크 <strong>운영관리 비용도 점차 증가</strong>함</li><li>다양한 환경에 따른 네트워크 및 자동화 기능과 서비스 <strong>확장이 불가</strong>함</li></ul></div><div class=\"on\"><img src=\"uploads/06dbe5eb13f591496a418b3d5ace5205.jpg\" alt=\"SDN 운영관제 솔루션\"><h4>SDN 운영관제 솔루션</h4><ul><li>통합 네트워크 <strong>서비스의 구독</strong>으로 네트워크 전문가 <strong>고용이 필요 없음</strong></li><li>지능형 네트워크 운영관리 솔루션 기반의 서비스를 통해 운영관리가 효율적이며 <strong>비용이 저렴</strong>함</li><li>다양한 고객 환경에 따른 <strong>맞춤형 네트워크 및 자동화 기능 확장</strong>이 용이함</li></ul></div></div></section></div><div class=\"pd-band\"><p>공인 IP · SD-WAN 서비스용 공인 IP</p><h3>SD-WAN 서비스가 가능한 다량의 IPv4 공인 IP 보유</h3></div>",
+   "detailHtml_en": "<div class=\"rich\"><section class=\"\"><div class=\"rs-hd\"><p class=\"eyebrow\">COMPARISON</p><h3>Service model comparison</h3></div><div class=\"pd-cmp\"><div><img src=\"uploads/f54ad0dba0ed1d1fcc4446e3c411b7e3.jpg\" alt=\"Conventional network operations\"><h4>Conventional network operations</h4><ul><li>Running your own network requires <strong>hiring many network experts</strong></li><li>As networks grow more complex, <strong>in-house operating costs keep rising</strong></li><li>Networks, automation and services <strong>cannot be extended</strong> to suit different environments</li></ul></div><div class=\"on\"><img src=\"uploads/06dbe5eb13f591496a418b3d5ace5205.jpg\" alt=\"SDN operations &amp; monitoring solution\"><h4>SDN operations &amp; monitoring solution</h4><ul><li>An integrated network <strong>subscription</strong> means <strong>no need to hire network experts</strong></li><li>Services built on an intelligent operations solution make management efficient and <strong>affordable</strong></li><li><strong>Custom networks and automation</strong> are easy to extend for each customer environment</li></ul></div></div></section></div><div class=\"pd-band\"><p>Public IP · for SD-WAN services</p><h3>A large pool of IPv4 public IPs ready for SD-WAN services</h3></div>"
   }
  },
  {
@@ -1077,8 +1284,9 @@
    "order": 10,
    "summary": "Rest API, OpenFlow 등 표준 프로토콜로 SDN 컨트롤러와 연동되는 데이터센터 자동화용 스위치",
    "summary_en": "Switches that integrate with SDN controllers over standard protocols such as REST API and OpenFlow, built for data center automation",
-   "updatedAt": "2026-11-12",
-   "visible": true
+   "updatedAt": "2026-11-13T02:30:07.722Z",
+   "visible": true,
+   "layout": "grid"
   }
  },
  {
@@ -1092,8 +1300,9 @@
    "order": 20,
    "summary": "PON에 SDN을 접목한 차세대 광통신 구조. QoS·대역폭·장애 대응을 중앙에서 제어",
    "summary_en": "Next-generation optical architecture combining PON with SDN — QoS, bandwidth and fault response controlled centrally",
-   "updatedAt": "2026-11-12",
-   "visible": true
+   "updatedAt": "2026-11-13T02:30:09.023Z",
+   "visible": true,
+   "layout": "grid"
   }
  },
  {
@@ -1107,8 +1316,9 @@
    "order": 30,
    "summary": "고속 인터넷, 안정성, 넓은 커버리지가 필요한 환경에서 최적의 성능 제공",
    "summary_en": "Optimal performance where high-speed internet, stability and wide coverage are required",
-   "updatedAt": "2026-11-12",
-   "visible": true
+   "updatedAt": "2026-11-13T02:30:10.190Z",
+   "visible": true,
+   "layout": "grid"
   }
  },
  {
@@ -1123,8 +1333,11 @@
    "order": 70,
    "summary": "네트워크 상태를 실시간 모니터링하고 원격제어와 장애 예측을 지원하는 스마트 배선 시스템",
    "summary_en": "Smart cabling system with real-time monitoring, remote control and fault prediction",
-   "updatedAt": "2026-11-12",
-   "visible": true
+   "updatedAt": "2026-11-13T02:30:11.484Z",
+   "visible": true,
+   "layout": "grid",
+   "detailHtml": "<div class=\"rich\"><section class=\"\"><div class=\"rs-hd\"><p class=\"eyebrow\">CONFIGURATION DIAGRAM</p><h3>통합배선반 구성도</h3></div><figure class=\"pd-fig dark\"><img src=\"uploads/75e9778e99587ddee77cbbaa8f3fef64.png\" alt=\"통합배선반 구성도\"></figure><div class=\"rs-cards\"><div class=\"rs-card\"><h4>통합배선반 정의</h4><p>통합배선반은 건물 내의 각종 통신, 네트워크, 전화, 영상, 제어시스템, 보안 등 각각 관리되던 배선을 통합하고, 케이블을 체계적으로 수집, 분배, 관리하는 설비를 의미합니다.</p></div><div class=\"rs-card\"><h4>통합배선반 주요 사용 목적</h4><ul><li>통신 및 네트워크 케이블의 효율적 분배와 정리, 신속한 점검 및 유지보수 지원</li><li>케이블 품질 보호(신호 손실 최소화), 회선 관제 및 모니터링 가능, 시스템 확장성 지원</li></ul></div></div></section><section class=\"rs-steps\"><div class=\"rs-hd\"><p class=\"eyebrow\">PROCESS</p><h3>통합배선반 구축 프로세스</h3></div><div class=\"rs-cards\"><div class=\"rs-card\"><span class=\"n\">STEP 01</span><h4>계획 및 설계</h4><p>통합배선에 사용될 기기의 종류와 서비스, 필요한 데이터 속도, 향후 시스템의 확장 가능성까지 고려해 건물 구조 및 사용 목적에 맞는 최적화된 배선 경로와 방법을 결정합니다.</p></div><div class=\"rs-card\"><span class=\"n\">STEP 02</span><h4>국·내외 표준 준수</h4><p>국·내외에서 인증된 통합배선 표준을 준수합니다.</p></div><div class=\"rs-card\"><span class=\"n\">STEP 03</span><h4>고품질 재료 사용</h4><p>고품질의 케이블과 연결되는 하드웨어의 선택은 전송 속도와 신호 품질에 직접적인 영향을 줄 수 있으며, 장기간 안정적인 성능 확보와 유지를 위해서는 내구성 있는 재료 사용이 필수적입니다.</p></div><div class=\"rs-card\"><span class=\"n\">STEP 04</span><h4>설치 최적화</h4><p>통합 배선에 사용되는 케이블의 굽힘 반경과 길이, 간섭을 최소화하는 것이 중요하며, 적절한 설치를 통해 시스템의 전체적인 성능과 안정성을 향상시킵니다.</p></div><div class=\"rs-card\"><span class=\"n\">STEP 05</span><h4>보안 준수</h4><p>시스템과 데이터 보안기준·프로토콜 준수를 통해 무결성·정확성·일관성·유효성을 보장합니다.</p></div><div class=\"rs-card\"><span class=\"n\">STEP 06</span><h4>유지보수·확장성 확보</h4><p>시스템 유지보수 용이성을 고려한 설계를 통해 확장 및 변경 필요 시 유연한 대처가 가능해집니다.</p></div><div class=\"rs-card\"><span class=\"n\">STEP 07</span><h4>검증 및 테스트</h4><p>통합배선 설치 후 각각 연결된 시스템이 제대로 작동하는지 정확하게 검증 및 테스트를 수행하며, 추후 발생할 수 있는 위협요소와 장애를 미리 발견하여 제거함으로써 최적화된 성능을 제공합니다.</p></div></div></section><section class=\"rs-feat\"><div class=\"rs-hd\"><p class=\"eyebrow\">SERVICE FEATURES</p><h3>통합배선반 구축 특장점</h3></div><div class=\"rs-cards\"><div class=\"rs-card\"><span class=\"n\">01</span><h4>유연성 및 호환성</h4><p>다양한 매체의 인터페이스 기능을 제공하며, 접속 디바이스를 모두 수용할 수 있는 범용 배선 구축으로 유연성 및 호환성 확보</p></div><div class=\"rs-card\"><span class=\"n\">02</span><h4>경제성</h4><p>배선 설치 및 유지보수가 용이한 체계 구축이 가능하며, 선행 배선 구축을 통한 운영관리 비용 절감 가능</p></div><div class=\"rs-card\"><span class=\"n\">03</span><h4>확장성</h4><p>ICT 기술 발전에 따른 최적화된 통신 환경 구축 및 표준화에 대한 선행 배선 증설 시 블록 단위로 확장할 수 있는 시스템 구현</p></div><div class=\"rs-card\"><span class=\"n\">04</span><h4>공간성</h4><p>집중되어 있는 배선반(SystemBox)과 경량의 케이블 구성으로 공간 활용성 용이</p></div></div></section><section class=\"\"><div class=\"rs-hd\"><p class=\"eyebrow\">EXPECTATION EFFECTIVENESS</p><h3>통합배선반 구축 기대효과</h3></div><div class=\"rs-cards\"><div class=\"rs-card\"><img src=\"uploads/7812d01c7ec4c63c541e4cdf16f6629d.jpg\" alt=\"시설물 유지보수 관리 개선\"><h4>시설물 유지보수 관리 개선</h4><p>환경 모니터링 및 케이블 등 시설물 상태에 대한 지속적인 유지보수와 안전관리 개선을 통해 장애 발생 최소화</p></div><div class=\"rs-card\"><img src=\"uploads/8adc9bd0167f8e7d4194ad5c7c8cedc8.jpg\" alt=\"운영 효율성 향상\"><h4>운영 효율성 향상</h4><p>업무 및 작업 프로세스의 자동화로 운영의 효율성을 높이고 생산성을 향상시킵니다.</p></div><div class=\"rs-card\"><img src=\"uploads/65a134961c5a0b2a17adec5cf45167f7.jpg\" alt=\"보안 강화·관리 용이성 확보\"><h4>보안 강화·관리 용이성 확보</h4><p>장애 이력 및 IP 관리를 통해 네트워크 보안의 강화와 자원 효율성을 고도화하여 시스템 관리 용이성을 높입니다.</p></div><div class=\"rs-card\"><img src=\"uploads/914b47921993f56717037522f32b1fa5.jpg\" alt=\"안정성·정확성 고도화\"><h4>안정성·정확성 고도화</h4><p>네트워크 트래픽 및 자동화된 선별 관리를 통해 장애를 사전에 예방하고, 문제 발생 시 정확한 대처가 가능하도록 안정성과 정확성을 고도화합니다.</p></div><div class=\"rs-card\"><img src=\"uploads/d61fa1e9ff91055b42b820edf2c025ca.jpg\" alt=\"장애 발생 대응 능력 강화\"><h4>장애 발생 대응 능력 강화</h4><p>장애를 실시간 감지하고, 이에 대한 실시간 모니터링과 이력 관리를 통해 장애 발생에 대한 대응능력을 강화합니다.</p></div></div></section></div>",
+   "detailHtml_en": "<div class=\"rich\"><section class=\"\"><div class=\"rs-hd\"><p class=\"eyebrow\">CONFIGURATION DIAGRAM</p><h3>Integrated patch panel configuration</h3></div><figure class=\"pd-fig dark\"><img src=\"uploads/75e9778e99587ddee77cbbaa8f3fef64.png\" alt=\"Integrated patch panel configuration\"></figure><div class=\"rs-cards\"><div class=\"rs-card\"><h4>What it is</h4><p>An integrated patch panel brings together cabling that used to be managed separately — telecom, network, telephone, video, control and security — and collects, distributes and manages the cables systematically.</p></div><div class=\"rs-card\"><h4>Main purposes</h4><ul><li>Efficient distribution and organization of telecom and network cables, with fast inspection and maintenance</li><li>Protects cable quality (minimal signal loss), enables line monitoring and supports system expansion</li></ul></div></div></section><section class=\"rs-steps\"><div class=\"rs-hd\"><p class=\"eyebrow\">PROCESS</p><h3>Deployment process</h3></div><div class=\"rs-cards\"><div class=\"rs-card\"><span class=\"n\">STEP 01</span><h4>Planning & design</h4><p>We choose the optimal cabling routes and methods for the building and its use, considering devices, services, required data rates and future expansion.</p></div><div class=\"rs-card\"><span class=\"n\">STEP 02</span><h4>Standards compliance</h4><p>We follow certified domestic and international structured-cabling standards.</p></div><div class=\"rs-card\"><span class=\"n\">STEP 03</span><h4>High-quality materials</h4><p>Cables and connecting hardware directly affect speed and signal quality; durable materials are essential for stable long-term performance.</p></div><div class=\"rs-card\"><span class=\"n\">STEP 04</span><h4>Optimized installation</h4><p>Minimizing bend radius, cable length and interference improves overall system performance and stability.</p></div><div class=\"rs-card\"><span class=\"n\">STEP 05</span><h4>Security compliance</h4><p>Following system and data security standards and protocols ensures integrity, accuracy, consistency and validity.</p></div><div class=\"rs-card\"><span class=\"n\">STEP 06</span><h4>Maintainability & scalability</h4><p>A design built for easy maintenance lets you respond flexibly to expansion and changes.</p></div><div class=\"rs-card\"><span class=\"n\">STEP 07</span><h4>Verification & testing</h4><p>After installation we verify and test every connected system, finding and removing potential threats and faults in advance.</p></div></div></section><section class=\"rs-feat\"><div class=\"rs-hd\"><p class=\"eyebrow\">SERVICE FEATURES</p><h3>Key advantages</h3></div><div class=\"rs-cards\"><div class=\"rs-card\"><span class=\"n\">01</span><h4>Flexibility & compatibility</h4><p>Universal cabling with interfaces for many media accommodates every connected device.</p></div><div class=\"rs-card\"><span class=\"n\">02</span><h4>Cost efficiency</h4><p>Easy installation and maintenance, and pre-installed cabling lowers operating costs.</p></div><div class=\"rs-card\"><span class=\"n\">03</span><h4>Scalability</h4><p>Expand block by block as ICT evolves and standards change.</p></div><div class=\"rs-card\"><span class=\"n\">04</span><h4>Space efficiency</h4><p>A centralized panel (SystemBox) and lightweight cabling save space.</p></div></div></section><section class=\"\"><div class=\"rs-hd\"><p class=\"eyebrow\">EXPECTATION EFFECTIVENESS</p><h3>Expected benefits</h3></div><div class=\"rs-cards\"><div class=\"rs-card\"><img src=\"uploads/7812d01c7ec4c63c541e4cdf16f6629d.jpg\" alt=\"Better facility maintenance\"><h4>Better facility maintenance</h4><p>Continuous monitoring of the environment and cabling minimizes failures.</p></div><div class=\"rs-card\"><img src=\"uploads/8adc9bd0167f8e7d4194ad5c7c8cedc8.jpg\" alt=\"Higher operational efficiency\"><h4>Higher operational efficiency</h4><p>Automated work processes raise efficiency and productivity.</p></div><div class=\"rs-card\"><img src=\"uploads/65a134961c5a0b2a17adec5cf45167f7.jpg\" alt=\"Stronger security, easier management\"><h4>Stronger security, easier management</h4><p>Fault history and IP management strengthen security and simplify administration.</p></div><div class=\"rs-card\"><img src=\"uploads/914b47921993f56717037522f32b1fa5.jpg\" alt=\"Greater stability & accuracy\"><h4>Greater stability & accuracy</h4><p>Traffic and automated screening prevent faults and enable precise responses.</p></div><div class=\"rs-card\"><img src=\"uploads/d61fa1e9ff91055b42b820edf2c025ca.jpg\" alt=\"Faster fault response\"><h4>Faster fault response</h4><p>Real-time detection, monitoring and history management strengthen incident response.</p></div></div></section></div>"
   }
  },
  {
@@ -1139,8 +1352,11 @@
    "order": 80,
    "summary": "광케이블 연결 상태를 실시간 감시·원격 제어하는 지능형 광분배 시스템",
    "summary_en": "Intelligent fiber distribution frame with real-time monitoring and remote control of fiber connections",
-   "updatedAt": "2026-11-12",
-   "visible": true
+   "updatedAt": "2026-11-13T02:30:12.639Z",
+   "visible": true,
+   "layout": "grid",
+   "detailHtml": "<div class=\"rich\"><section class=\"\"><div class=\"rs-hd\"><p class=\"eyebrow\">SYSTEM CONFIGURATION</p><h3>SDN 지능형 FDF 시스템 구성</h3></div><div class=\"rs-cards\"><div class=\"rs-card\"><h4>19” Rack Frame</h4><ul><li>15U Rack 구성</li><li>최대 52U까지 가능</li></ul></div><div class=\"rs-card\"><h4>지능형 OFD 및 Board</h4><ul><li>OFD 타입 또는 FDF 타입</li><li>LED를 통한 Port 상태 표시</li><li>Port 체결 여부 관리</li><li>NFC-tag를 통한 선번 관리</li></ul></div><div class=\"rs-card\"><h4>POE Switch</h4><ul><li>Uplink 2 Port</li><li>Multi로 구성 가능</li><li>최대 24Port LAN으로 구성</li></ul></div><div class=\"rs-card\"><h4>Management PC</h4><ul><li>Data Base 관리</li><li>작업 내용 지시</li><li>실시간 Port 상태 감시</li></ul></div><div class=\"rs-card\"><h4>Operator용 Tablet</h4><ul><li>예약된 작업 진행</li><li>작업 현장 정보 및 상태 확인</li></ul></div><div class=\"rs-card\"><h4>NFC Tag Holder</h4><ul><li>백색 : NFC Tag 삽입</li><li>투명 : NFC Tag 미삽입(Duplex 시 사용)</li><li>Board 상의 스위치를 통해 Port의 현재 상태 Update</li></ul></div></div></section><section class=\"rs-steps\"><div class=\"rs-hd\"><p class=\"eyebrow\">PROCESS</p><h3>SDN 지능형 FDF 시스템 운용 예시</h3></div><p class=\"rs-p\">지능형 광 분배함 선로정보관리 솔루션</p><figure class=\"pd-fig\"><img src=\"uploads/f9bf85630e7365ed3f20a6baf9e90bcf.png\" alt=\"지능형 광 분배함 선로정보관리 솔루션\"></figure><div class=\"rs-cards\"><div class=\"rs-card\"><h4>관리자 제어</h4><ul><li>Management PC를 통한 선로정보 관리/제어</li><li>현장 작업내용 작업자에게 지시, 선로정보 DB 관리</li></ul></div><div class=\"rs-card\"><h4>현장 작업자</h4><ul><li>Window 기반의 노트북 또는 Tablet PC 활용</li><li>NFC 선번 정보 입력 저장 수행</li><li>작업 내용 및 광선로 정보 확인/식별</li></ul></div></div><figure class=\"pd-fig dark\"><img src=\"uploads/165906a7636247ad178793da5aec6cd6.png\" alt=\"Management PC · Operator PC · DFIS Board 작업 흐름\"></figure></section></div>",
+   "detailHtml_en": "<div class=\"rich\"><section class=\"\"><div class=\"rs-hd\"><p class=\"eyebrow\">SYSTEM CONFIGURATION</p><h3>SDN intelligent FDF system configuration</h3></div><div class=\"rs-cards\"><div class=\"rs-card\"><h4>19” Rack Frame</h4><ul><li>15U rack</li><li>Up to 52U</li></ul></div><div class=\"rs-card\"><h4>Intelligent OFD & Board</h4><ul><li>OFD or FDF type</li><li>Port status shown by LEDs</li><li>Tracks whether each port is connected</li><li>Line numbering via NFC tags</li></ul></div><div class=\"rs-card\"><h4>PoE Switch</h4><ul><li>2 uplink ports</li><li>Multi-switch configuration</li><li>Up to 24 LAN ports</li></ul></div><div class=\"rs-card\"><h4>Management PC</h4><ul><li>Database management</li><li>Work instructions</li><li>Real-time port status monitoring</li></ul></div><div class=\"rs-card\"><h4>Operator tablet</h4><ul><li>Runs scheduled work</li><li>Checks site information and status</li></ul></div><div class=\"rs-card\"><h4>NFC Tag Holder</h4><ul><li>White: NFC tag inserted</li><li>Clear: no NFC tag (for duplex)</li><li>Board switches update the current port status</li></ul></div></div></section><section class=\"rs-steps\"><div class=\"rs-hd\"><p class=\"eyebrow\">PROCESS</p><h3>Operation example</h3></div><p class=\"rs-p\">Line information management for intelligent fiber distribution frames</p><figure class=\"pd-fig\"><img src=\"uploads/f9bf85630e7365ed3f20a6baf9e90bcf.png\" alt=\"Line information management solution\"></figure><div class=\"rs-cards\"><div class=\"rs-card\"><h4>Administrator control</h4><ul><li>Manage and control line information from the Management PC</li><li>Send work instructions to field staff and manage the line database</li></ul></div><div class=\"rs-card\"><h4>Field operator</h4><ul><li>Uses a Windows laptop or tablet PC</li><li>Writes and saves NFC line-number information</li><li>Checks work details and identifies fiber lines</li></ul></div></div><figure class=\"pd-fig dark\"><img src=\"uploads/165906a7636247ad178793da5aec6cd6.png\" alt=\"Work flow between Management PC, Operator PC and DFIS board\"></figure></section></div>"
   }
  },
  {

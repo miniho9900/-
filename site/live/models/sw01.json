@@ -1,0 +1,14 @@
+{
+ "productId": "p2",
+ "series": "TRIZN 3500 Series",
+ "name": "[SDN L3 스위치] 3556XC",
+ "name_en": "[SDN L3 Switch] 3556XC",
+ "specs": "인터페이스 | 48 x 10GBase SFP+, 8 x 40/100G Base QSFP+/QSFP28",
+ "specs_en": "Interface | 48 x 10GBase SFP+, 8 x 40/100G Base QSFP+/QSFP28",
+ "imageId": "e4281c42a3b141b32fef24f6ff5a8c6e",
+ "detailHtml": "<figure class=\"pd-fig\"><img src=\"/_blob/3958e3fe4cdd4787c3d967c9192466a5\" alt=\"SD-Network 스위치 소개\"></figure>",
+ "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"/_blob/3958e3fe4cdd4787c3d967c9192466a5\" alt=\"SD-Network switch overview\"></figure>",
+ "order": 0,
+ "visible": true,
+ "updatedAt": "2026-11-13T09:00:00.000Z"
+}

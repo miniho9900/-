@@ -231,6 +231,68 @@ p{margin:0}
 .rte-content a{color:var(--violet);text-decoration:underline;text-underline-offset:3px}
 .rte-content img{max-width:100%;height:auto;display:block;margin:1.2em 0}
 .rte-content blockquote{margin:1.2em 0;padding:4px 0 4px 24px;border-left:3px solid var(--violet);font-size:1.15em;font-weight:500;color:var(--ink)}
+.md-head{max-width:860px;margin-bottom:clamp(40px,5vw,64px)}
+.md-head h2{font-size:clamp(30px,3.6vw,48px);color:var(--ink);margin:12px 0 14px;line-height:1.25}
+.md-head p:not(.eyebrow){color:var(--muted);font-size:17px;line-height:1.8}
+.md-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,2vw,28px)}
+.md-card{display:grid;gap:18px;align-content:start;color:inherit}
+.md-card .th{aspect-ratio:4/3;background:linear-gradient(160deg,#F4F3FA,#E9E7F3);border:1px solid var(--line);display:grid;place-items:center;padding:12%;overflow:hidden;transition:border-color .3s var(--ease),box-shadow .3s var(--ease)}
+.md-card .th img{width:100%;height:100%;object-fit:contain;transition:transform .5s var(--ease);mix-blend-mode:multiply}
+.md-card .ph,.md-img .ph{font-family:var(--f-display);letter-spacing:.2em;color:#B9B4D3;font-size:14px}
+.md-card:hover .th,.md-card:focus-visible .th{border-color:var(--violet);box-shadow:0 18px 40px -24px rgba(82,48,194,.45)}
+.md-card:hover .th img{transform:scale(1.05)}
+.md-card .b{text-align:center;display:grid;gap:6px}
+.md-card .sr2{font-size:13px;color:var(--muted);letter-spacing:.02em}
+.md-card h3{font-family:var(--f-display);font-size:clamp(16px,1.35vw,19px);font-weight:600;color:var(--ink);line-height:1.4}
+.md-top{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,5vw,80px);align-items:start}
+.md-img{aspect-ratio:4/3;background:linear-gradient(160deg,#F4F3FA,#E9E7F3);border:1px solid var(--line);display:grid;place-items:center;padding:10%;position:sticky;top:150px}
+.md-img img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.md-info h2{font-size:clamp(28px,3.2vw,44px);color:var(--ink);margin:12px 0 28px;line-height:1.25}
+.md-spec{border-top:2px solid var(--ink);margin:0}
+.md-spec>div{display:grid;grid-template-columns:minmax(120px,34%) minmax(0,1fr);gap:16px;padding:16px 4px;border-bottom:1px solid var(--line);font-size:15px;line-height:1.65}
+.md-spec>div:has(> dd:only-child){grid-template-columns:minmax(0,1fr)}
+.md-spec dt{font-weight:600;color:var(--ink)}
+.md-spec dd{margin:0;color:#3D3A5C;overflow-wrap:anywhere}
+.md-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.pd-video{display:block;position:relative;aspect-ratio:16/9;background:#0E0B24;overflow:hidden;margin-bottom:clamp(48px,6vw,80px)}
+.pd-video video,.pd-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover;background:#000}
+.pd-yt{display:flex;align-items:center;justify-content:center;gap:22px;color:#fff;background:radial-gradient(120% 120% at 20% 10%,#3A1FA8 0%,#160F45 45%,#0B0920 100%)}
+.pd-yt .play{width:84px;height:84px;border-radius:50%;background:#fff;color:var(--violet);display:grid;place-items:center;transition:transform .3s var(--ease)}
+.pd-yt:hover .play{transform:scale(1.08)}
+.pd-yt .t{font-family:var(--f-display);font-size:clamp(18px,2vw,26px);font-weight:600;display:grid;gap:6px}
+.pd-yt small{font-size:14px;font-weight:400;opacity:.7}
+.pd-body figure.pd-fig{margin:28px 0 8px;text-align:center}
+.pd-body figure.pd-fig img{max-width:100%;height:auto;display:inline-block}
+.pd-body figure.pd-fig.dark{background:#15112E;padding:clamp(20px,4vw,56px)}
+.pd-body figure.pd-fig figcaption{font-size:14px;color:var(--muted);margin-top:12px}
+.pd-body .pd-cmp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:8px}
+.pd-body .pd-cmp>div{border:1px solid var(--line);background:var(--paper)}
+.pd-body .pd-cmp>div.on{border-color:var(--violet);box-shadow:0 24px 48px -32px rgba(82,48,194,.5)}
+.pd-body .pd-cmp img{display:block;width:100%;height:auto}
+.pd-body .pd-cmp h4{margin:0;padding:22px 28px 0;font-size:20px}
+.pd-body .pd-cmp ul{padding:12px 28px 26px 46px;margin:0;font-size:15px}
+.pd-body .pd-band{background:var(--ink);color:#fff;padding:clamp(40px,6vw,72px) clamp(24px,5vw,64px);margin-top:clamp(56px,6vw,88px);text-align:center}
+.pd-body .pd-band p{margin:0;color:rgba(255,255,255,.7);font-size:15px;letter-spacing:.04em}
+.pd-body .pd-band h3{color:#fff;margin:12px 0 0;border:0;padding:0;font-size:clamp(22px,2.8vw,36px)}
+.pd-body .rs-card img{width:100%;height:auto;aspect-ratio:43/30;object-fit:cover;margin:-30px -28px 6px;width:calc(100% + 56px);max-width:none}
+.pd-body .rich{margin-top:0}
+.pd-body .rich>section+section{margin-top:clamp(64px,7vw,104px)}
+.pd-body .rs-card h4{margin:0}
+.pd-body .rs-card ul{margin:0;padding-left:1.2em;font-size:15px}
+.pd-body .rs-card p{margin:0;font-size:15px;line-height:1.75}
+.fw-img{margin:0 0 40px;text-align:center}.fw-img img{max-width:100%;height:auto}
+.fw-body{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.fw-body table.fw-table{font-size:14px;min-width:960px;table-layout:fixed;display:table;overflow:visible}
+.fw-body table.fw-table thead th{background:#1C1A33;color:#fff;font-weight:600;text-align:center;padding:16px 12px;border-color:#1C1A33}
+.fw-body table.fw-table td{vertical-align:middle;padding:14px 14px;line-height:1.6}
+.fw-body table.fw-table th:nth-child(1){width:12%}.fw-body table.fw-table th:nth-child(2){width:14%}.fw-body table.fw-table th:nth-child(3){width:17%}.fw-body table.fw-table th:nth-child(4){width:24%}
+.fw-body table.fw-table td.fw-prod{font-weight:600;color:var(--ink);background:var(--mist);text-align:center}
+.fw-body table.fw-table td.fw-hash{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;word-break:break-all;color:#3D3A5C}
+.fw-body table.fw-table td.fw-file{word-break:break-all}
+.fw-body table.fw-table ul{margin:0;padding-left:1.1em}
+@media (max-width:1100px){.md-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:860px){.md-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.md-top{grid-template-columns:minmax(0,1fr)}.md-img{position:static}.pd-body .pd-cmp{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:480px){.md-grid{gap:14px}.md-card .th{padding:10%}.md-spec>div{grid-template-columns:minmax(0,1fr);gap:4px}.pd-yt{flex-direction:column;text-align:center;gap:14px}.pd-yt .play{width:64px;height:64px}}
 .pv-grid{display:grid;grid-template-columns:240px minmax(0,1fr);gap:clamp(32px,5vw,80px);align-items:start}
 .pv-toc{position:sticky;top:112px;display:flex;flex-direction:column;gap:2px;border-left:1px solid var(--line);padding-left:18px}
 .pv-toc .eyebrow{margin-bottom:12px}
@@ -868,16 +930,16 @@ if (EMBED){ try { if (!window.claude && window.parent.claude) window.claude = wi
 /* ================= constants ================= */
 const ROUTES = [
   ["home","홈"],["about","회사소개"],["business","사업영역"],["products","서비스"],
-  ["cert","인증·지적재산권"],["news","홍보·IR"],["contact","고객문의"]
+  ["cert","인증·지적재산권"],["news","홍보·IR"],["contact","고객문의"],["firmware","펌웨어 관리"],["privacy","개인정보처리방침"]
 ];
-const DEFAULT_MENU = ROUTES.slice(1).map(([route,label],i)=>({id:"d"+i,route,label,order:i*10,visible:true}));
+const DEFAULT_MENU = ROUTES.slice(1,7).map(([route,label],i)=>({id:"d"+i,route,label,order:i*10,visible:true}));
 const SUBMENU = {
-  about:["회사개요","기업 정보","비전 & 경영이념","연혁","오시는 길"], business:["네트워크 컨설팅 및 솔루션 개발","네트워크 시공 및 구축","네트워크 솔루션 임대 및 유지보수","네트워크 운영관제","조달 *S2B Biz"], products:["지능형 네트워크 솔루션","SDN 제품"],
+  about:["회사개요","기업 정보","비전 & 경영이념","연혁","오시는 길"], business:["네트워크 컨설팅 및 솔루션 개발","네트워크 시공 및 구축","네트워크 솔루션 임대 및 유지보수","네트워크 운영관제","조달 *S2B Biz"], products:["지능형 네트워크 솔루션","SDN 제품","펌웨어 관리"],
   cert:["인증 및 지적재산권"], news:["공지사항","보도자료","IR·공시"], contact:["고객문의","원격지원서비스"]
 };
 const BOARDS = [["notice","공지사항"],["press","보도자료"],["ir","IR·공시"]];
 const BOARD_LABEL = Object.fromEntries(BOARDS);
-const COLS = ["menus","slides","popups","business","products","works","posts","partners","clients","history","pillars","facts"];
+const COLS = ["menus","slides","popups","business","products","models","works","posts","partners","clients","history","pillars","facts"];
 
 const ARROW = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg>';
 const I = {
@@ -914,11 +976,11 @@ COLS.forEach(c => S[c] = []);
 let db = null, assets = null, user = null, canEdit = false, canWrite = null, myId = null;
 const SRV = window.TRIZN || null;            // set by api-client.js on the PHP server version
 let me = null, perms = null;                 // server version: logged-in admin and allowed sections (null = all)
-const canSec = sec => !perms || perms.includes("*") || perms.includes(sec);
+const canSec = sec => !perms || perms.includes("*") || perms.includes(sec==="firmware" ? "site" : sec);
 const MAX_UP = () => window.TRIZN_MAX_UPLOAD || 20*1024*1024;
 const MAX_LABEL = () => Math.floor(MAX_UP()/1048576) + "MB";
 const store = { get(k, area){ try { return (area||localStorage).getItem(k); } catch { return null; } }, set(k, v, area){ try { (area||localStorage).setItem(k, v); } catch {} } };
-const ui = { lang: store.get("tz-lang")==="en" ? "en" : "ko", preview: store.get("tz-preview", sessionStorage)==="1", pvOpen:false, slide:0, homeTab:"all", board:"notice", q:"", page:1, prodCat:"all", admTab:"notice", admQ:"", confirmDel:null, popDone:false };
+const ui = { lang: store.get("tz-lang")==="en" ? "en" : "ko", preview: store.get("tz-preview", sessionStorage)==="1", pvOpen:false, slide:0, homeTab:"all", board:"notice", q:"", page:1, prodCat:"all", mQ:"", mPage:1, mFor:"", admTab:"notice", admQ:"", confirmDel:null, popDone:false };
 
 /* ================= helpers ================= */
 const $ = (s, r=document) => r.querySelector(s);
@@ -1193,7 +1255,7 @@ function viewAbout(){
   </div></section>${footer()}`;
 }
 /* ---- English for the site's fixed wording (content itself comes from the *_en fields) ---- */
-const DICT = {"조직 및 인력": "Organization & People", "구축사례": "References", "네트워크·보안 제조사 기술 협력": "Network & security technology partners", "지사": "Branch", "주요 사업 현황": "Business Overview", "통합운영·관제센터": "Integrated operations center", "에이치원레디오": "H1 Radio", "대표이사": "CEO", "등록된 인증·지적재산권이 없습니다.": "No certifications listed yet.","회사개요": "Overview", "기업 정보": "Company Profile", "비전 & 경영이념": "Vision & Philosophy", "연혁": "History", "오시는 길": "Location", "네트워크 컨설팅 및 솔루션 개발": "Network Consulting & Solution Development", "네트워크 시공 및 구축": "Network Construction & Deployment", "네트워크 솔루션 임대 및 유지보수": "Network Solution Leasing & Maintenance", "네트워크 운영관제": "Network Operations & Monitoring", "조달 *S2B Biz": "Procurement · S2B Biz", "지능형 네트워크 솔루션": "Intelligent Network Solutions", "SDN 제품": "SDN Products", "공지사항": "Notices", "보도자료": "Press", "IR·공시": "IR & Disclosures", "고객문의": "Contact", "원격지원서비스": "Remote Support", "사업영역": "Business", "자세히 보기": "Learn more", "새로운 소식": "Latest News", "전체": "All", "공지": "Notice", "도입 상담, 견적, 기술 문의를 남겨 주세요.": "Ask us about deployment, quotes or technical questions.", "문의하기": "Contact Us", "엔지니어가 원격으로 바로 점검해 드립니다.": "Our engineers check your system remotely, right away.", "원격지원 받기": "Get remote support", "사이트 바로가기": "Visit site", "회사 소개 보기": "About TrizN", "본사": "HQ", "공장": "Factory", "연락처": "Contact", "회사소개": "Company", "인증 및 지적재산권": "Certifications & IP", "사업·서비스": "Business & Solutions", "토탈 네트워크 서비스": "Total Network Services", "고객지원": "Support", "패밀리 사이트": "Family Site", "개인정보처리방침": "Privacy Policy", "내용 보기": "View policy", "개인정보처리방침 목차": "Privacy policy contents", "이용약관": "Terms of Use", "관리자": "Admin", "트리즈엔 홈": "TrizN home", "주 메뉴": "Main menu", "언어 선택": "Language", "TRIZRO 사이트 바로가기 (새 창)": "Visit TRIZRO (new window)", "전체 메뉴 열기": "Open full menu", "전체 메뉴 닫기": "Close full menu", "메인 비주얼": "Main visual", "영상 일시정지": "Pause video", "영상 재생": "Play video", "유튜브에서 회사 소개 영상 보기 (새 창)": "Watch the company film on YouTube (new window)", "회사 소개 영상 재생": "Play company film", "이전 제품": "Previous", "다음 제품": "Next", "이전 슬라이드": "Previous slide", "다음 슬라이드": "Next slide", "푸터 메뉴": "Footer menu", "연혁을 등록하면 이곳에 표시됩니다.": "History will appear here.", "트리즈엔": "TrizN", "주소": "Address", "전화": "Phone", "팩스": "Fax", "고객문의 →": "Contact →", "서비스": "Solutions", "도입 문의": "Request a consultation", "← 전체 솔루션": "← All solutions", "등록된 인증·지적재산권이 없습니다.": "No certifications listed yet.", "홍보·IR": "News & IR", "소식": "News & IR", "게시물 검색": "Search posts", "번호": "No.", "제목": "Title", "첨부": "File", "작성일": "Date", "제목 또는 내용 검색": "Search title or content", "검색": "Search", "이전 페이지": "Previous page", "다음 페이지": "Next page", "목록으로": "Back to list", "이전글": "Prev", "다음글": "Next", "등록된 게시물이 없습니다.": "No posts yet.", "검색 결과가 없습니다.": "No results.", "게시물을 찾을 수 없습니다.": "Post not found.", "불러오는 중…": "Loading…", "무엇을 도와드릴까요?": "How can we help?", "대표전화": "Main line", "이메일": "Email", "이름 / 회사명": "Name / Company", "연락처 또는 이메일": "Phone or email", "문의 유형": "Inquiry type", "제품 문의": "Product inquiry", "견적 요청": "Request a quote", "기술 지원": "Technical support", "제휴 제안": "Partnership", "기타": "Other", "비워 두세요": "Leave blank", "문의 내용": "Message", "개인정보 수집 및 이용에 동의합니다.": "I agree to the collection and use of personal information.", "문의 접수하기": "Send inquiry", "상담원 연결": "Call support", "프로그램 실행": "Open the program", "아래 버튼으로 원격지원 페이지를 엽니다.": "Open the remote support page with the button below.", "접속번호 입력": "Enter the access code", "상담원이 알려준 번호를 입력하면 지원이 시작됩니다.": "Support starts once you enter the code from our engineer.", "원격지원 페이지 열기": "Open remote support", "온라인 접수는 로그인한 방문자만 쓸 수 있습니다.": "Online inquiries require sign-in.", "문의가 접수되었습니다. 담당자가 확인 후 연락드립니다.": "Thank you. We received your inquiry and will contact you soon.", "짧은 시간에 문의가 많이 접수되었습니다. 잠시 뒤 다시 시도하거나 전화로 문의해 주세요.": "Too many inquiries in a short time. Please try again later or call us.", "필수 항목을 모두 입력해 주세요.": "Please fill in all required fields.", "오늘 하루 보지 않기": "Don't show again today", "닫기 ✕": "Close ✕", "알림 팝업": "Notice", "영상 닫기": "Close video", "회사 소개 영상": "Company film", "콘텐츠를 아직 불러오지 못했습니다. 연결 상태를 확인해 주세요.": "Content could not be loaded yet. Please check your connection.", "등록된 소식이 없습니다.": "No news yet.", "공지사항이 없습니다.": "No notices yet.", "등록된 솔루션이 없습니다.": "No solutions listed yet.", "솔루션을 찾을 수 없습니다.": "Solution not found.", "사업영역을 등록하면 이곳에 표시됩니다.": "Business areas will appear here.", "주소를 등록하세요": "Address not set", "이 화면 편집": "Edit this page", "끌어서 순서 변경": "Drag to reorder", "CEO 인사말": "Overview", "카테고리별 보기": "By category", "인재채용": "Careers"};
+const DICT = {"조직 및 인력": "Organization & People", "구축사례": "References", "네트워크·보안 제조사 기술 협력": "Network & security technology partners", "지사": "Branch", "주요 사업 현황": "Business Overview", "통합운영·관제센터": "Integrated operations center", "에이치원레디오": "H1 Radio", "대표이사": "CEO", "등록된 인증·지적재산권이 없습니다.": "No certifications listed yet.","회사개요": "Overview", "기업 정보": "Company Profile", "비전 & 경영이념": "Vision & Philosophy", "연혁": "History", "오시는 길": "Location", "네트워크 컨설팅 및 솔루션 개발": "Network Consulting & Solution Development", "네트워크 시공 및 구축": "Network Construction & Deployment", "네트워크 솔루션 임대 및 유지보수": "Network Solution Leasing & Maintenance", "네트워크 운영관제": "Network Operations & Monitoring", "조달 *S2B Biz": "Procurement · S2B Biz", "지능형 네트워크 솔루션": "Intelligent Network Solutions", "SDN 제품": "SDN Products", "공지사항": "Notices", "보도자료": "Press", "IR·공시": "IR & Disclosures", "고객문의": "Contact", "원격지원서비스": "Remote Support", "사업영역": "Business", "자세히 보기": "Learn more", "새로운 소식": "Latest News", "전체": "All", "공지": "Notice", "도입 상담, 견적, 기술 문의를 남겨 주세요.": "Ask us about deployment, quotes or technical questions.", "문의하기": "Contact Us", "엔지니어가 원격으로 바로 점검해 드립니다.": "Our engineers check your system remotely, right away.", "원격지원 받기": "Get remote support", "사이트 바로가기": "Visit site", "회사 소개 보기": "About TrizN", "본사": "HQ", "공장": "Factory", "연락처": "Contact", "회사소개": "Company", "인증 및 지적재산권": "Certifications & IP", "사업·서비스": "Business & Solutions", "토탈 네트워크 서비스": "Total Network Services", "고객지원": "Support", "패밀리 사이트": "Family Site", "개인정보처리방침": "Privacy Policy", "펌웨어 관리": "Firmware", "목록으로": "Back to list", "제품명 검색": "Search models", "등록된 모델이 없습니다.": "No models listed yet.", "제품을 찾을 수 없습니다.": "Product not found.", "유튜브에서 보기 (새 창)": "Watch on YouTube (new window)", "소개 영상": "Overview video", "내용 보기": "View policy", "개인정보처리방침 목차": "Privacy policy contents", "이용약관": "Terms of Use", "관리자": "Admin", "트리즈엔 홈": "TrizN home", "주 메뉴": "Main menu", "언어 선택": "Language", "TRIZRO 사이트 바로가기 (새 창)": "Visit TRIZRO (new window)", "전체 메뉴 열기": "Open full menu", "전체 메뉴 닫기": "Close full menu", "메인 비주얼": "Main visual", "영상 일시정지": "Pause video", "영상 재생": "Play video", "유튜브에서 회사 소개 영상 보기 (새 창)": "Watch the company film on YouTube (new window)", "회사 소개 영상 재생": "Play company film", "이전 제품": "Previous", "다음 제품": "Next", "이전 슬라이드": "Previous slide", "다음 슬라이드": "Next slide", "푸터 메뉴": "Footer menu", "연혁을 등록하면 이곳에 표시됩니다.": "History will appear here.", "트리즈엔": "TrizN", "주소": "Address", "전화": "Phone", "팩스": "Fax", "고객문의 →": "Contact →", "서비스": "Solutions", "도입 문의": "Request a consultation", "← 전체 솔루션": "← All solutions", "등록된 인증·지적재산권이 없습니다.": "No certifications listed yet.", "홍보·IR": "News & IR", "소식": "News & IR", "게시물 검색": "Search posts", "번호": "No.", "제목": "Title", "첨부": "File", "작성일": "Date", "제목 또는 내용 검색": "Search title or content", "검색": "Search", "이전 페이지": "Previous page", "다음 페이지": "Next page", "목록으로": "Back to list", "이전글": "Prev", "다음글": "Next", "등록된 게시물이 없습니다.": "No posts yet.", "검색 결과가 없습니다.": "No results.", "게시물을 찾을 수 없습니다.": "Post not found.", "불러오는 중…": "Loading…", "무엇을 도와드릴까요?": "How can we help?", "대표전화": "Main line", "이메일": "Email", "이름 / 회사명": "Name / Company", "연락처 또는 이메일": "Phone or email", "문의 유형": "Inquiry type", "제품 문의": "Product inquiry", "견적 요청": "Request a quote", "기술 지원": "Technical support", "제휴 제안": "Partnership", "기타": "Other", "비워 두세요": "Leave blank", "문의 내용": "Message", "개인정보 수집 및 이용에 동의합니다.": "I agree to the collection and use of personal information.", "문의 접수하기": "Send inquiry", "상담원 연결": "Call support", "프로그램 실행": "Open the program", "아래 버튼으로 원격지원 페이지를 엽니다.": "Open the remote support page with the button below.", "접속번호 입력": "Enter the access code", "상담원이 알려준 번호를 입력하면 지원이 시작됩니다.": "Support starts once you enter the code from our engineer.", "원격지원 페이지 열기": "Open remote support", "온라인 접수는 로그인한 방문자만 쓸 수 있습니다.": "Online inquiries require sign-in.", "문의가 접수되었습니다. 담당자가 확인 후 연락드립니다.": "Thank you. We received your inquiry and will contact you soon.", "짧은 시간에 문의가 많이 접수되었습니다. 잠시 뒤 다시 시도하거나 전화로 문의해 주세요.": "Too many inquiries in a short time. Please try again later or call us.", "필수 항목을 모두 입력해 주세요.": "Please fill in all required fields.", "오늘 하루 보지 않기": "Don't show again today", "닫기 ✕": "Close ✕", "알림 팝업": "Notice", "영상 닫기": "Close video", "회사 소개 영상": "Company film", "콘텐츠를 아직 불러오지 못했습니다. 연결 상태를 확인해 주세요.": "Content could not be loaded yet. Please check your connection.", "등록된 소식이 없습니다.": "No news yet.", "공지사항이 없습니다.": "No notices yet.", "등록된 솔루션이 없습니다.": "No solutions listed yet.", "솔루션을 찾을 수 없습니다.": "Solution not found.", "사업영역을 등록하면 이곳에 표시됩니다.": "Business areas will appear here.", "주소를 등록하세요": "Address not set", "이 화면 편집": "Edit this page", "끌어서 순서 변경": "Drag to reorder", "CEO 인사말": "Overview", "카테고리별 보기": "By category", "인재채용": "Careers"};
 const TR_ATTR = /\b(placeholder|aria-label|title|alt)="([^"]*[\uAC00-\uD7A3][^"]*)"/g;
 function trText(t){
   const k = t.trim(); if (!k || !/[\uAC00-\uD7A3]/.test(k)) return t;
@@ -1306,15 +1368,80 @@ function viewProducts(){
     ${list.map((p,i) => `<a class="w-card reveal ${p.imageId?"":"noimg"}" href="#product-${esc(p.id)}">${p.imageId?vis(p.imageId,i+2,p.name):""}<div class="b"><span class="eyebrow">${esc(p.category)}</span><h3 style="font-family:var(--f-display);font-size:22px;font-weight:600;color:var(--ink)">${esc(p.name)}</h3><p class="note" style="font-size:14px">${esc(p.summary)}</p></div></a>`).join("") || `<div class="empty" style="grid-column:1/-1">등록된 솔루션이 없습니다.</div>`}
   </div></div></section>${footer()}`;
 }
+const FIRMWARE_KO = "<table class=\"fw-table\"><thead><tr><th>제품</th><th>모델 명</th><th>제품 사양</th><th>펌웨어 파일명</th><th>펌웨어 해시 값</th></tr></thead><tbody><tr><td class=\"fw-prod\">통합 컨트롤러</td><td>TRIZ-MX</td><td>-</td><td class=\"fw-file\">TRIZ-MX_PACKAGE-V1.1.4.enc</td><td class=\"fw-hash\">75B6CAC11997E23E8036E3860520B69E1600B6D5D893181E51AE4915EA27A072715345362CE40B77B0A878E0D8BD86AC09DDAB013824F86F87B8661D4871</td></tr><tr><td rowspan=\"14\" class=\"fw-prod\">SDN 스위치</td><td>TRIZN 2022BPS</td><td><ul><li>24×1G RJ45(PoE)</li><li>4×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZ20X_v1.0.1.tgz</td><td class=\"fw-hash\">C23F029733ECB513DB3F3C73867205430692E6916A8E40E6F07F7C5BB5867953C02A7A8197A2E42A91A674F49B6EF5E897201B59A891E33636AA8C40A3181E8CC8E5</td></tr><tr><td>TRIZ 2022BPX</td><td><ul><li>24×1G RJ45(PoE)</li><li>4×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZ20X_v1.0.1.tgz</td><td class=\"fw-hash\">C23F029733ECB513DB3F3C73867205430692E6916A8E40E6F07F7C5BB5867953C02A7A8197A2E42A91A674F49B6EF5E897201B59A891E33636AA8C40A3181E8CC8E5</td></tr><tr><td>TRIZ2022BTX</td><td><ul><li>24×1G RJ45</li><li>4×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZ20X_v1.0.1.tgz</td><td class=\"fw-hash\">C23F029733ECB513DB3F3C73867205430692E6916A8E40E6F07F7C5BB5867953C02A7A8197A2E42A91A674F49B6EF5E897201B59A891E33636AA8C40A3181E8CC8E5</td></tr><tr><td>TRIZ2052PS</td><td><ul><li>48×1G RJ45(PoE)</li><li>4×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZ205X_v1.0.1.tgz</td><td class=\"fw-hash\">0CC46596F5E16A9B01B0360046F71354C4048163C224F07660E5ACC3598B2BA7A19A97A2E42A91A674F49B6EF5E897201B59A891E33636AA8C40A3181E8CC8E5</td></tr><tr><td>TRIZ2052PX</td><td><ul><li>48×1G RJ45(PoE)</li><li>4×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZ205X_v1.0.1.tgz</td><td class=\"fw-hash\">0CC46596F5E16A9B01B0360046F71354C4048163C224F07660E5ACC3598B2BA7A19A97A2E42A91A674F49B6EF5E897201B59A891E33636AA8C40A3181E8CC8E5</td></tr><tr><td>TRIZ2052TX</td><td><ul><li>48×1G RJ45</li><li>4×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZ205X_v1.0.1.tgz</td><td class=\"fw-hash\">0CC46596F5E16A9B01B0360046F71354C4048163C224F07660E5ACC3598B2BA7A19A97A2E42A91A674F49B6EF5E897201B59A891E33636AA8C40A3181E8CC8E5</td></tr><tr><td>TRIZ2054XQ</td><td><ul><li>6×40G QSFP+</li><li>48×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZ205X_v1.0.1.tgz</td><td class=\"fw-hash\">0CC46596F5E16A9B01B0360046F71354C4048163C224F07660E5ACC3598B2BA7A19A97A2E42A91A674F49B6EF5E897201B59A891E33636AA8C40A3181E8CC8E5</td></tr><tr><td>TRIZN 3030TX</td><td><ul><li>24×1G RJ45</li><li>6×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZN–TRIZN3030(354)T(F)IX-10.32.203-vendor_V0770R0040C0B0012E_nos.img</td><td class=\"fw-hash\">3E59A53BB61B78E7A423C0028B07A7B3A5A6BB035AD3273796B82C9A95BBE33A9CA7FA8C9BFCBFD865BDBE2A6A2E9B94F8F67F46AC4AE5C0D226F6D5959A9CE9F2F</td></tr><tr><td>TRIZN 3030PX</td><td><ul><li>24×1G RJ45(PoE)</li><li>6×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZN–TRIZN3030(354)P(F)IX-10.32.203-vendor_V0770R0040C0B0012E_nos.img</td><td class=\"fw-hash\">3E59A53BB61B78E7A423C0028B07A7B3A5A6BB035AD3273796B82C9A95BBE33A9CA7FA8C9BFCBFD865BDBE2A6A2E9B94F8F67F46AC4AE5C0D226F6D5959A9CE9F2F</td></tr><tr><td>TRIZN 3054TX</td><td><ul><li>48×1G RJ45</li><li>6×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZN–TRIZN3050(354)T(F)IX-10.32.203-vendor_V0770R0040C0B0012E_nos.img</td><td class=\"fw-hash\">3E59A53BB61B78E7A423C0028B07A7B3A5A6BB035AD3273796B82C9A95BBE33A9CA7FA8C9BFCBFD865BDBE2A6A2E9B94F8F67F46AC4AE5C0D226F6D5959A9CE9F2F</td></tr><tr><td>TRIZN 3054PX</td><td><ul><li>48×1G RJ45(PoE)</li><li>6×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZN–TRIZN3050(354)P(F)IX-10.32.203-vendor_V0770R0040C0B0012E_nos.img</td><td class=\"fw-hash\">3E59A53BB61B78E7A423C0028B07A7B3A5A6BB035AD3273796B82C9A95BBE33A9CA7FA8C9BFCBFD865BDBE2A6A2E9B94F8F67F46AC4AE5C0D226F6D5959A9CE9F2F</td></tr><tr><td>TRIZN 3530XQ</td><td><ul><li>24×10G SFP+</li><li>6×100G QSFP28</li></ul></td><td class=\"fw-file\">TRIZN–TRIZN3520XQ-10.32.202-vendor_V0770R0040C0B0012E_nos.img</td><td class=\"fw-hash\">3E59A53BB61B78E7A423C0028B07A7B3A57D9B2E57AD58B07E120353B8746D1CF56D95E72B8C9A2E77A2FA9AC83B2AB8E6F07F53B0E9B42E2E22F0D77BC557</td></tr><tr><td>TRIZN 3534C</td><td><ul><li>2 x 10GBase SFP+</li><li>32 x 40/100G Base QSFP+/QSFP 28</li></ul></td><td class=\"fw-file\">TRIZN-TRIZN3556XC(3534C)-10.33.114-vendor_V707R009C000B009_nos.img</td><td class=\"fw-hash\">b59f95f96e247635b26c0a3ca2b678f73c1f3b3e91658ea70e381223a850819f</td></tr><tr><td>TRIZN 3556XC</td><td><ul><li>48 x 10GBase SFP+</li><li>8 x 40/100G Base QSFP+/QSFP28</li></ul></td><td class=\"fw-file\">TRIZN-TRIZN3556XC(3534C)-10.33.114-vendor_V707R009C000B009_nos.img</td><td class=\"fw-hash\">b59f95f96e247635b26c0a3ca2b678f73c1f3b3e91658ea70e381223a850819f</td></tr></tbody></table>";
+const FIRMWARE_EN = "<table class=\"fw-table\"><thead><tr><th>Product</th><th>Model</th><th>Specifications</th><th>Firmware file</th><th>Firmware hash</th></tr></thead><tbody><tr><td class=\"fw-prod\">Integrated Controller</td><td>TRIZ-MX</td><td>-</td><td class=\"fw-file\">TRIZ-MX_PACKAGE-V1.1.4.enc</td><td class=\"fw-hash\">75B6CAC11997E23E8036E3860520B69E1600B6D5D893181E51AE4915EA27A072715345362CE40B77B0A878E0D8BD86AC09DDAB013824F86F87B8661D4871</td></tr><tr><td rowspan=\"14\" class=\"fw-prod\">SDN Switch</td><td>TRIZN 2022BPS</td><td><ul><li>24×1G RJ45(PoE)</li><li>4×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZ20X_v1.0.1.tgz</td><td class=\"fw-hash\">C23F029733ECB513DB3F3C73867205430692E6916A8E40E6F07F7C5BB5867953C02A7A8197A2E42A91A674F49B6EF5E897201B59A891E33636AA8C40A3181E8CC8E5</td></tr><tr><td>TRIZ 2022BPX</td><td><ul><li>24×1G RJ45(PoE)</li><li>4×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZ20X_v1.0.1.tgz</td><td class=\"fw-hash\">C23F029733ECB513DB3F3C73867205430692E6916A8E40E6F07F7C5BB5867953C02A7A8197A2E42A91A674F49B6EF5E897201B59A891E33636AA8C40A3181E8CC8E5</td></tr><tr><td>TRIZ2022BTX</td><td><ul><li>24×1G RJ45</li><li>4×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZ20X_v1.0.1.tgz</td><td class=\"fw-hash\">C23F029733ECB513DB3F3C73867205430692E6916A8E40E6F07F7C5BB5867953C02A7A8197A2E42A91A674F49B6EF5E897201B59A891E33636AA8C40A3181E8CC8E5</td></tr><tr><td>TRIZ2052PS</td><td><ul><li>48×1G RJ45(PoE)</li><li>4×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZ205X_v1.0.1.tgz</td><td class=\"fw-hash\">0CC46596F5E16A9B01B0360046F71354C4048163C224F07660E5ACC3598B2BA7A19A97A2E42A91A674F49B6EF5E897201B59A891E33636AA8C40A3181E8CC8E5</td></tr><tr><td>TRIZ2052PX</td><td><ul><li>48×1G RJ45(PoE)</li><li>4×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZ205X_v1.0.1.tgz</td><td class=\"fw-hash\">0CC46596F5E16A9B01B0360046F71354C4048163C224F07660E5ACC3598B2BA7A19A97A2E42A91A674F49B6EF5E897201B59A891E33636AA8C40A3181E8CC8E5</td></tr><tr><td>TRIZ2052TX</td><td><ul><li>48×1G RJ45</li><li>4×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZ205X_v1.0.1.tgz</td><td class=\"fw-hash\">0CC46596F5E16A9B01B0360046F71354C4048163C224F07660E5ACC3598B2BA7A19A97A2E42A91A674F49B6EF5E897201B59A891E33636AA8C40A3181E8CC8E5</td></tr><tr><td>TRIZ2054XQ</td><td><ul><li>6×40G QSFP+</li><li>48×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZ205X_v1.0.1.tgz</td><td class=\"fw-hash\">0CC46596F5E16A9B01B0360046F71354C4048163C224F07660E5ACC3598B2BA7A19A97A2E42A91A674F49B6EF5E897201B59A891E33636AA8C40A3181E8CC8E5</td></tr><tr><td>TRIZN 3030TX</td><td><ul><li>24×1G RJ45</li><li>6×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZN–TRIZN3030(354)T(F)IX-10.32.203-vendor_V0770R0040C0B0012E_nos.img</td><td class=\"fw-hash\">3E59A53BB61B78E7A423C0028B07A7B3A5A6BB035AD3273796B82C9A95BBE33A9CA7FA8C9BFCBFD865BDBE2A6A2E9B94F8F67F46AC4AE5C0D226F6D5959A9CE9F2F</td></tr><tr><td>TRIZN 3030PX</td><td><ul><li>24×1G RJ45(PoE)</li><li>6×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZN–TRIZN3030(354)P(F)IX-10.32.203-vendor_V0770R0040C0B0012E_nos.img</td><td class=\"fw-hash\">3E59A53BB61B78E7A423C0028B07A7B3A5A6BB035AD3273796B82C9A95BBE33A9CA7FA8C9BFCBFD865BDBE2A6A2E9B94F8F67F46AC4AE5C0D226F6D5959A9CE9F2F</td></tr><tr><td>TRIZN 3054TX</td><td><ul><li>48×1G RJ45</li><li>6×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZN–TRIZN3050(354)T(F)IX-10.32.203-vendor_V0770R0040C0B0012E_nos.img</td><td class=\"fw-hash\">3E59A53BB61B78E7A423C0028B07A7B3A5A6BB035AD3273796B82C9A95BBE33A9CA7FA8C9BFCBFD865BDBE2A6A2E9B94F8F67F46AC4AE5C0D226F6D5959A9CE9F2F</td></tr><tr><td>TRIZN 3054PX</td><td><ul><li>48×1G RJ45(PoE)</li><li>6×10G SFP+</li></ul></td><td class=\"fw-file\">TRIZN–TRIZN3050(354)P(F)IX-10.32.203-vendor_V0770R0040C0B0012E_nos.img</td><td class=\"fw-hash\">3E59A53BB61B78E7A423C0028B07A7B3A5A6BB035AD3273796B82C9A95BBE33A9CA7FA8C9BFCBFD865BDBE2A6A2E9B94F8F67F46AC4AE5C0D226F6D5959A9CE9F2F</td></tr><tr><td>TRIZN 3530XQ</td><td><ul><li>24×10G SFP+</li><li>6×100G QSFP28</li></ul></td><td class=\"fw-file\">TRIZN–TRIZN3520XQ-10.32.202-vendor_V0770R0040C0B0012E_nos.img</td><td class=\"fw-hash\">3E59A53BB61B78E7A423C0028B07A7B3A57D9B2E57AD58B07E120353B8746D1CF56D95E72B8C9A2E77A2FA9AC83B2AB8E6F07F53B0E9B42E2E22F0D77BC557</td></tr><tr><td>TRIZN 3534C</td><td><ul><li>2 x 10GBase SFP+</li><li>32 x 40/100G Base QSFP+/QSFP 28</li></ul></td><td class=\"fw-file\">TRIZN-TRIZN3556XC(3534C)-10.33.114-vendor_V707R009C000B009_nos.img</td><td class=\"fw-hash\">b59f95f96e247635b26c0a3ca2b678f73c1f3b3e91658ea70e381223a850819f</td></tr><tr><td>TRIZN 3556XC</td><td><ul><li>48 x 10GBase SFP+</li><li>8 x 40/100G Base QSFP+/QSFP28</li></ul></td><td class=\"fw-file\">TRIZN-TRIZN3556XC(3534C)-10.33.114-vendor_V707R009C000B009_nos.img</td><td class=\"fw-hash\">b59f95f96e247635b26c0a3ca2b678f73c1f3b3e91658ea70e381223a850819f</td></tr></tbody></table>";
+const prodLnb = cur => `<nav class="lnb"><div class="wrap">${shown("products").map(x => `<a class="${x.id===cur?"on":""}" href="#product-${esc(x.id)}">${esc(x.name)}</a>`).join("")}<a class="${cur==="firmware"?"on":""}" href="#firmware">펌웨어 관리</a></div></nav>`;
+function prodVideo(p){
+  if (p.videoId) return `<div class="pd-video"><video src="${imgUrl(p.videoId)}" controls playsinline preload="metadata"></video></div>`;
+  const y = ytId(p.videoUrl); if (!y) return "";
+  return SRV ? `<div class="pd-video"><iframe src="https://www.youtube-nocookie.com/embed/${y}?rel=0" title="${esc(p.name)} 소개 영상" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`
+    : `<a class="pd-video pd-yt" href="https://www.youtube.com/watch?v=${y}" target="_blank" rel="noopener"><span class="play" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span><span class="t">${esc(p.name)} 소개 영상<small>유튜브에서 보기 (새 창)</small></span></a>`;
+}
+const specRows = t => String(t||"").split("\n").map(l => l.trim()).filter(Boolean).map(l => { const i = l.indexOf("|"); return i<0 ? ["", l] : [l.slice(0,i).trim(), l.slice(i+1).trim()]; }).filter(([a,b]) => b || a);
+function viewProductGrid(p){
+  if (ui.mFor !== p.id){ ui.mFor = p.id; ui.mQ = ""; ui.mPage = 1; }
+  const per = 12, q = ui.mQ.trim().toLowerCase();
+  const all = shown("models", m => m.productId===p.id);
+  const list = q ? all.filter(m => (m.name+" "+(m.series||"")).toLowerCase().includes(q)) : all;
+  const pages = Math.max(1, Math.ceil(list.length/per)); if (ui.mPage > pages) ui.mPage = pages;
+  const rows = list.slice((ui.mPage-1)*per, ui.mPage*per);
+  return `${subVis("Intelligent Network Solutions","서비스","서비스 › "+esc(p.name),4)}
+  ${prodLnb(p.id)}
+  <section class="sec"><div class="wrap">
+    <div class="md-head"><p class="eyebrow">${esc(p.category)}</p><h2>${esc(p.name)}</h2>${p.summary?`<p>${esc(p.summary)}</p>`:""}</div>
+    ${prodVideo(p)}
+    ${all.length ? `<div class="board-tools"><span class="total">${ui.lang==="en" ? `<b class="num">${list.length}</b> models` : `전체 <b class="num">${list.length}</b>개 모델`}</span>
+      <form class="search" id="mSearch" role="search"><label class="sr" for="mq">제품명 검색</label><input id="mq" type="search" placeholder="제품명 검색" value="${esc(ui.mQ)}"><button aria-label="검색">${I.search}</button></form></div>
+    <div class="md-grid">${rows.map(m => `<a class="md-card" href="#model-${esc(m.id)}"><div class="th">${m.imageId?`<img src="${imgUrl(m.imageId)}" alt="${esc(m.name)}" loading="lazy">`:`<span class="ph">TRIZN</span>`}</div><div class="b">${m.series?`<p class="sr2">${esc(m.series)}</p>`:""}<h3>${esc(m.name)}</h3></div></a>`).join("") || `<div class="empty" style="grid-column:1/-1">검색 결과가 없습니다.</div>`}</div>
+    ${pages>1?`<div class="pager"><button data-mpage="${ui.mPage-1}" ${ui.mPage<=1?"disabled":""} aria-label="이전 페이지">‹</button>${Array.from({length:pages},(_,i)=>`<button class="${ui.mPage===i+1?"on":""}" data-mpage="${i+1}">${i+1}</button>`).join("")}<button data-mpage="${ui.mPage+1}" ${ui.mPage>=pages?"disabled":""} aria-label="다음 페이지">›</button></div>`:""}`
+    : (p.detailHtml ? "" : `<div class="empty">${S.loaded?"등록된 모델이 없습니다.":"불러오는 중…"}</div>`)}
+    ${p.detailHtml?`<div class="rte-content pd-body" style="margin-top:${all.length?"clamp(72px,8vw,120px)":"0"}">${sanitize(p.detailHtml)}</div>`:""}
+  </div></section>${footer()}`;
+}
+function viewModel(id){
+  const m = shown("models").find(x => x.id===id);
+  const p = m && shown("products").find(x => x.id===m.productId);
+  if (!m) return `${subVis("Intelligent Network Solutions","서비스","서비스",4)}<section class="sec"><div class="wrap"><div class="empty">${S.loaded?"제품을 찾을 수 없습니다.":"불러오는 중…"}</div><p style="margin-top:24px"><a class="btn btn-line" href="#products">목록으로</a></p></div></section>${footer()}`;
+  const sibs = shown("models", x => x.productId===m.productId); const i = sibs.findIndex(x => x.id===m.id);
+  const prev = sibs[i-1], next = sibs[i+1], back = p ? "#product-"+p.id : "#products";
+  const specs = specRows(m.specs);
+  return `${subVis("Intelligent Network Solutions","서비스",`서비스 › ${p?esc(p.name)+" › ":""}${esc(m.name)}`,4)}
+  ${prodLnb(p?.id)}
+  <section class="sec"><div class="wrap">
+    <div class="md-top">
+      <div class="md-img">${m.imageId?`<img src="${imgUrl(m.imageId)}" alt="${esc(m.name)}">`:`<span class="ph">TRIZN</span>`}</div>
+      <div class="md-info">${m.series?`<p class="eyebrow">${esc(m.series)}</p>`:""}<h2>${esc(m.name)}</h2>
+        ${specs.length?`<dl class="md-spec">${specs.map(([k,v]) => `<div>${k?`<dt>${esc(k)}</dt>`:""}<dd>${esc(v)||"—"}</dd></div>`).join("")}</dl>`:""}
+        <p class="md-btns"><a class="btn btn-line" href="${back}">목록으로</a><a class="btn btn-ink" href="#contact">도입 문의 ${ARROW}</a></p></div>
+    </div>
+    ${m.detailHtml?`<div class="rte-content pd-body" style="margin-top:clamp(64px,7vw,104px)">${sanitize(m.detailHtml)}</div>`:""}
+    <div class="biz-pn" style="margin-top:clamp(56px,6vw,88px)">
+      ${prev?`<a href="#model-${esc(prev.id)}"><span>PREV</span><b>← ${esc(prev.name)}</b></a>`:`<a href="${back}"><span>LIST</span><b>← ${esc(p?.name||"전체 솔루션")}</b></a>`}
+      ${next?`<a href="#model-${esc(next.id)}"><span>NEXT</span><b>${esc(next.name)} →</b></a>`:`<a href="#contact"><span>CONTACT</span><b>도입 문의 →</b></a>`}
+    </div>
+  </div></section>${footer()}`;
+}
+function viewFirmware(){
+  const c = conf(), html = ui.lang==="en" ? (c.firmwareHtml_en || FIRMWARE_EN) : (c.firmwareHtml || FIRMWARE_KO);
+  return `${subVis("Firmware","펌웨어 관리","서비스 › 펌웨어 관리",4)}
+  ${prodLnb("firmware")}
+  <section class="sec"><div class="wrap">
+    <div class="md-head" style="text-align:center;margin-inline:auto"><p class="eyebrow">Firmware</p><h2>${esc(c.fwTitle || "통합 컨트롤러 및 SDN 스위치 펌웨어 목록")}</h2><p>${esc(c.fwLead || "TRIZN 장비별 최신 펌웨어 파일과 해시값을 제공합니다.")}</p></div>
+    ${c.firmwareImageId?`<figure class="fw-img"><img src="${imgUrl(c.firmwareImageId)}" alt="펌웨어 목록"></figure>`:""}
+    ${c.firmwareHide ? "" : `<div class="fw-body rte-content">${sanitize(html)}</div>`}
+  </div></section>${footer()}`;
+}
 function viewProduct(id){
   const all = shown("products"); const i = all.findIndex(x => x.id===id); const p = all[i];
   if (!p) return `${subVis("Intelligent Network Solutions","서비스","서비스",4)}<section class="sec"><div class="wrap"><div class="empty">${S.loaded?"솔루션을 찾을 수 없습니다.":"불러오는 중…"}</div><p style="margin-top:24px"><a class="btn btn-line" href="#products">목록으로</a></p></div></section>${footer()}`;
+  if (p.layout==="grid") return viewProductGrid(p);
   const prev = all[i-1], next = all[i+1];
   return `${subVis("Intelligent Network Solutions","서비스","서비스 › "+esc(p.name),4)}
-  <nav class="lnb"><div class="wrap">${all.map(x => `<a class="${x.id===p.id?"on":""}" href="#product-${esc(x.id)}">${esc(x.name)}</a>`).join("")}</div></nav>
+  ${prodLnb(p.id)}
   <section class="sec"><div class="wrap">
     <div class="prod-hd" ${p.imageId?"":'style="grid-template-columns:minmax(0,1fr)"'}>${p.imageId?vis(p.imageId,i+2,p.name):""}<div><p class="eyebrow">${esc(p.category)}</p><h2>${esc(p.name)}</h2><p>${esc(p.summary)}</p><p style="margin-top:28px"><a class="btn btn-ink" href="#contact">도입 문의 ${ARROW}</a></p></div></div>
-    ${p.detailHtml?`<div class="rte-content" style="margin-top:clamp(56px,6vw,88px)">${sanitize(p.detailHtml)}</div>`:""}
+    ${prodVideo(p) ? `<div style="margin-top:clamp(56px,6vw,88px)">${prodVideo(p)}</div>` : ""}
+    ${p.detailHtml?`<div class="rte-content pd-body" style="margin-top:clamp(56px,6vw,88px)">${sanitize(p.detailHtml)}</div>`:""}
     <div class="biz-pn" style="margin-top:clamp(56px,6vw,88px)">
       ${prev?`<a href="#product-${esc(prev.id)}"><span>PREV</span><b>← ${esc(prev.name)}</b></a>`:`<a href="#products"><span>LIST</span><b>← 전체 솔루션</b></a>`}
       ${next?`<a href="#product-${esc(next.id)}"><span>NEXT</span><b>${esc(next.name)} →</b></a>`:`<a href="#contact"><span>CONTACT</span><b>도입 문의 →</b></a>`}
@@ -1477,12 +1604,14 @@ document.addEventListener("click", e => {
   }
   const ht = e.target.closest("[data-hometab]"); if (ht){ ui.homeTab = ht.dataset.hometab; render(false); return; }
   const bd = e.target.closest("[data-board]"); if (bd){ ui.board = bd.dataset.board; ui.page = 1; ui.q=""; render(false); return; }
+  const mp = e.target.closest("[data-mpage]"); if (mp && !mp.disabled){ ui.mPage = +mp.dataset.mpage; render(false); $(".md-grid")?.scrollIntoView({behavior:"smooth", block:"start"}); return; }
   const pg = e.target.closest("[data-page]"); if (pg && !pg.disabled){ ui.page = +pg.dataset.page; render(false); $(".lnb")?.scrollIntoView({behavior:"smooth"}); return; }
   const ct = e.target.closest("[data-cat]"); if (ct){ ui.prodCat = ct.dataset.cat; render(false); return; }
   const ja = e.target.closest("[data-jump-after]"); if (ja){ const id = ja.dataset.jumpAfter; setTimeout(() => document.getElementById(id)?.scrollIntoView({behavior:"smooth"}), 120); }
   const jp = e.target.closest("[data-jump]"); if (jp){ e.preventDefault(); document.getElementById(jp.dataset.jump)?.scrollIntoView({behavior:"smooth"}); }
 });
 document.addEventListener("submit", async e => {
+  if (e.target.id==="mSearch"){ e.preventDefault(); ui.mQ = $("#mq").value; ui.mPage = 1; render(false); return; }
   if (e.target.id==="bSearch"){ e.preventDefault(); ui.q = $("#bq").value; ui.page = 1; render(false); return; }
   if (e.target.id==="inqForm"){
     e.preventDefault(); if (!SRV && (!db || !myId)) return;
@@ -1525,6 +1654,8 @@ function render(routeChanged){
   else if (r==="products") html = viewProducts();
   else if (r==="cert") html = viewWorks();
   else if (r.startsWith("product-")) html = viewProduct(r.slice(8));
+  else if (r.startsWith("model-")) html = viewModel(r.slice(6));
+  else if (r==="firmware") html = viewFirmware();
   else if (r==="news") html = viewNews();
   else if (r==="contact") html = viewContact();
   else if (r==="privacy") html = viewPrivacy();
@@ -1543,8 +1674,8 @@ function render(routeChanged){
   // floating "edit this page" for editors
   $("#editFab")?.remove();
   if (canEdit){
-    const map = {home:"slides",about:"facts",business:"business",products:"products",cert:"works",news:"posts",contact:"inquiries",privacy:"site"};
-    const sec = r.startsWith("post-") ? "posts-edit-"+r.slice(5) : r.startsWith("product-") ? "products-edit-"+r.slice(8) : r.startsWith("business-") ? "business-edit-"+r.slice(9) : (map[r] || "dashboard");
+    const map = {home:"slides",about:"facts",business:"business",products:"products",cert:"works",news:"posts",contact:"inquiries",privacy:"site",firmware:"firmware"};
+    const sec = r.startsWith("model-") ? "models-edit-"+r.slice(6) : r.startsWith("post-") ? "posts-edit-"+r.slice(5) : r.startsWith("product-") ? "products-edit-"+r.slice(8) : r.startsWith("business-") ? "business-edit-"+r.slice(9) : (map[r] || "dashboard");
     if (sec==="dashboard" || canSec(sec.split("-")[0])) document.body.insertAdjacentHTML("beforeend", `<a class="edit-fab" id="editFab" href="#admin-${sec}">${I.pen} 이 화면 편집</a>`);
   }
 }
@@ -1618,7 +1749,9 @@ const SCHEMA = {
       ["contentHtml","상세 · 본문","html-tall"],
       ["btnLabel","상세 · 버튼 문구 (선택)","text"],["btnUrl","상세 · 버튼 링크 (https://)","url"],["imageId","대표 이미지 (홈 카드 · 상단 배경, 권장 1800×900)","image"],["detailImageId","상세 · 구성도/설명 이미지 (선택)","image"]] },
   products:{ label:"솔루션", group:"콘텐츠", desc:"서비스 › 지능형 네트워크 솔루션. ‘홈 화면에 노출’을 켠 항목만 홈 가로 스크롤에 나옵니다.", title:x=>x.name, meta:x=>`${x.category||"카테고리 없음"}${x.featured!==false?" · 메인 노출":""}`, img:true,
-    fields:[["name","솔루션명","text"],["category","카테고리","text"],["summary","설명","textarea"],["detailHtml","상세 페이지 본문","html-tall"],["featured","홈 화면에 노출","bool"],["imageId","대표 이미지 (권장 1200×900)","image"]] },
+    fields:[["name","솔루션명","text"],["category","카테고리","text"],["summary","설명","textarea"],["videoUrl","소개 영상 · 유튜브 주소 (선택)","url","영상 파일을 올리면 파일이 먼저 재생됩니다."],["detailHtml","상세 페이지 본문","html-tall","‘모델 목록형’이면 모델 목록 아래에 나옵니다."],["layout","페이지 형태","layout"],["featured","홈 화면에 노출","bool"],["imageId","대표 이미지 (권장 1200×900)","image"],["videoId","소개 영상 파일 (MP4, 선택)","video"]] },
+  models:{ label:"제품 모델", group:"콘텐츠", desc:"‘모델 목록형’ 솔루션(스위치·PON·AP 등)에 나오는 모델 카드와 상세 페이지. 위에 있는 순서대로 표시됩니다.", title:x=>x.name, meta:x=>`${(S.products.find(p=>p.id===x.productId)||{}).name||"솔루션 미지정"}${x.series?" · "+x.series:""}`, img:true,
+    fields:[["name","모델명","text","예: [SDN L3 스위치] 3556XC"],["series","시리즈","text","예: TRIZN 3500 Series"],["specs","주요 사양","textarea-tall","한 줄에 하나씩 ‘항목 | 내용’ 형식으로 입력하세요. 예: 인터페이스 | 48 x 10GBase SFP+"],["detailHtml","상세 설명 (이미지·표)","html-tall"],["productId","소속 솔루션","product"],["imageId","제품 이미지 (투명 PNG 권장, 가로 1000px 이상)","image"]] },
   works:{ label:"인증·지적재산권", group:"콘텐츠", desc:"회사소개 › 인증 및 지적재산권 갤러리.", title:x=>x.title, meta:x=>`${x.category||""} · ${x.year||""}`, img:true,
     fields:[["title","명칭","text"],["category","구분 (인증/특허/등록 등)","text"],["client","발급 기관","text"],["year","취득 연도","text"],["imageId","인증서 이미지 (권장 900×1200)","image"]] },
   posts:{ label:"게시판", group:"게시판", desc:"공지사항 · 보도자료 · IR·공시. 상단 고정 글이 먼저 나오고, 나머지는 이 목록 순서대로 노출됩니다.", title:x=>x.title, meta:x=>`${BOARD_LABEL[x.board]||""} · ${fmtDate(x.date)}`, img:true, pin:true,
@@ -1641,11 +1774,11 @@ const ADM_NAV = [
   ["",[["dashboard","대시보드"]]],
   ["사이트",[["site","기본 정보 · 문구"],["menus","메뉴 관리"]]],
   ["메인",[["slides","메인 비주얼"],["popups","팝업 관리"]]],
-  ["콘텐츠",[["business","사업영역"],["products","솔루션"],["works","인증·지적재산권"]]],
+  ["콘텐츠",[["business","사업영역"],["products","솔루션"],["models","제품 모델"],["firmware","펌웨어 관리"],["works","인증·지적재산권"]]],
   ["게시판",[["posts","게시판 관리"],["inquiries","고객문의 접수"]]],
   ["회사정보",[["pillars","회사개요 핵심가치"],["facts","기업 정보 카드"],["history","연혁"],["partners","기술협력 파트너"]]]
 ];
-const SEC_TITLE = {dashboard:"대시보드",site:"기본 정보 · 문구",inquiries:"고객문의 접수",users:"관리자 계정",account:"내 계정"}; Object.entries(SCHEMA).forEach(([k,v]) => SEC_TITLE[k] = SEC_TITLE[k] || v.label+" 관리");
+const SEC_TITLE = {dashboard:"대시보드",site:"기본 정보 · 문구",firmware:"펌웨어 관리",inquiries:"고객문의 접수",users:"관리자 계정",account:"내 계정"}; Object.entries(SCHEMA).forEach(([k,v]) => SEC_TITLE[k] = SEC_TITLE[k] || v.label+" 관리");
 const countOf = k => k==="inquiries" ? S.inquiries.reduce((a,d)=>a+(d.items||[]).length,0) : (S[k]||[]).length || "";
 
 function renderAdmin(r){
@@ -1674,9 +1807,10 @@ function renderAdmin(r){
   const isEdit = (mode==="edit" || mode==="new") && SCHEMA[sec];
   if (isEdit && lastRoute===r && $("#edForm")?.dataset.ready==="1") return; // keep unsaved edits when live data arrives
   if (sec==="site" && lastRoute===r && $("#siteForm")) return;
+  if (sec==="firmware" && lastRoute===r && $("#fwForm")) return;
   if (!["dashboard","account"].includes(sec) && !canSec(sec)){ location.hash = "#admin-dashboard"; return; }
   const NAV = admNav();
-  const navHtml = NAV.map(([g,items]) => `${g?`<div class="grp">${g}</div>`:""}${items.map(([k,l]) => `<a href="#admin-${k}" class="${sec===k?"on":""}">${l}<span class="c">${["dashboard","site"].includes(k)?"":countOf(k)}</span></a>`).join("")}`).join("");
+  const navHtml = NAV.map(([g,items]) => `${g?`<div class="grp">${g}</div>`:""}${items.map(([k,l]) => `<a href="#admin-${k}" class="${sec===k?"on":""}">${l}<span class="c">${["dashboard","site","firmware"].includes(k)?"":countOf(k)}</span></a>`).join("")}`).join("");
   const sch = SCHEMA[sec];
   const descDash = "저장한 내용은 미리보기에서 확인한 뒤 반영합니다. 순서 변경·노출 스위치·삭제는 바로 적용됩니다.";
   const desc = sec==="dashboard" ? descDash : sec==="users" ? "서브관리자에게 아이디·비밀번호와 담당 메뉴를 정해 관리 권한을 줍니다." : sec==="account" ? "내 비밀번호를 바꿉니다." : sec==="dashboard" ? "저장한 내용은 홈페이지에 바로 반영됩니다." : sec==="site" ? "회사 정보, 주요 수치, 회사개요, 비전, 원격지원 안내 문구" : sec==="inquiries" ? "홈페이지 온라인 문의로 접수된 내용" : sch?.desc || "";
@@ -1687,12 +1821,12 @@ function renderAdmin(r){
     <div class="adm-main">
       <div class="adm-mtop"><div class="t"><img src="logo-white.png" alt="TRIZN"><a href="#home" style="font-size:13px;display:flex;gap:6px;align-items:center">${I.ext} 홈페이지</a></div><nav>${NAV.flatMap(g=>g[1]).map(([k,l]) => `<a href="#admin-${k}" class="${sec===k?"on":""}">${l}</a>`).join("")}</nav></div>
       <div class="adm-top"><div><h1>${isEdit ? esc(sch.label)+(mode==="new"?" 새로 등록":" 수정") : SEC_TITLE[sec]||"관리자"}</h1><p class="desc">${esc(isEdit ? "본문은 편집기에서 바로 꾸미거나, HTML 버튼으로 소스를 직접 고칠 수 있습니다." : desc)}</p></div><div class="a-tools"><button class="abtn" data-mobile>📱 모바일 미리보기</button><span class="live ${db?"":"off"}"><i></i>${db?"연결됨":"연결 안 됨"}</span></div></div>
-      <div class="adm-body">${isEdit?admEdit(sec, mode==="edit"?eid:null):sec==="users"?admUsers():sec==="account"?admAccount():sec==="dashboard"?admDashboard():sec==="site"?admSite():sec==="inquiries"?admInquiries():sch?admList(sec):admDashboard()}</div>
+      <div class="adm-body">${isEdit?admEdit(sec, mode==="edit"?eid:null):sec==="users"?admUsers():sec==="account"?admAccount():sec==="dashboard"?admDashboard():sec==="site"?admSite():sec==="firmware"?admFirmware():sec==="inquiries"?admInquiries():sch?admList(sec):admDashboard()}</div>
     </div></div>`;
   if (keepY) window.scrollTo(0,keepY);
   if (isEdit) wireEdit(); else if (sec==="users") wireUsers(); else if (sec==="account") wireAccount(); else wireAdmin(sec);
 }
-const PERM_SECTIONS = [["site","기본 정보 · 문구"],["menus","메뉴 관리"],["slides","메인 비주얼"],["popups","팝업 관리"],["business","사업영역"],["products","솔루션"],["works","인증·지적재산권"],["posts","게시판 관리"],["inquiries","고객문의 접수"],["pillars","회사개요 핵심가치"],["facts","기업 정보 카드"],["history","연혁"],["partners","기술협력 파트너"]];
+const PERM_SECTIONS = [["site","기본 정보 · 문구"],["menus","메뉴 관리"],["slides","메인 비주얼"],["popups","팝업 관리"],["business","사업영역"],["products","솔루션"],["models","제품 모델"],["works","인증·지적재산권"],["posts","게시판 관리"],["inquiries","고객문의 접수"],["pillars","회사개요 핵심가치"],["facts","기업 정보 카드"],["history","연혁"],["partners","기술협력 파트너"]];
 function admNav(){
   const nav = ADM_NAV.map(([g,items]) => [g, items.filter(([k]) => k==="dashboard" || canSec(k))]).filter(([,items]) => items.length);
   if (SRV && me?.role==="super") nav.push(["계정",[["users","관리자 계정"]]]);
@@ -1778,13 +1912,13 @@ function admDashboard(){
 function admList(c){
   const sch = SCHEMA[c];
   const q = ui.admQ.trim().toLowerCase();
-  let list = sorted(c, c==="posts" ? (x => x.board===ui.admTab) : null);
+  let list = sorted(c, c==="posts" ? (x => x.board===ui.admTab) : c==="models" && ui.admModel && ui.admModel!=="all" ? (x => x.productId===ui.admModel) : null);
   if (c==="posts") list = shownPostsSorted(list);
   const filtered = q ? list.filter(x => (sch.title(x)+" "+(sch.meta(x)||"")).toLowerCase().includes(q)) : list;
   const canSort = !q;
   return `<div class="panel">
     <div class="panel-hd">
-      <div class="a-tools">${c==="posts" ? `<div class="seg">${BOARDS.map(([k,l]) => `<button class="${ui.admTab===k?"on":""}" data-admtab="${k}">${l} <span class="num">${S.posts.filter(p=>p.board===k).length}</span></button>`).join("")}</div>` : `<h2>전체 ${list.length}개</h2>`}</div>
+      <div class="a-tools">${c==="models" ? `<div class="seg"><button class="${!ui.admModel||ui.admModel==="all"?"on":""}" data-admmodel="all">전체 <span class="num">${S.models.length}</span></button>${sorted("products").filter(p=>p.layout==="grid"||S.models.some(m=>m.productId===p.id)).map(p => `<button class="${ui.admModel===p.id?"on":""}" data-admmodel="${esc(p.id)}">${esc(p.name)} <span class="num">${S.models.filter(m=>m.productId===p.id).length}</span></button>`).join("")}</div>` : c==="posts" ? `<div class="seg">${BOARDS.map(([k,l]) => `<button class="${ui.admTab===k?"on":""}" data-admtab="${k}">${l} <span class="num">${S.posts.filter(p=>p.board===k).length}</span></button>`).join("")}</div>` : `<h2>전체 ${list.length}개</h2>`}</div>
       <div class="a-tools"><label class="sr" for="admQ">목록 검색</label><input class="a-search" id="admQ" type="search" placeholder="검색" value="${esc(ui.admQ)}"><a class="abtn pri" href="#admin-${c}-new">+ 새로 등록</a></div>
     </div>
     <div class="hint">${I.grip} ${canSort ? "손잡이를 끌어 순서를 바꾸세요. 바뀐 순서는 즉시 저장되어 홈페이지에 반영됩니다."+(c==="posts"?" (상단 고정 글은 항상 맨 위에 표시됩니다.)":"") : "검색 중에는 순서를 바꿀 수 없습니다. 검색어를 지우면 다시 정렬할 수 있습니다."}</div>
@@ -1894,6 +2028,7 @@ function wireAdmin(sec){
     listEl.addEventListener("dragover", e => { if(!dragId) return; e.preventDefault(); const row = e.target.closest(".s-row"); listEl.querySelectorAll(".s-row").forEach(r=>r.classList.remove("drop-before","drop-after")); if(!row||row.dataset.id===dragId) return; const b=row.getBoundingClientRect(); row.classList.add(e.clientY < b.top+b.height/2 ? "drop-before":"drop-after"); });
     listEl.addEventListener("drop", e => { e.preventDefault(); const row = e.target.closest(".s-row"); if(!row||!dragId||row.dataset.id===dragId) return; const before = row.classList.contains("drop-before"); reorder(sec, dragId, row.dataset.id, before); });
   }
+  const ff = $("#fwForm"); if (ff) ff.addEventListener("submit", saveFirmware);
   const sf = $("#siteForm"); if (sf){ sf.addEventListener("submit", saveSite);
     $("#cf-statsShow")?.addEventListener("click", e => { const b = e.currentTarget; const on = !b.classList.contains("on"); b.classList.toggle("on", on); b.setAttribute("aria-checked", on); b.nextElementSibling.textContent = on ? "노출" : "미노출"; }); }
 }
@@ -1916,6 +2051,7 @@ function reorder(c, fromId, toId, before){
 document.addEventListener("click", async e => {
   if (!route().startsWith("admin")) return;
   const t = e.target;
+  const amt = t.closest("[data-admmodel]"); if (amt){ ui.admModel = amt.dataset.admmodel; render(false); return; }
   const tab = t.closest("[data-admtab]"); if (tab){ ui.admTab = tab.dataset.admtab; render(false); return; }
   const mv = t.closest("[data-move]");
   if (mv && !mv.disabled){ const c = $("#sortList").dataset.col; const list = currentList(c); const i = list.findIndex(x=>x.id===mv.dataset.mid); const j = i + (+mv.dataset.move); if (j<0||j>=list.length) return; [list[i],list[j]]=[list[j],list[i]]; persistOrder(c, list, mv.dataset.mid); return; }
@@ -1932,8 +2068,8 @@ document.addEventListener("click", async e => {
 
 /* ---- edit page (board-style write/edit) ---- */
 let editing = null;
-const SIDE_TYPES = new Set(["image","video","file","bool","route","board","date","icon","dim"]);
-const SITE_LINK = {posts:x=>"#post-"+x.id, business:x=>"#business-"+x.id, products:x=>"#product-"+x.id, slides:()=>"#home", popups:()=>"#home", works:()=>"#cert", history:()=>"#about", pillars:()=>"#about", facts:()=>"#about", partners:()=>"#home", clients:()=>"#about", menus:()=>"#home"};
+const SIDE_TYPES = new Set(["image","video","file","bool","route","board","date","icon","dim","layout","product"]);
+const SITE_LINK = {posts:x=>"#post-"+x.id, business:x=>"#business-"+x.id, products:x=>"#product-"+x.id, models:x=>"#model-"+x.id, slides:()=>"#home", popups:()=>"#home", works:()=>"#cert", history:()=>"#about", pillars:()=>"#about", facts:()=>"#about", partners:()=>"#home", clients:()=>"#about", menus:()=>"#home"};
 const TR_TYPES = new Set(["text","textarea","textarea-tall","html","html-tall"]);
 const NO_TR = new Set(["en","year","btnLabel_never"]);
 const trFields = sch => sch.fields.filter(f => TR_TYPES.has(f[2]) && !NO_TR.has(f[0]));
@@ -1976,7 +2112,7 @@ function admEdit(c, id){
   const item = live || (dr ? {id, ...dr.data} : null);
   if (id && !item) return `<div class="panel"><div class="panel-bd"><div class="empty">${S.loaded?"항목을 찾을 수 없습니다. 이미 삭제되었을 수 있습니다.":"불러오는 중…"}</div><p style="margin-top:16px"><a class="abtn" href="#admin-${c}">← 목록으로</a></p></div></div>`;
   editing = {c, id, isNew: !live};
-  const v = item ? {...item, ...(dr ? dr.data : {})} : {visible:true, featured:true, board:ui.admTab, date:today(), btnRoute:"about"};
+  const v = item ? {...item, ...(dr ? dr.data : {})} : {visible:true, featured:true, board:ui.admTab, date:today(), btnRoute:"about", productId: ui.admModel && ui.admModel!=="all" ? ui.admModel : (sorted("products").find(p=>p.layout==="grid")||{}).id};
   const fld = ([k,l,type,help]) => {
     const fid = "ed-"+k; let input;
     if (type==="html"||type==="html-tall") return `<div class="af"><label>${l}</label>${rteHtml(k, htmlInitial(c,v,k), type==="html-tall")}${help?`<span class="help">${help}</span>`:""}</div>`;
@@ -1984,6 +2120,8 @@ function admEdit(c, id){
     else if (type==="route") input = `<select id="${fid}" data-f="${k}">${ROUTE_OPTS.map(([r,lb]) => `<option value="${r}" ${v[k]===r?"selected":""}>${lb}</option>`).join("")}</select>`;
     else if (type==="dim") input = `<select id="${fid}" data-f="${k}">${[["","자동 (글자가 있을 때만 보통)"],["none","없음 · 영상/사진 원래 밝기"],["light","약하게"],["mid","보통"],["strong","진하게"]].map(([r,lb]) => `<option value="${r}" ${(v[k]||"")===r?"selected":""}>${lb}</option>`).join("")}</select>`;
     else if (type==="icon") input = `<select id="${fid}" data-f="${k}">${Object.entries(FACT_ICONS).map(([r,[lb]]) => `<option value="${r}" ${v[k]===r?"selected":""}>${lb}</option>`).join("")}</select>`;
+    else if (type==="layout") input = `<select id="${fid}" data-f="${k}">${[["","상세 소개형 (운영관제·컨트롤러)"],["grid","모델 목록형 (스위치·PON·AP 등)"]].map(([r,lb]) => `<option value="${r}" ${(v[k]||"")===r?"selected":""}>${lb}</option>`).join("")}</select>`;
+    else if (type==="product") input = `<select id="${fid}" data-f="${k}">${sorted("products").map(p => `<option value="${esc(p.id)}" ${v[k]===p.id?"selected":""}>${esc(p.name)}${p.layout==="grid"?"":" (상세 소개형)"}</option>`).join("")}</select>`;
     else if (type==="board") input = `<select id="${fid}" data-f="${k}">${BOARDS.map(([r,lb]) => `<option value="${r}" ${v[k]===r?"selected":""}>${lb}</option>`).join("")}</select>`;
     else if (type==="bool") return `<label class="chk"><input type="checkbox" id="${fid}" data-f="${k}" ${v[k]!==false&&(v[k]||k==="featured")?"checked":""}> ${l}</label>`;
     else if (type==="image"||type==="video") return `<div class="af"><label>${l}</label>${imgFieldHtml(k, v[k], type==="video")}</div>`;
@@ -2099,9 +2237,46 @@ async function saveEditor(e){
     else { toast("반영 대기로 저장했습니다. 아직 방문자에게는 보이지 않습니다."); location.hash = "#admin-"+c; }
   } catch(err){ toast(dbErr(err), true); btn.disabled = false; btn.textContent = label; }
 }
+function admFirmware(){
+  const dr = draftFor("site","config");
+  const c = dr ? {...S.config, ...dr.data} : S.config;
+  const tx = (k,l,help="",pane="") => `<div class="af" ${pane?`data-lang-pane="${pane}" ${pane==="en"?"hidden":""}`:""}><label for="fw-${k}">${l}</label><input type="text" id="fw-${k}" data-fw="${k}" value="${esc(c[k])}">${help?`<span class="help">${help}</span>`:""}</div>`;
+  return `<form id="fwForm" class="panel">${dr?'<div class="panel-bd" style="background:#FFFBF2;border-bottom:1px solid var(--line)"><span class="badge wait">반영 대기</span> 저장했지만 아직 반영하지 않은 변경이 있습니다.</div>':""}
+    <div class="panel-hd"><div class="lang-tabs" role="tablist" aria-label="편집 언어"><button type="button" class="on" data-ltab="ko">한국어</button><button type="button" data-ltab="en">English</button></div><a class="abtn" href="#firmware">${I.ext} 홈페이지에서 보기</a></div>
+    <div class="panel-bd form-grid">
+      ${tx("fwTitle","제목","비워 두면 ‘통합 컨트롤러 및 SDN 스위치 펌웨어 목록’","ko")}${tx("fwTitle_en","제목 · English","","en")}
+      ${tx("fwLead","설명","비워 두면 ‘TRIZN 장비별 최신 펌웨어 파일과 해시값을 제공합니다.’","ko")}${tx("fwLead_en","설명 · English","","en")}
+      <div class="af full"><label>펌웨어 목록 이미지 (선택)</label>${imgFieldHtml("firmwareImageId", c.firmwareImageId)}<span class="help">표 대신 이미지로 올릴 수도 있습니다. 이미지와 표를 함께 쓰면 이미지가 위에 나옵니다.</span></div>
+      <label class="chk"><input type="checkbox" id="fw-hide" ${c.firmwareHide?"checked":""}> 표는 숨기고 이미지만 보이기</label>
+      <div class="af full" data-lang-pane="ko"><label>펌웨어 표 (한국어)</label>${rteHtml("firmwareHtml", c.firmwareHtml || FIRMWARE_KO, true)}<span class="help">표 칸을 눌러 바로 고치거나, ‘&lt;/&gt; HTML’로 줄을 복사해 새 모델을 추가하세요. 해시 값 칸(class="fw-hash")은 고정폭 글꼴로 줄바꿈됩니다.</span></div>
+      <div class="af full" data-lang-pane="en" hidden><label>펌웨어 표 · English</label>${rteHtml("firmwareHtml_en", c.firmwareHtml_en || FIRMWARE_EN, true)}</div>
+    </div>
+    <div class="drawer d-ft" style="position:static;width:auto;box-shadow:none;animation:none;border-radius:0 0 10px 10px;justify-content:flex-end;align-items:center;flex-wrap:wrap"><span class="note" style="margin-right:auto">저장한 내용은 미리보기에서 확인한 뒤 ‘반영하기’를 눌러야 방문자에게 보입니다.</span><button class="abtn" type="submit" data-mode="save">저장만</button><button class="abtn pri" type="submit" data-mode="preview">저장하고 미리보기</button></div>
+  </form>`;
+}
+async function saveFirmware(e){
+  e.preventDefault();
+  const dr = draftFor("site","config");
+  const data = {...S.config, ...(dr ? dr.data : {})};
+  document.querySelectorAll("[data-fw]").forEach(el => data[el.dataset.fw] = el.value.trim());
+  const el = $(`[data-imgval="firmwareImageId"]`); if (el) data.firmwareImageId = el.value || null;
+  data.firmwareHide = $("#fw-hide").checked;
+  const fk = getRte("firmwareHtml"), fe = getRte("firmwareHtml_en");
+  data.firmwareHtml = fk && fk!==sanitize(FIRMWARE_KO).trim() ? fk : "";
+  data.firmwareHtml_en = fe && fe!==sanitize(FIRMWARE_EN).trim() ? fe : "";
+  data.updatedAt = new Date().toISOString();
+  const mode = e.submitter?.dataset.mode || "preview";
+  try {
+    if (!db) throw {code:"unavailable"};
+    await db.doc("drafts/site__config").set({ col:"site", docId:"config", isNew:false, data, at:new Date().toISOString(), by: me?.id || "" });
+    if (mode==="preview"){ ui.preview = true; store.set("tz-preview","1",sessionStorage); toast("반영 대기로 저장했습니다. 미리보기에서 확인한 뒤 ‘반영하기’를 누르세요."); location.hash = "#firmware"; }
+    else toast("반영 대기로 저장했습니다. 아직 방문자에게는 보이지 않습니다.");
+  } catch(err){ toast(dbErr(err), true); }
+}
 async function saveSite(e){
   e.preventDefault();
-  const data = {...S.config};
+  const dr0 = draftFor("site","config");
+  const data = {...S.config, ...(dr0 ? dr0.data : {})};
   document.querySelectorAll("[data-cf]").forEach(el => data[el.dataset.cf] = el.value.trim());
   const st = [0,1,2,3].map(()=>({}));
   document.querySelectorAll("[data-st]").forEach(el => { const [i,k] = el.dataset.st.split(":"); st[+i][k] = el.value.trim(); });

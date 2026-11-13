@@ -1,0 +1,14 @@
+{
+ "productId": "p3",
+ "series": "TRIZN P5000 Series",
+ "name": "TRIZN P5134",
+ "name_en": "TRIZN P5134",
+ "specs": "고속 데이터 전송 | GPON, XG-PON 및 XGS-PON을 지원하여 높은 대역폭을 제공, 대규모 트래픽을 효율적으로 처리할 수  있습니다.\n확장성 | 유연한 아키텍처로 필요에 따라 포트를 추가할 수 있어 네트워크 확장이 용이합니다.\n신뢰성 | 이중 전원 공급 장치 및 팬 모듈을 통해 높은 가용성을 유지하며, 다운타임을 최소화합니다.\n강력한 관리 기능 | 통합된 네트워크 관리 시스템을 통해 실시간 모니터링 및 문제 해결이 가능하여 운영 효율성을 높입니다.\n에너지 효율성 | 전력 소비를 최소화하는 설계로 운영 비용을 절감하고, 환경에도 긍정적인 영향을 미칩니다.",
+ "specs_en": "High-speed data transfer | Supports GPON, XG-PON and XGS-PON for high bandwidth and efficient handling of heavy traffic.\nScalability | A flexible architecture lets you add ports as needed, making network expansion easy.\nReliability | Redundant power supplies and fan modules keep availability high and downtime minimal.\nPowerful management | An integrated network management system enables real-time monitoring and troubleshooting.\nEnergy efficiency | A low-power design cuts operating costs and reduces environmental impact.",
+ "imageId": "890c6f9f112b3394db2526273192df35",
+ "detailHtml": "<figure class=\"pd-fig\"><img src=\"/_blob/089809a3fb08a1243bd27b28e046709c\" alt=\"SDN PON 구성도\"></figure><h3>제품 스펙</h3><table><thead><tr><th>Model</th><th>TRIZN P5134</th></tr></thead><tbody><tr><td><b>Ports</b></td><td>24x 25GbE SFP+<br>4x 100GbE QSFP+</td></tr><tr><td><b>PoE</b></td><td>GPON, XG-PON, XGS-PON</td></tr><tr><td><b>Layer</b></td><td>Layer3</td></tr><tr><td><b>Mounting</b></td><td>Rack</td></tr></tbody></table>",
+ "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"/_blob/089809a3fb08a1243bd27b28e046709c\" alt=\"SDN PON topology\"></figure><h3>Specifications</h3><table><thead><tr><th>Model</th><th>TRIZN P5134</th></tr></thead><tbody><tr><td><b>Ports</b></td><td>24x 25GbE SFP+<br>4x 100GbE QSFP+</td></tr><tr><td><b>PoE</b></td><td>GPON, XG-PON, XGS-PON</td></tr><tr><td><b>Layer</b></td><td>Layer3</td></tr><tr><td><b>Mounting</b></td><td>Rack</td></tr></tbody></table>",
+ "order": 200,
+ "visible": true,
+ "updatedAt": "2026-11-13T09:00:00.000Z"
+}

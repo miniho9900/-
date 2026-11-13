@@ -1,0 +1,14 @@
+{
+ "productId": "p2",
+ "series": "SD 3500 Series",
+ "name": "[SDN L3 스위치] 3530XQ",
+ "name_en": "[SDN L3 Switch] 3530XQ",
+ "specs": "인터페이스 | 24x10GbE(SFP+) + 6x25/40GbE (SFP28/QSFP+)\n크기/무게 | 442.5(W) x 43.95(H) x 473(D) mm\nSwitching Capacity | 1.68 Tbps\nForwarding Rate | 600 Mpps\n입력전원 | AC 100~240V/50~60Hz | 2 AC modular (1+1 redundancy)\nCPU | Marvell CN9130 2.2GHz 4 core\nHDD / Memory | 32M SPI+8G MMC/SDRAM 4GB",
+ "specs_en": "Interface | 24x10GbE(SFP+) + 6x25/40GbE (SFP28/QSFP+)\nDimensions/Weight | 442.5(W) x 43.95(H) x 473(D) mm\nSwitching Capacity | 1.68 Tbps\nForwarding Rate | 600 Mpps\nPower input | AC 100~240V/50~60Hz | 2 AC modular (1+1 redundancy)\nCPU | Marvell CN9130 2.2GHz 4 core\nHDD / Memory | 32M SPI+8G MMC/SDRAM 4GB",
+ "imageId": "03f190478d4ac0479b82b877ba1a7143",
+ "detailHtml": "<figure class=\"pd-fig\"><img src=\"/_blob/3958e3fe4cdd4787c3d967c9192466a5\" alt=\"SD-Network 스위치 소개\"></figure>",
+ "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"/_blob/3958e3fe4cdd4787c3d967c9192466a5\" alt=\"SD-Network switch overview\"></figure>",
+ "order": 40,
+ "visible": true,
+ "updatedAt": "2026-11-13T09:00:00.000Z"
+}

@@ -1,0 +1,14 @@
+{
+ "productId": "p2",
+ "series": "TRIZN 3000 Series",
+ "name": "[SDN L2 스위치] 3052TX",
+ "name_en": "[SDN L2 Switch] 3052TX",
+ "specs": "인터페이스 | 48x10/100/1000M RJ45, 4x1G/10G SFP+\n크기/Fan/입력전원 // CPU / HDD/ Memory | 440(W)x44(H)x280(D) mm / Active Fan / AC 100~240V/50~60Hz // 800MHz, 1Core / SPI 32MB + Nand 256MB/ SDRAM 256MB\nSwitching Capacity / Forwarding Rate | 176 Gbps / 131 Mpps\n펌웨어 파일명 | TRIZN3052TX(PX)-10.31.209-V705R002C011B037S_nos.img\n파생 모델 | TRIZN 3052TX, TRIZN 3052PX, TRIZN 3052TF",
+ "specs_en": "Interface | 48x10/100/1000M RJ45, 4x1G/10G SFP+\nDimensions/Fan/Power input // CPU / HDD/ Memory | 440(W)x44(H)x280(D) mm / Active Fan / AC 100~240V/50~60Hz // 800MHz, 1Core / SPI 32MB + Nand 256MB/ SDRAM 256MB\nSwitching Capacity / Forwarding Rate | 176 Gbps / 131 Mpps\nFirmware file | TRIZN3052TX(PX)-10.31.209-V705R002C011B037S_nos.img\nVariants | TRIZN 3052TX, TRIZN 3052PX, TRIZN 3052TF",
+ "imageId": "94e1966f65ba17c89bfa9b502b48a3ff",
+ "detailHtml": "<figure class=\"pd-fig\"><img src=\"/_blob/54457ebca080a228e4331c9a30b1fd98\" alt=\"L2 스위치 구성도\"></figure><figure class=\"pd-fig\"><img src=\"/_blob/a8fbfde4ab554c0438e22f7f4a0d2a75\" alt=\"Edge Switch 주요 기능\"></figure><figure class=\"pd-fig\"><img src=\"/_blob/3958e3fe4cdd4787c3d967c9192466a5\" alt=\"SD-Network 스위치 소개\"></figure>",
+ "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"/_blob/54457ebca080a228e4331c9a30b1fd98\" alt=\"L2 switch topology\"></figure><figure class=\"pd-fig\"><img src=\"/_blob/a8fbfde4ab554c0438e22f7f4a0d2a75\" alt=\"Edge switch key features\"></figure><figure class=\"pd-fig\"><img src=\"/_blob/3958e3fe4cdd4787c3d967c9192466a5\" alt=\"SD-Network switch overview\"></figure>",
+ "order": 50,
+ "visible": true,
+ "updatedAt": "2026-11-13T09:00:00.000Z"
+}

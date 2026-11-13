@@ -1,0 +1,14 @@
+{
+ "productId": "p2",
+ "series": "SD 3000 - PoE Series",
+ "name": "[SDN L2 PoE] 3012PX",
+ "name_en": "[SDN L2 PoE] 3012PX",
+ "specs": "인터페이스 | 8x10/100/1000M RJ45, 4x1G/10G SFP+\nSwitching Capacity / Forwarding Rate | 96 Gbps / 71 Mpps\n입력전원 / CPU / HDD / Memory / FAN / PoE | AC 100~240V/50~60Hz / 800MHz, 1Core / SPI 32MB / SDRAM 256MB / Passive FAN / 8 port 802.3 af/at 제공\n펌웨어 파일명 | TRIZN3012(3028)T(P)X-10.31.211-V705R002C011B037S_nos.img",
+ "specs_en": "Interface | 8x10/100/1000M RJ45, 4x1G/10G SFP+\nSwitching Capacity / Forwarding Rate | 96 Gbps / 71 Mpps\nPower input / CPU / HDD / Memory / FAN / PoE | AC 100~240V/50~60Hz / 800MHz, 1Core / SPI 32MB / SDRAM 256MB / Passive FAN / 802.3af/at on 8 ports\nFirmware file | TRIZN3012(3028)T(P)X-10.31.211-V705R002C011B037S_nos.img",
+ "imageId": "82f57cab5ab284ff12ef9b3d29246bb9",
+ "detailHtml": "<figure class=\"pd-fig\"><img src=\"/_blob/3958e3fe4cdd4787c3d967c9192466a5\" alt=\"SD-Network 스위치 소개\"></figure>",
+ "detailHtml_en": "<figure class=\"pd-fig\"><img src=\"/_blob/3958e3fe4cdd4787c3d967c9192466a5\" alt=\"SD-Network switch overview\"></figure>",
+ "order": 100,
+ "visible": true,
+ "updatedAt": "2026-11-13T09:00:00.000Z"
+}
