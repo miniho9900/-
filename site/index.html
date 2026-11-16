@@ -1354,7 +1354,7 @@ function caseHtml(full){
 }
 function filmHtml(){
   const vid = cfg("filmVideoId"), yt = cfg("filmYoutube");
-  if (!vid && !yt) return "";
+  if (conf().filmHidden || (!vid && !yt)) return "";
   const loop = cfg("filmLoopId"), poster = cfg("filmPosterId");
   const hasMedia = !!(loop || poster);
   const bg = loop ? vis(poster,4,"",loop) : poster ? vis(poster,4,"") : "";
@@ -2276,7 +2276,7 @@ function admSite(){
   const f = (k,l,type="text",help="") => TRK.has(k) ? one(k,l,type,help,"ko") + one(k+"_en", l+" · English", type, "비워 두면 영문 화면에도 한국어가 보입니다.", "en") : one(k,l,type,help,"");
   return `<form id="siteForm" class="panel">${dr?'<div class="panel-bd" style="background:#FFFBF2;border-bottom:1px solid var(--line)"><span class="badge wait">반영 대기</span> 저장했지만 아직 반영하지 않은 변경이 있습니다. 아래는 그 변경을 포함한 내용입니다.</div>':""}
     <div class="panel-hd"><div class="lang-tabs" role="tablist" aria-label="편집 언어"><button type="button" class="on" data-ltab="ko">한국어</button><button type="button" data-ltab="en">English</button></div><span class="note">영문 화면(ENG)에 보일 문구는 English 탭에서 입력합니다.</span></div>
-    <div class="panel-hd" style="background:var(--lilac)"><h2>① 홈 · 회사 소개 영상</h2><span class="note">영상을 올리면 홈 사업영역 아래에 재생 버튼이 있는 영상 섹션이 나타납니다. 영상과 유튜브 주소가 모두 없으면 섹션이 사라지고 아래 내용이 올라옵니다.</span></div>
+    <div class="panel-hd" style="background:var(--lilac)"><h2>① 홈 · 회사 소개 영상 (Brand Film)</h2><div class="tg-wrap" style="min-width:0"><button type="button" class="tg ${c.filmHidden?"":"on"}" id="cf-filmShow" role="switch" aria-checked="${!c.filmHidden}" aria-label="홈에 브랜드 필름 노출"></button><span>${c.filmHidden?"미노출":"노출"}</span></div><span class="note" style="flex-basis:100%">영상을 올리면 홈 사업영역 아래에 재생 버튼이 있는 영상 섹션이 나타납니다. 영상과 유튜브 주소가 모두 없으면 섹션이 사라지고 아래 내용이 올라옵니다.</span></div>
     <div class="panel-bd form-grid">
       <div class="af"><label>재생 영상 (MP4) — 재생 버튼을 누르면 크게 재생</label>${imgFieldHtml("filmVideoId", c.filmVideoId, true)}<span class="help">${Math.floor(MAX_UP()/1048576)}MB까지 바로 올라가고, 더 크면 압축해서 올릴 수 있습니다.</span></div>
       <div class="af"><label>배경 반복 영상 (MP4, 짧게 · 선택) — 소리 없이 섹션 배경에서 반복</label>${imgFieldHtml("filmLoopId", c.filmLoopId, true)}</div>
@@ -2392,6 +2392,7 @@ function wireAdmin(sec){
   }
   const ff = $("#fwForm"); if (ff) ff.addEventListener("submit", saveFirmware);
   const sf = $("#siteForm"); if (sf){ sf.addEventListener("submit", saveSite);
+    $("#cf-filmShow")?.addEventListener("click", e => { const b = e.currentTarget; const on = !b.classList.contains("on"); b.classList.toggle("on", on); b.setAttribute("aria-checked", on); b.nextElementSibling.textContent = on ? "노출" : "미노출"; });
     $("#cf-statsShow")?.addEventListener("click", e => { const b = e.currentTarget; const on = !b.classList.contains("on"); b.classList.toggle("on", on); b.setAttribute("aria-checked", on); b.nextElementSibling.textContent = on ? "노출" : "미노출"; }); }
 }
 function currentList(c){ let l = sorted(c, c==="posts" ? (x => x.board===ui.admTab) : null); if (c==="posts") l = shownPostsSorted(l); return l; }
@@ -2650,6 +2651,7 @@ async function saveSite(e){
   document.querySelectorAll("[data-sthide]").forEach(el => { st[+el.dataset.sthide].hide = !el.checked; });
   data.stats = st.filter(s => s.num);
   data.statsHidden = !$("#cf-statsShow").classList.contains("on");
+  if ($("#cf-filmShow")) data.filmHidden = !$("#cf-filmShow").classList.contains("on");
   const os = [0,1,2,3].map(()=>({})); document.querySelectorAll("[data-os]").forEach(el => { const [i,k] = el.dataset.os.split(":"); os[+i][k] = el.value.trim(); });
   if (document.querySelector("[data-os]")) data.orgStats = os.filter(x => x.num);
   ["ceoImageId","ceoSignId","mapImageId","subVisImageId","tile1ImageId","tile2ImageId","tile3ImageId","filmVideoId","filmLoopId","filmPosterId","caseImageId"].forEach(k => { const el = $(`[data-imgval="${k}"]`); if (el) data[k] = el.value || null; });
