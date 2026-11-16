@@ -255,12 +255,14 @@ body{padding-bottom:64px}
     me: function () { return ready().then(function () { return me; }); },
     can: function () { return ready().then(function () { return !!me; }); }
   };
-  window.claude = { use: function (name) {
+  var shim = { use: function (name) {
     if (name === "db") return ready().then(function () { return db; }, function () { return null; });
     if (name === "user") return ready().then(function () { return user; }, function () { return null; });
     if (name === "assets") return ready().then(function () { return me ? assets : null; }, function () { return null; });
     return Promise.resolve(null);
   } };
+  window.TRIZN_CLAUDE = shim;   // the page reads this first, so a host-provided window.claude cannot replace it
+  try { window.claude = shim; } catch (e) {}
   window.TRIZN = {
     login: function (id, pw) { return ready().catch(function () {}).then(function () { return call("login", { id: id, pw: pw }); }); },
     logout: function () { return call("logout", {}); },
@@ -1413,7 +1415,7 @@ body.fx .n-card:hover{transform:translateY(-6px);box-shadow:0 26px 50px -28px rg
 "use strict";
 /* inside the mobile-preview frame: reuse the parent page's connection */
 const EMBED = window.name === "tz-mobile" && window.parent !== window;
-if (EMBED){ try { if (!window.claude && window.parent.claude) window.claude = window.parent.claude; } catch {} document.body.classList.add("embed"); }
+if (EMBED){ try { if (!window.TRIZN_CLAUDE && window.parent.TRIZN_CLAUDE) window.TRIZN_CLAUDE = window.parent.TRIZN_CLAUDE; if (!window.TRIZN && window.parent.TRIZN) window.TRIZN = window.parent.TRIZN; if (!window.claude && window.parent.claude) window.claude = window.parent.claude; } catch {} document.body.classList.add("embed"); }
 /* ================= constants ================= */
 const ROUTES = [
   ["home","홈"],["about","회사소개"],["business","사업영역"],["products","서비스"],
@@ -3219,7 +3221,7 @@ document.addEventListener("click", e => { const cl = e.target.closest("[data-img
 /* ================= boot ================= */
 render(true);
 (async () => {
-  const C = window.claude; if (!C || !C.use){ S.timedOut = true; render(false); return; }
+  const C = window.TRIZN_CLAUDE || window.claude; if (!C || !C.use){ S.timedOut = true; render(false); return; }
   const timer = setTimeout(() => { if (!S.loaded){ S.timedOut = true; schedule(); } }, 10000);
   try { user = await C.use("user"); } catch {}
   try { db = await C.use("db"); } catch {}

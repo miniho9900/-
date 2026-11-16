@@ -59,12 +59,14 @@
     me: function () { return ready().then(function () { return me; }); },
     can: function () { return ready().then(function () { return !!me; }); }
   };
-  window.claude = { use: function (name) {
+  var shim = { use: function (name) {
     if (name === "db") return ready().then(function () { return db; }, function () { return null; });
     if (name === "user") return ready().then(function () { return user; }, function () { return null; });
     if (name === "assets") return ready().then(function () { return me ? assets : null; }, function () { return null; });
     return Promise.resolve(null);
   } };
+  window.TRIZN_CLAUDE = shim;   // the page reads this first, so a host-provided window.claude cannot replace it
+  try { window.claude = shim; } catch (e) {}
   window.TRIZN = {
     login: function (id, pw) { return ready().catch(function () {}).then(function () { return call("login", { id: id, pw: pw }); }); },
     logout: function () { return call("logout", {}); },
