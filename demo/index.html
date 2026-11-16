@@ -1094,85 +1094,80 @@ body.embed .pv-bar,body.embed .pv-list,body.embed .edit-fab,body.embed .demo-bar
 body.embed .qnav{display:none}
 @media (max-width:760px){.qnav{top:auto;bottom:max(16px,env(safe-area-inset-bottom,0px));right:max(12px,env(safe-area-inset-right,0px));transform:translateY(12px);padding:5px 4px}.qnav.on{transform:none}.qnav .qbar{height:28px}.qnav button{width:40px;min-height:44px}body:has(#editFab) .qnav{bottom:calc(84px + env(safe-area-inset-bottom,0px))}}
 @media (prefers-reduced-motion:reduce){.qnav{transition:none}}
-/* ---- main page · reference-based motion (FX) ---- */
-body.fx .reveal.in{animation:fxUp .8s var(--ease) both}
-@keyframes fxUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
-.fx-down{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.08);backdrop-filter:blur(6px);color:#fff;display:grid;place-items:center;cursor:pointer;animation:fxBob 2.2s ease-in-out infinite;z-index:5}
-.fx-down:hover{background:#fff;color:var(--ink)}
-@keyframes fxBob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
-.fx-hd{display:grid;gap:14px;margin-bottom:clamp(36px,4vw,56px)}
-.fx-hd h2{font-size:clamp(30px,3.6vw,50px);color:var(--ink);letter-spacing:-.03em;line-height:1.25;margin:0}
-.fx-hd p{color:var(--muted);font-size:17px;max-width:60ch;margin:0}
+/* ---- main page · NHN Cloud style motion & layout (FX) ---- */
+body.fx .reveal.in{animation:fxUp .9s cubic-bezier(.2,.7,.2,1) both}
+@keyframes fxUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+body.fx .hero{height:100vh;min-height:620px;max-height:none}
+body.fx .hero .hero-copy .wrap{text-align:center;display:flex;flex-direction:column;align-items:center}
+body.fx .hero h1{margin-inline:auto}body.fx .hero .sub{margin-inline:auto}body.fx .hero .ctas{justify-content:center}
+body.fx .hero .ctas .btn{border-radius:999px}
+.fx-down{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);width:52px;height:52px;border-radius:50%;border:0;background:none;color:#fff;display:grid;place-items:center;cursor:pointer;animation:fxBob 2s ease-in-out infinite;z-index:5}
+.fx-down svg{width:30px;height:30px}
+@keyframes fxBob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,10px)}}
+.fx-hd{display:grid;gap:12px;margin-bottom:clamp(36px,4vw,56px)}
+.fx-hd h2{font-size:clamp(30px,3.4vw,46px);color:var(--ink);letter-spacing:-.03em;line-height:1.25;margin:0}
+.fx-hd p:not(.eyebrow){color:var(--muted);font-size:17px;max-width:60ch;margin:0}
 .fx-hd.center{text-align:center;justify-items:center}
-.fx-acc{display:flex;gap:12px;height:clamp(460px,52vw,560px)}
-.fx-pn{position:relative;flex:0 0 clamp(64px,6vw,84px);border-radius:16px;overflow:hidden;cursor:pointer;color:#fff;transition:flex .7s var(--ease);background:var(--ink);outline-offset:3px}
+.fx-acc{display:flex;gap:12px;height:clamp(460px,50vw,540px)}
+.fx-pn{position:relative;flex:0 0 clamp(64px,6vw,84px);border-radius:12px;overflow:hidden;cursor:pointer;color:#fff;transition:flex .7s var(--ease);background:var(--ink);outline-offset:3px}
 .fx-pn.on{flex:1 1 auto;cursor:default}
 .fx-pn .vis{position:absolute;inset:0}
-.fx-pn::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,8,40,.88) 0%,rgba(9,8,40,.55) 45%,rgba(9,8,40,.25));transition:background .5s}
-.fx-pn:not(.on)::after{background:rgba(9,8,40,.72)}
-.fx-pn-tab{position:absolute;z-index:2;left:50%;top:28px;transform:translateX(-50%) rotate(180deg);writing-mode:vertical-rl;font-family:var(--f-display);font-weight:600;font-size:16px;letter-spacing:.02em;white-space:nowrap;transition:opacity .3s}
+.fx-pn::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,8,40,.86) 0%,rgba(9,8,40,.5) 50%,rgba(9,8,40,.2));transition:background .5s}
+.fx-pn:not(.on)::after{background:rgba(9,8,40,.7)}
+.fx-pn-tab{position:absolute;z-index:2;left:50%;top:28px;transform:translateX(-50%);writing-mode:vertical-rl;font-family:var(--f-display);font-weight:600;font-size:16px;white-space:nowrap;transition:opacity .3s}
 .fx-pn.on .fx-pn-tab{opacity:0}
-.fx-pn-body{position:absolute;z-index:2;left:clamp(28px,3.4vw,48px);bottom:clamp(28px,3.4vw,48px);right:clamp(28px,3.4vw,48px);max-width:520px;display:grid;gap:10px;opacity:0;transform:translateY(16px);transition:opacity .4s,transform .6s var(--ease);pointer-events:none}
+.fx-pn-body{position:absolute;z-index:2;left:clamp(28px,3.4vw,48px);top:clamp(28px,3.4vw,48px);bottom:clamp(28px,3.4vw,48px);right:clamp(28px,3.4vw,48px);max-width:560px;display:flex;flex-direction:column;gap:10px;opacity:0;transform:translateY(16px);transition:opacity .4s,transform .6s var(--ease);pointer-events:none}
 .fx-pn.on .fx-pn-body{opacity:1;transform:none;transition-delay:.25s;pointer-events:auto}
-.fx-pn-body .no{font-family:var(--f-display);font-size:13px;letter-spacing:.18em;color:var(--violet-soft);margin:0}
-.fx-pn-body h3{font-size:clamp(24px,2.4vw,34px);margin:0;letter-spacing:-.02em}
-.fx-pn-body .en{font-family:var(--f-display);color:rgba(255,255,255,.65);margin:0}
-.fx-pn-body .desc{color:rgba(255,255,255,.82);line-height:1.75;margin:4px 0 8px}
-.fx-more{justify-self:start;display:inline-flex;gap:8px;align-items:center;font-size:14px;font-weight:600;padding:11px 18px;border-radius:999px;background:#fff;color:var(--ink)}
-.fx-more:hover{background:var(--violet);color:#fff}
-.fx-show{background:#14131F;color:#fff;padding-block:clamp(96px,11vw,150px)}
-.fx-show-hd{text-align:center;display:grid;gap:14px;justify-items:center;margin-bottom:36px}
-.fx-show-hd h2{font-size:clamp(30px,3.6vw,50px);line-height:1.28;letter-spacing:-.03em;margin:0}
-.fx-show-hd .eyebrow{color:var(--violet-soft)}
-.fx-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:28px}
-.fx-tabs button{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);color:rgba(255,255,255,.72);border-radius:999px;padding:10px 18px;font-size:14px;cursor:pointer;transition:all .25s}
-.fx-tabs button:hover{color:#fff;border-color:rgba(255,255,255,.4)}
-.fx-tabs button.on{background:#fff;color:var(--ink);border-color:#fff;font-weight:600}
-.fx-card{position:relative;background:#fff;color:var(--ink);border-radius:28px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(28px,4.4vw,64px);overflow:hidden;min-height:420px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
-.fx-card-txt{display:grid;gap:16px;align-content:center}
-.fx-pill{justify-self:start;background:var(--lilac);color:var(--violet);font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px}
-.fx-card h3{font-size:clamp(28px,3vw,42px);letter-spacing:-.02em;margin:0;line-height:1.2}
-.fx-card p{color:#4A4766;font-size:17px;line-height:1.75;margin:0}
-.fx-card-btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-.fx-card-btns .btn{border-radius:999px}
-.fx-card-vis{aspect-ratio:4/3;border-radius:20px;background:linear-gradient(160deg,#F4F3FA,#E7E4F4);display:grid;place-items:center;overflow:hidden;padding:6%}
-.fx-card-vis img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;animation:fxPop .8s var(--ease) both}
-.fx-card-vis.ph span{font-family:var(--f-display);letter-spacing:.3em;color:#B9B4D3}
-@keyframes fxPop{from{opacity:0;transform:scale(.96) translateY(12px)}to{opacity:1;transform:none}}
-.fx-card-txt>*{animation:fxUp .7s var(--ease) both}.fx-card-txt>*:nth-child(2){animation-delay:.06s}.fx-card-txt>*:nth-child(3){animation-delay:.12s}.fx-card-txt>*:nth-child(4){animation-delay:.18s}
-.fx-card-prog{position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--line)}
-.fx-card-prog i{position:absolute;inset:0;background:var(--violet);transform:scaleX(0);transform-origin:left}
-.fx-card.run .fx-card-prog i{animation:fxProg 6.5s linear forwards}
-.fx-card:hover .fx-card-prog i{animation-play-state:paused}
-@keyframes fxProg{to{transform:scaleX(1)}}
-.fx-all{background:var(--paper)}
-.fx-all-row{display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px;padding:22px 0;border-top:1px solid var(--line);max-width:1080px;margin:0 auto}
-.fx-all-row h3{font-size:17px;color:var(--ink);margin:10px 0 0}
-.fx-chips{display:flex;flex-wrap:wrap;gap:10px}
-.fx-chip{display:inline-flex;align-items:center;gap:10px;padding:13px 16px 13px 18px;border-radius:12px;background:var(--mist);color:var(--ink);font-size:15px;transition:background .2s,color .2s,transform .2s}
-.fx-chip svg{color:var(--muted)}
-.fx-chip:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}.fx-chip:hover svg{color:#fff}
-.fx-band{background:var(--violet);color:#fff;padding-block:clamp(88px,10vw,140px)}
-.fx-band .fx-hd h2{color:#fff}.fx-band .eyebrow{color:rgba(255,255,255,.7)}
-.fx-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.fx-group{background:#fff;color:var(--ink);border-radius:24px;padding:28px 24px 30px;display:grid;gap:18px;align-content:start}
-.fx-group h3{font-size:17px;text-align:center;margin:0}.fx-group h3 .num{color:var(--violet);font-size:14px;margin-left:4px}
-.fx-logos{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px}
-.fx-logo{height:62px;border-radius:12px;background:#F6F5FB;display:grid;place-items:center;padding:10px;font-size:13px;font-weight:600;color:var(--muted);text-align:center}
-.fx-logo img{max-width:100%;max-height:34px;object-fit:contain}
-body.fx .n-card,body.fx .tile,body.fx .n-list{border-radius:20px;overflow:hidden}
-body.fx .n-card{transition:transform .35s var(--ease),box-shadow .35s}
-body.fx .n-card:hover{transform:translateY(-6px);box-shadow:0 26px 50px -28px rgba(23,22,46,.45)}
-@media (max-width:1000px){.fx-groups{grid-template-columns:minmax(0,1fr)}.fx-card{grid-template-columns:minmax(0,1fr)}.fx-card-vis{order:-1}}
+.fx-pn-body .no{font-family:var(--f-display);font-size:12px;letter-spacing:.18em;color:var(--violet-soft);margin:0}
+.fx-pn-body .en{font-family:var(--f-display);font-weight:600;font-size:15px;color:rgba(255,255,255,.75);margin:0}
+.fx-pn-body h3{font-size:clamp(26px,2.6vw,36px);margin:0;letter-spacing:-.02em}
+.fx-pn-body .desc{color:rgba(255,255,255,.82);line-height:1.75;margin:6px 0 0;max-width:46ch}
+.fx-more{margin-top:auto;align-self:flex-start;display:inline-flex;gap:8px;align-items:center;width:44px;height:44px;justify-content:center;border-radius:50%;border:1px solid rgba(255,255,255,.5);color:#fff;font-size:0}
+.fx-more svg{width:18px;height:18px}
+.fx-more:hover{background:#fff;color:var(--ink)}
+.fx-svc-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(24px,3vw,40px)}
+.fx-svc-row{display:grid;grid-template-columns:72px minmax(0,1fr) 24px;gap:24px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line);color:inherit}
+.fx-ic{width:72px;height:72px;border-radius:12px;background:var(--paper);border:1px solid var(--line);display:grid;place-items:center;color:var(--violet);overflow:hidden;padding:10px}
+.fx-ic img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.fx-svc-txt{display:grid;gap:4px;min-width:0}
+.fx-svc-txt small{font-size:13px;color:var(--muted)}
+.fx-svc-txt b{font-size:19px;color:var(--ink);font-weight:700}
+.fx-svc-txt span{font-size:15px;color:#4A4766;line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.fx-arr{color:#B7B4CC;transition:transform .3s var(--ease),color .3s}
+.fx-svc-row:hover .fx-arr{color:var(--violet);transform:translateX(4px)}
+.fx-svc-row:hover b{color:var(--violet)}
+.fx-center{text-align:center;margin-top:44px}
+.fx-pillbtn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:999px;background:var(--violet);color:#fff;font-size:15px;font-weight:600}
+.fx-pillbtn:hover{background:var(--ink)}
+.fx-pillbtn.line{background:none;border:1px solid var(--line);color:var(--ink)}.fx-pillbtn.line:hover{border-color:var(--ink)}
+.fx-news-hd{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:36px}
+.fx-news-tools{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.fx-nav{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--paper);display:grid;place-items:center;cursor:pointer;color:var(--ink)}
+.fx-nav:hover{border-color:var(--ink)}
+.fx-slider{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:8px}
+.fx-slider::-webkit-scrollbar{display:none}
+.fx-case{flex:0 0 clamp(260px,24vw,312px);scroll-snap-align:start;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--paper);display:flex;flex-direction:column;color:inherit;transition:transform .35s var(--ease),box-shadow .35s}
+.fx-case:hover{transform:translateY(-6px);box-shadow:0 22px 44px -26px rgba(23,22,46,.4)}
+.fx-case-top{height:150px;display:grid;place-items:center;background:#F6F5FB;border-bottom:1px solid var(--line)}
+.fx-case-top img{width:100%;height:100%;object-fit:cover}
+.fx-case-b{padding:22px 22px 24px;display:grid;gap:10px;align-content:start;flex:1}
+.fx-case-b h3{font-size:17px;line-height:1.5;color:var(--ink);margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.fx-case-b .meta{font-size:13px;color:var(--muted)}
+.fx-case-b .go{margin-top:6px;display:inline-flex;gap:6px;align-items:center;font-size:14px;color:var(--muted)}
+.fx-case:hover .go{color:var(--violet)}
+body.fx .logo-chip{border-radius:12px}
+body.fx .tile{border-radius:12px;overflow:hidden}
+body.fx .cta .btn{border-radius:999px}
 @media (max-width:900px){
   .fx-acc{flex-direction:column;height:auto;gap:10px}
-  .fx-pn{flex:none;height:72px;transition:height .6s var(--ease)}
-  .fx-pn.on{height:420px}
-  .fx-pn-tab{writing-mode:horizontal-tb;transform:none;left:22px;top:24px}
-  .fx-all-row{grid-template-columns:minmax(0,1fr);gap:12px}
-  .fx-tabs{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}.fx-tabs button{flex:none}
+  .fx-pn{flex:none;height:68px;transition:height .6s var(--ease)}
+  .fx-pn.on{height:400px}
+  .fx-pn-tab{writing-mode:horizontal-tb;left:22px;top:22px;transform:none}
+  .fx-svc-list{grid-template-columns:minmax(0,1fr)}
+  .fx-svc-row{grid-template-columns:56px minmax(0,1fr) 20px;gap:16px}.fx-ic{width:56px;height:56px}
+  .fx-news-hd{align-items:flex-start}
 }
-@media (prefers-reduced-motion:reduce){.fx-down{animation:none}.fx-pn,.fx-pn-body{transition:none}.fx-card-vis img,.fx-card-txt>*{animation:none}body.fx .reveal.in{animation:none}}
+@media (prefers-reduced-motion:reduce){.fx-down{animation:none}.fx-pn,.fx-pn-body{transition:none}body.fx .reveal.in{animation:none}}
 .edit-fab{position:fixed;right:max(20px,env(safe-area-inset-right,0px));bottom:max(20px,env(safe-area-inset-bottom,0px));z-index:45;display:flex;align-items:center;gap:8px;background:var(--violet);color:#fff;padding:12px 18px;font-size:14px;font-weight:500;box-shadow:0 12px 30px -10px rgba(82,48,194,.7)}
 .edit-fab:hover{background:var(--ink)}
 
@@ -1628,83 +1623,55 @@ function subVis(eb, title, crumb, i, img){
   return `<section class="sub-vis ${bg?"has-img":""}">${vis(bg,i)}<div class="wrap"><p class="eyebrow">${eb}</p><h1>${title}</h1><p class="crumb">HOME › ${crumb}</p></div></section>`;
 }
 
-/* ================= main page · reference-based motion (FX) =================
-   NHN Cloud: centred hero cue, expanding "주요 솔루션" panels, scroll fade-up.
-   Toss Payments: dark showcase band with a large rounded card, "전체 서비스 모아보기" chips,
-   full-bleed brand-colour band with grouped partner cards, rounded soft cards. */
+/* ================= main page · NHN Cloud style motion & layout (FX) =================
+   Content and data stay exactly as they are; only layout and motion change:
+   centred full-screen hero with a bouncing ↓, "주요 솔루션"-style expanding panels,
+   "주요 서비스"-style two-column list, "고객 사례"-style card slider, scroll fade-up, rounded 12px cards. */
 function fxHome(html, d){
   if (!FX()) return html;
   const doc = new DOMParser().parseFromString(`<div>${html}</div>`, "text/html"), root = doc.body.firstChild;
-  const swap = (k, h) => { const el = root.querySelector(`[data-hsec="${k}"]`); if (el){ if (h){ const t = doc.createElement("div"); t.innerHTML = h; el.replaceWith(...t.childNodes); } else el.remove(); } };
+  const swap = (k, h) => { const el = root.querySelector(`[data-hsec="${k}"]`); if (el && h){ const t = doc.createElement("div"); t.innerHTML = h; el.replaceWith(...t.childNodes); } };
   const cue = root.querySelector(".scroll-cue"); if (cue) cue.outerHTML = `<button type="button" class="fx-down" data-fxdown aria-label="아래로 이동"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.8"/></svg></button>`;
   if (d.biz.length) swap("biz", fxAccHtml(d.biz));
-  if (d.prods.length) swap("prods", fxShowHtml(d.prods));
-  swap("mq", fxAllHtml());
-  if (d.partners.length) swap("partners", fxBandHtml(d.partners));
-  root.querySelectorAll(".sec-hd, .news-grid > *, .tiles > *, .cta .wrap > *").forEach(el => el.classList.add("reveal"));
+  if (d.prods.length) swap("prods", fxSvcHtml(d.prods));
+  swap("news", fxNewsHtml());
+  root.querySelectorAll(".sec-hd, .tiles > *, .cta .wrap > *, .logos").forEach(el => el.classList.add("reveal"));
   return root.innerHTML;
 }
 function fxAccHtml(biz){
   const a = Math.min(ui.fxAcc||0, biz.length-1);
   return `<section class="sec fx-accs"><div class="wrap">
-    <div class="fx-hd reveal"><h2>사업영역</h2><p>${esc(cfg("bizLead")||"")}</p></div>
+    <div class="fx-hd center reveal"><p class="eyebrow">Total Network Services</p><h2>사업영역</h2>${cfg("bizLead")?`<p>${esc(cfg("bizLead"))}</p>`:""}</div>
     <div class="fx-acc reveal" role="tablist" aria-label="사업영역">${biz.map((b,i) => `<div class="fx-pn ${i===a?"on":""}" data-fxacc="${i}" role="tab" aria-selected="${i===a}" tabindex="0">
       ${vis(b.imageId,i+1,b.title)}<span class="fx-pn-tab">${esc(b.en)}</span>
-      <div class="fx-pn-body"><p class="no">SERVICE ${String(i+1).padStart(2,"0")}</p><h3>${esc(b.title)}</h3><p class="en">${esc(b.en)}</p><p class="desc">${esc(b.summary)}</p><a class="fx-more" href="#business-${esc(b.id)}" ${b._pv?"data-pv":""}>자세히 보기 ${ARROW}</a></div>
+      <div class="fx-pn-body"><p class="no">SERVICE ${String(i+1).padStart(2,"0")}</p><p class="en">${esc(b.en)}</p><h3>${esc(b.title)}</h3><p class="desc">${esc(b.summary)}</p><a class="fx-more" href="#business-${esc(b.id)}" ${b._pv?"data-pv":""}>자세히 보기 ${ARROW}</a></div>
     </div>`).join("")}</div>
   </div></section>`;
 }
-function fxShowHtml(prods){
-  const a = Math.min(ui.fxShow||0, prods.length-1), p = prods[a];
-  const img = p.imageId || (shown("models", m => m.productId===p.id)[0]||{}).imageId;
-  return `<section class="fx-show"><div class="wrap">
-    <div class="fx-show-hd reveal"><p class="eyebrow">Intelligent Network Solutions</p><h2>트리즈엔에서<br>지능형 네트워크를 만들어 보세요</h2></div>
-    <div class="fx-tabs reveal" role="tablist" aria-label="솔루션">${prods.map((x,i) => `<button type="button" role="tab" class="${i===a?"on":""}" aria-selected="${i===a}" data-fxshow="${i}">${esc(x.name)}</button>`).join("")}</div>
-    <div class="fx-card reveal" id="fxCard">
-      <div class="fx-card-txt"><span class="fx-pill">${esc(p.category||"Solution")}</span><h3>${esc(p.name)}</h3><p>${esc(p.summary)}</p>
-        <div class="fx-card-btns"><a class="btn btn-violet" href="#product-${esc(p.id)}">자세히 보기 ${ARROW}</a><a class="btn btn-line" href="#contact">도입 문의</a></div></div>
-      <div class="fx-card-vis ${img?"":"ph"}">${img?`<img src="${imgUrl(img)}" alt="${esc(p.name)}">`:`<span>TRIZN</span>`}</div>
-      <span class="fx-card-prog" aria-hidden="true"><i></i></span>
-    </div>
+function fxSvcHtml(prods){
+  return `<section class="sec mist fx-svc"><div class="wrap">
+    <div class="fx-hd reveal"><p class="eyebrow">Intelligent Network Solutions</p><h2>지능형 네트워크 솔루션</h2></div>
+    <div class="fx-svc-list">${prods.map(p => { const img = p.imageId || (shown("models", m => m.productId===p.id)[0]||{}).imageId;
+      return `<a class="fx-svc-row reveal" href="#product-${esc(p.id)}" ${p._pv?"data-pv":""}><span class="fx-ic">${img?`<img src="${imgUrl(img)}" alt="">`:`<svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="14" width="18" height="6" rx="1.5" stroke="currentColor" stroke-width="1.6"/><circle cx="7" cy="7" r="1" fill="currentColor"/><circle cx="7" cy="17" r="1" fill="currentColor"/></svg>`}</span>
+        <span class="fx-svc-txt">${p.category?`<small>${esc(p.category)}</small>`:""}<b>${esc(p.name)}</b><span>${esc(p.summary)}</span></span>
+        <svg class="fx-arr" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg></a>`; }).join("")}</div>
+    <p class="fx-center reveal"><a class="fx-pillbtn" href="#products">전체 솔루션 보기</a></p>
   </div></section>`;
 }
-function fxAllHtml(){
-  const biz = shown("business"), prods = shown("products");
-  const rows = [
-    ["사업영역", biz.map(b => [b.title, "#business-"+b.id])],
-    ["서비스 · 솔루션", prods.map(p => [p.name, "#product-"+p.id]).concat([["펌웨어 관리","#firmware"]])],
-    ["고객지원", [["공지사항","#news"],["IR·공시","#news"],["고객문의","#contact"],["원격지원서비스","#contact"]]]
-  ].filter(r => r[1].length);
-  return `<section class="sec fx-all"><div class="wrap">
-    <div class="fx-hd center reveal"><h2>트리즈엔<br>전체 서비스 모아보기</h2></div>
-    ${rows.map(([h,l]) => `<div class="fx-all-row reveal"><h3>${esc(h)}</h3><div class="fx-chips">${l.map(([t,href]) => `<a class="fx-chip" href="${esc(href)}">${esc(t)}<svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.6"/></svg></a>`).join("")}</div></div>`).join("")}
+function fxNewsHtml(){
+  const posts = shownPostsSorted(shown("posts").filter(p => ui.homeTab==="all" ? true : p.board===ui.homeTab)).slice(0,10);
+  return `<section class="sec fx-news"><div class="wrap">
+    <div class="fx-news-hd reveal"><div class="fx-hd" style="margin:0"><p class="eyebrow">Newsroom</p><h2>새로운 소식</h2></div>
+      <div class="fx-news-tools"><div class="tabs" role="tablist">${[["all","전체"],["press","보도자료"],["notice","공지사항"],["ir","IR·공시"]].map(([k,l]) => `<button class="tab ${ui.homeTab===k?"on":""}" data-hometab="${k}" role="tab" aria-selected="${ui.homeTab===k}">${l}</button>`).join("")}</div>
+      <button type="button" class="fx-nav" data-fxnews="-1" aria-label="이전 소식">${I.left}</button><button type="button" class="fx-nav" data-fxnews="1" aria-label="다음 소식">${I.right}</button></div></div>
+    <div class="fx-slider reveal" id="fxNews">${posts.map(p => `<a class="fx-case" href="#post-${esc(p.id)}" ${p._pv?"data-pv":""}><div class="fx-case-top">${p.imageId?`<img src="${imgUrl(p.imageId)}" alt="" loading="lazy">`:`<span class="badge ${p.board==="notice"?"ink":""}">${esc(BOARD_LABEL[p.board]||"")}</span>`}</div>
+      <div class="fx-case-b">${p.imageId?`<span class="badge">${esc(BOARD_LABEL[p.board]||"")}</span>`:""}<h3>${esc(p.title)}</h3><span class="meta">${fmtDate(p.date)}</span><span class="go">자세히 보기 ${ARROW}</span></div></a>`).join("") || `<div class="empty">등록된 소식이 없습니다.</div>`}</div>
+    <p class="fx-center reveal" style="margin-top:36px"><a class="fx-pillbtn line" href="#news">MORE</a></p>
   </div></section>`;
-}
-function fxBandHtml(partners){
-  const groups = [["스위치 · OLT", /스위치|OLT/], ["보안 · UTM", /UTM|보안|방화벽/], ["무선 AP", /AP/]];
-  const used = new Set(); const out = groups.map(([t,re]) => [t, partners.filter(p => { const first = String(p.role||"").split("/")[0]; if (used.has(p.id) || !re.test(first)) return false; used.add(p.id); return true; })]);
-  const rest = partners.filter(p => !used.has(p.id)); if (rest.length) out.push(["기타", rest]);
-  return `<section class="fx-band"><div class="wrap">
-    <div class="fx-hd center reveal"><p class="eyebrow">Technology Partners</p><h2>트리즈엔과 함께하는 기술 파트너</h2></div>
-    <div class="fx-groups">${out.filter(g => g[1].length).map(([t,l]) => `<div class="fx-group reveal"><h3>${esc(t)} <span class="num">${l.length}</span></h3><div class="fx-logos">${l.map(p => `<span class="fx-logo" title="${esc(p.name)}${p.role?" · "+esc(p.role):""}">${p.imageId?`<img src="${imgUrl(p.imageId)}" alt="${esc(p.name)}">`:esc(p.name)}</span>`).join("")}</div></div>`).join("")}</div>
-  </div></section>`;
-}
-let fxTimer = 0;
-function fxStart(){
-  clearTimeout(fxTimer);
-  if (!document.body.classList.contains("fx") || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  const card = $("#fxCard"); if (!card) return;
-  card.classList.remove("run"); void card.offsetWidth; card.classList.add("run");
-  fxTimer = setTimeout(() => { const n = shown("products").length; if (route()==="home" && n > 1 && !card.matches(":hover")){ ui.fxShow = ((ui.fxShow||0)+1) % n; fxSetShow(); } else fxStart(); }, 6500);
-}
-function fxSetShow(){
-  const el = document.querySelector(".fx-show"); if (!el) return;
-  const t = document.createElement("div"); t.innerHTML = trHtml(fxShowHtml(shown("products", p => p.featured !== false)));
-  const nu = t.firstElementChild; nu.querySelectorAll(".reveal").forEach(x => x.classList.add("in")); el.replaceWith(nu); fxStart();
 }
 document.addEventListener("click", e => {
   const pn = e.target.closest("[data-fxacc]"); if (pn && !e.target.closest("a")){ ui.fxAcc = +pn.dataset.fxacc; document.querySelectorAll("[data-fxacc]").forEach(x => { const on = x===pn; x.classList.toggle("on", on); x.setAttribute("aria-selected", on); }); return; }
-  const sh = e.target.closest("[data-fxshow]"); if (sh){ ui.fxShow = +sh.dataset.fxshow; fxSetShow(); return; }
+  const nv = e.target.closest("[data-fxnews]"); if (nv){ const sl = document.getElementById("fxNews"); const c = sl && sl.querySelector(".fx-case"); if (c) sl.scrollBy({left: (+nv.dataset.fxnews) * (c.offsetWidth + 24), behavior:"smooth"}); return; }
   if (e.target.closest("[data-fxdown]")){ const h = $(".hero"); if (h) window.scrollTo({top: h.offsetTop + h.offsetHeight - 70, behavior:"smooth"}); }
 });
 let fxHover = 0;
@@ -1753,7 +1720,7 @@ function viewHome(){
     <div class="track" id="pTrack">${prods.map((p,i) => `<a class="p-card ${p.imageId?"":"noimg"}" href="#product-${esc(p.id)}" ${p._pv?"data-pv":""}>${p.imageId?vis(p.imageId,i+2,p.name):""}<div class="b"><span class="eyebrow">${esc(p.category)}</span><h3>${esc(p.name)}</h3><p>${esc(p.summary)}</p><span class="go">자세히 보기 ${ARROW}</span></div></a>`).join("")}</div>
   </section>` : ""}
   <div class="marquee" data-hsec="mq" aria-hidden="true"><div class="mq-row">${mqHtml}${mqHtml}</div></div>
-  <section class="sec"><div class="wrap">
+  <section class="sec" data-hsec="news"><div class="wrap">
     <div class="sec-hd"><div><p class="eyebrow">Newsroom</p><h2>새로운 소식</h2></div>
       <div class="tabs" role="tablist">${[["all","전체"],["press","보도자료"],["notice","공지사항"],["ir","IR·공시"]].map(([k,l]) => `<button class="tab ${ui.homeTab===k?"on":""}" data-hometab="${k}" role="tab" aria-selected="${ui.homeTab===k}">${l}</button>`).join("")}</div></div>
     <div class="news-grid">
@@ -2418,7 +2385,7 @@ function render(routeChanged){
   document.documentElement.lang = ui.lang;
   document.title = ui.lang==="en" ? "TrizN" : "트리즈엔";
   if (r==="home"){ startHero(); wireTrack(); const tr=$("#pTrack"); if (tr && trackX) tr.scrollLeft = trackX; } else clearTimeout(heroTimer);
-  observe(); initMap(); htlQueue(); if (r==="home" && FX()) fxStart(); else clearTimeout(fxTimer);
+  observe(); initMap(); htlQueue();
   if (routeChanged) window.scrollTo(0,0); else if (keepY) window.scrollTo(0,keepY);
   lastRoute = r;
   maybePopups();
